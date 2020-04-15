@@ -1,0 +1,11 @@
+Package: EquivalenceTTests
+Type: Package
+Title: Equivalence T-Tests (Beta) Module for JASP
+Version: 0.0.0
+Date: 2020-04-08
+Author: Jill de Ron
+Website: https://jasp-stats.org
+Maintainer: Jill de Ron <jillderon93@gmail.com>
+Description: This is a test version of Equivalence Testing module.
+License: GPL (>= 2)
+Imports: TOSTER, metaBMA

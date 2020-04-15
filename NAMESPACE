@@ -1,0 +1,8 @@
+export(EquivalenceIndependentSamplesTTest)
+export(EquivalencePairedSamplesTTest)
+export(EquivalenceOneSampleTTest)
+export(EquivalenceBayesianIndependentSamplesTTest)
+export(EquivalenceBayesianPairedSamplesTTest)
+export(EquivalenceBayesianOneSampleTTest)
+  import('TOSTER');
+  import('metaBMA');
