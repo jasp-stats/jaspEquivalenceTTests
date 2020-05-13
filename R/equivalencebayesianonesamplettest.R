@@ -138,10 +138,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   if (ready)
     equivalenceBayesianOneTTestTable$setExpectedSize(length(options$variables))
 
-  message <- gettextf("I ranges from %1$s to %2$s", 
-                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
-                      ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
-  equivalenceBayesianOneTTestTable$addFootnote(message)
+  equivalenceBayesianOneTTestTable$addFootnote(.equivalenceGetIntervalMessage(options$lowerbound, options$upperbound))
 
   jaspResults[["equivalenceBayesianOneTTestTable"]] <- equivalenceBayesianOneTTestTable
 
