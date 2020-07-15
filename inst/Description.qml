@@ -4,7 +4,7 @@ import JASP.Module 	1.0
 Description
 {
 	title:			qsTr("Equivalence T-Tests (Beta)")
-	name:			"Equivalence T-Tests"
+	name:			"EquivalenceTTests"
 	description:	qsTr("This is a test version of Equivalence Testing module.")
 	version:		"0.13"
 	author:			"Jill de Ron"
