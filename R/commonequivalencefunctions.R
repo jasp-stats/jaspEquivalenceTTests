@@ -395,15 +395,15 @@
         CRI <- NULL
       }
 
-      plotPriorPosterior <- JASPgraphs::PlotPriorAndPosterior(dfLines,
+      plotPriorPosterior <- jaspGraphs::PlotPriorAndPosterior(dfLines,
                                                               BF           = BF,
                                                               CRI          = CRI,
                                                               median       = median,
                                                               bfType       = "BF10",
                                                               xName = bquote(paste(.(gettext("Effect size")), ~delta)),
-                                                              bfSubscripts = JASPgraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
+                                                              bfSubscripts = jaspGraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
                                                                                                      "BF[phantom()%notin%phantom()%in%phantom()]")),
-                                                              pizzaTxt     = JASPgraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
+                                                              pizzaTxt     = jaspGraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
 
 
       if (options$priorandposteriorAdditionalInfo) {
@@ -1021,7 +1021,7 @@
   }
   dfLines$y <- log(dfLines$y)
 
-  plot <- JASPgraphs::PlotRobustnessSequential(
+  plot <- jaspGraphs::PlotRobustnessSequential(
     dfLines         = dfLines,
     xName           = gettext("n"),
     yName           = "BF[phantom()%in%phantom()%notin%phantom()]",
@@ -1029,10 +1029,10 @@
     bfType          = bftype,
     hypothesis      = "equal",
     evidenceLeveltxt = FALSE,
-    arrowLabel      = JASPgraphs::parseThis(c("H[phantom()%notin%phantom()]", "H[phantom()%in%phantom()]")),
-    bfSubscripts    = JASPgraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
+    arrowLabel      = jaspGraphs::parseThis(c("H[phantom()%notin%phantom()]", "H[phantom()%in%phantom()]")),
+    bfSubscripts    = jaspGraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
                                               "BF[phantom()%notin%phantom()%in%phantom()]")),
-    pizzaTxt        = JASPgraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
+    pizzaTxt        = jaspGraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
 
   return(plot)
 }
