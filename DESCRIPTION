@@ -1,4 +1,4 @@
-Package: EquivalenceTTests
+Package: jaspEquivalenceTTests
 Type: Package
 Title: Equivalence T-Tests (Beta) Module for JASP
 Version: 0.0.0
