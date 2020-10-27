@@ -381,7 +381,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
         ggplot2::geom_point(ggplot2::aes_string(x = 0, y = dif), shape = 21, fill = "black", size = 3, colour = "black") +
         ggplot2::labs(x = '', y = namePair) +
         ggplot2::expand_limits(x = c(-2, 4), y = 0)
-      plot <- JASPgraphs::themeJasp(plot)
+      plot <- jaspGraphs::themeJasp(plot)
       plot <- plot + ggplot2::theme(axis.text.x  = ggplot2::element_blank(),
                                     axis.title.x = ggplot2::element_blank(),
                                     axis.ticks.x = ggplot2::element_blank(),

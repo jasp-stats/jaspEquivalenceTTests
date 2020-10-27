@@ -14,6 +14,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+.equivalenceGetIntervalMessage <- function(lowerbound, upperbound) {
+  message <- gettextf("I ranges from %1$s to %2$s", 
+                      if(lowerbound == -Inf) "-\u221E" else lowerbound,
+                      if(upperbound == Inf) "\u221E" else upperbound)
+  message
+}
+
 .equivalencePriorandPosterior <- function(jaspResults, dataset, options, equivalenceBayesianTTestResults, ready, paired = FALSE) {
 
   # You only need to create this if it doesn't exist yet
@@ -388,15 +395,15 @@
         CRI <- NULL
       }
 
-      plotPriorPosterior <- JASPgraphs::PlotPriorAndPosterior(dfLines,
+      plotPriorPosterior <- jaspGraphs::PlotPriorAndPosterior(dfLines,
                                                               BF           = BF,
                                                               CRI          = CRI,
                                                               median       = median,
                                                               bfType       = "BF10",
                                                               xName = bquote(paste(.(gettext("Effect size")), ~delta)),
-                                                              bfSubscripts = JASPgraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
+                                                              bfSubscripts = jaspGraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
                                                                                                      "BF[phantom()%notin%phantom()%in%phantom()]")),
-                                                              pizzaTxt     = JASPgraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
+                                                              pizzaTxt     = jaspGraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
 
 
       if (options$priorandposteriorAdditionalInfo) {
@@ -455,17 +462,21 @@
                                    prior.scale        = prior.scale,
                                    prior.df           = prior.df)
 
-  lowerbound <- .equivalence_cdf_t(x                  = options$lowerbound,
-                                   t                  = t,
-                                   n1                 = n1,
-                                   n2                 = n2,
-                                   independentSamples = independentSamples,
-                                   prior.location     = prior.location,
-                                   prior.scale        = prior.scale,
-                                   prior.df           = prior.df)
-
-  errorEquivalencePosterior <- upperbound$abs.error + lowerbound$abs.error
-  integralEquivalencePosterior <- upperbound$value - lowerbound$value
+  if (options$lowerbound != -Inf) {
+    lowerbound <- .equivalence_cdf_t(x                  = options$lowerbound,
+                                     t                  = t,
+                                     n1                 = n1,
+                                     n2                 = n2,
+                                     independentSamples = independentSamples,
+                                     prior.location     = prior.location,
+                                     prior.scale        = prior.scale,
+                                     prior.df           = prior.df)
+    errorEquivalencePosterior <- upperbound$abs.error + lowerbound$abs.error
+    integralEquivalencePosterior <- upperbound$value - lowerbound$value
+  } else {
+    errorEquivalencePosterior <- upperbound$abs.error
+    integralEquivalencePosterior <- upperbound$value
+  }
 
   # to prevent numerical integration error (value < error)
   if (integralEquivalencePosterior < 0)
@@ -1010,7 +1021,7 @@
   }
   dfLines$y <- log(dfLines$y)
 
-  plot <- JASPgraphs::PlotRobustnessSequential(
+  plot <- jaspGraphs::PlotRobustnessSequential(
     dfLines         = dfLines,
     xName           = gettext("n"),
     yName           = "BF[phantom()%in%phantom()%notin%phantom()]",
@@ -1018,10 +1029,10 @@
     bfType          = bftype,
     hypothesis      = "equal",
     evidenceLeveltxt = FALSE,
-    arrowLabel      = JASPgraphs::parseThis(c("H[phantom()%notin%phantom()]", "H[phantom()%in%phantom()]")),
-    bfSubscripts    = JASPgraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
+    arrowLabel      = jaspGraphs::parseThis(c("H[phantom()%notin%phantom()]", "H[phantom()%in%phantom()]")),
+    bfSubscripts    = jaspGraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
                                               "BF[phantom()%notin%phantom()%in%phantom()]")),
-    pizzaTxt        = JASPgraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
+    pizzaTxt        = jaspGraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
 
   return(plot)
 }
