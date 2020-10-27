@@ -290,7 +290,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
                                   "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
                                   "informativeTScale", "informativeTDf"))
 
-  equivalenceMassTable$addColumnInfo(name = "variable",         title = " ",        type = "string", combine = TRUE)
+  equivalenceMassTable$addColumnInfo(name = "variable",         title = " ",                        type = "string", combine = TRUE)
   equivalenceMassTable$addColumnInfo(name = "section",          title = gettext("Section"),         type = "string")
   equivalenceMassTable$addColumnInfo(name = "mass",             title = gettext("Mass"),            type = "number")
 
