@@ -13,9 +13,6 @@ Description
 	license:		"GPL (>= 2)"
 	icon:			"equivalence-module.svg"
 
-	Package { name: "TOSTER"	}
-	Package { name: "metaBMA"	}
-
 	Analysis
 	{
 		title:	qsTr("Equivalence Independent Samples T-Test")
