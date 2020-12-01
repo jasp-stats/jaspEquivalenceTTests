@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 720.00 576.00'>
+<defs>
+  <style type='text/css'><![CDATA[
+    line, polyline, polygon, path, rect, circle {
+      fill: none;
+      stroke: #000000;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-miterlimit: 10.00;
+    }
+  ]]></style>
+</defs>
+<rect width='100%' height='100%' style='stroke: none; fill: #FFFFFF;'/>
+<rect x='0.00' y='0.00' width='720.00' height='576.00' style='stroke-width: 10.67; stroke: none;' />
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5'>
+    <rect x='0.00' y='17.29' width='720.00' height='558.71' />
+  </clipPath>
+</defs>
+<rect x='0.00' y='17.29' width='720.00' height='558.71' style='stroke-width: 10.67; stroke: none;' clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)' />
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='426.21' y='376.07' style='font-size: 16.93px; font-family: Liberation Sans;' textLength='11.28px' lengthAdjust='spacingAndGlyphs'>B</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='437.49' y='376.07' style='font-size: 16.93px; font-family: Liberation Sans;' textLength='10.34px' lengthAdjust='spacingAndGlyphs'>F</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='447.84' y='379.19' style='font-size: 11.85px; font-family: Symbola;' textLength='7.89px' lengthAdjust='spacingAndGlyphs'>∉</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='455.73' y='379.19' style='font-size: 11.85px; font-family: Symbola;' textLength='7.89px' lengthAdjust='spacingAndGlyphs'>∈</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='467.53' y='376.07' style='font-size: 16.93px; font-family: Symbola;' textLength='13.14px' lengthAdjust='spacingAndGlyphs'>=</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='484.59' y='376.07' style='font-size: 16.93px; font-family: Liberation Sans;' textLength='71.02px' lengthAdjust='spacingAndGlyphs'>3.01e+09</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='428.33' y='223.69' style='font-size: 16.93px; font-family: Liberation Sans;' textLength='11.28px' lengthAdjust='spacingAndGlyphs'>B</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='439.61' y='223.69' style='font-size: 16.93px; font-family: Liberation Sans;' textLength='10.34px' lengthAdjust='spacingAndGlyphs'>F</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='449.96' y='226.82' style='font-size: 11.85px; font-family: Symbola;' textLength='7.89px' lengthAdjust='spacingAndGlyphs'>∈</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='457.85' y='226.82' style='font-size: 11.85px; font-family: Symbola;' textLength='7.89px' lengthAdjust='spacingAndGlyphs'>∉</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='469.65' y='223.69' style='font-size: 16.93px; font-family: Symbola;' textLength='13.14px' lengthAdjust='spacingAndGlyphs'>=</text></g>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDE3LjI5)'><text x='486.71' y='223.69' style='font-size: 16.93px; font-family: Liberation Sans;' textLength='66.78px' lengthAdjust='spacingAndGlyphs'>3.32e-10</text></g>
+<defs>
+  <clipPath id='cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA='>
+    <rect x='0.00' y='0.00' width='720.00' height='576.00' />
+  </clipPath>
+</defs>
+<g clip-path='url(#cpMC4wMHw3MjAuMDB8NTc2LjAwfDAuMDA=)'><text x='0.00' y='9.08' style='font-size: 13.20px; font-family: Liberation Sans;' textLength='449.16px' lengthAdjust='spacingAndGlyphs'>EquivalenceBayesianPairedSamplesTTest-contnormal-contgamma-subplot-1</text></g>
+</svg>
