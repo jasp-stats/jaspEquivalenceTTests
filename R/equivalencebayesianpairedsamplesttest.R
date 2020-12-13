@@ -26,8 +26,8 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- jaspTTests::.ttestBayesianReadData(dataset, options)
-    errors  <- jaspTTests::.ttestBayesianGetErrorsPerVariable(dataset, options, "paired")
+    dataset <- .ttestBayesianReadData(dataset, options)
+    errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "paired")
   }
 
   # Compute the results
@@ -246,7 +246,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
     sd   <- sd(data)
     se   <- sd/sqrt(n)
 
-    posteriorSummary <- jaspTTests::.posteriorSummaryGroupMean(variable = data, descriptivesPlotsCredibleInterval = 0.95)
+    posteriorSummary <- jaspTTests:::.posteriorSummaryGroupMean(variable = data, descriptivesPlotsCredibleInterval = 0.95)
     ciLower <- .clean(posteriorSummary[["ciLower"]])
     ciUpper <- .clean(posteriorSummary[["ciUpper"]])
 

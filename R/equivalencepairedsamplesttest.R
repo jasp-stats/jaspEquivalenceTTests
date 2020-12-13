@@ -26,9 +26,9 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- jaspTTests::.ttestReadData(dataset, options, "paired")
-    jaspTTests::.ttestCheckErrors(dataset, options, "paired")
-    errors  <- jaspTTests::.ttestBayesianGetErrorsPerVariable(dataset, options, "paired")
+    dataset <- jaspTTests:::.ttestReadData(dataset, options, "paired")
+    jaspTTests:::.ttestCheckErrors(dataset, options, "paired")
+    errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "paired")
   }
 
   # Compute the results
@@ -106,7 +106,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
         alphaLevel <- 1 - (ciEffSize + 1) / 2
         d   <- mean(c1 - c2) / sd(c1 - c2)
 
-        confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
+        confIntEffSize <- jaspTTests:::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
                                                        df = tableResults$tost$asDF$`df[0]`,
                                                        alpha.lower = alphaLevel,
                                                        alpha.upper = alphaLevel)[c(1, 3)]

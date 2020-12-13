@@ -21,9 +21,9 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- jaspTTests::.ttestReadData(dataset, options, "one-sample")
-    jaspTTests::.ttestCheckErrors(dataset, options, "one-sample")
-    errors <- jaspTTests::.ttestBayesianGetErrorsPerVariable(dataset, options, "one-sample")
+    dataset <- jaspTTests:::.ttestReadData(dataset, options, "one-sample")
+    jaspTTests:::.ttestCheckErrors(dataset, options, "one-sample")
+    errors <- .ttestBayesianGetErrorsPerVariable(dataset, options, "one-sample")
   }
 
   # Compute the results
@@ -95,7 +95,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
         confIntEffSize <- c(0,0)
         ciEffSize <- 1 - 2 * options$alpha
         alphaLevel <- 1 - (ciEffSize + 1) / 2
-        confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
+        confIntEffSize <- jaspTTests:::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
                                                        df = tableResults$tost$asDF$`df[0]`,
                                                        alpha.lower = alphaLevel,
                                                        alpha.upper = alphaLevel)[c(1, 3)]

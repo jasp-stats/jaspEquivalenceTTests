@@ -19,8 +19,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
   ready <- (length(options$variables) != 0 && options$groupingVariable != "")
 
   if (ready) {
-    dataset <- jaspTTests::.ttestBayesianReadData(dataset, options)
-    errors  <- jaspTTests::.ttestBayesianGetErrorsPerVariable(dataset, options, "independent")
+    dataset <- .ttestBayesianReadData(dataset, options)
+    errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "independent")
   }
 
   # Compute the results
@@ -263,7 +263,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
         mean             <- mean(groupData)
         sd               <- sd(groupData)
         se               <- sd/sqrt(n)
-        posteriorSummary <- jaspTTests::.posteriorSummaryGroupMean(variable = groupData, descriptivesPlotsCredibleInterval = 0.95)
+        posteriorSummary <- jaspTTests:::.posteriorSummaryGroupMean(variable = groupData, descriptivesPlotsCredibleInterval = 0.95)
         ciLower          <- .clean(posteriorSummary[["ciLower"]])
         ciUpper          <- .clean(posteriorSummary[["ciUpper"]])
 

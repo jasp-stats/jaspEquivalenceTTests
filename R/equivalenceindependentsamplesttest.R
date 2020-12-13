@@ -20,9 +20,9 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- jaspTTests::.ttestReadData(dataset, options, "independent")
-    jaspTTests::.ttestCheckErrors(dataset, options, "independent")
-    errors  <- jaspTTests::.ttestBayesianGetErrorsPerVariable(dataset, options, "independent")
+    dataset <- jaspTTests:::.ttestReadData(dataset, options, "independent")
+    jaspTTests:::.ttestCheckErrors(dataset, options, "independent")
+    errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "independent")
   }
 
   # Compute the results
@@ -96,7 +96,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
         ciEffSize <- 1 - 2 * options$alpha
         alphaLevel <- 1 - (ciEffSize + 1) / 2
-        confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
+        confIntEffSize <- jaspTTests:::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
                                                        df = tableResults$tost$asDF$`df[0]`, alpha.lower = alphaLevel,
                                                        alpha.upper = alphaLevel)[c(1, 3)]
         confIntEffSize <- unlist(confIntEffSize) * sqrt((sum(ns)) / (prod(ns)))
