@@ -1137,3 +1137,50 @@
   }
   return(errors)
 }
+
+.ttestReadData <- function(dataset, options, type) {
+  if (!is.null(dataset))
+    return(dataset)
+  else {
+    groups  <- options$groupingVariable
+    if (!is.null(groups) && groups == "")
+      groups <- NULL
+    if(type %in% c("one-sample", "independent"))
+      depvars <- unlist(options$variables)
+    else if (type == 'paired') {
+      depvars <- unlist(options$pairs)
+      depvars <- depvars[depvars != ""]
+    }
+    exclude <- NULL
+    if (options$missingValues == "excludeListwise")
+      exclude <- depvars
+    return(.readDataSetToEnd(columns.as.numeric  = depvars,
+                             columns.as.factor   = groups,
+                             exclude.na.listwise = exclude))
+  }
+}
+
+.ttestCheckErrors <- function(dataset, options, type) {
+  if(type == "paired")
+    for (pair in options$pairs) {
+      if(pair[[1]] == "" || pair[[2]] == "")
+        next
+      p1 <- pair[[1]]
+      p2 <- pair[[2]]
+      if(is.null(p1) || is.null(p2))
+        return()
+      datasetErrorCheck <- data.frame(dataset[[.v(p1)]] - dataset[[.v(p2)]])
+      colnames(datasetErrorCheck) <- .v(paste0("Difference between ", p1, " and ", p2))
+      .hasErrors(datasetErrorCheck,
+                 type = "variance",
+                 exitAnalysisIfErrors = TRUE)
+    }
+  else if(type == "independent") {
+    if (length(options$variables) != 0 && options$groupingVariable != '')
+      .hasErrors(dataset,
+                 type = 'factorLevels',
+                 factorLevels.target  = options$groupingVariable,
+                 factorLevels.amount  = '!= 2',
+                 exitAnalysisIfErrors = TRUE)
+  }
+}

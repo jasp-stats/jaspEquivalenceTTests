@@ -21,8 +21,8 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- jaspTTests:::.ttestReadData(dataset, options, "one-sample")
-    jaspTTests:::.ttestCheckErrors(dataset, options, "one-sample")
+    dataset <- .ttestReadData(dataset, options, "one-sample")
+    .ttestCheckErrors(dataset, options, "one-sample")
     errors <- .ttestBayesianGetErrorsPerVariable(dataset, options, "one-sample")
   }
 

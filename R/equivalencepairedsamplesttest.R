@@ -26,8 +26,8 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- jaspTTests:::.ttestReadData(dataset, options, "paired")
-    jaspTTests:::.ttestCheckErrors(dataset, options, "paired")
+    dataset <- .ttestReadData(dataset, options, "paired")
+    .ttestCheckErrors(dataset, options, "paired")
     errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "paired")
   }
 

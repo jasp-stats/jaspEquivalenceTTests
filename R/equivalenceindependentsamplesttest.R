@@ -20,8 +20,8 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- jaspTTests:::.ttestReadData(dataset, options, "independent")
-    jaspTTests:::.ttestCheckErrors(dataset, options, "independent")
+    dataset <- .ttestReadData(dataset, options, "independent")
+    .ttestCheckErrors(dataset, options, "independent")
     errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "independent")
   }
 
