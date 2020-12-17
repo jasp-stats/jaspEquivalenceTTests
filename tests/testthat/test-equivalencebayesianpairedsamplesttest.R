@@ -1,13 +1,13 @@
-options <- jaspTools::analysisOptions("EquivalenceBayesianPairedSamplesTTest")
+options <- analysisOptions("EquivalenceBayesianPairedSamplesTTest")
+options$lowerbound <- -1.5
+options$upperbound <- 0
 options$descriptives <- TRUE
 options$massPriorPosterior <- TRUE
 options$priorandposterior <- TRUE
 options$plotSequentialAnalysis <- TRUE
 options$plotSequentialAnalysisRobustness <- TRUE
 options$pairs <- list(c("contNormal", "contGamma"))
-
 set.seed(1)
-
 results <- runAnalysis("EquivalenceBayesianPairedSamplesTTest", "test.csv", options)
 
 test_that("Descriptives table results match", {
@@ -22,21 +22,21 @@ test_that("Descriptives table results match", {
 test_that("Equivalence Bayesian Paired Samples T-Test table results match", {
   table <- results[["results"]][["equivalenceBayesianPairedTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(3.47730636520188e-10, 317024.273844527, "-", "<unicode> <unicode> I vs. H<unicode>",
-                                      "contNormal", "contGamma", 1.04706316347092, 0.000105284051986773,
-                                      " ", "<unicode> <unicode> I vs. H<unicode>", " ", " ", 3.32100916784706e-10,
-                                      663888.878137445, " ", "<unicode> <unicode> I vs. <unicode> <unicode> I",
-                                      " ", " ", 3011132910.08552, 7.32209808255702e-14, " ", "<unicode> <unicode> I vs. <unicode> <unicode> I",
+                                 list(2.76007174511518, 2.71359624686912e-06, "-", "<unicode> <unicode> I vs. H<unicode>",
+                                      "contNormal", "contGamma", 0.0108203255834508, 0.000692189922647916,
+                                      " ", "<unicode> <unicode> I vs. H<unicode>", " ", " ", 255.08213443564,
+                                      5.87239897863078e-08, " ", "<unicode> <unicode> I vs. <unicode> <unicode> I",
+                                      " ", " ", 0.00392030591327952, 0.00382098769550796, " ", "<unicode> <unicode> I vs. <unicode> <unicode> I",
                                       " ", " "))
 })
 
 test_that("Prior and Posterior Mass table results match", {
   table <- results[["results"]][["equivalenceMassPairedTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(0.0449477788241001, "p(<unicode> <unicode> I | H<unicode>)", "-",
-                                      "contNormal", "contGamma", 1.5629719740673e-11, "p(<unicode> <unicode> I | H<unicode>, data)",
-                                      " ", " ", " ", 0.9550522211759, "p(<unicode> <unicode> I | H<unicode>)",
-                                      " ", " ", " ", 0.99999999998437, "p(<unicode> <unicode> I | H<unicode>, data)",
+                                 list(0.359799641236534, "p(<unicode> <unicode> I | H<unicode>)", "-",
+                                      "contNormal", "contGamma", 0.993072823679537, "p(<unicode> <unicode> I | H<unicode>, data)",
+                                      " ", " ", " ", 0.640200358763466, "p(<unicode> <unicode> I | H<unicode>)",
+                                      " ", " ", " ", 0.00692717632046269, "p(<unicode> <unicode> I | H<unicode>, data)",
                                       " ", " ", " "))
 })
 
@@ -45,5 +45,3 @@ test_that("contNormal - contGamma plot matches", {
   testPlot <- results[["state"]][["figures"]][[plotName]][["obj"]]
   jaspTools::expect_equal_plots(testPlot, "contnormal-contgamma", dir="EquivalenceBayesianPairedSamplesTTest")
 })
-
-# check .hasErrors()
