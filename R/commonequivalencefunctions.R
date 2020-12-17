@@ -23,18 +23,18 @@
 
 .equivalencePriorandPosterior <- function(jaspResults, dataset, options, equivalenceBayesianTTestResults, ready, paired = FALSE) {
 
-  # You only need to create this if it doesn't exist yet
-  # if (is.null(equivalencePriorPosteriorContainer))
-
-  equivalencePriorPosteriorContainer <- createJaspContainer(title = gettext("Equivalence Prior and Posterior"))
-  jaspResults[["equivalencePriorPosteriorContainer"]] <- equivalencePriorPosteriorContainer
-
-  equivalencePriorPosteriorContainer$dependOn(c("priorandposterior", "missingValues", "priorWidth",
-                                                "effectSizeStandardized", "equivalenceRegion", "lower", "upper",
-                                                "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior",
-                                                "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                                "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                                "informativeTScale", "informativeTDf", "priorandposteriorAdditionalInfo"))
+  if (is.null(jaspResults[["equivalencePriorPosteriorContainer"]])) {
+    equivalencePriorPosteriorContainer <- createJaspContainer(title = gettext("Equivalence Prior and Posterior"))
+    equivalencePriorPosteriorContainer$dependOn(c("priorandposterior", "missingValues", "priorWidth",
+                                                  "effectSizeStandardized", "equivalenceRegion", "lower", "upper",
+                                                  "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior",
+                                                  "informative", "informativeCauchyLocation", "informativeCauchyScale",
+                                                  "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
+                                                  "informativeTScale", "informativeTDf", "priorandposteriorAdditionalInfo"))
+    jaspResults[["equivalencePriorPosteriorContainer"]] <- equivalencePriorPosteriorContainer
+  } else {
+    equivalencePriorPosteriorContainer <- jaspResults[["equivalencePriorPosteriorContainer"]]
+  }
 
   if (!ready)
     return()

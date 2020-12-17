@@ -1,10 +1,10 @@
-options <- analysisOptions("EquivalenceIndependentSamplesTTest")
+options <- jaspTools::analysisOptions("EquivalenceIndependentSamplesTTest")
 options$variables <- "contNormal"
 options$groupingVariable <- "contBinom"
 options$descriptives <- TRUE
 options$equivalenceboundsplot <- TRUE
 set.seed(1)
-results <- runAnalysis("EquivalenceIndependentSamplesTTest", "test.csv", options)
+results <- jaspTools::runAnalysis("EquivalenceIndependentSamplesTTest", "test.csv", options)
 
 
 test_that("contNormal plot matches", {

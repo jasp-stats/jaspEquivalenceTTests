@@ -1,9 +1,9 @@
-options <- analysisOptions("EquivalenceOneSampleTTest")
+options <- jaspTools::analysisOptions("EquivalenceOneSampleTTest")
 options$variables <- "contGamma"
 options$descriptives <- TRUE
 options$equivalenceboundsplot <- TRUE
 set.seed(1)
-results <- runAnalysis("EquivalenceOneSampleTTest", "test.csv", options)
+results <- jaspTools::runAnalysis("EquivalenceOneSampleTTest", "test.csv", options)
 
 test_that("contGamma plot matches", {
   plotName <- results[["results"]][["equivalenceOneBoundsContainer"]][["collection"]][["equivalenceOneBoundsContainer_contGamma"]][["data"]]

@@ -1,4 +1,4 @@
-options <- analysisOptions("EquivalenceBayesianPairedSamplesTTest")
+options <- jaspTools::analysisOptions("EquivalenceBayesianPairedSamplesTTest")
 options$lowerbound <- -1.5
 options$upperbound <- 0
 options$descriptives <- TRUE
@@ -8,7 +8,7 @@ options$plotSequentialAnalysis <- TRUE
 options$plotSequentialAnalysisRobustness <- TRUE
 options$pairs <- list(c("contNormal", "contGamma"))
 set.seed(1)
-results <- runAnalysis("EquivalenceBayesianPairedSamplesTTest", "test.csv", options)
+results <- jaspTools::runAnalysis("EquivalenceBayesianPairedSamplesTTest", "test.csv", options)
 
 test_that("Descriptives table results match", {
   table <- results[["results"]][["equivalenceBayesianDescriptivesTable"]][["data"]]

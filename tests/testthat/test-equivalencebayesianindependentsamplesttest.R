@@ -41,7 +41,5 @@ test_that("Prior and Posterior Mass table results match", {
 test_that("contNormal plot matches", {
   plotName <- results[["results"]][["equivalencePriorPosteriorContainer"]][["collection"]][["equivalencePriorPosteriorContainer_contNormal"]][["data"]]
   testPlot <- results[["state"]][["figures"]][[plotName]][["obj"]]
-  jaspTools::expect_equal_plots(testPlot, "contnormal", dir="EquivalenceBayesianIndependentSamplesTTest")
+  jaspTools::expect_equal_plots(testPlot, "contnormal", dir = "EquivalenceBayesianIndependentSamplesTTest")
 })
-
-# check .hasErrors()

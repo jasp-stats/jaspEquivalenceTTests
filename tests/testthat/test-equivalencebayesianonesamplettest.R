@@ -1,4 +1,4 @@
-options <- analysisOptions("EquivalenceBayesianOneSampleTTest")
+options <- jaspTools::analysisOptions("EquivalenceBayesianOneSampleTTest")
 options$variables <- "contNormal"
 options$descriptives <- TRUE
 options$massPriorPosterior <- TRUE
@@ -7,7 +7,7 @@ options$plotSequentialAnalysis <- TRUE
 options$plotSequentialAnalysisRobustness <- TRUE
 
 set.seed(1)
-results <- runAnalysis("EquivalenceBayesianOneSampleTTest", "test.csv", options)
+results <- jaspTools::runAnalysis("EquivalenceBayesianOneSampleTTest", "test.csv", options)
 
 test_that("Descriptives table results match", {
   table <- results[["results"]][["equivalenceBayesianDescriptivesTable"]][["data"]]

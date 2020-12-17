@@ -1,9 +1,9 @@
-options <- analysisOptions("EquivalencePairedSamplesTTest")
+options <- jaspTools::analysisOptions("EquivalencePairedSamplesTTest")
 options$descriptives <- TRUE
 options$equivalenceboundsplot <- TRUE
 options$pairs <- list(c("contNormal", "contGamma"))
 set.seed(1)
-results <- runAnalysis("EquivalencePairedSamplesTTest", "test.csv", options)
+results <- jaspTools::runAnalysis("EquivalencePairedSamplesTTest", "test.csv", options)
 
 test_that("contNormal - contGamma plot matches", {
   plotName <- results[["results"]][["equivalencePairedBoundsContainer"]][["collection"]][["equivalencePairedBoundsContainer_contNormal - contGamma"]][["data"]]
