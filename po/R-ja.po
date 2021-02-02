@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.1.0\n"
 "POT-Creation-Date: 2021-01-06 09:17\n"
-"PO-Revision-Date: 2021-02-01 08:41+0000\n"
+"PO-Revision-Date: 2021-02-03 07:41+0000\n"
 "Last-Translator: Yoshihiko Kunisato <ykunisato@psy.senshu-u.ac.jp>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/ja/>\n"
@@ -59,16 +59,16 @@ msgid "SD"
 msgstr ""
 
 msgid "SE"
-msgstr ""
+msgstr "標準誤差"
 
 msgid "95%% Credible Interval"
 msgstr ""
 
 msgid "Lower"
-msgstr ""
+msgstr "下"
 
 msgid "Upper"
-msgstr ""
+msgstr "上"
 
 msgid "Prior and Posterior Mass Table"
 msgstr ""
@@ -95,7 +95,7 @@ msgid "Statistic"
 msgstr "統計"
 
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgid "df"
 msgstr "自由度"
