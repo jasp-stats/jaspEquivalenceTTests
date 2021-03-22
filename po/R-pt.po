@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
 "POT-Creation-Date: 2021-03-06 13:58\n"
-"PO-Revision-Date: 2021-03-19 18:18+0000\n"
-"Last-Translator: Alex França <alex.tonante@gmail.com>\n"
+"PO-Revision-Date: 2021-03-23 19:29+0000\n"
+"Last-Translator: Laura Durans <lauraadurans@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/pt/>\n"
 "Language: pt\n"
@@ -63,7 +63,7 @@ msgstr ""
 
 #, fuzzy
 msgid "Mean"
-msgstr "Médias"
+msgstr "Média"
 
 msgid "SD"
 msgstr ""
@@ -76,11 +76,9 @@ msgstr "EP"
 msgid "95%% Credible Interval"
 msgstr "Intervalo de credibilidade"
 
-#, fuzzy
 msgid "Lower"
 msgstr "Inferior"
 
-#, fuzzy
 msgid "Upper"
 msgstr "Superior"
 
@@ -143,7 +141,6 @@ msgstr ""
 msgid "High"
 msgstr ""
 
-#, fuzzy
 msgid "%s%% Confidence Interval"
 msgstr "Intervalo de Confiança"
 
