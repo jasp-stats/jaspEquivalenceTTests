@@ -1,12 +1,12 @@
 Package: jaspEquivalenceTTests
 Type: Package
 Title: Equivalence T-Tests (Beta) Module for JASP
-Version: 0.1.0
+Version: 0.15
 Date: 2020-04-08
 Author: Jill de Ron
 Website: https://jasp-stats.org
 Maintainer: Jill de Ron <jillderon93@gmail.com>
-Description: This is a test version of Equivalence Testing module.
+Description: Test the difference between two means with an interval-null hypothesis
 License: GPL (>= 2)
 Encoding: UTF-8
 Imports:

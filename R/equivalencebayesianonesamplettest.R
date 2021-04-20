@@ -138,7 +138,10 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   if (ready)
     equivalenceBayesianOneTTestTable$setExpectedSize(length(options$variables))
 
-  equivalenceBayesianOneTTestTable$addFootnote(.equivalenceGetIntervalMessage(options$lowerbound, options$upperbound))
+  message <- gettextf("I ranges from %1$s to %2$s", 
+                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
+                      ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
+  equivalenceBayesianOneTTestTable$addFootnote(message)
 
   jaspResults[["equivalenceBayesianOneTTestTable"]] <- equivalenceBayesianOneTTestTable
 
@@ -237,7 +240,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
 .massPriorPosteriorOneTTestTable <- function(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready) {
 
-  equivalenceMassTable <- createJaspTable(title = gettext("Prior and Posterior Mass"))
+  equivalenceMassTable <- createJaspTable(title = gettext("Prior and Posterior Mass Table"))
   equivalenceMassTable$dependOn(c("variables", "priorWidth", "mu", "lower", "upper", "region",
                                   "effectSizeStandardized", "equivalenceRegion", "lowerbound", "upperbound", "lower_max", "upper_min",
                                   "informative", "informativeCauchyLocation", "informativeCauchyScale",

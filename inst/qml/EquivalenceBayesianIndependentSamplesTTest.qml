@@ -24,7 +24,7 @@ import QtQuick.Layouts  1.3
 
 Form
 {
-    usesJaspResults: true
+    
     plotHeight: 300
     plotWidth:  350
 

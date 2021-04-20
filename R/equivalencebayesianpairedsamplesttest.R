@@ -151,8 +151,10 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
   if (ready)
     equivalenceBayesianPairedTTestTable$setExpectedSize(length(options$pairs))
 
-  equivalenceBayesianPairedTTestTable$addFootnote(.equivalenceGetIntervalMessage(options$lowerbound, options$upperbound))
-
+  message <- gettextf("I ranges from %1$s to %2$s", 
+                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound), 
+                      ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
+  equivalenceBayesianPairedTTestTable$addFootnote(message)
 
   jaspResults[["equivalenceBayesianPairedTTestTable"]] <- equivalenceBayesianPairedTTestTable
 
@@ -265,7 +267,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
 .massPriorPosteriorPairedTTestTable <- function(jaspResults, dataset, options, equivalenceBayesianPairedTTestResults, ready) {
 
   # Create table
-  equivalenceMassPairedTTestTable <- createJaspTable(title = gettext("Prior and Posterior Mass"))
+  equivalenceMassPairedTTestTable <- createJaspTable(title = gettext("Equivalence Mass Table"))
   equivalenceMassPairedTTestTable$dependOn(c("pairs", "equivalenceRegion", "priorWidth", "effectSizeStandardized","informative", "lower", "upper", "region",
                                              "informativeCauchyLocation", "informativeCauchyScale", "lowerbound", "upperbound", "lower_max", "upper_min",
                                              "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
