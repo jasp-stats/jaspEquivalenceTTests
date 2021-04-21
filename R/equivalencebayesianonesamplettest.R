@@ -163,7 +163,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
       equivalenceBayesianOneTTestTable$addFootnote(message = results$errorFootnotes, rowNames = variable, colNames = "statistic")
       equivalenceBayesianOneTTestTable$addRows(list(variable = variable, statistic = NaN), rowNames = variable)
     } else {
-      
+
       error_in_alt <- (results$errorPrior + results$errorPosterior) / results$bfEquivalence
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
                                                  statistic        = "\U003B4 \U02208 I vs. H\u2081",
@@ -175,7 +175,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
                                                  statistic        = "\U003B4 \U02209 I vs. H\u2081",
                                                  bf               = results$bfNonequivalence,
                                                  error            = ifelse(error_notin_alt == Inf, "NA", error_notin_alt)))
-      
+
       error_in_notin <- (2*(results$errorPrior + results$errorPosterior)) / (results$bfEquivalence / results$bfNonequivalence)
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
                                                  statistic        = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
@@ -224,7 +224,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
     sd   <- sd(data)
     se   <- sd/sqrt(n)
 
-    posteriorSummary <- .posteriorSummaryGroupMean(variable = data, descriptivesPlotsCredibleInterval = 0.95)
+    posteriorSummary <- jaspTTests:::.posteriorSummaryGroupMean(variable = data, descriptivesPlotsCredibleInterval = 0.95)
     ciLower <- .clean(posteriorSummary[["ciLower"]])
     ciUpper <- .clean(posteriorSummary[["ciUpper"]])
 
