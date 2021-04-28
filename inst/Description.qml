@@ -5,7 +5,7 @@ Description
 {
 	title:			qsTr("Equivalence T-Tests (Beta)")
 	name:			"jaspEquivalenceTTests"
-	description:	qsTr("This is a test version of Equivalence Testing module.")
+	description:	qsTr("Test the difference between two means with an interval-null hypothesis")
 	version:		"0.13"
 	author:			"Jill de Ron"
 	maintainer:		"Jill de Ron <jillderon93@gmail.com>"
