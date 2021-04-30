@@ -297,7 +297,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   for (variable in options$variables) {
 
     results <- equivalenceIndTTestResults[[variable]]
-    amountLevels <- length(levels(dataset[[.v(options$groupingVariable)]]))
+    amountLevels <- nlevels(factor(dataset[[options[["groupingVariable"]]]]))
 
     if (!is.null((results$status))) {
       equivalenceDescriptivesTable$addFootnote(message = results$errorFootnotes, rowNames = variable, colNames = "level")
@@ -307,11 +307,11 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
       for (i in 1:amountLevels) {
 
         equivalenceDescriptivesTable$addRows(list(variable      = variable,
-                                                  level         = levels(results[[paste("name[",i,"]", sep = "")]]),
-                                                  N             = results[[paste("n[",i,"]", sep = "")]],
-                                                  mean          = results[[paste("m[",i,"]", sep = "")]],
-                                                  sd            = results[[paste("sd[",i,"]", sep = "")]],
-                                                  se            = results[[paste("se[",i,"]", sep = "")]]))
+                                                  level         = results[[paste0("name[",i,"]")]],
+                                                  N             = results[[paste0("n[",i,"]")   ]],
+                                                  mean          = results[[paste0("m[",i,"]")   ]],
+                                                  sd            = results[[paste0("sd[",i,"]")  ]],
+                                                  se            = results[[paste0("se[",i,"]")  ]]))
       }
     }
   }
