@@ -95,7 +95,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
         confIntEffSize <- c(0,0)
         ciEffSize <- 1 - 2 * options$alpha
         alphaLevel <- 1 - (ciEffSize + 1) / 2
-        confIntEffSize <- jaspTTests:::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
+        confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
                                                        df = tableResults$tost$asDF$`df[0]`,
                                                        alpha.lower = alphaLevel,
                                                        alpha.upper = alphaLevel)[c(1, 3)]

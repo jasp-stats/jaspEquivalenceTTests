@@ -248,7 +248,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
     sd   <- sd(data)
     se   <- sd/sqrt(n)
 
-    posteriorSummary <- jaspTTests:::.posteriorSummaryGroupMean(variable = data, descriptivesPlotsCredibleInterval = 0.95)
+    posteriorSummary <- jaspTTests::.posteriorSummaryGroupMean(variable = data, descriptivesPlotsCredibleInterval = 0.95)
     ciLower <- .clean(posteriorSummary[["ciLower"]])
     ciUpper <- .clean(posteriorSummary[["ciUpper"]])
 
