@@ -266,7 +266,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
         mean             <- mean(groupData)
         sd               <- sd(groupData)
         se               <- sd/sqrt(n)
-        posteriorSummary <- jaspTTests:::.posteriorSummaryGroupMean(variable = groupData, descriptivesPlotsCredibleInterval = 0.95)
+        posteriorSummary <- jaspTTests::.posteriorSummaryGroupMean(variable = groupData, descriptivesPlotsCredibleInterval = 0.95)
         ciLower          <- .clean(posteriorSummary[["ciLower"]])
         ciUpper          <- .clean(posteriorSummary[["ciUpper"]])
 

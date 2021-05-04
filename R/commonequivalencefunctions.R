@@ -205,7 +205,7 @@
         ylim <- vector("numeric", 2)
 
         ylim[1] <- 0
-        dmax1 <- optimize(function(x)jaspTTests:::.dposterior_informative(x,
+        dmax1 <- optimize(function(x)jaspTTests::.dposterior_informative(x,
                                                              t        = t,
                                                              n1       = n1,
                                                              n2       = n2,
@@ -215,7 +215,7 @@
                           interval = range(xticks),
                           maximum  = TRUE)$objective
 
-        dmax2 <- optimize(function(x)jaspTTests:::.dprior_informative(x,
+        dmax2 <- optimize(function(x)jaspTTests::.dprior_informative(x,
                                                          oneSided = oneSided,
                                                          options  = options),
                           interval = range(xticks),
@@ -226,11 +226,11 @@
 
         # Calculate prior and posterior over the whole range
         xxx <- seq(min(xticks), max(xticks), length.out = 1000)
-        priorLine <- jaspTTests:::.dprior_informative(xxx,
+        priorLine <- jaspTTests::.dprior_informative(xxx,
                                          oneSided = oneSided,
                                          options  = options)
 
-        posteriorLine <- jaspTTests:::.dposterior_informative(xxx,
+        posteriorLine <- jaspTTests::.dposterior_informative(xxx,
                                                  t        = t,
                                                  n1       = n1,
                                                  n2       = n2,
@@ -248,11 +248,11 @@
           xx <- seq(min(options$lowerbound), max(options$upperbound), length.out = 1000)
         }
 
-        priorInterval <- jaspTTests:::.dprior_informative(xx,
+        priorInterval <- jaspTTests::.dprior_informative(xx,
                                              oneSided = oneSided,
                                              options  = options)
 
-        posteriorInterval <- jaspTTests:::.dposterior_informative(xx,
+        posteriorInterval <- jaspTTests::.dposterior_informative(xx,
                                                      t        = t,
                                                      n1       = n1,
                                                      n2       = n2,
@@ -296,13 +296,13 @@
 
         parameters <- try(silent = TRUE,
                           expr = optim(par = c(deltaHat, sigmaStart, df),
-                                       fn = jaspTTests:::.likelihoodShiftedT, data = delta,
+                                       fn = jaspTTests::.likelihoodShiftedT, data = delta,
                                        method = "BFGS")$par)
 
         if (isTryError(parameters)) {
           parameters <- try(silent = TRUE,
                             expr = optim(par = c(deltaHat, sigmaStart, df),
-                                         fn = jaspTTests:::.likelihoodShiftedT, data = delta,
+                                         fn = jaspTTests::.likelihoodShiftedT, data = delta,
                                          method ="Nelder-Mead")$par)
         }
 
@@ -314,7 +314,7 @@
         ylim <- vector("numeric", 2)
         ylim[1] <- 0
 
-        dmax <- optimize(function(x)jaspTTests:::.dposteriorShiftedT(x, parameters = parameters,
+        dmax <- optimize(function(x)jaspTTests::.dposteriorShiftedT(x, parameters = parameters,
                                                         oneSided = oneSided), interval = range(xticks),
                          maximum = TRUE)$objective
 
@@ -333,8 +333,8 @@
         }
 
         # Calculate prior and posterior over the whole range
-        priorLine     <- jaspTTests:::.dprior(seq(min(xticks), max(xticks),length.out = 1000), r = r, oneSided = oneSided)
-        posteriorLine <- jaspTTests:::.dposteriorShiftedT(x = seq(min(xticks), max(xticks),
+        priorLine     <- jaspTTests::.dprior(seq(min(xticks), max(xticks),length.out = 1000), r = r, oneSided = oneSided)
+        posteriorLine <- jaspTTests::.dposteriorShiftedT(x = seq(min(xticks), max(xticks),
                                                      length.out = 1000), parameters = parameters,
                                              oneSided = oneSided)
 
@@ -348,19 +348,19 @@
           xx <- seq(min(options$lowerbound), max(options$upperbound), length.out = 1000)
         }
 
-        priorInterval <- jaspTTests:::.dprior(x        = xx,
+        priorInterval <- jaspTTests::.dprior(x        = xx,
                                  r        = r,
                                  oneSided = oneSided)
 
-        posteriorInterval  <- jaspTTests:::.dposteriorShiftedT(x          = xx,
+        posteriorInterval  <- jaspTTests::.dposteriorShiftedT(x          = xx,
                                                   parameters = parameters,
                                                   oneSided   = oneSided)
 
       }
 
       if ("effectSizeStandardized" %in% names(options) && options$effectSizeStandardized == "informative") {
-        heightPriorAtZero <- jaspTTests:::.dprior_informative(0, oneSided = oneSided, options = options)
-        heightPosteriorAtZero <- jaspTTests:::.dposterior_informative(0,
+        heightPriorAtZero <- jaspTTests::.dprior_informative(0, oneSided = oneSided, options = options)
+        heightPosteriorAtZero <- jaspTTests::.dposterior_informative(0,
                                                          t        = t,
                                                          n1       = n1,
                                                          n2       = n2,
@@ -368,8 +368,8 @@
                                                          oneSided = oneSided,
                                                          options  = options)
       } else {
-        heightPriorAtZero <- jaspTTests:::.dprior(0, r, oneSided = oneSided)
-        heightPosteriorAtZero <- jaspTTests:::.dposteriorShiftedT(0, parameters = parameters, oneSided = oneSided)
+        heightPriorAtZero <- jaspTTests::.dprior(0, r, oneSided = oneSided)
+        heightPosteriorAtZero <- jaspTTests::.dposteriorShiftedT(0, parameters = parameters, oneSided = oneSided)
 
       }
 
@@ -418,8 +418,8 @@
       } else {
 
         plotPriorPosterior <- plotPriorPosterior + ggplot2::geom_ribbon(
-          data.frame(x = xx, ymin = 0, ymax = c(jaspTTests:::.dposteriorShiftedT(x = xx, parameters = parameters,
-                                                                    oneSided = oneSided), jaspTTests:::.dprior(xx, r = r, oneSided = oneSided)), g = factor(rep(1:2, each = 1000))), # data.frame(x = xx, ymin = 0, ymax = c(dnorm(xx, 0, 1), dnorm(xx, 1, .5)), g = factor(rep(1:2, each=1000))),
+          data.frame(x = xx, ymin = 0, ymax = c(jaspTTests::.dposteriorShiftedT(x = xx, parameters = parameters,
+                                                                    oneSided = oneSided), jaspTTests::.dprior(xx, r = r, oneSided = oneSided)), g = factor(rep(1:2, each = 1000))), # data.frame(x = xx, ymin = 0, ymax = c(dnorm(xx, 0, 1), dnorm(xx, 1, .5)), g = factor(rep(1:2, each=1000))),
           mapping = ggplot2::aes(x = x, ymax = ymax, ymin = ymin, group = g, fill = g),
           inherit.aes = FALSE,
           alpha = .5, show.legend = FALSE) +
@@ -553,7 +553,7 @@
   # This is a trick to minimalize numerical integration error
   while(continue && i <= maxiter) {
     r <- try({
-      int <- integrate(jaspTTests:::.posterior_normal, lower = -Inf, upper = x, t = t, n1 = n1, n2 = n2,
+      int <- integrate(jaspTTests::.posterior_normal, lower = -Inf, upper = x, t = t, n1 = n1, n2 = n2,
                        independentSamples = independentSamples, prior.mean = prior.mean, prior.variance = prior.variance,
                        rel.tol = rel.tol, subdivisions = subdivisions)
     }, silent = TRUE)
@@ -588,7 +588,7 @@
   # This is a trick to minimalize numerical integration error
   while(continue && i <= maxiter) {
     r <- try({
-      int <- integrate(jaspTTests:::.posterior_t, lower = -Inf, upper = x, t = t, n1 = n1, n2 = n2,
+      int <- integrate(jaspTTests::.posterior_t, lower = -Inf, upper = x, t = t, n1 = n1, n2 = n2,
                        independentSamples = independentSamples, prior.location = prior.location,
                        prior.scale = prior.scale, prior.df = prior.df, rel.tol = rel.tol,
                        subdivisions = subdivisions)
