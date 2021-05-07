@@ -3,21 +3,22 @@ msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
 "POT-Creation-Date: 2021-03-06 13:58\n"
-"PO-Revision-Date: 2020-12-02 21:29+0000\n"
-"Last-Translator: JASP Stats <b.boutin@uva.nl>\n"
+"PO-Revision-Date: 2021-04-26 20:31+0000\n"
+"Last-Translator: Alex França <alex.tonante@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
-"jaspEquivalenceTTests/pt/>\n"
+"jaspequivalencettests-r/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7-dev\n"
 "X-Language: en_US\n"
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
 
 msgid "I ranges from %1$s to %2$s"
-msgstr ""
+msgstr "I varia de %1$s a %2$s"
 
 msgid "Equivalence Prior and Posterior"
 msgstr ""
@@ -42,13 +43,14 @@ msgstr ""
 
 #, fuzzy
 msgid "Model Comparison"
-msgstr "Opções de modelo"
+msgstr "Comparação de Modelo"
 
 msgid "BF"
 msgstr ""
 
+#, fuzzy
 msgid "error %"
-msgstr ""
+msgstr "erro %"
 
 #, fuzzy
 msgid "Descriptives"
@@ -57,28 +59,33 @@ msgstr "Descritivas"
 msgid "Group"
 msgstr ""
 
+#, fuzzy
 msgid "N"
-msgstr ""
+msgstr "N"
 
 #, fuzzy
 msgid "Mean"
-msgstr "Médias"
+msgstr "Média"
 
+#, fuzzy
 msgid "SD"
-msgstr ""
+msgstr "DP"
 
+#, fuzzy
 msgid "SE"
-msgstr ""
+msgstr "EP"
 
 #, fuzzy
 msgid "95%% Credible Interval"
 msgstr "Intervalo de credibilidade"
 
+#, fuzzy
 msgid "Lower"
-msgstr ""
+msgstr "Inferior"
 
+#, fuzzy
 msgid "Upper"
-msgstr ""
+msgstr "Superior"
 
 msgid "Prior and Posterior Mass Table"
 msgstr ""
@@ -112,10 +119,11 @@ msgstr "t"
 
 #, fuzzy
 msgid "df"
-msgstr "gl:"
+msgstr "gl"
 
+#, fuzzy
 msgid "p"
-msgstr ""
+msgstr "p"
 
 msgid "T-Test"
 msgstr ""
@@ -140,12 +148,12 @@ msgstr ""
 msgid "High"
 msgstr ""
 
-#, fuzzy
 msgid "%s%% Confidence Interval"
 msgstr "Intervalo de Confiança"
 
+#, fuzzy
 msgid "Cohen's d"
-msgstr ""
+msgstr "D de Cohen"
 
 #, fuzzy
 msgid "Raw"
@@ -159,4 +167,3 @@ msgstr ""
 
 msgid "Equivalence Paired Samples T-Test"
 msgstr ""
-
