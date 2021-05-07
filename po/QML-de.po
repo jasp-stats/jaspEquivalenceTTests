@@ -13,10 +13,6 @@ msgid "Equivalence T-Tests (Beta)"
 msgstr "Äquivalenz-T-Tests (Beta)"
 
 msgctxt "Description|"
-msgid "This is a test version of Equivalence Testing module."
-msgstr "Dies ist eine Testversion des Äquivalenzstests-Moduls."
-
-msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
 msgstr "Äquivalenz-T-Test für unabhängige Stichproben"
 
@@ -499,3 +495,7 @@ msgstr "Fälle pro abhängige Variable ausschließen"
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "Fälle listenweise ausschließen"
+
+msgctxt "Description|"
+msgid "Test the difference between two means with an interval-null hypothesis"
+msgstr ""

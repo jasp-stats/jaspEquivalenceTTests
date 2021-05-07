@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2021-03-06 13:58\n"
+"POT-Creation-Date: 2021-05-07 13:20\n"
 "PO-Revision-Date: 2021-04-26 20:31+0000\n"
 "Last-Translator: Alex França <alex.tonante@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
@@ -36,6 +36,12 @@ msgid ""
 msgstr ""
 
 msgid "n"
+msgstr ""
+
+msgid "Please provide another variable."
+msgstr ""
+
+msgid "Variables %s and %s are the same!"
 msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
