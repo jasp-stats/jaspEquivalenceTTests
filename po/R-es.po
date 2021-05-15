@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JASP 0.9.2\n"
 "POT-Creation-Date: 2021-05-07 13:20\n"
-"PO-Revision-Date: 2021-05-15 20:51+0000\n"
+"PO-Revision-Date: 2021-05-16 21:33+0000\n"
 "Last-Translator: Paulina Elizabeth Robalino <paulina.e.robalino@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/es/>\n"
@@ -81,25 +81,25 @@ msgid "Upper"
 msgstr "Superior"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "Tabla de masa anterior y posterior"
 
 msgid "Section"
-msgstr ""
+msgstr "Sección"
 
 msgid "Mass"
-msgstr ""
+msgstr "Masa"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Equivalencia Bayesiana de Prueba T de una muestra"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Equivalencia Bayesiana de Prueba T de muestras apareadas"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "Equivalencia de Tabla de Masa"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Equivalencia de Prueba T de muestras independientes"
 
 msgid "Statistic"
 msgstr "Estadística"
@@ -114,40 +114,40 @@ msgid "p"
 msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "Prueba T"
 
 msgid "Upper bound"
-msgstr ""
+msgstr "Límite superior"
 
 msgid "Lower bound"
-msgstr ""
+msgstr "Límite inferior"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "Límites de equivalencia"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "Tipo de límites"
 
 msgid "Low"
-msgstr ""
+msgstr "Bajo"
 
 msgid "High"
-msgstr ""
+msgstr "Alto"
 
 msgid "%s%% Confidence Interval"
 msgstr "%s%% Intervalo de Confianza"
 
 msgid "Cohen's d"
-msgstr ""
+msgstr "d de Cohen"
 
 msgid "Raw"
-msgstr ""
+msgstr "Bruto"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "Gráfico de límites equivalentes"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Equivalencia de Prueba T para una muestra"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Equivalencia Prueba T de muestras apareadas"
