@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-05-16 21:32+0000\n"
+"Last-Translator: Paulina Elizabeth Robalino <paulina.e.robalino@gmail.com>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.7-dev\n"
 "X-Language: en_US\n"
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
@@ -407,15 +413,13 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
 msgstr "Especificación de límites en"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr "D de Cohen"
+msgstr "d de Cohen"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
-msgstr "Crudo"
+msgstr "Bruto"
 
 #, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
@@ -492,10 +496,9 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
 msgstr "Especificación de límites en"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
-msgstr "D de Cohen"
+msgstr "d de Cohen"
 
 #, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
@@ -557,15 +560,13 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
 msgstr "Especificación de límites en"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr "D de Cohen"
+msgstr "d de Cohen"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr "Crudo"
+msgstr "Bruto"
 
 #, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
