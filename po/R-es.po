@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: JASP 0.9.2\n"
 "POT-Creation-Date: 2021-05-07 13:20\n"
-"PO-Revision-Date: 2021-05-13 22:32+0000\n"
+"PO-Revision-Date: 2021-05-15 20:51+0000\n"
 "Last-Translator: Paulina Elizabeth Robalino <paulina.e.robalino@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/es/>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Weblate 4.7-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
-msgstr ""
+msgstr "I varía de %1$s a %2$s"
 
 msgid "Equivalence Prior and Posterior"
 msgstr "Equivalencia anterior y posterior"
@@ -29,33 +29,35 @@ msgid ""
 "Sequential analysis robustness check plot currently not supported for "
 "informed prior."
 msgstr ""
+"El gráfico de verificación de robustez del análisis secuencial actualmente "
+"no es compatible con información previa informada."
 
 msgid "n"
 msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "Por favor proporcione otra variable."
 
 msgid "Variables %s and %s are the same!"
-msgstr ""
+msgstr "¡Las variables %s y %s son iguales!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Equivalencia Bayesiana de Prueba T de muestras independientes"
 
 msgid "Model Comparison"
-msgstr ""
+msgstr "Comparación del modelo"
 
 msgid "BF"
-msgstr ""
+msgstr "BF"
 
 msgid "error %"
-msgstr ""
+msgstr "error %"
 
 msgid "Descriptives"
-msgstr ""
+msgstr "Descriptivos"
 
 msgid "Group"
-msgstr ""
+msgstr "Grupo"
 
 msgid "N"
 msgstr "N"
