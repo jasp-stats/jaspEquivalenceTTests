@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
 "POT-Creation-Date: 2021-05-07 13:20\n"
-"PO-Revision-Date: 2021-04-26 20:31+0000\n"
+"PO-Revision-Date: 2021-05-15 20:51+0000\n"
 "Last-Translator: Alex França <alex.tonante@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/pt/>\n"
@@ -47,37 +47,30 @@ msgstr ""
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr ""
 
-#, fuzzy
 msgid "Model Comparison"
 msgstr "Comparação de Modelo"
 
 msgid "BF"
 msgstr ""
 
-#, fuzzy
 msgid "error %"
 msgstr "erro %"
 
-#, fuzzy
 msgid "Descriptives"
 msgstr "Descritivas"
 
 msgid "Group"
 msgstr ""
 
-#, fuzzy
 msgid "N"
 msgstr "N"
 
-#, fuzzy
 msgid "Mean"
 msgstr "Média"
 
-#, fuzzy
 msgid "SD"
 msgstr "DP"
 
-#, fuzzy
 msgid "SE"
 msgstr "EP"
 
@@ -85,11 +78,9 @@ msgstr "EP"
 msgid "95%% Credible Interval"
 msgstr "Intervalo de credibilidade"
 
-#, fuzzy
 msgid "Lower"
 msgstr "Inferior"
 
-#, fuzzy
 msgid "Upper"
 msgstr "Superior"
 
@@ -115,19 +106,15 @@ msgstr ""
 msgid "Equivalence Independent Samples T-Test"
 msgstr ""
 
-#, fuzzy
 msgid "Statistic"
 msgstr "Estatísticas"
 
-#, fuzzy
 msgid "t"
 msgstr "t"
 
-#, fuzzy
 msgid "df"
 msgstr "gl"
 
-#, fuzzy
 msgid "p"
 msgstr "p"
 
@@ -157,7 +144,6 @@ msgstr ""
 msgid "%s%% Confidence Interval"
 msgstr "Intervalo de Confiança"
 
-#, fuzzy
 msgid "Cohen's d"
 msgstr "D de Cohen"
 
