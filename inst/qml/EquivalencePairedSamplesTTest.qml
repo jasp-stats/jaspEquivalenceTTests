@@ -24,7 +24,7 @@ import QtQuick.Layouts  1.3
 
 Form
 {
-    
+
     plotHeight: 300
     plotWidth:  350
 
@@ -51,16 +51,16 @@ Form
               columnSpacing: 0
 
               RadioButton { value: "region"; checked: true; id: region }
-              DoubleField { name: "lowerbound"; label: qsTr("from")	; max: upperbound.value; defaultValue: -0.05; id: lowerbound; negativeValues: true; enabled: region.checked; inclusive: JASP.None}
-              DoubleField { name: "upperbound"; label: qsTr("to")	; min: lowerbound.value; defaultValue: 0.05;  id: upperbound; negativeValues: true; enabled: region.checked; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+              DoubleField { name: "lowerbound"; label: qsTr("from")	; max: upperbound.value; defaultValue: -0.05; id: lowerbound; negativeValues: true; inclusive: JASP.None}
+              DoubleField { name: "upperbound"; label: qsTr("to")	; min: lowerbound.value; defaultValue: 0.05;  id: upperbound; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
 
               RadioButton { value: "lower"; id: lower }
-              Label		  { text: qsTr("from %1").arg(" -∞ "); enabled: lower.checked}
-              DoubleField { name: "lower_max"; label: qsTr("to"); id: lower_max; defaultValue: 0.05; negativeValues: true; enabled: lower.checked; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+              Label		  { text: qsTr("from %1").arg(" -∞ ")}
+              DoubleField { name: "lower_max"; label: qsTr("to"); id: lower_max; defaultValue: 0.05; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
 
               RadioButton { value: "upper"; id: upper }
-              DoubleField { name: "upper_min"; label: qsTr("from"); id: upper_min; defaultValue: -0.05; negativeValues: true; enabled: upper.checked}
-              Label		  { text: qsTr("to %1").arg(" ∞ "); Layout.leftMargin: jaspTheme.columnGroupSpacing; enabled: upper.checked}
+              DoubleField { name: "upper_min"; label: qsTr("from"); id: upper_min; defaultValue: -0.05; negativeValues: true}
+              Label		  { text: qsTr("to %1").arg(" ∞ "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
             }
         }
 
