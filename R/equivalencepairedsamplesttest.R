@@ -107,9 +107,9 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
         d   <- mean(c1 - c2) / sd(c1 - c2)
 
         confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
-                                                       df = tableResults$tost$asDF$`df[0]`,
-                                                       alpha.lower = alphaLevel,
-                                                       alpha.upper = alphaLevel)[c(1, 3)]
+                                                                   df = tableResults$tost$asDF$`df[0]`,
+                                                                   alpha.lower = alphaLevel,
+                                                                   alpha.upper = alphaLevel)[c(1, 3)]
         confIntEffSize <- unlist(confIntEffSize) / sqrt(n)
         confIntEffSize <- sort(confIntEffSize)
 
@@ -342,7 +342,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
 
   equivalencePairedBoundsContainer <- createJaspContainer(title = gettext("Equivalence Bounds Plots"))
   equivalencePairedBoundsContainer$dependOn(c("pairs", "equivalenceRegion", "lower", "upper",
-                                              "region", "lowerbound", "upperbound", "lower_max", "upper_min", "equivalenceboundsplot",
+                                              "region", "lowerbound", "upperbound", "lower_max", "upper_min",
                                               "boundstype", "alpha", "missingValues"))
   jaspResults[["equivalencePairedBoundsContainer"]] <- equivalencePairedBoundsContainer
 
