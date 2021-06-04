@@ -8,15 +8,9 @@ msgstr ""
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
 
-#, fuzzy
 msgctxt "Description|"
 msgid "Equivalence T-Tests (Beta)"
 msgstr "Pruebas T de equivalencia (Beta)"
-
-#, fuzzy
-msgctxt "Description|"
-msgid "This is a test version of Equivalence Testing module."
-msgstr "Esta es una versión de prueba del módulo Prueba de equivalencia."
 
 #, fuzzy
 msgctxt "Description|"
@@ -413,15 +407,13 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
 msgstr "Especificación de límites en"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr "D de Cohen"
+msgstr "d de Cohen"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
-msgstr "Crudo"
+msgstr "Bruto"
 
 #, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
@@ -498,10 +490,9 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
 msgstr "Especificación de límites en"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
-msgstr "D de Cohen"
+msgstr "d de Cohen"
 
 #, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
@@ -563,15 +554,13 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
 msgstr "Especificación de límites en"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr "D de Cohen"
+msgstr "d de Cohen"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr "Crudo"
+msgstr "Bruto"
 
 #, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
@@ -607,3 +596,7 @@ msgstr "Excluir casos por variable dependiente"
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "Excluir casos según la lista"
+
+msgctxt "Description|"
+msgid "Test the difference between two means with an interval-null hypothesis"
+msgstr ""

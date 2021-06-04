@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15\n"
-"POT-Creation-Date: 2021-03-06 13:58\n"
+"POT-Creation-Date: 2021-05-07 13:20\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,12 @@ msgid "Sequential analysis robustness check plot currently not supported for inf
 msgstr ""
 
 msgid "n"
+msgstr ""
+
+msgid "Please provide another variable."
+msgstr ""
+
+msgid "Variables %s and %s are the same!"
 msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"

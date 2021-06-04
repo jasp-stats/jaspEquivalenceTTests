@@ -8,7 +8,6 @@ msgstr ""
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Variables"
 msgstr "Variáveis"
@@ -459,10 +458,6 @@ msgid "Equivalence T-Tests (Beta)"
 msgstr ""
 
 msgctxt "Description|"
-msgid "This is a test version of Equivalence Testing module."
-msgstr ""
-
-msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
 msgstr ""
 
@@ -508,4 +503,8 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Test the difference between two means with an interval-null hypothesis"
 msgstr ""
