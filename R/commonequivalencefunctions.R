@@ -93,26 +93,26 @@
         xlim <- vector("numeric", 2)
         if (options[["informativeStandardizedEffectSize"]] == "cauchy") {
 
-          ci99PlusMedian <- .ciPlusMedian_t(t                  = t,
-                                            n1                 = n1,
-                                            n2                 = n2,
-                                            independentSamples = !paired && !is.null(n2),
-                                            prior.location     = options[["informativeCauchyLocation"]],
-                                            prior.scale        = options[["informativeCauchyScale"]],
-                                            prior.df           = 1,
-                                            ci                 = .99,
-                                            oneSided           = oneSided)
+          ci99PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
+                                                        n1                 = n1,
+                                                        n2                 = n2,
+                                                        independentSamples = !paired && !is.null(n2),
+                                                        prior.location     = options[["informativeCauchyLocation"]],
+                                                        prior.scale        = options[["informativeCauchyScale"]],
+                                                        prior.df           = 1,
+                                                        ci                 = .99,
+                                                        oneSided           = oneSided)
 
-          priorLower <- .qShiftedT(.15, parameters = c(options[["informativeCauchyLocation"]],
+          priorLower <- jaspTTests::.qShiftedT(.15, parameters = c(options[["informativeCauchyLocation"]],
                                                        options[["informativeCauchyScale"]],
                                                        1), oneSided = oneSided)
 
-          priorUpper <- .qShiftedT(.85, parameters = c(options[["informativeCauchyLocation"]],
+          priorUpper <- jaspTTests::.qShiftedT(.85, parameters = c(options[["informativeCauchyLocation"]],
                                                        options[["informativeCauchyScale"]],
                                                        1), oneSided = oneSided)
 
           # Compute 95% credible interval & median
-          ci95PlusMedian <- .ciPlusMedian_t(t                  = t,
+          ci95PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
                                             n1                 = n1,
                                             n2                 = n2,
                                             independentSamples = !paired && !is.null(n2),
@@ -128,7 +128,7 @@
 
         } else if (options[["informativeStandardizedEffectSize"]] == "t") {
 
-          ci99PlusMedian <- .ciPlusMedian_t(t                  = t,
+          ci99PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
                                             n1                 = n1,
                                             n2                 = n2,
                                             independentSamples = !paired && !is.null(n2),
@@ -138,18 +138,18 @@
                                             ci                 = .99,
                                             oneSided           = oneSided)
 
-          priorLower <- .qShiftedT(.15, parameters = c(options[["informativeTLocation"]],
+          priorLower <- jaspTTests::.qShiftedT(.15, parameters = c(options[["informativeTLocation"]],
                                                        options[["informativeTScale"]],
                                                        options[["informativeTDf"]]),
                                    oneSided = oneSided)
 
-          priorUpper <- .qShiftedT(.85, parameters = c(options[["informativeTLocation"]],
+          priorUpper <- jaspTTests::.qShiftedT(.85, parameters = c(options[["informativeTLocation"]],
                                                        options[["informativeTScale"]],
                                                        options[["informativeTDf"]]),
                                    oneSided = oneSided)
 
           # Compute 95% credible interval & median
-          ci95PlusMedian <- .ciPlusMedian_t(t                  = t,
+          ci95PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
                                             n1                 = n1,
                                             n2                 = n2,
                                             independentSamples = !paired && !is.null(n2),
@@ -165,7 +165,7 @@
 
         } else if (options[["informativeStandardizedEffectSize"]] == "normal") {
 
-          ci99PlusMedian <- .ciPlusMedian_normal(t                  = t,
+          ci99PlusMedian <- jaspTTests::.ciPlusMedian_normal(t                  = t,
                                                  n1                 = n1,
                                                  n2                 = n2,
                                                  independentSamples = !paired && !is.null(n2),
@@ -183,7 +183,7 @@
           priorUpper <- qnorm(upperp, options[["informativeNormalMean"]], options[["informativeNormalStd"]])
 
           # Compute 95% credible interval & median
-          ci95PlusMedian <- .ciPlusMedian_normal(t                  = t,
+          ci95PlusMedian <- jaspTTests::.ciPlusMedian_normal(t                  = t,
                                                  n1                 = n1,
                                                  n2                 = n2,
                                                  independentSamples = !paired && !is.null(n2),
@@ -327,9 +327,9 @@
         medianPosterior <- median(delta)
 
         if (any(is.na(c(CIlow, CIhigh, medianPosterior)))) {
-          CIlow <- .qShiftedT(0.025, parameters, oneSided = FALSE)
-          CIhigh <- .qShiftedT(0.975, parameters, oneSided = FALSE)
-          medianPosterior <- .qShiftedT(0.5, parameters, oneSided = FALSE)
+          CIlow <- jaspTTests::.qShiftedT(0.025, parameters, oneSided = FALSE)
+          CIhigh <- jaspTTests::.qShiftedT(0.975, parameters, oneSided = FALSE)
+          medianPosterior <- jaspTTests::.qShiftedT(0.5, parameters, oneSided = FALSE)
         }
 
         # Calculate prior and posterior over the whole range
