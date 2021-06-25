@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-25 16:33+0000\n"
+"PO-Revision-Date: 2021-06-26 17:33+0000\n"
 "Last-Translator: Matheus Macena <macenamt21@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-qml/pt/>\n"
@@ -24,11 +24,11 @@ msgstr "Variável de Agrupamento"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Região de Equivalência"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Estatísticas adicionais"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Descriptives"
@@ -41,27 +41,27 @@ msgstr "Diagramas"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Anterior e posterior"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Informação adicional"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Análise sequencial"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "Teste de robustez"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Valores ausentes"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Exclusão listwise de casos"
 
 #, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
@@ -70,48 +70,47 @@ msgstr "Variáveis"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
-msgstr ""
+msgstr "Valor de teste"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Região de equivalência"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Estatísticas adicionais"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
 msgstr "Descritivas"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
-msgstr "Diagramas"
+msgstr "Gráficos"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Anterior e posterior"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Informação adicional"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Análise sequencial"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "Verificação de robustez"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Valores ausentes"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Exclusão listwise de casos"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable pairs"
