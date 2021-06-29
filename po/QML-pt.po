@@ -1,15 +1,9 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-06-26 17:33+0000\n"
-"Last-Translator: Matheus Macena <macenamt21@gmail.com>\n"
-"Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
-"jaspequivalencettests-qml/pt/>\n"
-"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.7.1-dev\n"
 "X-Language: pt\n"
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
@@ -120,9 +114,10 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Estatísticas adicionais"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Descriptives"
@@ -133,29 +128,34 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
 msgstr "Diagramas"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Anterior e posterior"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Informação adicional"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Análise sequencial"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Robustness check"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Valores ausentes"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Exclusão listwise de casos"
 
 #, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
@@ -180,9 +180,10 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Welch"
 msgstr "Welch"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Estatísticas adicionais"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Descriptives"
@@ -200,26 +201,30 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Valores ausentes"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Exclusão listwise de casos"
 
 #, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
 msgstr "Variáveis"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
-msgstr ""
+msgstr "Valor de teste"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Estatísticas adicionais"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
@@ -237,13 +242,15 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Valores ausentes"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Exclusão listwise de casos"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable pairs"
@@ -257,9 +264,10 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Estatísticas adicionais"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
@@ -269,13 +277,15 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Valores ausentes"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Exclusão listwise de casos"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
