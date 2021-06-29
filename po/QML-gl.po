@@ -4,500 +4,586 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: nl\n"
-"X-Language: nl\n"
-"X-Source-Language: American English\n"
+"X-Language: gl_ES\n"
+"X-Source-Language: C\n"
 "X-Qt-Contexts: true\n"
 
-msgctxt "Description|"
-msgid "Equivalence T-Tests (Beta)"
-msgstr "Gelijkwaardigheids T-Toetsen"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Raw"
+msgstr "Bruto"
 
-msgctxt "Description|"
-msgid "Equivalence Independent Samples T-Test"
-msgstr "Gelijkwaardigheids T-Toets voor Onafhankelijke Steekproeven"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "Rexión de equivalencia"
 
-msgctxt "Description|"
-msgid "Independent Samples T-Test"
-msgstr "T-Toets voor Onafhankelijke Steekproeven"
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Prior and posterior mass"
+msgstr "Masa previa e posterior"
 
-msgctxt "Description|"
-msgid "Equivalence Paired Samples T-Test"
-msgstr "Gelijkwaardigheids Gepaarde T-Toets"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Equivalence bounds plot"
+msgstr "Gráfica de límites de equivalencia"
 
-msgctxt "Description|"
-msgid "Paired Samples T-Test"
-msgstr "Gepaarde T-Toets"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Alpha level"
+msgstr "Nivel alfa"
 
-msgctxt "Description|"
-msgid "Equivalence One Sample T-Test"
-msgstr "Gelijkwaardigheids T-Toets voor Eén Gemiddelde"
-
-msgctxt "Description|"
-msgid "One Sample T-Test"
-msgstr "T-Toets voor Eén Gemiddelde"
-
-msgctxt "Description|"
-msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
-"Gelijkwaardigheids Bayesiaanse T-Toets voor Onafhankelijke Steekproeven"
-
-msgctxt "Description|"
-msgid "Bayesian Independent Samples T-Test"
-msgstr "Bayesiaanse T-Toets voor Onafhankelijke Steekproeven"
-
-msgctxt "Description|"
-msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr "Gelijkwaardigheids Bayesiaanse Gepaarde T-Toets"
-
-msgctxt "Description|"
-msgid "Bayesian Paired Samples T-Test"
-msgstr "Bayesiaanse Gepaarde T-Toets"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "Especificación de límites en"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr "Gelijkwaardigheids Bayesiaanse T-Toets voor Eén Gemiddelde"
+msgstr "Proba T baiesiana de equivalencia para unha mostra"
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
-msgstr "Bayesiaanse T-Toets voor Eén Gemiddelde"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Variabelen"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Grouping Variable"
-msgstr "Groepen"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "Gelijkwaardigheidsgebied"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "from"
-msgstr "van"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "to"
-msgstr "naar"
-
-#, qt-format
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "from %1"
-msgstr "van %1"
-
-#, qt-format
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "to %1"
-msgstr "naar %1"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "Aanvullende statistieken"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Descriptives"
-msgstr "Beschrijvende statistiek"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Prior and posterior mass"
-msgstr "Prior en posterior massa"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Plots"
-msgstr "Grafieken"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Prior and posterior"
-msgstr "Prior en posterior"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Additional info"
-msgstr "Aanvullende info"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Sequential analysis"
-msgstr "Sequentiële analyse"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Robustness check"
-msgstr "Robuustheidsevaluatie"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Missing Values"
-msgstr "Ontbrekende waarden"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "Sluit waarnemingen uit per afhankelijke variable"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "Sluit waarnemingen uit per rij"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Variables"
-msgstr "variabelen"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Test value"
-msgstr "Toetswaarde"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Equivalence Region"
-msgstr "Gelijkwaardigheidsgebied"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "from"
-msgstr "van"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "to"
-msgstr "naar"
-
-#, qt-format
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "from %1"
-msgstr "van %1"
-
-#, qt-format
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "to %1"
-msgstr "naar %1"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Additional Statistics"
-msgstr "Aanvullende statistieken"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Descriptives"
-msgstr "Beschrijvende statistiek"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Prior and posterior mass"
-msgstr "Prior en posterior massa"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Plots"
-msgstr "Grafieken"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Prior and posterior"
-msgstr "Prior en posterior"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Additional info"
-msgstr "Aanvullende info"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Sequential analysis"
-msgstr "Sequentiële analyse"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Robustness check"
-msgstr "Robuustheidsevaluatie"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Missing Values"
-msgstr "Ontbrekende waarden"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "Sluit waarnemingen uit per afhankelijke variable"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Exclude cases listwise"
-msgstr "Sluit waarnemingen uit per rij"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Variabele paren"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "Gelijkwaardigheidsgebied"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "from"
-msgstr "van"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "to"
-msgstr "naar"
-
-#, qt-format
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "from %1"
-msgstr "van %1"
-
-#, qt-format
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "to %1"
-msgstr "naar %1"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "Aanvullende statistieken"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Descriptives"
-msgstr "Beschrijvende statistiek"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Prior and posterior mass"
-msgstr "Prior en posterior massa"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Plots"
-msgstr "Grafieken"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Prior and posterior"
-msgstr "Prior en posterior"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Additional info"
-msgstr "Aanvullende info"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Sequential analysis"
-msgstr "Sequentiële analyse"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Robustness check"
-msgstr "Robuustheidsevaluatie"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Missing Values"
-msgstr "Ontbrekende waarden"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "Sluit waarnemingen uit per afhankelijke variable"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "Sluit waarnemingen uit per rij"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Variabelen"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Grouping Variable"
-msgstr "Groepen"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Tests"
-msgstr "Toetsen"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Student"
-msgstr "Student"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Welch"
-msgstr "Welch"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "Aanvullende statistieken"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Descriptives"
-msgstr "Beschrijvende statistiek"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Equivalence bounds plot"
-msgstr "Gelijkwaardigheidsgrenzen diagram"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "Gelijkwaardigheidsgebied"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "from"
-msgstr "van"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "to"
-msgstr "naar"
-
-#, qt-format
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "from %1"
-msgstr "van %1"
-
-#, qt-format
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "to %1"
-msgstr "naar %1"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Bounds specification in"
-msgstr "Specificatie grenzen in"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Cohen's d"
-msgstr "Cohen's d"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Raw"
-msgstr "Ruw"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Alpha level"
-msgstr "Alpha niveau"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Missing Values"
-msgstr "Ontbrekende Waarden"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "Sluit waarnemingen uit per afhankelijke variable"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "Sluit waarnemingen uit per rij"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Variables"
-msgstr "Variabelen"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Test value"
-msgstr "Toetswaarde"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Additional Statistics"
-msgstr "Aanvullende Statistieken"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Descriptives"
-msgstr "Beschrijvende statistiek"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Equivalence bounds plot"
-msgstr "Gelijkwaardigheidsgrenzen diagram"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Equivalence Region"
-msgstr "Gelijkwaardigheidsgebied"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "from"
-msgstr "van"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "to"
-msgstr "naar"
-
-#, qt-format
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "from %1"
-msgstr "van %1"
-
-#, qt-format
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "to %1"
-msgstr "naar %1"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Bounds specification in"
-msgstr "Specificatie grenzen in"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Cohen's d"
-msgstr "Cohen's d"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Raw"
-msgstr "Ruw"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Alpha level"
-msgstr "Alpha niveau"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Missing Values"
-msgstr "Ontbrekende waarden"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "Sluit waarnemingen uit per afhankelijke variable"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Exclude cases listwise"
-msgstr "Sluit waarnemingen uit per rij"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Variabele paren"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "Gelijkwaardigheidsgebied"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "from"
-msgstr "van"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "to"
-msgstr "naar"
-
-#, qt-format
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "from %1"
-msgstr "van %1"
-
-#, qt-format
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "to %1"
-msgstr "naar %1"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Bounds specification in"
-msgstr "Specificatie grenzen in"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Cohen's d"
-msgstr "Cohen's d"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Raw"
-msgstr "Ruw"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Alpha level"
-msgstr "Alpha niveau"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "Aanvullende statistieken"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Descriptives"
-msgstr "Beschrijvende statistiek"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Equivalence bounds plot"
-msgstr "Gelijkwaardigheidsgrenzen diagram"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Missing Values"
-msgstr "Ontbrekende waarden"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "Sluit waarnemingen uit per afhankelijke variable"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "Sluit waarnemingen uit per rij"
+msgstr "Proba T baiesiana dunha mostra"
+
+msgctxt "Description|"
+msgid "Bayesian Independent Samples T-Test"
+msgstr "Proba T baiesiana para mostras independentes"
+
+msgctxt "Description|"
+msgid "Equivalence T-Tests (Beta)"
+msgstr "Probas T de equivalencia (Beta)"
+
+msgctxt "Description|"
+msgid "Equivalence Paired Samples T-Test"
+msgstr "Proba T de equivalencia para mostras emparelladas"
+
+msgctxt "Description|"
+msgid "Equivalence One Sample T-Test"
+msgstr "Proba T de equivalencia para unha mostra"
+
+msgctxt "Description|"
+msgid "Bayesian Paired Samples T-Test"
+msgstr "Proba T baiesiana para mostras emparelladas"
+
+msgctxt "Description|"
+msgid "Equivalence Bayesian Independent Samples T-Test"
+msgstr "Proba T baiesiana de equivalencia para mostras independentes"
+
+msgctxt "Description|"
+msgid "Equivalence Independent Samples T-Test"
+msgstr "Proba T de equivalencia para mostras independentes"
+
+msgctxt "Description|"
+msgid "One Sample T-Test"
+msgstr "Proba T para unha mostra"
+
+msgctxt "Description|"
+msgid "Equivalence Bayesian Paired Samples T-Test"
+msgstr "Proba T baiesiana de equivalencia para mostras emparelladas"
+
+msgctxt "Description|"
+msgid "Paired Samples T-Test"
+msgstr "Proba T para mostras emparelladas"
+
+msgctxt "Description|"
+msgid "Independent Samples T-Test"
+msgstr "Proba T para mostras independentes"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
 msgstr ""
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Variables"
+msgstr "Variables"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Grouping Variable"
+msgstr "Variable de agrupación"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "Rexión de equivalencia"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "from"
+msgstr "desde"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "to"
+msgstr "ata"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "from %1"
+msgstr "desde %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "to %1"
+msgstr "ata %1"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "Estatísticos adicionais"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Descriptives"
+msgstr "Descritivos"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Prior and posterior mass"
+msgstr "Masa previa e posterior"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Plots"
+msgstr "Gráficas"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Prior and posterior"
+msgstr "Previo e posterior"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Additional info"
+msgstr "Información adicional"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Sequential analysis"
+msgstr "Análise secuencial"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Robustness check"
+msgstr "Comprobación da robustez"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Missing Values"
+msgstr "Valores ausentes"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "Excluír casos por variable dependente"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "Excluír casos por lista"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Variables"
+msgstr "Variables"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Test value"
+msgstr "Probar valor"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Equivalence Region"
+msgstr "Rexión de equivalencia"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "from"
+msgstr "desde"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "to"
+msgstr "ata"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "from %1"
+msgstr "desde %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "to %1"
+msgstr "ata %1"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Additional Statistics"
+msgstr "Estatísticos adicionais"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Descriptives"
+msgstr "Descritivos"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Prior and posterior mass"
+msgstr "Masa previa e posterior"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Plots"
+msgstr "Gráficas"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Prior and posterior"
+msgstr "Previo e posterior"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Additional info"
+msgstr "Información adicional"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Sequential analysis"
+msgstr "Análise secuencial"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Robustness check"
+msgstr "Comprobación da robustez"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Missing Values"
+msgstr "Valores ausentes"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "Excluír casos por variable dependente"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Exclude cases listwise"
+msgstr "Excluír casos por lista"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable pairs"
+msgstr "Pares de variables"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "Rexión de equivalencia"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "from"
+msgstr "desde"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "to"
+msgstr "ata"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "from %1"
+msgstr "desde %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "to %1"
+msgstr "ata %1"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "Estatísticos adicionais"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Descriptives"
+msgstr "Descritivos"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Plots"
+msgstr "Gráficas"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Prior and posterior"
+msgstr "Previo e posterior"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Additional info"
+msgstr "Información adicional"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Sequential analysis"
+msgstr "Análise secuencial"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Robustness check"
+msgstr "Comprobación da robustez"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Missing Values"
+msgstr "Valores ausentes"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "Excluír casos por variable dependente"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "Excluír casos por lista"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Variables"
+msgstr "Variables"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Grouping Variable"
+msgstr "Variable de agrupación"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Tests"
+msgstr "Probas"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Student"
+msgstr "Student"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Welch"
+msgstr "Welch"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "Estatísticos adicionais"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Descriptives"
+msgstr "Descritivos"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Equivalence bounds plot"
+msgstr "Gráfica de límites de equivalencia"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "Rexión de equivalencia"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "from"
+msgstr "desde"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "to"
+msgstr "ata"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "from %1"
+msgstr "desde %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "to %1"
+msgstr "ata %1"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "Especificación de límites en"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Cohen's d"
+msgstr "D de Cohen"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Raw"
+msgstr "Bruto"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Alpha level"
+msgstr "Nivel alfa"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Missing Values"
+msgstr "Valores ausentes"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "Excluír casos por variable dependente"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "Excluír casos por lista"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Variables"
+msgstr "Variables"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Test value"
+msgstr "Probar valor"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Additional Statistics"
+msgstr "Estatísticos adicionais"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Descriptives"
+msgstr "Descritivos"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Equivalence bounds plot"
+msgstr "Gráfica de límites de equivalencia"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Equivalence Region"
+msgstr "Rexión de equivalencia"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "from"
+msgstr "desde"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "to"
+msgstr "ata"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "from %1"
+msgstr "desde %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "to %1"
+msgstr "ata %1"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Bounds specification in"
+msgstr "Especificación de límites en"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Cohen's d"
+msgstr "D de Cohen"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Raw"
+msgstr "Bruto"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Alpha level"
+msgstr "Nivel alfa"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Missing Values"
+msgstr "Valores ausentes"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "Excluír casos por variable dependente"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Exclude cases listwise"
+msgstr "Excluír casos por lista"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable pairs"
+msgstr "Pares de variables"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "from"
+msgstr "desde"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "to"
+msgstr "ata"
+
+#, fuzzy, qt-format
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "from %1"
+msgstr "desde %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "to %1"
+msgstr "ata %1"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Cohen's d"
+msgstr "D de Cohen"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "Estatísticos adicionais"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Descriptives"
+msgstr "Descritivos"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Missing Values"
+msgstr "Valores ausentes"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "Excluír casos por variable dependente"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "Excluír casos por lista"
