@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-05-07 13:20\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: gl_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Virgin-Header: remove this line if you change anything in the header.\n"
+"X-Language: gl_ES\n"
+"X-Source-Language: C\n"
+"X-Generator: Poedit 2.3\n"
+
+msgid "I ranges from %1$s to %2$s"
+msgstr ""
+
+#, fuzzy
+msgid "Equivalence Prior and Posterior"
+msgstr "Previo e posterior"
+
+msgid "Effect size"
+msgstr "Magnitude do efecto"
+
+#, fuzzy
+msgid "Equivalence Sequential Analysis"
+msgstr "Análise secuencial"
+
+msgid ""
+"Sequential analysis robustness check plot currently not supported for "
+"informed prior."
+msgstr ""
+
+msgid "n"
+msgstr "n"
+
+#, fuzzy
+msgid "Please provide another variable."
+msgstr "Excluír casos por variable dependente"
+
+msgid "Variables %s and %s are the same!"
+msgstr ""
+
+msgid "Equivalence Bayesian Independent Samples T-Test"
+msgstr "Proba T baiesiana de equivalencia para mostras independentes"
+
+#, fuzzy
+msgid "Model Comparison"
+msgstr "Opcións do modelo"
+
+msgid "BF"
+msgstr "FB"
+
+#, fuzzy
+msgid "error %"
+msgstr "fallo % >"
+
+msgid "Descriptives"
+msgstr "Descritivos"
+
+msgid "Group"
+msgstr "Grupo"
+
+msgid "N"
+msgstr "N"
+
+msgid "Mean"
+msgstr "Media"
+
+msgid "SD"
+msgstr ""
+
+#, fuzzy
+msgid "SE"
+msgstr "M.E.S."
+
+#, fuzzy
+msgid "95%% Credible Interval"
+msgstr "Intervalo de credibilidade"
+
+msgid "Lower"
+msgstr "Inferior"
+
+msgid "Upper"
+msgstr "Superior"
+
+#, fuzzy
+msgid "Prior and Posterior Mass Table"
+msgstr "Masa previa e posterior"
+
+msgid "Section"
+msgstr "Sección"
+
+msgid "Mass"
+msgstr "Masa"
+
+msgid "Equivalence Bayesian One Sample T-Test"
+msgstr "Proba T baiesiana de equivalencia para unha mostra"
+
+msgid "Equivalence Bayesian Paired Samples T-Test"
+msgstr "Proba T baiesiana de equivalencia para mostras emparelladas"
+
+#, fuzzy
+msgid "Equivalence Mass Table"
+msgstr "Gráfica de límites de equivalencia"
+
+msgid "Equivalence Independent Samples T-Test"
+msgstr "Proba T de equivalencia para mostras independentes"
+
+#, fuzzy
+msgid "Statistic"
+msgstr "Estatísticos"
+
+msgid "t"
+msgstr "t"
+
+msgid "df"
+msgstr "gl"
+
+msgid "p"
+msgstr "p"
+
+#, fuzzy
+msgid "T-Test"
+msgstr "Probas T"
+
+#, fuzzy
+msgid "Upper bound"
+msgstr "Límite superior:"
+
+#, fuzzy
+msgid "Lower bound"
+msgstr "Límite inferior:"
+
+#, fuzzy
+msgid "Equivalence Bounds"
+msgstr "Gráfica de límites de equivalencia"
+
+#, fuzzy
+msgid "Bounds type"
+msgstr "Representar o tipo"
+
+msgid "Low"
+msgstr "Baixo"
+
+msgid "High"
+msgstr "Alto"
+
+#, fuzzy
+msgid "%s%% Confidence Interval"
+msgstr "Intervalo de confianza"
+
+msgid "Cohen's d"
+msgstr "D de Cohen"
+
+msgid "Raw"
+msgstr "Bruto"
+
+#, fuzzy
+msgid "Equivalence Bounds Plots"
+msgstr "Gráfica de límites de equivalencia"
+
+msgid "Equivalence One Sample T-Test"
+msgstr "Proba T de equivalencia para unha mostra"
+
+msgid "Equivalence Paired Samples T-Test"
+msgstr "Proba T de equivalencia para mostras emparelladas"
+
