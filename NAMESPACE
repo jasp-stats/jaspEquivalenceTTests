@@ -1,4 +1,3 @@
-import(jaspBase)
 export(EquivalenceIndependentSamplesTTest)
 export(EquivalencePairedSamplesTTest)
 export(EquivalenceOneSampleTTest)
