@@ -136,7 +136,7 @@ msgstr "Fälle listenweise ausschließen"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
-msgstr "variabelen"
+msgstr "Variablen"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
