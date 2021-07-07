@@ -1,7 +1,7 @@
 Package: jaspEquivalenceTTests
 Type: Package
 Title: Equivalence T-Tests (Beta) Module for JASP
-Version: 0.15
+Version: 0.15.0
 Date: 2020-04-08
 Author: Jill de Ron
 Website: https://jasp-stats.org
