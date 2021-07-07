@@ -126,7 +126,10 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
   # Save results to state
   jaspResults[["stateEquivalenceBayesianIndTTestResults"]] <- createJaspState(results)
   jaspResults[["stateEquivalenceBayesianIndTTestResults"]]$dependOn(c("variables", "groupingVariable", "equivalenceRegion", "lower", "upper",
-                                                                      "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior", "missingValues"))
+                                                                      "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior", "missingValues",
+                                                                      "informative", "informativeCauchyLocation", "informativeCauchyScale",
+                                                                      "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
+                                                                      "informativeTScale", "informativeTDf"))
 
   return(results)
 }

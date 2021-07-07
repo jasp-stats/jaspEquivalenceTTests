@@ -65,7 +65,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
     results[[variable]] <- list()
 
-    if(!isFALSE(errors[[variable]])) {
+    if (!isFALSE(errors[[variable]])) {
       errorMessage <- errors[[variable]]$message
       results[[variable]][["status"]] <- "error"
       results[[variable]][["errorFootnotes"]] <- errorMessage
@@ -85,42 +85,52 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
         errorMessage <- .extractErrorMessage(tableResults)
         results[[variable]][["status"]]         <- "error"
         results[[variable]][["errorFootnotes"]] <- errorMessage
-
+        
       } else {
 
         variableData <- dataset[[ .v(variable) ]]
         groupingData <- dataset[[ .v(options$groupingVariable) ]]
         ns  <- tapply(variableData, groupingData, function(x) length(na.omit(x)))
 
-        confIntEffSize <- c(0,0)
+        confIntEffSize <- c(0, 0)
 
         ciEffSize <- 1 - 2 * options$alpha
         alphaLevel <- 1 - (ciEffSize + 1) / 2
-        confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
+        
+        confIntEffSize <- try(jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
                                                        df = tableResults$tost$asDF$`df[0]`, alpha.lower = alphaLevel,
-                                                       alpha.upper = alphaLevel)[c(1, 3)]
-        confIntEffSize <- unlist(confIntEffSize) * sqrt((sum(ns)) / (prod(ns)))
-        confIntEffSize <- sort(confIntEffSize)
+                                                       alpha.upper = alphaLevel)[c(1, 3)])
+        
+        if (isTryError(confIntEffSize)) {
+          results[[variable]][["status"]]         <- "error"
+          results[[variable]][["errorFootnotes"]] <- "Confidence interval could not be computed"
+          
+        } else {
+          
+          confIntEffSize <- unlist(confIntEffSize) * sqrt((sum(ns)) / (prod(ns)))
+          confIntEffSize <- sort(confIntEffSize)
+          
+          results[[variable]] <- list(
+            ttestTvalue = tableResults$tost$asDF$`t[0]`,
+            ttestDf     = tableResults$tost$asDF$`df[0]`,
+            ttestP      = tableResults$tost$asDF$`p[0]`,
+            upperTvalue = tableResults$tost$asDF$`t[1]`,
+            upperDf     = tableResults$tost$asDF$`df[1]`,
+            upperP      = tableResults$tost$asDF$`p[1]`,
+            lowerTvalue = tableResults$tost$asDF$`t[2]`,
+            lowerDf     = tableResults$tost$asDF$`df[2]`,
+            lowerP      = tableResults$tost$asDF$`p[2]`,
+            lowCohen    = tableResults$eqb$asDF$`low[cohen]`,
+            highCohen   = tableResults$eqb$asDF$`high[cohen]`,
+            cilCohen    = as.numeric(confIntEffSize[1]),
+            ciuCohen    = as.numeric(confIntEffSize[2]),
+            lowRaw      = tableResults$eqb$asDF$`low[raw]`,
+            highRaw     = tableResults$eqb$asDF$`high[raw]`,
+            cilRaw      = tableResults$eqb$asDF$`cil[raw]`,
+            ciuRaw      = tableResults$eqb$asDF$`ciu[raw]`,
+            desc        = as.data.frame(tableResults$desc))
+        }
 
-        results[[variable]] <- list(
-          ttestTvalue = tableResults$tost$asDF$`t[0]`,
-          ttestDf     = tableResults$tost$asDF$`df[0]`,
-          ttestP      = tableResults$tost$asDF$`p[0]`,
-          upperTvalue = tableResults$tost$asDF$`t[1]`,
-          upperDf     = tableResults$tost$asDF$`df[1]`,
-          upperP      = tableResults$tost$asDF$`p[1]`,
-          lowerTvalue = tableResults$tost$asDF$`t[2]`,
-          lowerDf     = tableResults$tost$asDF$`df[2]`,
-          lowerP      = tableResults$tost$asDF$`p[2]`,
-          lowCohen    = tableResults$eqb$asDF$`low[cohen]`,
-          highCohen   = tableResults$eqb$asDF$`high[cohen]`,
-          cilCohen    = as.numeric(confIntEffSize[1]),
-          ciuCohen    = as.numeric(confIntEffSize[2]),
-          lowRaw      = tableResults$eqb$asDF$`low[raw]`,
-          highRaw     = tableResults$eqb$asDF$`high[raw]`,
-          cilRaw      = tableResults$eqb$asDF$`cil[raw]`,
-          ciuRaw      = tableResults$eqb$asDF$`ciu[raw]`,
-          desc        = as.data.frame(tableResults$desc))
       }
     }
   }
@@ -137,7 +147,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceIndTTestTable <- createJaspTable(title = gettext("Equivalence Independent Samples T-Test"))
-  equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "lowerbound",
+  equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "lowerbound",  "equivalenceRegion",
                                       "upperbound", "boundstype", "alpha", "missingValues"))
 
   # Add Columns to table
