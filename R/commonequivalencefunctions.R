@@ -505,8 +505,8 @@
   # BF_equivalence = density in the range of the posterior / density in the range of the prior
 
   # Step 1: Density in the range of the prior
-  prior <- metaBMA::prior("norm", c(mean = prior.mean, sd = sqrt(prior.variance)))
-  integralEquivalencePrior <- integrate(prior, lower = options$lowerbound, upper = options$upperbound)
+  #prior <- metaBMA::prior("norm", c(mean = prior.mean, sd = sqrt(prior.variance)))
+  integralEquivalencePrior <- integrate(dnorm, mean = prior.mean, sd = sqrt(prior.variance), lower = options$lowerbound, upper = options$upperbound)
   errorEquivalencePrior <- integralEquivalencePrior$abs.error
   integralEquivalencePrior <- integralEquivalencePrior$value
 
