@@ -137,7 +137,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceIndTTestTable <- createJaspTable(title = gettext("Equivalence Independent Samples T-Test"))
-  equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "lowerbound", "equivalenceRegion",
+  equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "lowerbound",
                                       "upperbound", "boundstype", "alpha", "missingValues"))
 
   # Add Columns to table
