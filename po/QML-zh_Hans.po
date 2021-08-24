@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-07-12 09:33+0000\n"
-"Last-Translator: shun wang <shuonwang@gmail.com>\n"
+"PO-Revision-Date: 2021-08-25 17:35+0000\n"
+"Last-Translator: Hu Chuan-Peng <hcp4715@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "jasp/jaspequivalencettests-qml/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -9,7 +9,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8-dev\n"
+"X-Generator: Weblate 4.8.1-dev\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
@@ -46,7 +46,7 @@ msgstr "单样本T检验"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "贝叶斯独立样本的等值T检验"
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
@@ -70,15 +70,16 @@ msgstr "贝叶斯单样本T检验"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "变量"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr ""
+msgstr "分组变量"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等值区间"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
