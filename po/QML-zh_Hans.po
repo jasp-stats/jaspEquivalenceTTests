@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-25 17:35+0000\n"
-"Last-Translator: Hu Chuan-Peng <hcp4715@gmail.com>\n"
+"PO-Revision-Date: 2021-08-27 20:21+0000\n"
+"Last-Translator: shun wang <shuonwang@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
 "jasp/jaspequivalencettests-qml/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -46,7 +46,7 @@ msgstr "单样本T检验"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr "贝叶斯独立样本的等值T检验"
+msgstr "贝叶斯独立样本的等效T检验"
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
@@ -76,10 +76,9 @@ msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr "分组变量"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr "等值区间"
+msgstr "等效区域"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
