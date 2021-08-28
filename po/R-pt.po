@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
 "POT-Creation-Date: 2021-05-07 13:20\n"
-"PO-Revision-Date: 2021-06-16 19:33+0000\n"
-"Last-Translator: Alex França <alex.tonante@gmail.com>\n"
+"PO-Revision-Date: 2021-08-27 20:21+0000\n"
+"Last-Translator: Laura Durans <lauraadurans@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/pt/>\n"
 "Language: pt\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.7-dev\n"
+"X-Generator: Weblate 4.8.1-dev\n"
 "X-Language: en_US\n"
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
@@ -21,31 +21,32 @@ msgid "I ranges from %1$s to %2$s"
 msgstr "I varia de %1$s a %2$s"
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "Equivalência anterior e posterior"
 
-#, fuzzy
 msgid "Effect size"
 msgstr "Tamanho do efeito"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "Análise Sequencial de Equivalência"
 
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
 "informed prior."
 msgstr ""
+"Gráfico de verificação de robustez da análise sequencial atualmente não "
+"suportado para informado anterior."
 
 msgid "n"
-msgstr ""
+msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "Por favor, forneça outra variável."
 
 msgid "Variables %s and %s are the same!"
-msgstr ""
+msgstr "As variáveis %s e %s são as mesmas!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Teste T de Amostras Independentes Bayesianas de Equivalência"
 
 msgid "Model Comparison"
 msgstr "Comparação de Modelo"
@@ -60,7 +61,7 @@ msgid "Descriptives"
 msgstr "Descritivas"
 
 msgid "Group"
-msgstr ""
+msgstr "Grupo"
 
 msgid "N"
 msgstr "N"
@@ -74,9 +75,8 @@ msgstr "DP"
 msgid "SE"
 msgstr "EP"
 
-#, fuzzy
 msgid "95%% Credible Interval"
-msgstr "Intervalo de credibilidade"
+msgstr "Intervalo de Confiança 95%%"
 
 msgid "Lower"
 msgstr "Inferior"
@@ -85,26 +85,25 @@ msgid "Upper"
 msgstr "Superior"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "Tabela de massa anterior e posterior"
 
-#, fuzzy
 msgid "Section"
-msgstr "Correção"
+msgstr "Seção"
 
 msgid "Mass"
-msgstr ""
+msgstr "Massa"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Teste T de Equivalência Bayesiana de uma amostra"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Teste T de Equivalência Bayesiana de Amostras Pareadas"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "Tabela de massa de equivalência"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Teste T de Amostras Independentes de Equivalência"
 
 msgid "Statistic"
 msgstr "Estatísticas"
@@ -119,27 +118,25 @@ msgid "p"
 msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "Teste T"
 
-#, fuzzy
 msgid "Upper bound"
-msgstr "limite superior:"
+msgstr "Limite superior"
 
-#, fuzzy
 msgid "Lower bound"
-msgstr "limite inferior:"
+msgstr "Limite inferior"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "Limites de equivalência"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "Tipo de limites"
 
 msgid "Low"
-msgstr ""
+msgstr "Baixo"
 
 msgid "High"
-msgstr ""
+msgstr "Alto"
 
 msgid "%s%% Confidence Interval"
 msgstr "%s%% Intervalo de Confiança"
@@ -147,15 +144,14 @@ msgstr "%s%% Intervalo de Confiança"
 msgid "Cohen's d"
 msgstr "D de Cohen"
 
-#, fuzzy
 msgid "Raw"
-msgstr "bruto"
+msgstr "Bruto"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "Gráficos de limites de equivalência"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Teste T de Equivalência de Uma Amostra"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Teste T de Amostras Emparelhadas de Equivalência"
