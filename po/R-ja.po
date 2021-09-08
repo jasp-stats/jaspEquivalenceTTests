@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.1.0\n"
 "POT-Creation-Date: 2021-05-07 13:20\n"
-"PO-Revision-Date: 2021-09-03 07:36+0000\n"
-"Last-Translator: Daiki Hojo <dhojo.bayes@gmail.com>\n"
+"PO-Revision-Date: 2021-09-08 12:11+0000\n"
+"Last-Translator: Koji Kosugi <kosugitti@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/ja/>\n"
 "Language: ja\n"
@@ -14,16 +14,16 @@ msgstr ""
 "X-Generator: Weblate 4.8.1-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
-msgstr ""
+msgstr "%1$sから%2$sの範囲です"
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "同等の事前分布と事後分布"
 
 msgid "Effect size"
 msgstr "効果量"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "等価シーケンシャル解析"
 
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
@@ -40,13 +40,13 @@ msgid "Variables %s and %s are the same!"
 msgstr "変数 %s と %s は同じです!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "等価ベイズ独立サンプルのt検定"
 
 msgid "Model Comparison"
 msgstr "モデル比較"
 
 msgid "BF"
-msgstr ""
+msgstr "BF"
 
 msgid "error %"
 msgstr "エラー %"
@@ -79,25 +79,25 @@ msgid "Upper"
 msgstr "上"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "事前と事後の質量テーブル"
 
 msgid "Section"
-msgstr ""
+msgstr "セクション"
 
 msgid "Mass"
-msgstr ""
+msgstr "質量"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "等価ベイジアン1標本のt検定"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "等価ベイジアン対応のあるサンプルのt検定"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "等価質量表"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "等価独立サンプルのt検定"
 
 msgid "Statistic"
 msgstr "統計"
@@ -112,7 +112,7 @@ msgid "p"
 msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "t検定"
 
 msgid "Upper bound"
 msgstr "上限"
@@ -121,16 +121,16 @@ msgid "Lower bound"
 msgstr "下限"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "等価性の境界"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "境界タイプ"
 
 msgid "Low"
-msgstr ""
+msgstr "低"
 
 msgid "High"
-msgstr ""
+msgstr "高"
 
 msgid "%s%% Confidence Interval"
 msgstr "%s%% 信頼区間"
@@ -139,13 +139,13 @@ msgid "Cohen's d"
 msgstr "コーエン(Cohen)のd"
 
 msgid "Raw"
-msgstr ""
+msgstr "生"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "等価境界線プロット"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "等価1サンプルのt検定"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "等価対応のある標本のt検定"
