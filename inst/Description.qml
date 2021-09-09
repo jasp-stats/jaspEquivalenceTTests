@@ -3,7 +3,7 @@ import JASP.Module 	1.0
 
 Description
 {
-	title:			qsTr("Equivalence T-Tests (Beta)")
+	title:			qsTr("Equivalence T-Tests")
 	name:			"jaspEquivalenceTTests"
 	description:	qsTr("Test the difference between two means with an interval-null hypothesis")
 	version:		"0.15"
