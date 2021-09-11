@@ -6,10 +6,6 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
-msgid "Equivalence T-Tests (Beta)"
-msgstr ""
-
-msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
 msgstr ""
 
@@ -495,4 +491,8 @@ msgstr ""
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Equivalence T-Tests"
 msgstr ""

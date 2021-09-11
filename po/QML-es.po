@@ -8,10 +8,6 @@ msgstr ""
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
 
-msgctxt "Description|"
-msgid "Equivalence T-Tests (Beta)"
-msgstr "Pruebas T de equivalencia (Beta)"
-
 #, fuzzy
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
@@ -514,4 +510,8 @@ msgstr "Excluir casos según la lista"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Equivalence T-Tests"
 msgstr ""

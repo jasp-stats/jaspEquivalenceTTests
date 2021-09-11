@@ -445,10 +445,6 @@ msgid "to %1"
 msgstr "para %1"
 
 msgctxt "Description|"
-msgid "Equivalence T-Tests (Beta)"
-msgstr "Testes T de Equivalência (Beta)"
-
-msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
 msgstr "Teste T de Equivalência de Amostras Independentes"
 
@@ -500,3 +496,7 @@ msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
 msgstr ""
 "Testar a diferença entre duas médias com uma hipótese de intervalo nulo"
+
+msgctxt "Description|"
+msgid "Equivalence T-Tests"
+msgstr ""

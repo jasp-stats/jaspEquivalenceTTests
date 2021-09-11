@@ -8,10 +8,6 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
-msgid "Equivalence T-Tests (Beta)"
-msgstr ""
-
-msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
 msgstr ""
 
@@ -497,4 +493,8 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Equivalence T-Tests"
 msgstr ""
