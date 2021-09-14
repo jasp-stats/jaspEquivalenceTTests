@@ -40,7 +40,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
   if(options$descriptives && is.null(jaspResults[["equivalenceBayesianDescriptivesTable"]]))
     .equivalenceBayesianOneTTestTableDescriptives(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready)
-
+  
   if (options$priorandposterior)
     .equivalencePriorandPosterior(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready)
 

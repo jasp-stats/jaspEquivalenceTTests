@@ -44,7 +44,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
   # Output tables and plots
   .equivalenceBayesianPairedTTestTableMain(jaspResults, dataset, options, equivalenceBayesianPairedTTestResults, ready)
 
-  if(options$descriptives)
+  if(options$descriptives && is.null(jaspResults[["equivalenceBayesianDescriptivesTable"]]))
     .equivalenceBayesianPairedTTestTableDescriptives(jaspResults, dataset, options, equivalenceBayesianPairedTTestResults, ready)
 
   if (options$priorandposterior)
