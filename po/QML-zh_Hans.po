@@ -1,21 +1,11 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-08-27 20:21+0000\n"
-"Last-Translator: shun wang <shuonwang@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"jasp/jaspequivalencettests-qml/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8.1-dev\n"
-"X-Qt-Contexts: true\n"
 "X-Language: zh_Hans\n"
-
-msgctxt "Description|"
-msgid "Equivalence T-Tests (Beta)"
-msgstr ""
+"X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
@@ -143,17 +133,19 @@ msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "变量"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效区域"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
@@ -221,9 +213,10 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable pairs"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效区域"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
@@ -287,13 +280,15 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "变量"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr ""
+msgstr "分组变量"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Tests"
@@ -319,9 +314,10 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效区域"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
@@ -369,9 +365,10 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "变量"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
@@ -389,9 +386,10 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效区域"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
@@ -443,9 +441,10 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable pairs"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效区域"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
@@ -503,4 +502,8 @@ msgstr ""
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Equivalence T-Tests"
 msgstr ""
