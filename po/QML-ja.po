@@ -1,15 +1,21 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-09-24 01:34+0000\n"
+"Last-Translator: Daiki Hojo <dhojo.bayes@gmail.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.9-dev\n"
 "X-Language: ja\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
-msgstr "等価独立サンプルのt検定"
+msgstr "同等性独立サンプルのt検定"
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
@@ -17,7 +23,7 @@ msgstr "独立したサンプルのt検定"
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
-msgstr "等価対応のある標本のt検定"
+msgstr "同等性対応のある標本のt検定"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
@@ -25,7 +31,7 @@ msgstr "対応のあるサンプルのt検定"
 
 msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
-msgstr "等価1サンプルのt検定"
+msgstr "同等性1サンプルのt検定"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
@@ -33,7 +39,7 @@ msgstr "1標本のt検定"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr "等価ベイズ独立サンプルのt検定"
+msgstr "同等性ベイジアン独立サンプルのt検定"
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
@@ -41,7 +47,7 @@ msgstr "ベイジアン独立サンプルのt検定"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr "等価ベイジアン対応のあるサンプルのt検定"
+msgstr "同等性ベイジアン対応のあるサンプルのt検定"
 
 msgctxt "Description|"
 msgid "Bayesian Paired Samples T-Test"
@@ -49,7 +55,7 @@ msgstr "ベイジアン対応のあるサンプルのt検定"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr "等価ベイジアン1標本のt検定"
+msgstr "同等性ベイジアン1標本のt検定"
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
@@ -65,7 +71,7 @@ msgstr "グループ化変数"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr "等価領域"
+msgstr "同等性領域"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
@@ -139,7 +145,7 @@ msgstr "検定統計量:"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr "等価領域"
+msgstr "同等性領域"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
@@ -209,7 +215,7 @@ msgstr "変数ペア"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr "等価領域"
+msgstr "同等性領域"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
@@ -303,11 +309,11 @@ msgstr "記述統計量"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr "等価境界線プロット"
+msgstr "同等性境界線プロット"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr "等価領域"
+msgstr "同等性領域"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
@@ -373,11 +379,11 @@ msgstr "記述統計量"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
-msgstr "等価境界線プロット"
+msgstr "同等性境界線プロット"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr "等価領域"
+msgstr "同等性領域"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
@@ -431,7 +437,7 @@ msgstr "変数ペア"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr "等価領域"
+msgstr "同等性領域"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
@@ -477,7 +483,7 @@ msgstr "記述統計量"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr "等価境界線プロット"
+msgstr "同等性境界線プロット"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
@@ -497,4 +503,4 @@ msgstr "区間帰無仮説による2つの平均値の差の検定"
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
-msgstr "等価性t検定"
+msgstr "同等性t検定"
