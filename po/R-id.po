@@ -2,82 +2,85 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
 "POT-Creation-Date: 2021-07-10 02:52\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-09-29 02:37+0000\n"
+"Last-Translator: Sunu Bagaskara <sunu.bagaskara@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-r/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.9-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
 msgstr ""
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "Prior dan Posterior Setara"
 
 msgid "Effect size"
-msgstr ""
+msgstr "Besaran efek"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "Analisis Sekuensial Setara"
 
 msgid "Sequential analysis robustness check plot currently not supported for informed prior."
 msgstr ""
 
 msgid "n"
-msgstr ""
+msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "Mohon tambahkan variabel lainnya."
 
 msgid "Variables %s and %s are the same!"
-msgstr ""
+msgstr "Variabel %s dan %s sama!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Uji-t Sampel Independen Bayesian Setara"
 
 msgid "Model Comparison"
-msgstr ""
+msgstr "Perbandingan Model"
 
 msgid "BF"
-msgstr ""
+msgstr "BF"
 
 msgid "error %"
-msgstr ""
+msgstr "galat %"
 
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptif"
 
 msgid "Group"
-msgstr ""
+msgstr "Kelompok"
 
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgid "Mean"
-msgstr ""
+msgstr "Rerata"
 
 msgid "SD"
-msgstr ""
+msgstr "SD"
 
 msgid "SE"
-msgstr ""
+msgstr "SE"
 
 msgid "95%% Credible Interval"
-msgstr ""
+msgstr "Interval Kredibel 95%%"
 
 msgid "Lower"
-msgstr ""
+msgstr "Bawah"
 
 msgid "Upper"
-msgstr ""
+msgstr "Atas"
 
 msgid "Prior and Posterior Mass Table"
 msgstr ""
 
 msgid "Section"
-msgstr ""
+msgstr "Bagian"
 
 msgid "Mass"
 msgstr ""
@@ -95,43 +98,43 @@ msgid "Equivalence Independent Samples T-Test"
 msgstr ""
 
 msgid "Statistic"
-msgstr ""
+msgstr "Statistik"
 
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgid "df"
-msgstr ""
+msgstr "df"
 
 msgid "p"
-msgstr ""
+msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "Uji-T"
 
 msgid "Upper bound"
-msgstr ""
+msgstr "Batas atas"
 
 msgid "Lower bound"
-msgstr ""
+msgstr "Batas bawah"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "Batas Kesetaraan"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "Tipe batas"
 
 msgid "Low"
-msgstr ""
+msgstr "Rendah"
 
 msgid "High"
-msgstr ""
+msgstr "Tinggi"
 
 msgid "%s%% Confidence Interval"
-msgstr ""
+msgstr "%s%% Interval Kepercayaan"
 
 msgid "Cohen's d"
-msgstr ""
+msgstr "d Cohen"
 
 msgid "Raw"
 msgstr ""
