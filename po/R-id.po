@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
+"POT-Creation-Date: 2021-07-10 02:52\n"
+"PO-Revision-Date: 2021-09-29 02:37+0000\n"
+"Last-Translator: Sunu Bagaskara <sunu.bagaskara@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-r/id/>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.9-dev\n"
+
+msgid "I ranges from %1$s to %2$s"
+msgstr ""
+
+msgid "Equivalence Prior and Posterior"
+msgstr "Prior dan Posterior Setara"
+
+msgid "Effect size"
+msgstr "Besaran efek"
+
+msgid "Equivalence Sequential Analysis"
+msgstr "Analisis Sekuensial Setara"
+
+msgid "Sequential analysis robustness check plot currently not supported for informed prior."
+msgstr ""
+
+msgid "n"
+msgstr "n"
+
+msgid "Please provide another variable."
+msgstr "Mohon tambahkan variabel lainnya."
+
+msgid "Variables %s and %s are the same!"
+msgstr "Variabel %s dan %s sama!"
+
+msgid "Equivalence Bayesian Independent Samples T-Test"
+msgstr "Uji-t Sampel Independen Bayesian Setara"
+
+msgid "Model Comparison"
+msgstr "Perbandingan Model"
+
+msgid "BF"
+msgstr "BF"
+
+msgid "error %"
+msgstr "galat %"
+
+msgid "Descriptives"
+msgstr "Deskriptif"
+
+msgid "Group"
+msgstr "Kelompok"
+
+msgid "N"
+msgstr "N"
+
+msgid "Mean"
+msgstr "Rerata"
+
+msgid "SD"
+msgstr "SD"
+
+msgid "SE"
+msgstr "SE"
+
+msgid "95%% Credible Interval"
+msgstr "Interval Kredibel 95%%"
+
+msgid "Lower"
+msgstr "Bawah"
+
+msgid "Upper"
+msgstr "Atas"
+
+msgid "Prior and Posterior Mass Table"
+msgstr ""
+
+msgid "Section"
+msgstr "Bagian"
+
+msgid "Mass"
+msgstr ""
+
+msgid "Equivalence Bayesian One Sample T-Test"
+msgstr ""
+
+msgid "Equivalence Bayesian Paired Samples T-Test"
+msgstr ""
+
+msgid "Equivalence Mass Table"
+msgstr ""
+
+msgid "Equivalence Independent Samples T-Test"
+msgstr ""
+
+msgid "Statistic"
+msgstr "Statistik"
+
+msgid "t"
+msgstr "t"
+
+msgid "df"
+msgstr "df"
+
+msgid "p"
+msgstr "p"
+
+msgid "T-Test"
+msgstr "Uji-T"
+
+msgid "Upper bound"
+msgstr "Batas atas"
+
+msgid "Lower bound"
+msgstr "Batas bawah"
+
+msgid "Equivalence Bounds"
+msgstr "Batas Kesetaraan"
+
+msgid "Bounds type"
+msgstr "Tipe batas"
+
+msgid "Low"
+msgstr "Rendah"
+
+msgid "High"
+msgstr "Tinggi"
+
+msgid "%s%% Confidence Interval"
+msgstr "%s%% Interval Kepercayaan"
+
+msgid "Cohen's d"
+msgstr "d Cohen"
+
+msgid "Raw"
+msgstr ""
+
+msgid "Equivalence Bounds Plots"
+msgstr ""
+
+msgid "Equivalence One Sample T-Test"
+msgstr ""
+
+msgid "Equivalence Paired Samples T-Test"
+msgstr ""
