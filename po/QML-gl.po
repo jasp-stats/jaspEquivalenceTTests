@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-10-24 10:54+0000\n"
+"PO-Revision-Date: 2021-10-24 13:08+0000\n"
 "Last-Translator: ecadrian <ecadrian@hotmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-qml/gl/>\n"
@@ -40,11 +40,11 @@ msgstr "Especificación de límites en"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr "Proba T baiesiana de equivalencia para unha mostra"
+msgstr "Proba T baiesiana de Equivalencia para Unha Mostra"
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
-msgstr "Proba T baiesiana dunha mostra"
+msgstr "Proba T baiesiana para Unha Mostra"
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
@@ -60,27 +60,27 @@ msgstr "Proba T de Equivalencia para Unha Mostra"
 
 msgctxt "Description|"
 msgid "Bayesian Paired Samples T-Test"
-msgstr "Proba T Baiesiana para Mostras Emparelladas"
+msgstr "Proba T baiesiana para Mostras Emparelladas"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr "Proba T baiesiana de equivalencia para mostras independentes"
+msgstr "Proba T baiesiana de Equivalencia para Mostras Independentes"
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
-msgstr "Proba T de equivalencia para mostras independentes"
+msgstr "Proba T de Equivalencia para Mostras Independentes"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
-msgstr "Proba T para unha mostra"
+msgstr "Proba T para Unha Mostra"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr "Proba T baiesiana de equivalencia para mostras emparelladas"
+msgstr "Proba T baiesiana de Equivalencia para Mostras Emparelladas"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
-msgstr "Proba T para mostras emparelladas"
+msgstr "Proba T para Mostras Emparelladas"
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
