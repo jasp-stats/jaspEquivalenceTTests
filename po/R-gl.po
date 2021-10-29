@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2021-05-07 13:20\n"
-"PO-Revision-Date: 2021-10-20 15:33+0000\n"
+"PO-Revision-Date: 2021-10-24 13:07+0000\n"
 "Last-Translator: ecadrian <ecadrian@hotmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/gl/>\n"
@@ -50,7 +50,7 @@ msgid "Variables %s and %s are the same!"
 msgstr "As variables %s e %s son as mesmas!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr "Proba T baiesiana de equivalencia para mostras independentes"
+msgstr "Proba T baiesiana de Equivalencia para Mostras Independentes"
 
 msgid "Model Comparison"
 msgstr "Cotexo de Modelos"
@@ -98,16 +98,16 @@ msgid "Mass"
 msgstr "Masa"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr "Proba T baiesiana de equivalencia para unha mostra"
+msgstr "Proba T baiesiana de Equivalencia para Unha Mostra"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr "Proba T baiesiana de equivalencia para mostras emparelladas"
+msgstr "Proba T baiesiana de Equivalencia para Mostras Emparelladas"
 
 msgid "Equivalence Mass Table"
-msgstr "Táboa de masa de equivalencia"
+msgstr "Táboa de Masa de Equivalencia"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr "Proba T de equivalencia para mostras independentes"
+msgstr "Proba T de Equivalencia para Mostras Independentes"
 
 msgid "Statistic"
 msgstr "Estatístico"
@@ -155,7 +155,7 @@ msgid "Equivalence Bounds Plots"
 msgstr "Gráficas de límites de equivalencia"
 
 msgid "Equivalence One Sample T-Test"
-msgstr "Proba T de equivalencia para unha mostra"
+msgstr "Proba T de Equivalencia para Unha Mostra"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr "Proba T de equivalencia para mostras emparelladas"
+msgstr "Proba T de Equivalencia para Mostras Emparelladas"
