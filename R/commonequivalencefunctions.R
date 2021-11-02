@@ -14,6 +14,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+# This is a temporary fix
+# TODO: remove it when R will solve this problem!
+gettextf <- function(fmt, ..., domain = NULL)  {
+  return(sprintf(gettext(fmt, domain = domain), ...))
+}
+
 .equivalenceGetIntervalMessage <- function(lowerbound, upperbound) {
   message <- gettextf("I ranges from %1$s to %2$s",
                       if(lowerbound == -Inf) "-\u221E" else lowerbound,
