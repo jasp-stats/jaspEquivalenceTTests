@@ -1,15 +1,9 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-11-13 16:56+0000\n"
-"Last-Translator: Shun Wang <shuonwang@gmail.com>\n"
-"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
-"jasp/jaspequivalencettests-qml/zh_Hans/>\n"
-"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9.1-dev\n"
 "X-Language: zh_Hans\n"
 "X-Qt-Contexts: true\n"
 
@@ -320,23 +314,25 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "等效区域"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "从"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "至"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from %1"
 msgstr ""
 
-#, qt-format
+#, fuzzy, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "至 %1"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
@@ -354,34 +350,40 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "缺失值处理方式"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "排除每个因变量的个案"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "按列表排除个案"
 
 #, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
 msgstr "变量"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
-msgstr ""
+msgstr "检验值"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "附加统计"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述统计"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
@@ -392,23 +394,25 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
 msgstr "等效区域"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "从"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "至"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from %1"
 msgstr ""
 
-#, qt-format
+#, fuzzy, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "至 %1"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
@@ -426,44 +430,50 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "缺失值处理方式"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "排除每个因变量的个案"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "按列表排除个案"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable pairs"
-msgstr ""
+msgstr "变量对"
 
 #, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "等效区域"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "从"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "至"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from %1"
 msgstr ""
 
-#, qt-format
+#, fuzzy, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "至 %1"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
@@ -481,29 +491,34 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "附加统计"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述统计"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "缺失值处理方式"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "排除每个因变量的个案"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "按列表排除个案"
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
