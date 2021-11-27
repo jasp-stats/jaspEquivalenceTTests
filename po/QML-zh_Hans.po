@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2021-11-22 22:59+0000\n"
+"Last-Translator: Shun Wang <shuonwang@gmail.com>\n"
+"Language-Team: Chinese (Simplified) <https://hosted.weblate.org/projects/"
+"jasp/jaspequivalencettests-qml/zh_Hans/>\n"
+"Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.10-dev\n"
 "X-Language: zh_Hans\n"
 "X-Qt-Contexts: true\n"
 
@@ -307,19 +313,16 @@ msgstr "描述统计"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "等效边界图"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "等效区域"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
 msgstr "从"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to"
 msgstr "至"
@@ -327,79 +330,69 @@ msgstr "至"
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "从 %1"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to %1"
 msgstr "至 %1"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "边界限制在"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Raw"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "显著水平(α)"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Missing Values"
 msgstr "缺失值处理方式"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
 msgstr "排除每个因变量的个案"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "按列表排除个案"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
 msgstr "变量"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
 msgstr "检验值"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
 msgstr "附加统计"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
 msgstr "描述统计"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "等效边界图"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
 msgstr "等效区域"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
 msgstr "从"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to"
 msgstr "至"
@@ -407,60 +400,53 @@ msgstr "至"
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "从 %1"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to %1"
 msgstr "至 %1"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "边界限制在"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Raw"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "显著水平(α)"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Missing Values"
 msgstr "缺失值处理方式"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
 msgstr "排除每个因变量的个案"
 
-#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
 msgstr "按列表排除个案"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable pairs"
 msgstr "变量对"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "等效区域"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
 msgstr "从"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to"
 msgstr "至"
@@ -468,58 +454,53 @@ msgstr "至"
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "从 %1"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to %1"
 msgstr "至 %1"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "边界限制在"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Raw"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "显著水平(α)"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
 msgstr "附加统计"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
 msgstr "描述统计"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "等效边界图"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
 msgstr "缺失值处理方式"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
 msgstr "排除每个因变量的个案"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "按列表排除个案"
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
-msgstr ""
+msgstr "等效性 T 检验"
