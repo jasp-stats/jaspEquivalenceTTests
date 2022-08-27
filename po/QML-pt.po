@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2022-08-28 23:23+0000\n"
+"Last-Translator: Laura Durans <lauraadurans@gmail.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1-dev\n"
 "X-Language: pt\n"
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
@@ -22,7 +28,7 @@ msgstr "Região de Equivalência"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr "Estatísticas adicionais"
+msgstr "Estatísticas Adicionais"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Descriptives"
@@ -30,27 +36,27 @@ msgstr "Descritivas"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Plots"
-msgstr "Diagramas"
+msgstr "Gráficos"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior"
-msgstr "Anterior e posterior"
+msgstr "Anterior e Posterior"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional info"
-msgstr "Informação adicional"
+msgstr "Informações Adicionais"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Sequential analysis"
-msgstr "Análise sequencial"
+msgstr "Análise Sequencial"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Robustness check"
-msgstr "Teste de robustez"
+msgstr "Teste de Robustez"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr "Valores ausentes"
+msgstr "Valores Ausentes"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
@@ -70,7 +76,7 @@ msgstr "Região de equivalência"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr "Estatísticas adicionais"
+msgstr "Estatísticas Adicionais"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
@@ -82,27 +88,27 @@ msgstr "Gráficos"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
-msgstr "Anterior e posterior"
+msgstr "Anterior e Posterior"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
-msgstr "Informação adicional"
+msgstr "Informações adicionais"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Sequential analysis"
-msgstr "Análise sequencial"
+msgstr "Análise Sequencial"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Robustness check"
-msgstr "Verificação de robustez"
+msgstr "Verificação de Robustez"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Missing Values"
-msgstr "Valores ausentes"
+msgstr "Valores Ausentes"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr "Excluir casos em lista"
+msgstr "Exclusão listwise de casos"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable pairs"
@@ -114,7 +120,7 @@ msgstr "Região de equivalência"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr "Estatísticas adicionais"
+msgstr "Estatísticas Adicionais"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Descriptives"
@@ -122,15 +128,15 @@ msgstr "Descritivas"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
-msgstr "Diagramas"
+msgstr "Gráficos"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
-msgstr "Anterior e posterior"
+msgstr "Anterior e Posterior"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional info"
-msgstr "Informação adicional"
+msgstr "Informações Adicionais"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Sequential analysis"
@@ -138,7 +144,7 @@ msgstr "Análise sequencial"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Robustness check"
-msgstr "Verificação de robustez"
+msgstr "Verificação de Robustez"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Missing Values"
@@ -146,7 +152,7 @@ msgstr "Valores ausentes"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr "Excluir casos em lista"
+msgstr "Exclusão listwise de casos"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Variables"
@@ -170,7 +176,7 @@ msgstr "Welch"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr "Estatísticas adicionais"
+msgstr "Estatísticas Adicionais"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Descriptives"
@@ -194,7 +200,7 @@ msgstr "Valores ausentes"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr "Excluir casos em lista"
+msgstr "Exclusão listwise"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
@@ -230,7 +236,7 @@ msgstr "Valores ausentes"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr "Excluir casos em lista"
+msgstr "Exclusão listwise"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable pairs"
@@ -262,7 +268,7 @@ msgstr "Valores ausentes"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr "Excluir casos em lista"
+msgstr "Exclusão listwise"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
@@ -454,19 +460,19 @@ msgstr "Teste T de Amostras Independentes"
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
-msgstr "Teste T de Equivalência de Amostras Independentes"
+msgstr "Teste T de Equivalência de Amostras Dependentes"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
-msgstr "Teste T de amostras pareadas"
+msgstr "Teste T de Amostras Dependentes"
 
 msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
-msgstr "Teste T de Equivalência de Uma Amostra"
+msgstr "Teste T de Equivalência de Amostra Única"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
-msgstr "Teste T de uma amostra"
+msgstr "Teste T de Amostra Única"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Independent Samples T-Test"
@@ -474,29 +480,28 @@ msgstr "Teste T Bayesiano de Equivalência de Amostras Independentes"
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
-msgstr "Teste T de Amostras Independentes Bayesianas"
+msgstr "Teste T Bayesiano de Amostras Independentes"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr "Teste T Bayesiano de Equivalência de Amostras Independentes"
+msgstr "Teste T Bayesiano de Equivalência de Amostras Dependentes"
 
 msgctxt "Description|"
 msgid "Bayesian Paired Samples T-Test"
-msgstr "Teste-t de amostras pareadas Bayesianas"
+msgstr "Teste T Bayesiano de Amostras Dependentes"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr "Teste T Bayesiano de Equivalência de Amostras Independentes"
+msgstr "Teste T Bayesiano de Equivalência de Amostra Única"
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
-msgstr "Teste T Bayesiano de Uma Amostra"
+msgstr "Teste T Bayesiano de Amostra Única"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
-msgstr ""
-"Testar a diferença entre duas médias com uma hipótese de intervalo nulo"
+msgstr "Testar a diferença entre duas médias"
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
-msgstr ""
+msgstr "Testes T de Equivalência"
