@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
 "POT-Creation-Date: 2021-07-10 02:52\n"
-"PO-Revision-Date: 2022-09-14 20:18+0000\n"
+"PO-Revision-Date: 2022-09-15 09:10+0000\n"
 "Last-Translator: Josée Turcotte <jturcotte@laurentienne.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/fr/>\n"
@@ -68,19 +68,19 @@ msgid "SE"
 msgstr ""
 
 msgid "95%% Credible Interval"
-msgstr ""
+msgstr "Intervalle de confiance de 95%"
 
 msgid "Lower"
-msgstr ""
+msgstr "Inférieur"
 
 msgid "Upper"
-msgstr ""
+msgstr "Supérieur"
 
 msgid "Prior and Posterior Mass Table"
 msgstr ""
 
 msgid "Section"
-msgstr ""
+msgstr "Section"
 
 msgid "Mass"
 msgstr ""
@@ -94,50 +94,56 @@ msgstr ""
 msgid "Equivalence Mass Table"
 msgstr ""
 
+#, fuzzy
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Test T pour échantillons indépendants"
 
 msgid "Statistic"
-msgstr ""
+msgstr "Statistique"
 
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgid "df"
-msgstr ""
+msgstr "ddl"
 
 msgid "p"
-msgstr ""
+msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "Test T"
 
 msgid "Upper bound"
-msgstr ""
+msgstr "Borne supérieure"
 
 msgid "Lower bound"
-msgstr ""
+msgstr "Borne inférieure"
 
 msgid "Equivalence Bounds"
 msgstr ""
 
+#, fuzzy
 msgid "Bounds type"
-msgstr ""
+msgstr "Type de bornes"
 
+#, fuzzy
 msgid "Low"
-msgstr ""
+msgstr "Bas"
 
+#, fuzzy
 msgid "High"
-msgstr ""
+msgstr "Haut"
 
+#, fuzzy
 msgid "%s%% Confidence Interval"
-msgstr ""
+msgstr "%s%% Intervalle de confiance"
 
 msgid "Cohen's d"
-msgstr ""
+msgstr "d de Cohen"
 
+#, fuzzy
 msgid "Raw"
-msgstr ""
+msgstr "Brut"
 
 msgid "Equivalence Bounds Plots"
 msgstr ""
@@ -145,5 +151,6 @@ msgstr ""
 msgid "Equivalence One Sample T-Test"
 msgstr ""
 
+#, fuzzy
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Test T d'équivalence pour échantillon pairé"
