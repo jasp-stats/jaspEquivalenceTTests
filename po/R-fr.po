@@ -1,0 +1,156 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
+"POT-Creation-Date: 2021-07-10 02:52\n"
+"PO-Revision-Date: 2022-09-28 09:50+0000\n"
+"Last-Translator: Cécile Mazon <cecile.mazon@inria.fr>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-r/fr/>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 4.14.1\n"
+
+msgid "I ranges from %1$s to %2$s"
+msgstr ""
+
+msgid "Equivalence Prior and Posterior"
+msgstr ""
+
+msgid "Effect size"
+msgstr "Taille d'effet"
+
+msgid "Equivalence Sequential Analysis"
+msgstr ""
+
+msgid "Sequential analysis robustness check plot currently not supported for informed prior."
+msgstr ""
+
+msgid "n"
+msgstr ""
+
+msgid "Please provide another variable."
+msgstr ""
+
+msgid "Variables %s and %s are the same!"
+msgstr ""
+
+msgid "Equivalence Bayesian Independent Samples T-Test"
+msgstr ""
+
+msgid "Model Comparison"
+msgstr ""
+
+msgid "BF"
+msgstr ""
+
+msgid "error %"
+msgstr ""
+
+msgid "Descriptives"
+msgstr ""
+
+msgid "Group"
+msgstr ""
+
+msgid "N"
+msgstr ""
+
+msgid "Mean"
+msgstr ""
+
+msgid "SD"
+msgstr "ET"
+
+msgid "SE"
+msgstr ""
+
+msgid "95%% Credible Interval"
+msgstr "Intervalle de confiance de 95%"
+
+msgid "Lower"
+msgstr "Inférieur"
+
+msgid "Upper"
+msgstr "Supérieur"
+
+msgid "Prior and Posterior Mass Table"
+msgstr ""
+
+msgid "Section"
+msgstr "Section"
+
+msgid "Mass"
+msgstr ""
+
+msgid "Equivalence Bayesian One Sample T-Test"
+msgstr ""
+
+msgid "Equivalence Bayesian Paired Samples T-Test"
+msgstr ""
+
+msgid "Equivalence Mass Table"
+msgstr ""
+
+#, fuzzy
+msgid "Equivalence Independent Samples T-Test"
+msgstr "Test T pour échantillons indépendants"
+
+msgid "Statistic"
+msgstr "Statistique"
+
+msgid "t"
+msgstr "t"
+
+msgid "df"
+msgstr "ddl"
+
+msgid "p"
+msgstr "p"
+
+msgid "T-Test"
+msgstr "Test T"
+
+msgid "Upper bound"
+msgstr "Borne supérieure"
+
+msgid "Lower bound"
+msgstr "Borne inférieure"
+
+msgid "Equivalence Bounds"
+msgstr ""
+
+#, fuzzy
+msgid "Bounds type"
+msgstr "Type de bornes"
+
+#, fuzzy
+msgid "Low"
+msgstr "Bas"
+
+#, fuzzy
+msgid "High"
+msgstr "Haut"
+
+#, fuzzy
+msgid "%s%% Confidence Interval"
+msgstr "%s%% Intervalle de confiance"
+
+msgid "Cohen's d"
+msgstr "d de Cohen"
+
+#, fuzzy
+msgid "Raw"
+msgstr "Brut"
+
+msgid "Equivalence Bounds Plots"
+msgstr ""
+
+msgid "Equivalence One Sample T-Test"
+msgstr ""
+
+#, fuzzy
+msgid "Equivalence Paired Samples T-Test"
+msgstr "Test T d'équivalence pour échantillon pairé"
