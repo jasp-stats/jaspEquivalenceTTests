@@ -3,13 +3,11 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
-msgstr "T-tests d'équivalence"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
@@ -17,7 +15,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
-msgstr "Test T d'équivalence entre deux échantillons indépendants"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
