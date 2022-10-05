@@ -1,8 +1,8 @@
 Package: jaspEquivalenceTTests
 Type: Package
 Title: Equivalence T-Tests Module for JASP
-Version: 0.16.4
-Date: 2022-09-12
+Version: 0.17.0
+Date: 2022-10-05
 Author: Jill de Ron
 Website: https://jasp-stats.org
 Maintainer: Jill de Ron <jillderon93@gmail.com>
