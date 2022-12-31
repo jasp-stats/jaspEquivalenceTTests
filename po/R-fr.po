@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
 "POT-Creation-Date: 2021-07-10 02:52\n"
-"PO-Revision-Date: 2022-12-15 17:32+0000\n"
+"PO-Revision-Date: 2022-12-30 10:47+0000\n"
 "Last-Translator: Josée Turcotte <jturcotte@laurentienne.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/fr/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 4.15.1-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
 msgstr ""
@@ -52,7 +52,7 @@ msgid "error %"
 msgstr ""
 
 msgid "Descriptives"
-msgstr ""
+msgstr "Descriptifs"
 
 msgid "Group"
 msgstr ""
@@ -101,13 +101,13 @@ msgid "Equivalence Independent Samples T-Test"
 msgstr "Test T pour échantillons indépendants"
 
 msgid "Statistic"
-msgstr "Statistique"
+msgstr "Statistiques"
 
 msgid "t"
 msgstr "t"
 
 msgid "df"
-msgstr "ddl"
+msgstr "dl"
 
 msgid "p"
 msgstr "p"
@@ -136,9 +136,8 @@ msgstr "Bas"
 msgid "High"
 msgstr "Haut"
 
-#, fuzzy
 msgid "%s%% Confidence Interval"
-msgstr "%s%% Intervalle de confiance"
+msgstr "Intervalle de confiance %x%%"
 
 msgid "Cohen's d"
 msgstr "d de Cohen"
