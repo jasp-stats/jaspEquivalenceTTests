@@ -1,35 +1,41 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2023-02-01 03:03+0000\n"
+"Last-Translator: Ünal Halit ÖZDEN <uozden@ticaret.edu.tr>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.16-dev\n"
 "X-Language: tr\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Bağımsız Örneklem t-Testi"
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
-msgstr ""
+msgstr "Bağımsız Örneklem t-Testi"
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Eşlenik Örneklem t-Testi"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
-msgstr ""
+msgstr "Eşlenik Örnekler t-Testi (Bağımlı Örneklem t-Testi"
 
 msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Tek Örneklem t-Tesi"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
-msgstr ""
+msgstr "Tek Örneklem t-Testi"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Independent Samples T-Test"
@@ -37,7 +43,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Bayesçi Bağımsız Örnekler t-Testi"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Paired Samples T-Test"
@@ -45,7 +51,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Bayesçi Eşlenik Örneklem t-Testi"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian One Sample T-Test"
@@ -53,11 +59,11 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Bayesçi Tek Örneklem T-Testi"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "Değişkenler"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -69,11 +75,11 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "itibaren"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ile"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
@@ -87,7 +93,7 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Ek İstatistikler"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Descriptives"
@@ -99,11 +105,11 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "Grafikler"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Önceki ve sonraki"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional info"
@@ -131,7 +137,7 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "Değişkenler"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
