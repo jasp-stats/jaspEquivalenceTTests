@@ -1,15 +1,9 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-02-01 03:03+0000\n"
-"Last-Translator: Ünal Halit ÖZDEN <uozden@ticaret.edu.tr>\n"
-"Language-Team: Turkish <https://hosted.weblate.org/projects/jasp/"
-"jaspequivalencettests-qml/tr/>\n"
-"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.16-dev\n"
 "X-Language: tr\n"
 "X-Qt-Contexts: true\n"
 
@@ -147,13 +141,15 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "itibaren"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "ile"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
@@ -165,9 +161,10 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to %1"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Ek İstatistikler"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
@@ -177,13 +174,15 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior mass"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "Grafikler"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Önceki ve sonraki"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
@@ -217,13 +216,15 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "itibaren"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ile"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
@@ -235,9 +236,10 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to %1"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Ek İstatistikler"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Descriptives"
@@ -247,13 +249,15 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior mass"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "Grafikler"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Önceki ve sonraki"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional info"
@@ -279,9 +283,10 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "Değişkenler"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -299,9 +304,10 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Welch"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Ek İstatistikler"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Descriptives"
@@ -315,13 +321,15 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "itibaren"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ile"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
@@ -361,17 +369,19 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "Değişkenler"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Ek İstatistikler"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
@@ -385,13 +395,15 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "itibaren"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "ile"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
@@ -439,13 +451,15 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "itibaren"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ile"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
@@ -473,9 +487,10 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Ek İstatistikler"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
