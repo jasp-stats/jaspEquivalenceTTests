@@ -77,7 +77,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
                                               mu           = options$mu,
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
-                                              eqbound_type = ifelse(options$boundstype == "raw", "raw", "SMD"),  # bounds type is raw or cohen's d
+                                              eqbound_type = switch(options$boundstype, "raw" = "raw", "cohensD" = "SMD"),  # bounds type is raw or cohen's d
                                               alpha        = options$alpha,                                    # default = 0.05
                                               desc         = TRUE))
 
@@ -114,12 +114,12 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
           lowerP      = tableResults$tost$asDF$`p[2]`,
           lowCohen    = tableResults$eqb$asDF$`low[cohen]`,
           highCohen   = tableResults$eqb$asDF$`high[cohen]`,
-          cilCohen    = as.numeric(confIntEffSize[1]),
-          ciuCohen    = as.numeric(confIntEffSize[2]),
+          cilCohen    = tableResults$effsize$asDF$`cil[cohen]`,
+          ciuCohen    = tableResults$effsize$asDF$`ciu[cohen]`,
           lowRaw      = tableResults$eqb$asDF$`low[raw]`,
           highRaw     = tableResults$eqb$asDF$`high[raw]`,
-          cilRaw      = tableResults$eqb$asDF$`cil[raw]`,
-          ciuRaw      = tableResults$eqb$asDF$`ciu[raw]`,
+          cilRaw      = tableResults$effsize$asDF$`cil[raw]`,
+          ciuRaw      = tableResults$effsize$asDF$`ciu[raw]`,
           desc        = as.data.frame(tableResults$desc))
       }
     }

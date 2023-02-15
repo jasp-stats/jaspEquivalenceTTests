@@ -74,10 +74,10 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
       tableResults <- try(TOSTER::dataTOSTtwo(data         = dataset,
                                               deps         = .v(variable),
                                               group        = .v(options$groupingVariable),
-                                              var_equal    = ifelse(options$tests == "students", TRUE, FALSE),
+                                              var_equal    = options$tests == "students",
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
-                                              eqbound_type = ifelse(options$boundstype == "raw", "raw", "SMD"),  # bounds type is raw or cohen's d
+                                              eqbound_type = switch(options$boundstype, "raw" = "raw", "cohensD" = "SMD"),  # bounds type is raw or cohen's d
                                               alpha        = options$alpha,
                                               desc         = TRUE))
 
@@ -122,12 +122,12 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
             lowerP      = tableResults$tost$asDF$`p[2]`,
             lowCohen    = tableResults$eqb$asDF$`low[cohen]`,
             highCohen   = tableResults$eqb$asDF$`high[cohen]`,
-            cilCohen    = as.numeric(confIntEffSize[1]),
-            ciuCohen    = as.numeric(confIntEffSize[2]),
+            cilCohen    = tableResults$effsize$asDF$`cil[cohen]`,
+            ciuCohen    = tableResults$effsize$asDF$`ciu[raw]`,
             lowRaw      = tableResults$eqb$asDF$`low[raw]`,
             highRaw     = tableResults$eqb$asDF$`high[raw]`,
-            cilRaw      = tableResults$eqb$asDF$`cil[raw]`,
-            ciuRaw      = tableResults$eqb$asDF$`ciu[raw]`,
+            cilRaw      = tableResults$effsize$asDF$`cil[raw]`,
+            ciuRaw      = tableResults$effsize$asDF$`ciu[raw]`,
             desc        = as.data.frame(tableResults$desc))
         }
 
