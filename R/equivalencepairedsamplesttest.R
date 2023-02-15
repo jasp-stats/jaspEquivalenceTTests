@@ -85,7 +85,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
                                                  pairs        = list(list(i1 = p1, i2 = p2)),
                                                  low_eqbound  = options$lowerbound,
                                                  high_eqbound = options$upperbound,
-                                                 eqbound_type = ifelse(options$boundstype == "raw", "raw", "d"),  # bounds type is raw or cohen's d
+                                                 eqbound_type = ifelse(options$boundstype == "raw", "raw", "SMD"),  # bounds type is raw or cohen's d
                                                  alpha        = options$alpha,                                    # default = 0.05
                                                  desc         = TRUE))
 
@@ -372,17 +372,25 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
       dif <- (m1 - m2)
 
       # Make plot
-      plot <- ggplot2::ggplot(data = dataset, ggplot2::aes_string(x = 0, y = dif)) +
-        ggplot2::annotate("rect", xmin = -20, xmax = 20, ymin = results$lowRaw, ymax = results$highRaw, alpha = .5) +
-        ggplot2::geom_errorbar(ggplot2::aes_string(x = 0, ymin = results$cilRaw, ymax = results$ciuRaw, width = .4), size = .8, colour = "black") +
+      plot <- ggplot2::ggplot(data = dataset, ggplot2::aes_string(x = 0, y = dif))
+      if (options[["boundstype"]] == "raw") {
+        plot <- plot + ggplot2::annotate(geom = "rect", xmin = -20, xmax = 20, ymin = results$lowRaw, ymax = results$highRaw, alpha = .5) +
+          ggplot2::geom_errorbar(ymin = results$cilRaw, ymax = results$ciuRaw, width = .4, size = .8, colour = "black")
+      } else {
+        plot <- plot + ggplot2::annotate(geom = "rect", xmin = -20, xmax = 20, ymin = results$lowCohen, ymax = results$highCohen, alpha = .5) +
+          ggplot2::geom_errorbar(ymin = results$cilCohen, ymax = results$ciuCohen, width = .4, size = .8, colour = "black")
+      }
+      plot <- plot +
         ggplot2::geom_point(ggplot2::aes_string(x = 0, y = dif), shape = 21, fill = "black", size = 3, colour = "black") +
-        ggplot2::labs(x = '', y = namePair) +
-        ggplot2::expand_limits(x = c(-2, 4), y = 0)
-      plot <- jaspGraphs::themeJasp(plot)
-      plot <- plot + ggplot2::theme(axis.text.x  = ggplot2::element_blank(),
-                                    axis.title.x = ggplot2::element_blank(),
-                                    axis.ticks.x = ggplot2::element_blank(),
-                                    axis.line.x  = ggplot2::element_blank(),) + ggplot2::scale_x_discrete(limits = c("", "", "", "", "", "", ""))
+        ggplot2::labs(x = NULL, y = namePair) +
+        ggplot2::expand_limits(x = c(-2, 4), y = 0) +
+        jaspGraphs::geom_rangeframe() +
+        jaspGraphs::themeJaspRaw() +
+        ggplot2::theme(axis.text.x  = ggplot2::element_blank(),
+                       axis.title.x = ggplot2::element_blank(),
+                       axis.ticks.x = ggplot2::element_blank(),
+                       axis.line.x  = ggplot2::element_blank()) +
+        ggplot2::scale_x_discrete(limits = c("", "", "", "", "", "", ""))
 
       equivalencePairedTTestPlot$plotObject <- plot
     }
