@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.17.0\n"
 "POT-Creation-Date: 2022-11-30 10:26\n"
-"PO-Revision-Date: 2023-05-04 19:40+0000\n"
+"PO-Revision-Date: 2023-05-12 11:47+0000\n"
 "Last-Translator: Tomasz Misiuro <tomaszmisiuro@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/pl/>\n"
@@ -65,16 +65,16 @@ msgid "Mean"
 msgstr "Średnia"
 
 msgid "SD"
-msgstr "SD"
+msgstr "Odch. stand."
 
 msgid "SE"
-msgstr "SE"
+msgstr "Błąd stand."
 
 msgid "95%% Credible Interval"
 msgstr "95%% Przedział wiarygodności"
 
 msgid "Lower"
-msgstr "Dolny"
+msgstr "Dolna granica"
 
 msgid "Upper"
 msgstr "Górna granica"
