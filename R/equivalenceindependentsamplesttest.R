@@ -337,8 +337,9 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
                                         "alpha", "missingValues"))
   jaspResults[["equivalenceBoundsContainer"]] <- equivalenceBoundsContainer
 
-  if (!ready)
+  if (!ready) {
     return()
+  }
 
   for (variable in options$variables) {
 
