@@ -39,8 +39,8 @@ msgstr "n"
 msgid "Please provide another variable."
 msgstr "Bitte gib eine andere Variable ein."
 
-msgid "Variables %s and %s are the same!"
-msgstr "Variablen %s und %s sind gleich!"
+msgid "Variables %1$s and %2$s are the same!"
+msgstr "Variablen %1$s und %2$s sind gleich!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Äquivalenz Bayesscher t-Test für unabhängige Stichproben"

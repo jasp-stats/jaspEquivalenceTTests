@@ -34,8 +34,8 @@ msgstr "n"
 msgid "Please provide another variable."
 msgstr "Mohon tambahkan variabel lainnya."
 
-msgid "Variables %s and %s are the same!"
-msgstr "Variabel %s dan %s sama!"
+msgid "Variables %1$s and %2$s are the same!"
+msgstr "Variabel %1$s dan %2$s sama!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Uji-t Sampel Independen Bayesian Setara"

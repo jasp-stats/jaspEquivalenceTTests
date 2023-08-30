@@ -36,8 +36,8 @@ msgstr "n"
 msgid "Please provide another variable."
 msgstr "別の変数を用意してください."
 
-msgid "Variables %s and %s are the same!"
-msgstr "変数 %s と %s は同じです!"
+msgid "Variables %1$s and %2$s are the same!"
+msgstr "変数 %1$s と %2$s は同じです!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "同等性ベイジアン独立サンプルのt検定"

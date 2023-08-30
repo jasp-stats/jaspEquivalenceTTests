@@ -1129,7 +1129,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
       } else if (identical(pair[[1L]], pair[[2L]])) {
 
-        errors[[var]] <- list(message = gettextf("Variables %s and %s are the same!",
+        errors[[var]] <- list(message = gettextf("Variables %1$s and %2$s are the same!",
                                                  pair[[1L]], pair[[2L]]))
 
       } else {
