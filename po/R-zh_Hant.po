@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.18.2\n"
 "POT-Creation-Date: 2023-11-18 02:50\n"
-"PO-Revision-Date: 2023-12-15 00:11+0000\n"
+"PO-Revision-Date: 2023-12-16 02:49+0000\n"
 "Last-Translator: Ginger Shu-Ying Yeh <gingershuying@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
 "jasp/jaspequivalencettests-r/zh_Hant/>\n"
@@ -29,52 +29,52 @@ msgid "Sequential analysis robustness check plot currently not supported for inf
 msgstr ""
 
 msgid "n"
-msgstr ""
+msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "請提供其他變數。"
 
 msgid "Variables %1$s and %2$s are the same!"
-msgstr ""
+msgstr "變數 %1$s 和 %2$s 相同!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr ""
 
 msgid "Model Comparison"
-msgstr ""
+msgstr "模型比較"
 
 msgid "BF"
-msgstr ""
+msgstr "BF"
 
 msgid "error %"
-msgstr ""
+msgstr "誤差 %"
 
 msgid "Descriptives"
-msgstr ""
+msgstr "敘述統計量"
 
 msgid "Group"
-msgstr ""
+msgstr "群"
 
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgid "Mean"
-msgstr ""
+msgstr "平均數"
 
 msgid "SD"
-msgstr ""
+msgstr "標準差"
 
 msgid "SE"
-msgstr ""
+msgstr "標準誤"
 
 msgid "95%% Credible Interval"
 msgstr ""
 
 msgid "Lower"
-msgstr ""
+msgstr "下界"
 
 msgid "Upper"
-msgstr ""
+msgstr "上界"
 
 msgid "Prior and Posterior Mass Table"
 msgstr ""
@@ -83,7 +83,7 @@ msgid "Section"
 msgstr ""
 
 msgid "Mass"
-msgstr ""
+msgstr "質量"
 
 msgid "Equivalence Bayesian One Sample T-Test"
 msgstr ""
@@ -101,22 +101,22 @@ msgid "Statistic"
 msgstr ""
 
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgid "df"
-msgstr ""
+msgstr "自由度"
 
 msgid "p"
-msgstr ""
+msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "t檢定"
 
 msgid "Upper bound"
-msgstr ""
+msgstr "上界"
 
 msgid "Lower bound"
-msgstr ""
+msgstr "下界"
 
 msgid "Equivalence Bounds"
 msgstr ""
@@ -131,7 +131,7 @@ msgid "High"
 msgstr ""
 
 msgid "%s%% Confidence Interval"
-msgstr ""
+msgstr "%s%% 信賴區間"
 
 msgid "Cohen's d"
 msgstr ""
