@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jaspEquivalenceTTests 0.18.2\n"
+"POT-Creation-Date: 2023-11-18 02:50\n"
+"PO-Revision-Date: 2023-12-16 02:49+0000\n"
+"Last-Translator: Ginger Shu-Ying Yeh <gingershuying@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://hosted.weblate.org/projects/"
+"jasp/jaspequivalencettests-r/zh_Hant/>\n"
+"Language: zh_Hant\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.3\n"
+
+msgid "I ranges from %1$s to %2$s"
+msgstr ""
+
+msgid "Equivalence Prior and Posterior"
+msgstr ""
+
+msgid "Effect size"
+msgstr "效果量"
+
+msgid "Equivalence Sequential Analysis"
+msgstr ""
+
+msgid "Sequential analysis robustness check plot currently not supported for informed prior."
+msgstr ""
+
+msgid "n"
+msgstr "n"
+
+msgid "Please provide another variable."
+msgstr "請提供其他變數。"
+
+msgid "Variables %1$s and %2$s are the same!"
+msgstr "變數 %1$s 和 %2$s 相同!"
+
+msgid "Equivalence Bayesian Independent Samples T-Test"
+msgstr ""
+
+msgid "Model Comparison"
+msgstr "模型比較"
+
+msgid "BF"
+msgstr "BF"
+
+msgid "error %"
+msgstr "誤差 %"
+
+msgid "Descriptives"
+msgstr "敘述統計量"
+
+msgid "Group"
+msgstr "群"
+
+msgid "N"
+msgstr "N"
+
+msgid "Mean"
+msgstr "平均數"
+
+msgid "SD"
+msgstr "標準差"
+
+msgid "SE"
+msgstr "標準誤"
+
+msgid "95%% Credible Interval"
+msgstr ""
+
+msgid "Lower"
+msgstr "下界"
+
+msgid "Upper"
+msgstr "上界"
+
+msgid "Prior and Posterior Mass Table"
+msgstr ""
+
+msgid "Section"
+msgstr ""
+
+msgid "Mass"
+msgstr "質量"
+
+msgid "Equivalence Bayesian One Sample T-Test"
+msgstr ""
+
+msgid "Equivalence Bayesian Paired Samples T-Test"
+msgstr ""
+
+msgid "Equivalence Mass Table"
+msgstr ""
+
+msgid "Equivalence Independent Samples T-Test"
+msgstr ""
+
+msgid "Statistic"
+msgstr ""
+
+msgid "t"
+msgstr "t"
+
+msgid "df"
+msgstr "自由度"
+
+msgid "p"
+msgstr "p"
+
+msgid "T-Test"
+msgstr "t檢定"
+
+msgid "Upper bound"
+msgstr "上界"
+
+msgid "Lower bound"
+msgstr "下界"
+
+msgid "Equivalence Bounds"
+msgstr ""
+
+msgid "Bounds type"
+msgstr ""
+
+msgid "Low"
+msgstr ""
+
+msgid "High"
+msgstr ""
+
+msgid "%s%% Confidence Interval"
+msgstr "%s%% 信賴區間"
+
+msgid "Cohen's d"
+msgstr ""
+
+msgid "Raw"
+msgstr ""
+
+msgid "Equivalence Bounds Plots"
+msgstr ""
+
+msgid "Equivalence One Sample T-Test"
+msgstr ""
+
+msgid "Equivalence Paired Samples T-Test"
+msgstr ""
