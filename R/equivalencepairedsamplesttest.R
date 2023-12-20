@@ -71,8 +71,8 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
 
     namePair <- paste(pair[[1L]], " - ",  pair[[2L]], sep = "")
 
-    p1 <- .v(pair[[1L]])
-    p2 <- .v(pair[[2L]])
+    p1 <- pair[[1]]
+    p2 <- pair[[2]]
     results[[namePair]] <- list()
 
     # Check for errors per variable
@@ -82,8 +82,8 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
       results[[namePair]][["errorFootnotes"]] <- errorMessage
     } else {
       tableResults <- try(TOSTER::dataTOSTpaired(data         = dataset,
-                                                 pair1        = p1,
-                                                 pair2        = p2,
+                                                 pair1        = toString(p1),
+                                                 pair2        = toString(p2),
                                                  low_eqbound  = options$lowerbound,
                                                  high_eqbound = options$upperbound,
                                                  eqbound_type = switch(options$boundstype, "raw" = "raw", "cohensD" = "SMD"),  # bounds type is raw or cohen's d
@@ -107,31 +107,31 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
         alphaLevel <- 1 - (ciEffSize + 1) / 2
         d   <- mean(c1 - c2) / sd(c1 - c2)
 
-        confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
-                                                                   df = tableResults$tost$asDF$`df[0]`,
+        confIntEffSize <- jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$t[1],
+                                                                   df = tableResults$tost$asDF$df[1],
                                                                    alpha.lower = alphaLevel,
                                                                    alpha.upper = alphaLevel)[c(1, 3)]
         confIntEffSize <- unlist(confIntEffSize) / sqrt(n)
         confIntEffSize <- sort(confIntEffSize)
 
         results[[namePair]] <- list(
-          ttestTvalue = tableResults$tost$asDF$`t[0]`,
-          ttestDf     = tableResults$tost$asDF$`df[0]`,
-          ttestP      = tableResults$tost$asDF$`p[0]`,
-          upperTvalue = tableResults$tost$asDF$`t[1]`,
-          upperDf     = tableResults$tost$asDF$`df[1]`,
-          upperP      = tableResults$tost$asDF$`p[1]`,
-          lowerTvalue = tableResults$tost$asDF$`t[2]`,
-          lowerDf     = tableResults$tost$asDF$`df[2]`,
-          lowerP      = tableResults$tost$asDF$`p[2]`,
-          lowCohen    = tableResults$eqb$asDF$`low[cohen]`,
-          highCohen   = tableResults$eqb$asDF$`high[cohen]`,
-          cilCohen    = tableResults$effsize$asDF$`cil[cohen]`,
-          ciuCohen    = tableResults$effsize$asDF$`ciu[cohen]`,
-          lowRaw      = tableResults$eqb$asDF$`low[raw]`,
-          highRaw     = tableResults$eqb$asDF$`high[raw]`,
-          cilRaw      = tableResults$effsize$asDF$`cil[raw]`,
-          ciuRaw      = tableResults$effsize$asDF$`ciu[raw]`,
+          ttestTvalue = tableResults$tost$asDF$t[1],
+          ttestDf     = tableResults$tost$asDF$df[1],
+          ttestP      = tableResults$tost$asDF$p[1],
+          lowerTvalue = tableResults$tost$asDF$t[2],
+          lowerDf     = tableResults$tost$asDF$df[2],
+          lowerP      = tableResults$tost$asDF$p[2],
+          upperTvalue = tableResults$tost$asDF$t[3],
+          upperDf     = tableResults$tost$asDF$df[3],
+          upperP      = tableResults$tost$asDF$p[3],
+          lowCohen    = tableResults$eqb$asDF$low[1],
+          highCohen   = tableResults$eqb$asDF$high[1],
+          cilCohen    = tableResults$effsize$asDF$cil[2],
+          ciuCohen    = tableResults$effsize$asDF$ciu[2],
+          lowRaw      = tableResults$eqb$asDF$low[2],
+          highRaw     = tableResults$eqb$asDF$high[2],
+          cilRaw      = tableResults$effsize$asDF$cil[1],
+          ciuRaw      = tableResults$effsize$asDF$ciu[1],
           desc        = as.data.frame(tableResults$desc))
       }
     }
@@ -368,8 +368,8 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
       equivalencePairedTTestPlot$setError(results$errorFootnotes)
     } else {
       # Calculate mean of group difference
-      m1  <- results$desc$`m[1]`
-      m2  <- results$desc$`m[2]`
+      m1  <- results$desc$m[1]
+      m2  <- results$desc$m[2]
       dif <- (m1 - m2)
 
       # Make plot
