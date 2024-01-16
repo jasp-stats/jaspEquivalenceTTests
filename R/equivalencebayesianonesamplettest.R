@@ -133,7 +133,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   equivalenceBayesianOneTTestTable$addColumnInfo(name = "variable",   title = " ",                          type = "string", combine = TRUE)
   equivalenceBayesianOneTTestTable$addColumnInfo(name = "statistic",  title = gettext("Model Comparison"),  type = "string")
   equivalenceBayesianOneTTestTable$addColumnInfo(name = "bf",         title = gettext("BF"),                type = "number")
-  equivalenceBayesianOneTTestTable$addColumnInfo(name = "error",      title = gettext("error %"),           type = "number")
+  equivalenceBayesianOneTTestTable$addColumnInfo(name = "error",      title = gettextf("error %%"),         type = "number")
 
   if (ready)
     equivalenceBayesianOneTTestTable$setExpectedSize(length(options$variables))
