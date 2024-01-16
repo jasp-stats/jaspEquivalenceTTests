@@ -146,7 +146,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "variable2",   title = " ",                         type = "string")
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "statistic",   title = gettext("Model Comparison"), type = "string")
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "bf",          title = gettext("BF"),               type = "number")
-  equivalenceBayesianPairedTTestTable$addColumnInfo(name = "error",       title = gettext("error %"),            type = "number")
+  equivalenceBayesianPairedTTestTable$addColumnInfo(name = "error",       title = gettextf("error %%"),        type = "number")
 
   if (ready)
     equivalenceBayesianPairedTTestTable$setExpectedSize(length(options$pairs))

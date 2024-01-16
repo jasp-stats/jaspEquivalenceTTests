@@ -148,7 +148,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
   equivalenceBayesianIndTTestTable$addColumnInfo(name = "variable",   title = " ",                          type = "string", combine = TRUE)
   equivalenceBayesianIndTTestTable$addColumnInfo(name = "statistic",  title = gettext("Model Comparison"),  type = "string")
   equivalenceBayesianIndTTestTable$addColumnInfo(name = "bf",         title = gettext("BF"),                type = "number")
-  equivalenceBayesianIndTTestTable$addColumnInfo(name = "error",      title = gettext("error %"),           type = "number")
+  equivalenceBayesianIndTTestTable$addColumnInfo(name = "error",      title = gettextf("error %%"),         type = "number")
 
   equivalenceBayesianIndTTestTable$showSpecifiedColumnsOnly <- TRUE
 
