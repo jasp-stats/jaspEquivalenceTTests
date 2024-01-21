@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-01-21 19:01+0000\n"
+"PO-Revision-Date: 2024-01-22 18:11+0000\n"
 "Last-Translator: robachowyk <kaya.robach@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-qml/fr/>\n"
@@ -15,7 +15,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
-msgstr "T-tests d'équivalence"
+msgstr "Tests T d'équivalence"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
@@ -31,11 +31,11 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
-msgstr "T-test d'équivalence pour des échantillons appariés"
+msgstr "Test T d'équivalence pour des échantillons appariés"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
-msgstr ""
+msgstr "Test T pour des échantillons appariés"
 
 msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
@@ -51,7 +51,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Test T bayésien pour échantillons indépendants"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Paired Samples T-Test"
@@ -59,7 +59,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Test T bayésien pour échantillons appariés"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian One Sample T-Test"
@@ -67,7 +67,7 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Test T bayésien pour un échantillon"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Variables"
