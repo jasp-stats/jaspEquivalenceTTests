@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
-"POT-Creation-Date: 2021-07-10 02:52\n"
+"POT-Creation-Date: 2024-03-02 02:50\n"
 "PO-Revision-Date: 2022-02-17 15:13+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/jasp/"
@@ -25,7 +25,9 @@ msgstr "Besaran efek"
 msgid "Equivalence Sequential Analysis"
 msgstr "Analisis Sekuensial Setara"
 
-msgid "Sequential analysis robustness check plot currently not supported for informed prior."
+msgid ""
+"Sequential analysis robustness check plot currently not supported for "
+"informed prior."
 msgstr ""
 
 msgid "n"
@@ -46,7 +48,8 @@ msgstr "Perbandingan Model"
 msgid "BF"
 msgstr "BF"
 
-msgid "error %"
+#, fuzzy
+msgid "error %%"
 msgstr "galat %"
 
 msgid "Descriptives"

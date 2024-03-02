@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2021-05-07 13:20\n"
+"POT-Creation-Date: 2024-03-02 02:50\n"
 "PO-Revision-Date: 2023-01-15 11:50+0000\n"
 "Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/jasp/"
@@ -51,7 +51,8 @@ msgstr "Modellvergleich"
 msgid "BF"
 msgstr "BF"
 
-msgid "error %"
+#, fuzzy
+msgid "error %%"
 msgstr "Fehler %"
 
 msgid "Descriptives"
