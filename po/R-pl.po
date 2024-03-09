@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.17.0\n"
 "POT-Creation-Date: 2024-03-02 02:50\n"
-"PO-Revision-Date: 2023-09-20 11:21+0000\n"
+"PO-Revision-Date: 2024-03-07 09:01+0000\n"
 "Last-Translator: Tomasz Misiuro <tomaszmisiuro@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/pl/>\n"
@@ -10,21 +10,21 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.1-dev\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
 msgstr "I znajduje się w zakresie od %1$s do %2$s"
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "Prior i posterior równoważności"
 
 msgid "Effect size"
 msgstr "Wielkość efektu"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "Analiza sekwencyjna równoważności"
 
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
@@ -43,7 +43,7 @@ msgid "Variables %1$s and %2$s are the same!"
 msgstr "Zmienne %1$s i %2$s są takie same!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Bayesowski test równoważności dla prób niezależnych"
 
 msgid "Model Comparison"
 msgstr "Porównanie modeli"
@@ -51,9 +51,8 @@ msgstr "Porównanie modeli"
 msgid "BF"
 msgstr "BF"
 
-#, fuzzy
 msgid "error %%"
-msgstr "błąd %"
+msgstr "błąd %%"
 
 msgid "Descriptives"
 msgstr "Statystyki opisowe"
@@ -83,25 +82,25 @@ msgid "Upper"
 msgstr "Górny"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "Tabela masy a priori i a posteriori"
 
 msgid "Section"
 msgstr "Sekcja"
 
 msgid "Mass"
-msgstr ""
+msgstr "Masa"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Bayesowski test równoważności dla jednej próby"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Bayesowski test równoważności dla prób zależnych"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "Tabela masy równoważności"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Test równoważności dla prób niezależnych"
 
 msgid "Statistic"
 msgstr "Statystyka"
@@ -125,7 +124,7 @@ msgid "Lower bound"
 msgstr "Dolna granica"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "Przedziały równoważności"
 
 msgid "Bounds type"
 msgstr "Typ granic"
@@ -146,10 +145,10 @@ msgid "Raw"
 msgstr "Wiersz"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "Wykresy przedziałów równoważności"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Test równoważności dla jednej próby"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Test równoważności dla prób zależnych"
