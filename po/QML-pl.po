@@ -1,16 +1,22 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2024-03-07 10:01+0000\n"
+"Last-Translator: Tomasz Misiuro <tomaszmisiuro@gmail.com>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.5-dev\n"
 "X-Language: pl\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Test równoważności dla prób niezależnych"
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
@@ -18,7 +24,7 @@ msgstr "Test t dla prób niezależnych"
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Test równoważności dla prób zależnych"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
@@ -26,7 +32,7 @@ msgstr "Test t dla prób zależnych"
 
 msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Test równoważności dla jednej próby"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
@@ -34,7 +40,7 @@ msgstr "Test t dla jednej próby"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Bayesowski test równoważności dla prób niezależnych"
 
 msgctxt "Description|"
 msgid "Bayesian Independent Samples T-Test"
@@ -42,7 +48,7 @@ msgstr "Bayesowski test t dla prób niezależnych"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Bayesowski test równoważności dla prób zależnych"
 
 msgctxt "Description|"
 msgid "Bayesian Paired Samples T-Test"
@@ -50,7 +56,7 @@ msgstr "Bayesowski test t dla prób zależnych"
 
 msgctxt "Description|"
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Bayesowski test równoważności dla jednej próby"
 
 msgctxt "Description|"
 msgid "Bayesian One Sample T-Test"
@@ -66,7 +72,7 @@ msgstr "Zmienna grupująca"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Przedział równoważności"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
@@ -96,7 +102,7 @@ msgstr "Statystyki opisowe"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "Masa a priori i a posteriori"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Plots"
@@ -110,7 +116,6 @@ msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional info"
 msgstr "Dodatkowe informacje"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Sequential analysis"
 msgstr "Analiza sekwencyjna"
@@ -141,7 +146,7 @@ msgstr "Wartość testowana"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Przedział równoważności"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
@@ -171,7 +176,7 @@ msgstr "Statystyki opisowe"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "Masa a priori i a posteriori"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
@@ -185,7 +190,6 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
 msgstr "Dodatkowe informacje"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Sequential analysis"
 msgstr "Analiza sekwencyjna"
@@ -212,7 +216,7 @@ msgstr "Pary zmiennych"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Przedział równoważności"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
@@ -242,7 +246,7 @@ msgstr "Statystyki opisowe"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "Masa a priori i a posteriori"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
@@ -306,11 +310,11 @@ msgstr "Statystyki opisowe"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "Wykres przedziałów równoważności"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Przedział równoważności"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
@@ -332,7 +336,7 @@ msgstr "do %1"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Specyfikacja granic"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
@@ -376,11 +380,11 @@ msgstr "Statystyki opisowe"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "Wykres przedziałów równoważności"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Przedział równoważności"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
@@ -402,7 +406,7 @@ msgstr "do %1"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Specyfikacja granic"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
@@ -434,7 +438,7 @@ msgstr "Pary zmiennych"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Przedział równoważności"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
@@ -456,16 +460,15 @@ msgstr "do %1"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Specyfikacja granic"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
 msgstr "d Cohena"
 
-#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr "Wiersz"
+msgstr "Surowy"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
@@ -481,7 +484,7 @@ msgstr "Statystyki opisowe"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "Wykres przedziałów równoważności"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
@@ -498,7 +501,9 @@ msgstr "Wyklucz obserwacje ze wszystkich analiz"
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
 msgstr ""
+"Testuj różnicę między dwiema średnimi przy użyciu hipotezy zerowej "
+"przedziałowej"
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
-msgstr ""
+msgstr "Testy równoważności"
