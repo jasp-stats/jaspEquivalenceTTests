@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
 "POT-Creation-Date: 2024-03-02 02:50\n"
-"PO-Revision-Date: 2024-04-07 21:01+0000\n"
+"PO-Revision-Date: 2024-04-09 13:34+0000\n"
 "Last-Translator: robachowyk <kaya.robach@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/fr/>\n"
@@ -144,7 +144,6 @@ msgstr "Intervalle de confiance %s%%"
 msgid "Cohen's d"
 msgstr "d de Cohen"
 
-#, fuzzy
 msgid "Raw"
 msgstr "Brut"
 
