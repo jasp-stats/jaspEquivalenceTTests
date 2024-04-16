@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.3.2",
+    "Version": "4.3.3",
     "Repositories": [
       {
         "Name": "CRAN",
@@ -86,7 +86,7 @@
     },
     "TOSTER": {
       "Package": "TOSTER",
-      "Version": "0.8.1",
+      "Version": "0.8.2",
       "Source": "Repository"
     },
     "abind": {
