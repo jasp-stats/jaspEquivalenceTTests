@@ -1,15 +1,9 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-05-19 20:45+0000\n"
-"Last-Translator: robachowyk <kaya.robach@gmail.com>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/jasp/"
-"jaspequivalencettests-qml/fr/>\n"
-"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.6-dev\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Language: fr\n"
 "X-Qt-Contexts: true\n"
 
@@ -173,13 +167,15 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to %1"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistiques Complémentaires"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Descriptives"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior mass"
@@ -189,17 +185,20 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Prior et postérieur"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Info additionelles"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Analyse séquentielle"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Robustness check"
@@ -243,13 +242,15 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to %1"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistiques Complémentaires"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Descriptives"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior mass"
@@ -259,17 +260,20 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Prior et postérieur"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Info additionelles"
 
+#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Analyse séquentielle"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Robustness check"
@@ -307,13 +311,15 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Welch"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistiques Complémentaires"
 
+#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Descriptives"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
@@ -377,13 +383,15 @@ msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistiques Complémentaires"
 
+#, fuzzy
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Descriptives"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
@@ -481,13 +489,15 @@ msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
 msgstr ""
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistiques Complémentaires"
 
+#, fuzzy
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Descriptives"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
