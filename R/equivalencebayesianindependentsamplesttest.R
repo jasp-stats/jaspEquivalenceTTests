@@ -19,7 +19,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
   ready <- (length(options$variables) != 0 && options$groupingVariable != "")
 
   if (ready) {
-    dataset <- .ttestBayesianReadData(dataset, options)
+    dataset <- .ttestReadData(dataset, options, "independent")
     errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "independent")
   }
 
@@ -154,8 +154,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
   if (ready)
     equivalenceBayesianIndTTestTable$setExpectedSize(length(options$variables))
-  
-  message <- gettextf("I ranges from %1$s to %2$s", 
+
+  message <- gettextf("I ranges from %1$s to %2$s",
                       ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
                       ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
   equivalenceBayesianIndTTestTable$addFootnote(message)

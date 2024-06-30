@@ -20,7 +20,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   ready <- (length(options$variables) > 0)
 
   if (ready) {
-    dataset <- .ttestBayesianReadData(dataset, options)
+    dataset <- .ttestReadData(dataset, options, "one-sample")
     errors <- .ttestBayesianGetErrorsPerVariable(dataset, options, "one-sample")
   }
 
@@ -138,7 +138,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   if (ready)
     equivalenceBayesianOneTTestTable$setExpectedSize(length(options$variables))
 
-  message <- gettextf("I ranges from %1$s to %2$s", 
+  message <- gettextf("I ranges from %1$s to %2$s",
                       ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
                       ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
   equivalenceBayesianOneTTestTable$addFootnote(message)

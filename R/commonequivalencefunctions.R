@@ -512,7 +512,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
   # Step 1: Density in the range of the prior
   integralEquivalencePrior <- pnorm(options$upperbound, prior.mean, sqrt(prior.variance)) - pnorm(options$lowerbound, prior.mean, sqrt(prior.variance))
-  
+
   errorEquivalencePrior <- 0
 
   integralNonequivalencePrior <- 1 - integralEquivalencePrior
@@ -1044,40 +1044,6 @@ gettextf <- function(fmt, ..., domain = NULL)  {
     pizzaTxt        = jaspGraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
 
   return(plot)
-}
-
-.ttestBayesianReadData <- function(dataset = NULL, options) {
-
-  if (is.null(dataset)) {
-    missing <- options[["missingValues"]]
-    if (is.null(options[["variables"]])) {
-      dependents <- unique(unlist(options[["pairs"]] ))
-      dependents <- dependents[dependents != ""]
-    } else {
-      dependents <- unlist(options[["variables"]])
-    }
-    grouping <- options[["groupingVariable"]]
-    if (identical(grouping, ""))
-      grouping <- NULL
-
-    excl <- grouping
-    if (missing == "excludeListwise")
-      excl <- c(excl, dependents)
-
-    if (length(dependents)) {
-      dataset <- .readDataSetToEnd(columns = c(dependents, grouping), exclude.na.listwise = excl)
-      if (!is.null(grouping))
-        dataset[[.v(grouping)]] <- as.factor(dataset[[.v(grouping)]])
-
-      # 100% required if we fully switch to columns = ... , but also allow the QML interface to be not strict in terms of input,
-      # so factors can be entered in scale boxes. Joris probably has more ideas about this
-      for (var in .v(dependents)) {
-        if (is.factor(dataset[[var]]))
-          dataset[[var]] <- as.numeric(levels(dataset[[var]]))[dataset[[var]]]
-      }
-    }
-  }
-  return(dataset)
 }
 
 .ttestBayesianGetErrorsPerVariable <- function(dataset, options, analysis) {
