@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: Weblate 5.7-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
-msgstr "範囲を%1$から%2$へ"
+msgstr "範囲を%1$sから%2$sへ"
 
 msgid "Equivalence Prior and Posterior"
 msgstr "同等の事前分布と事後分布"
