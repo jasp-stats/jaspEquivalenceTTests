@@ -131,7 +131,7 @@
     },
     "boot": {
       "Package": "boot",
-      "Version": "1.3-30",
+      "Version": "1.3-31",
       "Source": "Repository"
     },
     "bridgesampling": {
@@ -199,11 +199,6 @@
       "Version": "2.1-1",
       "Source": "Repository"
     },
-    "commonmark": {
-      "Package": "commonmark",
-      "Version": "1.9.1",
-      "Source": "Repository"
-    },
     "contfrac": {
       "Package": "contfrac",
       "Version": "1.1-12",
@@ -222,21 +217,6 @@
     "cpp11": {
       "Package": "cpp11",
       "Version": "0.5.0",
-      "Source": "Repository"
-    },
-    "crayon": {
-      "Package": "crayon",
-      "Version": "1.5.3",
-      "Source": "Repository"
-    },
-    "crul": {
-      "Package": "crul",
-      "Version": "1.5.0",
-      "Source": "Repository"
-    },
-    "curl": {
-      "Package": "curl",
-      "Version": "5.2.2",
       "Source": "Repository"
     },
     "data.table": {
@@ -336,17 +316,12 @@
     },
     "gdtools": {
       "Package": "gdtools",
-      "Version": "0.3.7",
+      "Version": "0.4.0",
       "Source": "Repository"
     },
     "generics": {
       "Package": "generics",
       "Version": "0.1.3",
-      "Source": "Repository"
-    },
-    "gfonts": {
-      "Package": "gfonts",
-      "Version": "0.2.0",
       "Source": "Repository"
     },
     "ggdist": {
@@ -409,16 +384,6 @@
       "Version": "1.6.4",
       "Source": "Repository"
     },
-    "httpcode": {
-      "Package": "httpcode",
-      "Version": "0.3.0",
-      "Source": "Repository"
-    },
-    "httpuv": {
-      "Package": "httpuv",
-      "Version": "1.6.15",
-      "Source": "Repository"
-    },
     "hypergeo": {
       "Package": "hypergeo",
       "Version": "1.2-13",
@@ -467,7 +432,7 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspTTests",
-      "RemoteSha": "232d43df09f5dbb0fecc08462b018083be349268"
+      "RemoteSha": "6bea253cc072cd786e90186aeeb94dbf13dc8e10"
     },
     "jmvcore": {
       "Package": "jmvcore",
@@ -497,11 +462,6 @@
     "labeling": {
       "Package": "labeling",
       "Version": "0.4.3",
-      "Source": "Repository"
-    },
-    "later": {
-      "Package": "later",
-      "Version": "1.3.2",
       "Source": "Repository"
     },
     "lattice": {
@@ -596,7 +556,7 @@
     },
     "mvtnorm": {
       "Package": "mvtnorm",
-      "Version": "1.2-6",
+      "Version": "1.3-0",
       "Source": "Repository"
     },
     "nlme": {
@@ -682,11 +642,6 @@
     "processx": {
       "Package": "processx",
       "Version": "3.8.4",
-      "Source": "Repository"
-    },
-    "promises": {
-      "Package": "promises",
-      "Version": "1.3.0",
       "Source": "Repository"
     },
     "ps": {
@@ -776,7 +731,7 @@
     },
     "rvg": {
       "Package": "rvg",
-      "Version": "0.3.3",
+      "Version": "0.3.4",
       "Source": "Repository"
     },
     "sass": {
@@ -787,16 +742,6 @@
     "scales": {
       "Package": "scales",
       "Version": "1.3.0",
-      "Source": "Repository"
-    },
-    "shiny": {
-      "Package": "shiny",
-      "Version": "1.9.1",
-      "Source": "Repository"
-    },
-    "sourcetools": {
-      "Package": "sourcetools",
-      "Version": "0.1.7-1",
       "Source": "Repository"
     },
     "stringi": {
@@ -859,16 +804,6 @@
       "Version": "0.52",
       "Source": "Repository"
     },
-    "triebeard": {
-      "Package": "triebeard",
-      "Version": "0.4.1",
-      "Source": "Repository"
-    },
-    "urltools": {
-      "Package": "urltools",
-      "Version": "1.7.3",
-      "Source": "Repository"
-    },
     "utf8": {
       "Package": "utf8",
       "Version": "1.2.4",
@@ -907,11 +842,6 @@
     "xml2": {
       "Package": "xml2",
       "Version": "1.3.6",
-      "Source": "Repository"
-    },
-    "xtable": {
-      "Package": "xtable",
-      "Version": "1.8-4",
       "Source": "Repository"
     },
     "yaml": {
