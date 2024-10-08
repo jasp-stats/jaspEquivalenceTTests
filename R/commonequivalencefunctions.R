@@ -512,7 +512,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
   # Step 1: Density in the range of the prior
   integralEquivalencePrior <- pnorm(options$upperbound, prior.mean, sqrt(prior.variance)) - pnorm(options$lowerbound, prior.mean, sqrt(prior.variance))
-  
+
   errorEquivalencePrior <- 0
 
   integralNonequivalencePrior <- 1 - integralEquivalencePrior
@@ -709,11 +709,11 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
   hasGrouping <- !is.null(grouping)
   if (hasGrouping) {
-    levels <- levels(dataset[[.v(grouping)]])
+    levels <- levels(dataset[[grouping]])
     g1 <- levels[1]
     g2 <- levels[2]
-    idxG1 <- dataset[[.v(grouping)]] == g1
-    idxG2 <- dataset[[.v(grouping)]] == g2
+    idxG1 <- dataset[[grouping]] == g1
+    idxG2 <- dataset[[grouping]] == g2
    } else {
     g1 <- NULL
     g2 <- NULL
@@ -732,7 +732,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
     if (paired) {
       title <- paste(variable[[1L]], variable[[2L]], sep = " - ")
 
-      subDataSet <- dataset[, .v(c(variable[[1L]], variable[[2L]]))]
+      subDataSet <- dataset[, c(variable[[1L]], variable[[2L]])]
       subDataSet <- subDataSet[complete.cases(subDataSet), ]
 
       group1 <- subDataSet[[1L]]
@@ -741,15 +741,15 @@ gettextf <- function(fmt, ..., domain = NULL)  {
       variable <- title
     } else {
       title <- variable
-      idxC <- !is.na(dataset[[.v(variable)]])
+      idxC <- !is.na(dataset[[variable]])
 
       if (hasGrouping) {
-        group1 <- dataset[idxG1 && idxC, .v(variable)]
-        group2 <- dataset[idxG2 && idxC, .v(variable)]
-        subDataSet <- dataset[idxC, .v(c(variable, grouping))]
+        group1 <- dataset[idxG1 & idxC, variable]
+        group2 <- dataset[idxG2 & idxC, variable]
+        subDataSet <- dataset[idxC, c(variable, grouping)]
       } else {
         # group 1 is empty [numeric(0)]
-        group1 <- dataset[idxC, .v(variable)]
+        group1 <- dataset[idxC, variable]
         group1 <- group1 - options$mu
       }
     }
@@ -1046,40 +1046,6 @@ gettextf <- function(fmt, ..., domain = NULL)  {
   return(plot)
 }
 
-.ttestBayesianReadData <- function(dataset = NULL, options) {
-
-  if (is.null(dataset)) {
-    missing <- options[["missingValues"]]
-    if (is.null(options[["variables"]])) {
-      dependents <- unique(unlist(options[["pairs"]] ))
-      dependents <- dependents[dependents != ""]
-    } else {
-      dependents <- unlist(options[["variables"]])
-    }
-    grouping <- options[["groupingVariable"]]
-    if (identical(grouping, ""))
-      grouping <- NULL
-
-    excl <- grouping
-    if (missing == "excludeListwise")
-      excl <- c(excl, dependents)
-
-    if (length(dependents)) {
-      dataset <- .readDataSetToEnd(columns = c(dependents, grouping), exclude.na.listwise = excl)
-      if (!is.null(grouping))
-        dataset[[.v(grouping)]] <- as.factor(dataset[[.v(grouping)]])
-
-      # 100% required if we fully switch to columns = ... , but also allow the QML interface to be not strict in terms of input,
-      # so factors can be entered in scale boxes. Joris probably has more ideas about this
-      for (var in .v(dependents)) {
-        if (is.factor(dataset[[var]]))
-          dataset[[var]] <- as.numeric(levels(dataset[[var]]))[dataset[[var]]]
-      }
-    }
-  }
-  return(dataset)
-}
-
 .ttestBayesianGetErrorsPerVariable <- function(dataset, options, analysis) {
 
   errors <- list()
@@ -1144,25 +1110,21 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 }
 
 .ttestReadData <- function(dataset, options, type) {
-  if (!is.null(dataset))
-    return(dataset)
-  else {
-    groups  <- options$groupingVariable
-    if (!is.null(groups) && groups == "")
-      groups <- NULL
-    if(type %in% c("one-sample", "independent"))
-      depvars <- unlist(options$variables)
-    else if (type == 'paired') {
-      depvars <- unlist(options$pairs)
-      depvars <- depvars[depvars != ""]
+
+  if (options[["missingValues"]] == "excludeListwise") {
+
+    if (type %in% c("one-sample", "independent"))
+      exclude <- unlist(options[["dependent"]])
+    else if (type == "paired") {
+      exclude <- unlist(options[["pairs"]])
+      exclude <- exclude[exclude != ""]
     }
-    exclude <- NULL
-    if (options$missingValues == "excludeListwise")
-      exclude <- depvars
-    return(.readDataSetToEnd(columns.as.numeric  = depvars,
-                             columns.as.factor   = groups,
-                             exclude.na.listwise = exclude))
+
+    return(jaspBase::excludeNaListwise(dataset, exclude))
   }
+
+  return(dataset)
+
 }
 
 .ttestCheckErrors <- function(dataset, options, type) {
