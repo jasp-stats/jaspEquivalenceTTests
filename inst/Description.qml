@@ -12,6 +12,7 @@ Description
 	website:		"https://jasp-stats.org"
 	license:		"GPL (>= 2)"
 	icon:			"equivalence-module.svg"
+	preloadData:	true
 
 	Analysis
 	{

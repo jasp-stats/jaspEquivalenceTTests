@@ -16,7 +16,7 @@ test_that("contNormal plot matches", {
 test_that("Equivalence Bounds table results match", {
   table <- results[["results"]][["equivalenceBoundsTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(0.05, -0.05, -0.180126797550567, "Cohen's d", 0.487380845343539,
+                                 list(0.05, -0.05, -0.178720893167791, "Cohen's d", 0.520223461720696,
                                       "contNormal", 0.0530338698488416, -0.0530338698488416, -0.193495020233012,
                                       "Raw", 0.520223461720696, ""))
 })
@@ -33,6 +33,6 @@ test_that("Equivalence Independent Samples T-Test table results match", {
   table <- results[["results"]][["equivalenceIndTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
                                  list(98, 0.448976320466698, "T-Test", 0.760172707980336, "contNormal",
-                                      98, 0.695584187884492, "Upper bound", 0.513393454395275, "",
-                                      98, 0.158218835873606, "Lower bound", 1.0069519615654, ""))
+                                      98, 0.158218835873606, "Upper bound", 1.0069519615654, "",
+                                      98, 0.695584187884492, "Lower bound", 0.513393454395275, ""))
 })
