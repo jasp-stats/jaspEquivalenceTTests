@@ -112,10 +112,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Save results to state
   jaspResults[["stateEquivalenceBayesianOneTTestResults"]] <- createJaspState(results)
-  jaspResults[["stateEquivalenceBayesianOneTTestResults"]]$dependOn(c("variables", "mu", "equivalenceRegion", "lower", "upper", "region", "lowerbound", "upperbound", "lower_max", "upper_min",
-                                                                      "priorWidth", "effectSizeStandardized","informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                                                      "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                                                      "informativeTScale", "informativeTDf", "missingValues"))
+  jaspResults[["stateEquivalenceBayesianOneTTestResults"]]$dependOn(c("variables", "groupingVariable", "missingValues", "mu", .equivalenceRegionDependencies, .equivalencePriorDependencies))
   return(results)
 }
 
@@ -123,10 +120,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceBayesianOneTTestTable <- createJaspTable(title = gettext("Equivalence Bayesian One Sample T-Test"))
-  equivalenceBayesianOneTTestTable$dependOn(c("variables", "mu", "equivalenceRegion", "priorWidth", "lower", "upper", "region", "lowerbound", "upperbound", "lower_max", "upper_min",
-                                              "effectSizeStandardized","informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                              "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                              "informativeTScale", "informativeTDf", "missingValues"))
+  equivalenceBayesianOneTTestTable$dependOn(c("variables", "groupingVariable", "missingValues", "mu", .equivalenceRegionDependencies, .equivalencePriorDependencies))
   equivalenceBayesianOneTTestTable$showSpecifiedColumnsOnly <- TRUE
 
   # Add Columns to table
@@ -241,11 +235,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 .massPriorPosteriorOneTTestTable <- function(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready) {
 
   equivalenceMassTable <- createJaspTable(title = gettext("Prior and Posterior Mass Table"))
-  equivalenceMassTable$dependOn(c("variables", "priorWidth", "mu", "lower", "upper", "region",
-                                  "effectSizeStandardized", "equivalenceRegion", "lowerbound", "upperbound", "lower_max", "upper_min",
-                                  "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                  "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                  "informativeTScale", "informativeTDf"))
+  equivalenceMassTable$dependOn(c("variables", "mu", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
 
   equivalenceMassTable$addColumnInfo(name = "variable",      title = " ",                     type = "string", combine = TRUE)
   equivalenceMassTable$addColumnInfo(name = "section",       title = gettext("Section"),      type = "string")

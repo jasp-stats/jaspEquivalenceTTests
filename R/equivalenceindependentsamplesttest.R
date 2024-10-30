@@ -85,7 +85,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
         errorMessage <- .extractErrorMessage(tableResults)
         results[[variable]][["status"]]         <- "error"
         results[[variable]][["errorFootnotes"]] <- errorMessage
-        
+
       } else {
 
         variableData <- dataset[[ .v(variable) ]]
@@ -96,20 +96,20 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
         ciEffSize <- 1 - 2 * options$alpha
         alphaLevel <- 1 - (ciEffSize + 1) / 2
-        
+
         confIntEffSize <- try(jaspTTests::.confidenceLimitsEffectSizes(ncp = tableResults$tost$asDF$`t[0]`,
                                                        df = tableResults$tost$asDF$`df[0]`, alpha.lower = alphaLevel,
                                                        alpha.upper = alphaLevel)[c(1, 3)])
-        
+
         if (isTryError(confIntEffSize)) {
           results[[variable]][["status"]]         <- "error"
           results[[variable]][["errorFootnotes"]] <- "Confidence interval could not be computed"
-          
+
         } else {
-          
+
           confIntEffSize <- unlist(confIntEffSize) * sqrt((sum(ns)) / (prod(ns)))
           confIntEffSize <- sort(confIntEffSize)
-          
+
           results[[variable]] <- list(
             ttestTvalue = tableResults$tost$asDF$`t[0]`,
             ttestDf     = tableResults$tost$asDF$`df[0]`,
@@ -137,8 +137,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Save results to state
   jaspResults[["stateEquivalenceIndTTestResults"]] <- createJaspState(results)
-  jaspResults[["stateEquivalenceIndTTestResults"]]$dependOn(c("variables", "groupingVariable", "tests", "equivalenceRegion", "lower", "upper",
-                                                              "region", "lowerbound", "upperbound", "lower_max", "upper_min", "boundstype", "alpha", "missingValues"))
+  jaspResults[["stateEquivalenceIndTTestResults"]]$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
 
   return(results)
 }
@@ -147,8 +146,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceIndTTestTable <- createJaspTable(title = gettext("Equivalence Independent Samples T-Test"))
-  equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "lowerbound",  "equivalenceRegion",
-                                      "upperbound", "boundstype", "alpha", "missingValues"))
+  equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
 
   # Add Columns to table
   equivalenceIndTTestTable$addColumnInfo(name = "variable",   title = " ",                   type = "string", combine = TRUE)
@@ -214,10 +212,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceBoundsTable <- createJaspTable(title = gettext("Equivalence Bounds"))
-  equivalenceBoundsTable$dependOn(c("variables", "groupingVariable", "tests",
-                                    "equivalenceRegion", "lower", "upper",
-                                    "region", "lowerbound", "upperbound", "lower_max", "upper_min",
-                                    "boundstype", "alpha", "missingValues"))
+  equivalenceBoundsTable$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
 
   # Add Columns to table
   equivalenceBoundsTable$addColumnInfo(name = "variable",   title = " ",                            type = "string", combine = TRUE)
@@ -330,11 +325,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 .equivalencePlotInd <- function(jaspResults, dataset, options, equivalenceIndTTestResults, ready) {
 
   equivalenceBoundsContainer <- createJaspContainer(title = gettext("Equivalence Bounds Plots"))
-  equivalenceBoundsContainer$dependOn(c("equivalenceboundsplot", "boundstype",
-                                        "variables", "groupingVariable", "tests",
-                                        "equivalenceRegion", "lower", "upper",
-                                        "region", "lowerbound", "upperbound", "lower_max", "upper_min",
-                                        "alpha", "missingValues"))
+  equivalenceBoundsContainer$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
   jaspResults[["equivalenceBoundsContainer"]] <- equivalenceBoundsContainer
 
   if (!ready) {

@@ -31,12 +31,9 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
   if (is.null(jaspResults[["equivalencePriorPosteriorContainer"]])) {
     equivalencePriorPosteriorContainer <- createJaspContainer(title = gettext("Equivalence Prior and Posterior"))
-    equivalencePriorPosteriorContainer$dependOn(c("priorandposterior", "missingValues", "priorWidth",
-                                                  "effectSizeStandardized", "equivalenceRegion", "lower", "upper",
-                                                  "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior",
-                                                  "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                                  "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                                  "informativeTScale", "informativeTDf", "priorandposteriorAdditionalInfo"))
+    equivalencePriorPosteriorContainer$dependOn(c("priorandposterior", "priorandposteriorAdditionalInfo", "missingValues",
+                                                  ,
+                                                  .equivalencePriorDependencies))
     jaspResults[["equivalencePriorPosteriorContainer"]] <- equivalencePriorPosteriorContainer
   } else {
     equivalencePriorPosteriorContainer <- jaspResults[["equivalencePriorPosteriorContainer"]]
@@ -1151,3 +1148,16 @@ gettextf <- function(fmt, ..., domain = NULL)  {
                  exitAnalysisIfErrors = TRUE)
   }
 }
+
+.equivalenceRegionDependencies <- c(
+  "equivalenceRegion",
+  "lowerbound", "upperbound",
+  "lower_max", "upper_min"
+)
+.equivalencePriorDependencies  <- c(
+  "effectSize", "effectSizeStandardized", "defaultStandardizedEffectSize", "informativeStandardizedEffectSize",
+  "priorWidth",
+  "informativeCauchyLocation", "informativeCauchyScale",
+  "informativeNormalMean", "informativeNormalStd",
+  "informativeTLocation", "informativeTScale", "informativeTDf"
+)

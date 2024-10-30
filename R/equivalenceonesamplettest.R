@@ -127,8 +127,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Save results to state
   jaspResults[["stateEquivalenceOneTTestResults"]] <- createJaspState(results)
-  jaspResults[["stateEquivalenceOneTTestResults"]]$dependOn(c("variables", "mu", "equivalenceRegion", "lower", "upper",
-                                                              "region", "lowerbound", "upperbound", "lower_max", "upper_min", "boundstype", "alpha", "missingValues"))
+  jaspResults[["stateEquivalenceOneTTestResults"]]$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
 
   return(results)
 }
@@ -137,8 +136,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceOneTTestTable <- createJaspTable(title = gettext("Equivalence One Sample T-Test"))
-  equivalenceOneTTestTable$dependOn(c("variables", "mu", "equivalenceRegion", "lower", "upper",
-                                      "region", "lowerbound", "upperbound", "lower_max", "upper_min", "boundstype", "alpha"))
+  equivalenceOneTTestTable$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
 
   # Add Columns to table
   equivalenceOneTTestTable$addColumnInfo(name = "variable",   title = " ",                   type = "string", combine = TRUE)
@@ -202,9 +200,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceOneBoundsTable <- createJaspTable(title = gettext("Equivalence Bounds"))
-  equivalenceOneBoundsTable$dependOn(c("variables", "mu", "equivalenceRegion", "lower", "upper",
-                                       "region", "lowerbound", "upperbound", "lower_max", "upper_min",
-                                       "boundstype", "alpha", "missingValues"))
+  equivalenceOneBoundsTable$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
 
   # Add Columns to table
   equivalenceOneBoundsTable$addColumnInfo(name = "variable",   title = " ",                     type = "string", combine = TRUE)
@@ -312,8 +308,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 .equivalenceOnePlot <- function(jaspResults, dataset, options, equivalenceOneTTestResults, ready) {
 
   equivalenceOneBoundsContainer <- createJaspContainer(title = gettext("Equivalence Bounds Plots"))
-  equivalenceOneBoundsContainer$dependOn(c("boundstype", "missingValues", "equivalenceRegion", "lower", "upper",
-                                           "region", "lowerbound", "upperbound", "lower_max", "upper_min", "equivalenceboundsplot"))
+  equivalenceOneBoundsContainer$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
   jaspResults[["equivalenceOneBoundsContainer"]] <- equivalenceOneBoundsContainer
 
   if (!ready)

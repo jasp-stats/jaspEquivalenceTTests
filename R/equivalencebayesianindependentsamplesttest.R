@@ -125,11 +125,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
   # Save results to state
   jaspResults[["stateEquivalenceBayesianIndTTestResults"]] <- createJaspState(results)
-  jaspResults[["stateEquivalenceBayesianIndTTestResults"]]$dependOn(c("variables", "groupingVariable", "equivalenceRegion", "lower", "upper",
-                                                                      "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior", "missingValues",
-                                                                      "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                                                      "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                                                      "informativeTScale", "informativeTDf"))
+  jaspResults[["stateEquivalenceBayesianIndTTestResults"]]$dependOn(c("variables", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
 
   return(results)
 }
@@ -138,11 +134,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
   # Create table
   equivalenceBayesianIndTTestTable <- createJaspTable(title = gettext("Equivalence Bayesian Independent Samples T-Test"))
-  equivalenceBayesianIndTTestTable$dependOn(c("variables", "groupingVariable", "priorWidth",
-                                            "effectSizeStandardized", "equivalenceRegion", "lower", "upper", "region", "lowerbound", "upperbound",
-                                            "lower_max", "upper_min", "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                            "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                            "informativeTScale", "informativeTDf"))
+  equivalenceBayesianIndTTestTable$dependOn(c("variables", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
 
   # Add Columns to table
   equivalenceBayesianIndTTestTable$addColumnInfo(name = "variable",   title = " ",                          type = "string", combine = TRUE)
@@ -290,11 +282,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
 .massPriorPosteriorIndpTTestTable <- function(jaspResults, dataset, options, equivalenceBayesianIndTTestResults, ready) {
   equivalenceMassTable <- createJaspTable(title = gettext("Prior and Posterior Mass Table"))
-  equivalenceMassTable$dependOn(c("variables", "groupingVariable", "priorWidth", "lower", "upper", "region",
-                                  "effectSizeStandardized", "equivalenceRegion", "lowerbound", "upperbound", "lower_max", "upper_min",
-                                  "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                  "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                  "informativeTScale", "informativeTDf"))
+  equivalenceMassTable$dependOn(c("variables", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  defaultStandardizedEffectSize
 
   equivalenceMassTable$addColumnInfo(name = "variable",         title = " ",                        type = "string", combine = TRUE)
   equivalenceMassTable$addColumnInfo(name = "section",          title = gettext("Section"),         type = "string")
