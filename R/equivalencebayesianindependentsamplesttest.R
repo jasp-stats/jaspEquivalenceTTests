@@ -283,7 +283,6 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 .massPriorPosteriorIndpTTestTable <- function(jaspResults, dataset, options, equivalenceBayesianIndTTestResults, ready) {
   equivalenceMassTable <- createJaspTable(title = gettext("Prior and Posterior Mass Table"))
   equivalenceMassTable$dependOn(c("variables", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
-  defaultStandardizedEffectSize
 
   equivalenceMassTable$addColumnInfo(name = "variable",         title = " ",                        type = "string", combine = TRUE)
   equivalenceMassTable$addColumnInfo(name = "section",          title = gettext("Section"),         type = "string")
