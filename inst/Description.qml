@@ -14,6 +14,12 @@ Description
 	icon:			"equivalence-module.svg"
 	preloadData:	true
 
+	GroupTitle
+	{
+		title:	qsTr("Classical")
+		icon:	"equivalence-module.svg"
+	}
+
 	Analysis
 	{
 		title:	qsTr("Equivalence Independent Samples T-Test")
@@ -37,6 +43,12 @@ Description
 	}
 
 	Separator {}
+
+	GroupTitle
+	{
+		title:	qsTr("Classical")
+		icon:	"equivalence-module-bayesian.svg"
+	}
 
 	Analysis
 	{
