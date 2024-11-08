@@ -26,7 +26,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
 
   # Read dataset and error checking
   if (ready) {
-    dataset <- .ttestBayesianReadData(dataset, options)
+    dataset <- .ttestReadData(dataset, options, "paired")
     errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "paired")
   }
 
@@ -151,8 +151,8 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
   if (ready)
     equivalenceBayesianPairedTTestTable$setExpectedSize(length(options$pairs))
 
-  message <- gettextf("I ranges from %1$s to %2$s", 
-                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound), 
+  message <- gettextf("I ranges from %1$s to %2$s",
+                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
                       ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
   equivalenceBayesianPairedTTestTable$addFootnote(message)
 
