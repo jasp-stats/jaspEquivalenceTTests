@@ -41,10 +41,10 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   if(options$descriptives && is.null(jaspResults[["equivalenceBayesianDescriptivesTable"]]))
     .equivalenceBayesianOneTTestTableDescriptives(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready)
 
-  if (options$priorandposterior)
+  if (options$priorandposterior && is.null(jaspResults[["equivalencePriorPosteriorContainer"]]))
     .equivalencePriorandPosterior(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready)
 
-  if (options$plotSequentialAnalysis)
+  if (options$plotSequentialAnalysis && is.null(jaspResults[["equivalenceSequentialContainer"]]))
     .equivalencePlotSequentialAnalysis(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready)
 
   if (options$massPriorPosterior && is.null(jaspResults[["equivalenceMassTable"]]))
@@ -121,6 +121,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceBayesianOneTTestTable <- createJaspTable(title = gettext("Equivalence Bayesian One Sample T-Test"))
   equivalenceBayesianOneTTestTable$dependOn(c("variables", "groupingVariable", "missingValues", "mu", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  equivalenceBayesianOneTTestTable$position <- 1
   equivalenceBayesianOneTTestTable$showSpecifiedColumnsOnly <- TRUE
 
   # Add Columns to table
@@ -193,6 +194,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceBayesianDescriptivesTable <- createJaspTable(title = gettext("Descriptives"))
   equivalenceBayesianDescriptivesTable$dependOn(c("variables", "descriptives", "missingValues"))
+  equivalenceBayesianDescriptivesTable$position <- 2
   equivalenceBayesianDescriptivesTable$showSpecifiedColumnsOnly <- TRUE
 
   # Add Columns to table
@@ -235,7 +237,8 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 .massPriorPosteriorOneTTestTable <- function(jaspResults, dataset, options, equivalenceBayesianOneTTestResults, ready) {
 
   equivalenceMassTable <- createJaspTable(title = gettext("Prior and Posterior Mass Table"))
-  equivalenceMassTable$dependOn(c("variables", "mu", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  equivalenceMassTable$dependOn(c("variables", "mu", "groupingVariable", "missingValues", "massPriorPosterior", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  equivalenceMassTable$position <- 3
 
   equivalenceMassTable$addColumnInfo(name = "variable",      title = " ",                     type = "string", combine = TRUE)
   equivalenceMassTable$addColumnInfo(name = "section",       title = gettext("Section"),      type = "string")

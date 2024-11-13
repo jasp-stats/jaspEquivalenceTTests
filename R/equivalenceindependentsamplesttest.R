@@ -45,7 +45,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   if (options$descriptives && is.null(jaspResults[["equivalenceDescriptivesTable"]]))
     .equivalenceIndTTestTableDescriptives(jaspResults, dataset, options, equivalenceIndTTestResults, ready)
 
-  if (options$equivalenceboundsplot)
+  if (options$equivalenceboundsplot && is.null(jaspResults[["equivalenceBoundsContainer"]]))
     .equivalencePlotInd(jaspResults, dataset, options, equivalenceIndTTestResults, ready)
 
   return()
@@ -147,6 +147,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceIndTTestTable <- createJaspTable(title = gettext("Equivalence Independent Samples T-Test"))
   equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalenceIndTTestTable$positions <- 1
 
   # Add Columns to table
   equivalenceIndTTestTable$addColumnInfo(name = "variable",   title = " ",                   type = "string", combine = TRUE)
@@ -213,6 +214,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceBoundsTable <- createJaspTable(title = gettext("Equivalence Bounds"))
   equivalenceBoundsTable$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalenceBoundsTable$positions <- 2
 
   # Add Columns to table
   equivalenceBoundsTable$addColumnInfo(name = "variable",   title = " ",                            type = "string", combine = TRUE)
@@ -273,6 +275,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceDescriptivesTable <- createJaspTable(title = gettext("Descriptives"))
   equivalenceDescriptivesTable$dependOn(c("variables", "groupingVariable", "descriptives", "missingValues"))
+  equivalenceDescriptivesTable$positions <- 3
 
   # Add Columns to table
   equivalenceDescriptivesTable$addColumnInfo(name = "variable",   title = " ",                  type = "string", combine = TRUE)
@@ -325,7 +328,8 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 .equivalencePlotInd <- function(jaspResults, dataset, options, equivalenceIndTTestResults, ready) {
 
   equivalenceBoundsContainer <- createJaspContainer(title = gettext("Equivalence Bounds Plots"))
-  equivalenceBoundsContainer$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalenceBoundsContainer$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", "equivalenceboundsplot", .equivalenceRegionDependencies))
+  equivalenceBoundsContainer$positions <- 4
   jaspResults[["equivalenceBoundsContainer"]] <- equivalenceBoundsContainer
 
   if (!ready) {

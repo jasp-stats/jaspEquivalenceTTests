@@ -51,7 +51,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
   if (options$descriptives && is.null(jaspResults[["equivalencePairedDescriptivesTable"]]))
     .equivalencePairedTTestTableDescriptives(jaspResults, dataset, options, equivalencePairedTTestResults, ready)
 
-  if (options$equivalenceboundsplot)
+  if (options$equivalenceboundsplot && is.null(jaspResults[["equivalencePairedBoundsContainer"]]))
     .equivalenceBoundsPlotPaired(jaspResults, dataset, options, equivalencePairedTTestResults, ready)
 
   return()
@@ -149,6 +149,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalencePairedTTestTable <- createJaspTable(title = gettext("Equivalence Paired Samples T-Test"))
   equivalencePairedTTestTable$dependOn(c("pairs", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalencePairedTTestTable$position <- 1
 
   # Add Columns to table
   equivalencePairedTTestTable$addColumnInfo(name = "variable1",   title = " ",                   type = "string")
@@ -223,6 +224,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalencePairedBoundsTable <- createJaspTable(title = gettext("Equivalence Bounds"))
   equivalencePairedBoundsTable$dependOn(c("pairs", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalencePairedBoundsTable$position <- 2
 
   # Add Columns to table
   equivalencePairedBoundsTable$addColumnInfo(name = "variable1",   title = " ",                   type = "string", combine = TRUE)
@@ -291,6 +293,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalencePairedDescriptivesTable <- createJaspTable(title = gettext("Descriptives"))
   equivalencePairedDescriptivesTable$dependOn(c("pairs", "descriptives", "missingValues"))
+  equivalencePairedDescriptivesTable$position <- 3
 
   # Add Columns to table
   equivalencePairedDescriptivesTable$addColumnInfo(name = "level",      title = " ",                  type = "string")
@@ -336,9 +339,9 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
 
 .equivalenceBoundsPlotPaired <- function(jaspResults, dataset, options, equivalencePairedTTestResults, ready) {
 
-
   equivalencePairedBoundsContainer <- createJaspContainer(title = gettext("Equivalence Bounds Plots"))
-  equivalencePairedBoundsContainer$dependOn(c("pairs", "alpha", "missingValues",  "boundstype", .equivalenceRegionDependencies))
+  equivalencePairedBoundsContainer$dependOn(c("pairs", "alpha", "missingValues",  "boundstype", "equivalenceboundsplot", .equivalenceRegionDependencies))
+  equivalencePairedBoundsContainer$position <- 4
   jaspResults[["equivalencePairedBoundsContainer"]] <- equivalencePairedBoundsContainer
 
   if (!ready)

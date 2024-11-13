@@ -46,7 +46,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
   if(options$descriptives && is.null(jaspResults[["equivalenceOneDescriptivesTable"]]))
     .equivalenceOneTTestTableDescriptives(jaspResults, dataset, options, equivalenceOneTTestResults, ready)
 
-  if(options$equivalenceboundsplot)
+  if(options$equivalenceboundsplot && is.null(jaspResults[["equivalenceOneBoundsContainer"]]))
     .equivalenceOnePlot(jaspResults, dataset, options, equivalenceOneTTestResults, ready)
 
   return()
@@ -137,6 +137,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceOneTTestTable <- createJaspTable(title = gettext("Equivalence One Sample T-Test"))
   equivalenceOneTTestTable$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalenceOneTTestTable$position <- 1
 
   # Add Columns to table
   equivalenceOneTTestTable$addColumnInfo(name = "variable",   title = " ",                   type = "string", combine = TRUE)
@@ -201,6 +202,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceOneBoundsTable <- createJaspTable(title = gettext("Equivalence Bounds"))
   equivalenceOneBoundsTable$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalenceOneBoundsTable$position <- 2
 
   # Add Columns to table
   equivalenceOneBoundsTable$addColumnInfo(name = "variable",   title = " ",                     type = "string", combine = TRUE)
@@ -261,6 +263,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceOneDescriptivesTable <- createJaspTable(title = gettext("Descriptives"))
+  equivalenceOneDescriptivesTable$position <- 3
   equivalenceOneDescriptivesTable$dependOn(c("variables", "mu", "descriptives", "missingValues"))
 
   # Add Columns to table
@@ -308,7 +311,8 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 .equivalenceOnePlot <- function(jaspResults, dataset, options, equivalenceOneTTestResults, ready) {
 
   equivalenceOneBoundsContainer <- createJaspContainer(title = gettext("Equivalence Bounds Plots"))
-  equivalenceOneBoundsContainer$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
+  equivalenceOneBoundsContainer$dependOn(c("variables", "mu", "alpha", "missingValues", "boundstype", "equivalenceboundsplot", .equivalenceRegionDependencies))
+  equivalenceOneBoundsContainer$position <- 4
   jaspResults[["equivalenceOneBoundsContainer"]] <- equivalenceOneBoundsContainer
 
   if (!ready)
