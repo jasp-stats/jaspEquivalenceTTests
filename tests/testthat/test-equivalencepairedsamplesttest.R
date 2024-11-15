@@ -14,9 +14,9 @@ test_that("contNormal - contGamma plot matches", {
 test_that("Equivalence Bounds table results match", {
   table <- results[["results"]][["equivalencePairedBoundsTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(0.05, -0.05, 0.90704359444212, "-", "Cohen's d", 1.42519540666454,
+                                 list(0.05, -0.05, -1.42519540666454, "-", "Cohen's d", -0.90704359444212,
                                       "contNormal", "contGamma", 0.0956629548867044, -0.0956629548867044,
-                                      1.90403353524533, "", "Raw", 2.53938523225467, "", ""))
+                                      -2.53938523225467, "", "Raw", -1.90403353524533, "", ""))
 })
 
 test_that("Descriptives table results match", {
@@ -30,8 +30,8 @@ test_that("Descriptives table results match", {
 test_that("Equivalence Paired Samples T-Test table results match", {
   table <- results[["results"]][["equivalencePairedTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(99, 3.4809614504484e-20, "-", "T-Test", 11.6121720596087, "contNormal",
-                                      "contGamma", 99, 1, "", "Upper bound", 11.1121720596087, "",
-                                      "", 99, 1.47774434503596e-21, "", "Lower bound", 12.1121720596087,
-                                      "", ""))
+                                 list(99, 3.4809614504484e-20, "-", "T-Test", -11.6121720596087, "contNormal",
+                                      "contGamma", 99, 1.47774434503596e-21, "", "Upper bound", -12.1121720596087,
+                                      "", "", 99, 1, "", "Lower bound", -11.1121720596087, "", ""
+                                 ))
 })

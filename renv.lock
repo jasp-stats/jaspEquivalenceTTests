@@ -1594,6 +1594,11 @@
         "utils"
       ]
     },
+    "renv": {
+      "Package": "renv",
+      "Version": "1.0.11",
+      "Source": "Repository"
+    },
     "reshape2": {
       "Package": "reshape2",
       "Version": "1.4.4",

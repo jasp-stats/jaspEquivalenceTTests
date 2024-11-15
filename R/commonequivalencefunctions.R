@@ -29,18 +29,11 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
 .equivalencePriorandPosterior <- function(jaspResults, dataset, options, equivalenceBayesianTTestResults, ready, paired = FALSE) {
 
-  if (is.null(jaspResults[["equivalencePriorPosteriorContainer"]])) {
-    equivalencePriorPosteriorContainer <- createJaspContainer(title = gettext("Equivalence Prior and Posterior"))
-    equivalencePriorPosteriorContainer$dependOn(c("priorandposterior", "missingValues", "priorWidth",
-                                                  "effectSizeStandardized", "equivalenceRegion", "lower", "upper",
-                                                  "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior",
-                                                  "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                                  "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                                  "informativeTScale", "informativeTDf", "priorandposteriorAdditionalInfo"))
-    jaspResults[["equivalencePriorPosteriorContainer"]] <- equivalencePriorPosteriorContainer
-  } else {
-    equivalencePriorPosteriorContainer <- jaspResults[["equivalencePriorPosteriorContainer"]]
-  }
+  equivalencePriorPosteriorContainer <- createJaspContainer(title = gettext("Equivalence Prior and Posterior"))
+  equivalencePriorPosteriorContainer$dependOn(c("priorandposterior", "priorandposteriorAdditionalInfo", "missingValues", .equivalencePriorDependencies))
+  equivalencePriorPosteriorContainer$position <- 4
+
+  jaspResults[["equivalencePriorPosteriorContainer"]] <- equivalencePriorPosteriorContainer
 
   if (!ready)
     return()
@@ -518,13 +511,22 @@ gettextf <- function(fmt, ..., domain = NULL)  {
   integralNonequivalencePrior <- 1 - integralEquivalencePrior
 
   # Step 2: Density in the equivalence range of the posterior
-  upperbound <- .equivalence_cdf_normal(x = options$upperbound, t, n1, n2, independentSamples,
-                                        prior.mean = prior.mean, prior.variance = prior.variance)
+  if (options$upperbound == Inf) {
+    upperbound <- list(value = 1, abs.error = 0)
+  } else {
+    upperbound <- .equivalence_cdf_normal(x = options$upperbound, t, n1, n2, independentSamples,
+                                          prior.mean = prior.mean, prior.variance = prior.variance)
+  }
 
-  lowerbound <- .equivalence_cdf_normal(x = options$lowerbound, t, n1, n2, independentSamples,
-                                        prior.mean = prior.mean, prior.variance = prior.variance)
+  if (options$lowerbound == -Inf) {
+    lowerbound <- list(value = 0, abs.error = 0)
+  } else {
+    lowerbound <- .equivalence_cdf_normal(x = options$lowerbound, t, n1, n2, independentSamples,
+                                          prior.mean = prior.mean, prior.variance = prior.variance)
+  }
 
-  errorEquivalencePosterior <- upperbound$abs.error + lowerbound$abs.error
+
+  errorEquivalencePosterior    <- upperbound$abs.error + lowerbound$abs.error
   integralEquivalencePosterior <- upperbound$value - lowerbound$value
 
   # to prevent numerical integration error (value < error)
@@ -660,7 +662,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
   } else if (options[["informativeStandardizedEffectSize"]] == "normal") {
 
-    bfObject <- .equivalence_bf_normal(t                 = tValue,
+    bfObject <- .equivalence_bf_normal(t                  = tValue,
                                        n1                 = n1,
                                        n2                 = n2,
                                        independentSamples = !paired && !is.null(y),
@@ -689,14 +691,10 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 }
 
 .equivalencePlotSequentialAnalysis <- function(jaspResults, dataset, options, equivalenceBayesianTTestResults, ready, paired = FALSE) {
-  equivalenceSequentialContainer <- createJaspContainer(title = gettext("Equivalence Sequential Analysis"))
 
-  equivalenceSequentialContainer$dependOn(c("missingValues", "priorWidth",
-                                            "effectSizeStandardized", "equivalenceRegion","lower", "upper",
-                                            "region", "lowerbound", "upperbound", "lower_max", "upper_min", "prior",
-                                            "informative", "informativeCauchyLocation", "informativeCauchyScale",
-                                            "informativeNormalMean", "informativeNormalStd", "informativeTLocation",
-                                            "informativeTScale", "informativeTDf", "plotSequentialAnalysisRobustness"))
+  equivalenceSequentialContainer <- createJaspContainer(title = gettext("Equivalence Sequential Analysis"))
+  equivalenceSequentialContainer$dependOn(c("missingValues", "effectSizeStandardized", .equivalenceRegionDependencies, .equivalencePriorDependencies, "plotSequentialAnalysis", "plotSequentialAnalysisRobustness"))
+  equivalenceSequentialContainer$position <- 5
 
   jaspResults[["equivalenceSequentialContainer"]] <- equivalenceSequentialContainer
 
@@ -1151,3 +1149,16 @@ gettextf <- function(fmt, ..., domain = NULL)  {
                  exitAnalysisIfErrors = TRUE)
   }
 }
+
+.equivalenceRegionDependencies <- c(
+  "equivalenceRegion",
+  "lowerbound", "upperbound",
+  "lower_max", "upper_min"
+)
+.equivalencePriorDependencies  <- c(
+  "effectSize", "effectSizeStandardized", "defaultStandardizedEffectSize", "informativeStandardizedEffectSize",
+  "priorWidth",
+  "informativeCauchyLocation", "informativeCauchyScale",
+  "informativeNormalMean", "informativeNormalStd",
+  "informativeTLocation", "informativeTScale", "informativeTDf"
+)

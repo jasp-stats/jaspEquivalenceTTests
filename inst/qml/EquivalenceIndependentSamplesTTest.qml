@@ -53,7 +53,6 @@ Form
     {
         title: qsTr("Equivalence Region")
         columns: 2
-        alignTextFields: false
 
         RadioButtonGroup
         {
