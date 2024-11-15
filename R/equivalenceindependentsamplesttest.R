@@ -147,7 +147,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceIndTTestTable <- createJaspTable(title = gettext("Equivalence Independent Samples T-Test"))
   equivalenceIndTTestTable$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
-  equivalenceIndTTestTable$positions <- 1
+  equivalenceIndTTestTable$position <- 1
 
   # Add Columns to table
   equivalenceIndTTestTable$addColumnInfo(name = "variable",   title = " ",                   type = "string", combine = TRUE)
@@ -214,7 +214,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceBoundsTable <- createJaspTable(title = gettext("Equivalence Bounds"))
   equivalenceBoundsTable$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", .equivalenceRegionDependencies))
-  equivalenceBoundsTable$positions <- 2
+  equivalenceBoundsTable$position <- 2
 
   # Add Columns to table
   equivalenceBoundsTable$addColumnInfo(name = "variable",   title = " ",                            type = "string", combine = TRUE)
@@ -275,7 +275,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
   # Create table
   equivalenceDescriptivesTable <- createJaspTable(title = gettext("Descriptives"))
   equivalenceDescriptivesTable$dependOn(c("variables", "groupingVariable", "descriptives", "missingValues"))
-  equivalenceDescriptivesTable$positions <- 3
+  equivalenceDescriptivesTable$position <- 3
 
   # Add Columns to table
   equivalenceDescriptivesTable$addColumnInfo(name = "variable",   title = " ",                  type = "string", combine = TRUE)
@@ -329,7 +329,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
   equivalenceBoundsContainer <- createJaspContainer(title = gettext("Equivalence Bounds Plots"))
   equivalenceBoundsContainer$dependOn(c("variables", "groupingVariable", "tests", "alpha", "missingValues", "boundstype", "equivalenceboundsplot", .equivalenceRegionDependencies))
-  equivalenceBoundsContainer$positions <- 4
+  equivalenceBoundsContainer$position <- 4
   jaspResults[["equivalenceBoundsContainer"]] <- equivalenceBoundsContainer
 
   if (!ready) {
