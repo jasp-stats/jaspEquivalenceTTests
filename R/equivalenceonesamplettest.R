@@ -333,32 +333,32 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
     if (!is.null((results$status))) {
       equivalenceOneTTestPlot$setError(results$errorFootnotes)
     } else {
-      # Calculate mean of group difference
-      m1  <- results$desc$m
-      m2  <- options$mu
-      dif <- (m1 - m2)
-
       # Make plot:
-
-      plot <- ggplot2::ggplot(data = dataset, ggplot2::aes_string(x = 0, y = dif))
+      plot <- ggplot2::ggplot(data = dataset, ggplot2::aes_string(x = 0, y = 0))
       if (options[["boundstype"]] == "raw") {
+        # TODO: the effect size should be passed directly instead of recomputing from the confidence intervals
+        dif <- (results$ciuRaw + results$cilRaw) / 2
         plot <- plot + ggplot2::annotate(geom = "rect", xmin = -20, xmax = 20, ymin = results$lowRaw, ymax = results$highRaw, alpha = .5) +
           ggplot2::geom_errorbar(ymin = results$cilRaw, ymax = results$ciuRaw, width = .4, size = .8, colour = "black")
+        yTicks <- jaspGraphs::getPrettyAxisBreaks(c(results$cilRaw, results$ciuRaw, results$lowRaw, results$highRaw))
       } else {
+        # TODO: the effect size should be passed directly instead of recomputing from the confidence intervals
+        dif <- (results$ciuCohen + results$cilCohen) / 2
         plot <- plot + ggplot2::annotate(geom = "rect", xmin = -20, xmax = 20, ymin = results$lowCohen, ymax = results$highCohen, alpha = .5) +
           ggplot2::geom_errorbar(ymin = results$cilCohen, ymax = results$ciuCohen, width = .4, size = .8, colour = "black")
+        yTicks <- jaspGraphs::getPrettyAxisBreaks(c(results$cilCohen, results$ciuCohen, results$lowCohen, results$highCohen))
       }
       plot <- plot +
         ggplot2::geom_point(ggplot2::aes_string(x = 0, y = dif), shape = 21, fill = "black", size = 3, colour = "black") +
-        ggplot2::labs(x = NULL, y = variable) +
+        ggplot2::scale_x_discrete(limits = c("", "", "", "", "", "", "")) +
+        jaspGraphs::scale_y_continuous(name = variable, breaks = yTicks, limits = range(yTicks)) +
         ggplot2::expand_limits(x = c(-2, 4), y = 0) +
         jaspGraphs::geom_rangeframe() +
         jaspGraphs::themeJaspRaw() +
         ggplot2::theme(axis.text.x  = ggplot2::element_blank(),
                        axis.title.x = ggplot2::element_blank(),
                        axis.ticks.x = ggplot2::element_blank(),
-                       axis.line.x  = ggplot2::element_blank()) +
-        ggplot2::scale_x_discrete(limits = c("", "", "", "", "", "", ""))
+                       axis.line.x  = ggplot2::element_blank())
 
       equivalenceOneTTestPlot$plotObject <- plot
     }
