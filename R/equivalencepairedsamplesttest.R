@@ -351,12 +351,13 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
 
     namePair <- paste(pair[[1L]], " - ", pair[[2L]], sep = "")
 
+    # TODO: broken because of QML updates -- setting pairs dependencies does not work
     # Check if the plot for this variable was already created previously
-    if (!is.null(equivalencePairedBoundsContainer[[namePair]]))
-       next
+    # if (!is.null(equivalencePairedBoundsContainer[[namePair]]))
+    #    next
 
     equivalencePairedTTestPlot <- createJaspPlot(title = namePair, width = 480, height = 320)
-    equivalencePairedTTestPlot$dependOn(optionContainsValue = list("pairs" = pair))
+    # equivalencePairedTTestPlot$dependOn(optionContainsValue = list("pairs" = pair))
 
     # Get results
     results <- equivalencePairedTTestResults[[namePair]]
