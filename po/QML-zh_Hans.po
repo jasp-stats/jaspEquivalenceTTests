@@ -498,3 +498,7 @@ msgstr "按列表排除个案"
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
 msgstr "等效性 T 检验"
+
+msgctxt "Description|"
+msgid "Classical"
+msgstr ""

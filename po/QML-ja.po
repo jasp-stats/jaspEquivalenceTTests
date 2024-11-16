@@ -498,3 +498,7 @@ msgstr "区間帰無仮説による2つの平均値の差の検定"
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
 msgstr "同等性t検定"
+
+msgctxt "Description|"
+msgid "Classical"
+msgstr ""

@@ -500,3 +500,7 @@ msgstr ""
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
 msgstr "Contrastes T de Equivalencia"
+
+msgctxt "Description|"
+msgid "Classical"
+msgstr ""

@@ -499,3 +499,7 @@ msgstr "Testar a diferença entre duas médias"
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
 msgstr "Testes T de Equivalência"
+
+msgctxt "Description|"
+msgid "Classical"
+msgstr ""

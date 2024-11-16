@@ -499,3 +499,7 @@ msgstr "Excluír casos segundo a lista"
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
 msgstr "Probas T de Equivalencia"
+
+msgctxt "Description|"
+msgid "Classical"
+msgstr ""

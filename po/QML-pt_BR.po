@@ -498,3 +498,7 @@ msgstr ""
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr ""
+
+msgctxt "Description|"
+msgid "Classical"
+msgstr ""
