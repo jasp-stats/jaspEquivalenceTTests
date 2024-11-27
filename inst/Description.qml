@@ -46,7 +46,7 @@ Description
 
 	GroupTitle
 	{
-		title:	qsTr("Classical")
+		title:	qsTr("Bayesian")
 		icon:	"equivalence-module-bayesian.svg"
 	}
 
