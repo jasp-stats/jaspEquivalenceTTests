@@ -503,3 +503,7 @@ msgstr "Testes T de Equivalência"
 msgctxt "Description|"
 msgid "Classical"
 msgstr ""
+
+msgctxt "Description|"
+msgid "Bayesian"
+msgstr ""

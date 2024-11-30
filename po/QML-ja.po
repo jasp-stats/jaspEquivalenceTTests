@@ -502,3 +502,7 @@ msgstr "同等性t検定"
 msgctxt "Description|"
 msgid "Classical"
 msgstr ""
+
+msgctxt "Description|"
+msgid "Bayesian"
+msgstr ""

@@ -504,3 +504,7 @@ msgstr "Contrastes T de Equivalencia"
 msgctxt "Description|"
 msgid "Classical"
 msgstr "Clásico"
+
+msgctxt "Description|"
+msgid "Bayesian"
+msgstr ""

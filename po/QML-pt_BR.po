@@ -502,3 +502,7 @@ msgstr ""
 msgctxt "Description|"
 msgid "Classical"
 msgstr ""
+
+msgctxt "Description|"
+msgid "Bayesian"
+msgstr ""
