@@ -2,145 +2,149 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.19.2\n"
 "POT-Creation-Date: 2024-10-19 03:00\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-01-05 12:56+0000\n"
+"Last-Translator: தமிழ்நேரம் <anishprabu.t@gmail.com>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-r/ta/>\n"
 "Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.10-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
-msgstr ""
+msgstr "நான் %1$s முதல் %2$s வரை இருக்கும்"
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "சமநிலை முன் மற்றும் பின்புறம்"
 
 msgid "Effect size"
-msgstr ""
+msgstr "விளைவு அளவு"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "சமநிலை தொடர்ச்சியான பகுப்பாய்வு"
 
 msgid "Sequential analysis robustness check plot currently not supported for informed prior."
 msgstr ""
+"தொடர்ச்சியான பகுப்பாய்வு வலுவான சோதனை சூழ்ச்சி தற்போது தகவலறிந்த முன் ஆதரிக்கப்படவில்லை."
 
 msgid "n"
-msgstr ""
+msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "மற்றொரு மாறியை வழங்கவும்."
 
 msgid "Variables %1$s and %2$s are the same!"
-msgstr ""
+msgstr "மாறிகள் %1$s மற்றும் %2$s ஆகியவை ஒன்றே!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "சமநிலை பேய்சியன் சுயாதீன மாதிரிகள் டி-சோதனை"
 
 msgid "Model Comparison"
-msgstr ""
+msgstr "மாதிரி ஒப்பீடு"
 
 msgid "BF"
-msgstr ""
+msgstr "பி.எஃப்"
 
 msgid "error %%"
-msgstr ""
+msgstr "பிழை %%"
 
 msgid "Descriptives"
-msgstr ""
+msgstr "விளக்கமான"
 
 msgid "Group"
-msgstr ""
+msgstr "குழு"
 
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgid "Mean"
-msgstr ""
+msgstr "இடை, சராசரி"
 
 msgid "SD"
-msgstr ""
+msgstr "எச்.டி."
 
 msgid "SE"
-msgstr ""
+msgstr "உடன்"
 
 msgid "95%% Credible Interval"
-msgstr ""
+msgstr "95 %% நம்பகமான இடைவெளி"
 
 msgid "Lower"
-msgstr ""
+msgstr "கீழ்"
 
 msgid "Upper"
-msgstr ""
+msgstr "மேல்"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "முன் மற்றும் பின்புற வெகுசன அட்டவணை"
 
 msgid "Section"
-msgstr ""
+msgstr "பிரிவு"
 
 msgid "Mass"
-msgstr ""
+msgstr "நிறை"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "சமநிலை பேய்சியன் ஒரு மாதிரி டி-சோதனை"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "சமநிலை பேய்சியன் இணை மாதிரிகள் டி-சோதனை"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "சமநிலை வெகுசன அட்டவணை"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "சமமான சுயாதீன மாதிரிகள் டி-சோதனை"
 
 msgid "Statistic"
-msgstr ""
+msgstr "புள்ளிவிவரம்"
 
 msgid "t"
-msgstr ""
+msgstr "டி"
 
 msgid "df"
-msgstr ""
+msgstr "டி.எஃப்"
 
 msgid "p"
-msgstr ""
+msgstr "ப"
 
 msgid "T-Test"
-msgstr ""
+msgstr "டி-சோதனை"
 
 msgid "Upper bound"
-msgstr ""
+msgstr "மேல் பிணைப்பு"
 
 msgid "Lower bound"
-msgstr ""
+msgstr "கீழ் எல்லை"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "சமநிலை எல்லைகள்"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "எல்லைகள் வகை"
 
 msgid "Low"
-msgstr ""
+msgstr "குறைந்த"
 
 msgid "High"
-msgstr ""
+msgstr "உயர்ந்த"
 
 msgid "%s%% Confidence Interval"
-msgstr ""
+msgstr "%s %% நம்பிக்கை இடைவெளி"
 
 msgid "Cohen's d"
-msgstr ""
+msgstr "கோஅனின் டி"
 
 msgid "Raw"
-msgstr ""
+msgstr "மூல"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "சமநிலை எல்லைகள்"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "சமநிலை ஒரு மாதிரி டி-சோதனை"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "சமநிலை இணை மாதிரிகள் டி-சோதனை"
