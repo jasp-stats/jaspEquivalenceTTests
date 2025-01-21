@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-01-20 01:53+0000\n"
+"PO-Revision-Date: 2025-01-22 11:01+0000\n"
 "Last-Translator: 陳寬裕 <pf.kuan.yu.chen@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/jasp/jaspequivalencettests-qml/zh_Hant/>\n"
@@ -71,7 +71,7 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Variables"
-msgstr "變數"
+msgstr "變項"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -145,7 +145,7 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
-msgstr "變數"
+msgstr "變項"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
@@ -289,7 +289,7 @@ msgstr ""
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Variables"
-msgstr "變數"
+msgstr "變項"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -371,7 +371,7 @@ msgstr ""
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
-msgstr "變數"
+msgstr "變項"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
