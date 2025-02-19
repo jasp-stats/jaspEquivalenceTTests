@@ -72,8 +72,8 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
     } else {
       tableResults <- try(TOSTER::dataTOSTtwo(data         = dataset,
-                                              deps         = .v(variable),
-                                              group        = .v(options$groupingVariable),
+                                              deps         = variable,
+                                              group        = options$groupingVariable,
                                               var_equal    = options$tests == "students",
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
@@ -88,8 +88,8 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
       } else {
 
-        variableData <- dataset[[ .v(variable) ]]
-        groupingData <- dataset[[ .v(options$groupingVariable) ]]
+        variableData <- dataset[[ variable ]]
+        groupingData <- dataset[[ options$groupingVariable ]]
         ns  <- tapply(variableData, groupingData, function(x) length(na.omit(x)))
 
         confIntEffSize <- c(0, 0)

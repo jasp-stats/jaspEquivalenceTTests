@@ -80,7 +80,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
       results[[namePair]][["status"]] <- "error"
       results[[namePair]][["errorFootnotes"]] <- errorMessage
     } else {
-      subDataSet <- dataset[, .v(c(pair[[1L]], pair[[2L]]))]
+      subDataSet <- dataset[, c(pair[[1L]], pair[[2L]])]
       subDataSet <- subDataSet[complete.cases(subDataSet), ]
 
       x <- subDataSet[[1L]]
@@ -235,7 +235,7 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
 
   for (var in vars) {
 
-    data <- na.omit(dataset[[ .v(var) ]])
+    data <- na.omit(dataset[[ var ]])
     n    <- length(data)
     mean <- mean(data)
     med  <- median(data)

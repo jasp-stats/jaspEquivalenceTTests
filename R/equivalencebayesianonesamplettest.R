@@ -75,7 +75,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
     } else {
 
-      x <- dataset[[.v(variable)]]
+      x <- dataset[[variable]]
       x <- x[!is.na(x)] - options$mu
 
       results[[variable]][["n1"]] <- length(x)
@@ -213,7 +213,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   for (variable in options$variables) {
 
     # Get data of the variable
-    data <- dataset[[.v(variable)]]
+    data <- dataset[[variable]]
 
     n    <- length(data)
     mean <- mean(data)

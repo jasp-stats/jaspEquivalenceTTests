@@ -73,7 +73,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
     } else {
       tableResults <- try(TOSTER::dataTOSTone(data         = dataset,
-                                              vars         = .v(variable),
+                                              vars         = variable,
                                               mu           = options$mu,
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
@@ -89,7 +89,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
       } else {
 
-        dat <- na.omit(dataset[[ .v(variable) ]])
+        dat <- na.omit(dataset[[ variable ]])
         n   <- length(dat)
 
         confIntEffSize <- c(0,0)

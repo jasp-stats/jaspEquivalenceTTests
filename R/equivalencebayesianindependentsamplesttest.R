@@ -63,13 +63,13 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
   results <- list()
 
   group  <- options$groupingVariable
-  levels <- levels(dataset[[.v(group)]])
+  levels <- levels(dataset[[group]])
   g1     <- levels[1L]
   g2     <- levels[2L]
 
-  idxg1  <- dataset[[.v(group)]] == g1
-  idxg2  <- dataset[[.v(group)]] == g2
-  idxNAg <- is.na(dataset[[.v(group)]])
+  idxg1  <- dataset[[group]] == g1
+  idxg2  <- dataset[[group]] == g2
+  idxNAg <- is.na(dataset[[group]])
 
   for (variable in options$variables) {
 
@@ -84,8 +84,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
     } else {
 
       # It is necessary to remove NAs
-      idxNA      <- is.na(dataset[[.v(variable)]]) | idxNAg
-      subDataSet <- dataset[!idxNA, .v(variable)]
+      idxNA      <- is.na(dataset[[variable]]) | idxNAg
+      subDataSet <- dataset[!idxNA, variable]
 
       group1 <- subDataSet[idxg1[!idxNA]]
       group2 <- subDataSet[idxg2[!idxNA]]
@@ -248,7 +248,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
       equivalenceBayesianDescriptivesTable$addRows(list(variable = variable, level = NaN), rowNames = variable)
     } else {
       # Get data of the grouping variable
-      data    <- dataset[[.v(options$groupingVariable)]]
+      data    <- dataset[[options$groupingVariable]]
       levels  <- levels(data)
       nlevels <- length(levels)
 
@@ -256,7 +256,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
         # Get data per level
         level <- levels[i]
-        groupData <- na.omit(dataset[data == level, .v(variable)])
+        groupData <- na.omit(dataset[data == level, variable])
 
         # Calculate descriptives per level
         n                <- length(groupData)

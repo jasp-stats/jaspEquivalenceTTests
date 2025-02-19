@@ -323,7 +323,7 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
 
   for (var in vars) {
 
-    data <- na.omit(dataset[[ .v(var) ]])
+    data <- na.omit(dataset[[ var ]])
     n    <- length(data)
     mean <- mean(data)
     sd   <- sd(data)
