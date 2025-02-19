@@ -82,8 +82,8 @@ EquivalencePairedSamplesTTest <- function(jaspResults, dataset, options) {
       results[[namePair]][["errorFootnotes"]] <- errorMessage
     } else {
       tableResults <- try(TOSTER::dataTOSTpaired(data         = dataset,
-                                                 pair1        = toString(p2),
-                                                 pair2        = toString(p1),
+                                                 pair1        = (p2), # there is a non-standard evaluation - keep the brackets
+                                                 pair2        = (p1), # there is a non-standard evaluation - keep the brackets
                                                  low_eqbound  = options$lowerbound,
                                                  high_eqbound = options$upperbound,
                                                  eqbound_type = switch(options$boundstype, "raw" = "raw", "cohensD" = "SMD"),  # bounds type is raw or cohen's d

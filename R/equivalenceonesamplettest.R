@@ -73,7 +73,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
     } else {
       tableResults <- try(TOSTER::dataTOSTone(data         = dataset,
-                                              vars         = variable,
+                                              vars         = (variable), # there is a non-standard evaluation - keep the brackets
                                               mu           = options$mu,
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
