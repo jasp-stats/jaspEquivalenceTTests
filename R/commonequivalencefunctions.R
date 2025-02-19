@@ -71,7 +71,12 @@ gettextf <- function(fmt, ..., domain = NULL)  {
       # Needed variables
       delta          <- NULL
       nullInterval   <- c(-Inf, Inf)
-      oneSided       <- FALSE
+      oneSided       <- switch(
+        options[["alternative"]],
+        "greater" = "right",
+        "less" = "left",
+        FALSE
+      )
       iterations     <- 10000
       addInformation <- options[["priorandposteriorAdditionalInfo"]]
       t              <- results[["tValue"]]
@@ -86,291 +91,222 @@ gettextf <- function(fmt, ..., domain = NULL)  {
         return()
       }
 
-      if (options[["effectSizeStandardized"]] == "informative") {
+      xlim <- vector("numeric", 2)
+      if (options[["effectSizeStandardized"]] == "default") {
 
-        # Informative prior
-        xlim <- vector("numeric", 2)
-        if (options[["informativeStandardizedEffectSize"]] == "cauchy") {
+        ci99PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
+                                                      n1                 = n1,
+                                                      n2                 = n2,
+                                                      independentSamples = !paired && !is.null(n2),
+                                                      prior.location     = 0,
+                                                      prior.scale        = r,
+                                                      prior.df           = 1,
+                                                      ci                 = .99,
+                                                      oneSided           = oneSided)
 
-          ci99PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
-                                                        n1                 = n1,
-                                                        n2                 = n2,
-                                                        independentSamples = !paired && !is.null(n2),
-                                                        prior.location     = options[["informativeCauchyLocation"]],
-                                                        prior.scale        = options[["informativeCauchyScale"]],
-                                                        prior.df           = 1,
-                                                        ci                 = .99,
-                                                        oneSided           = oneSided)
+        priorLower <- jaspTTests::.qShiftedT(.15, parameters = c(options[["informativeCauchyLocation"]],
+                                                                 options[["informativeCauchyScale"]],
+                                                                 1), oneSided = oneSided)
 
-          priorLower <- jaspTTests::.qShiftedT(.15, parameters = c(options[["informativeCauchyLocation"]],
-                                                       options[["informativeCauchyScale"]],
-                                                       1), oneSided = oneSided)
-
-          priorUpper <- jaspTTests::.qShiftedT(.85, parameters = c(options[["informativeCauchyLocation"]],
-                                                       options[["informativeCauchyScale"]],
-                                                       1), oneSided = oneSided)
-
-          # Compute 95% credible interval & median
-          ci95PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
-                                            n1                 = n1,
-                                            n2                 = n2,
-                                            independentSamples = !paired && !is.null(n2),
-                                            prior.location     = options[["informativeCauchyLocation"]],
-                                            prior.scale        = options[["informativeCauchyScale"]],
-                                            prior.df           = 1,
-                                            ci                 = .95,
-                                            oneSided           = oneSided)
-
-          CIlow <- ci95PlusMedian[["ciLower"]]
-          CIhigh <- ci95PlusMedian[["ciUpper"]]
-          medianPosterior <- ci95PlusMedian[["median"]]
-
-        } else if (options[["informativeStandardizedEffectSize"]] == "t") {
-
-          ci99PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
-                                            n1                 = n1,
-                                            n2                 = n2,
-                                            independentSamples = !paired && !is.null(n2),
-                                            prior.location     = options[["informativeTLocation"]],
-                                            prior.scale        = options[["informativeTScale"]],
-                                            prior.df           = options[["informativeTDf"]],
-                                            ci                 = .99,
-                                            oneSided           = oneSided)
-
-          priorLower <- jaspTTests::.qShiftedT(.15, parameters = c(options[["informativeTLocation"]],
-                                                       options[["informativeTScale"]],
-                                                       options[["informativeTDf"]]),
-                                   oneSided = oneSided)
-
-          priorUpper <- jaspTTests::.qShiftedT(.85, parameters = c(options[["informativeTLocation"]],
-                                                       options[["informativeTScale"]],
-                                                       options[["informativeTDf"]]),
-                                   oneSided = oneSided)
-
-          # Compute 95% credible interval & median
-          ci95PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
-                                            n1                 = n1,
-                                            n2                 = n2,
-                                            independentSamples = !paired && !is.null(n2),
-                                            prior.location     = options[["informativeTLocation"]],
-                                            prior.scale        = options[["informativeTScale"]],
-                                            prior.df           = options[["informativeTDf"]],
-                                            ci                 = .95,
-                                            oneSided           = oneSided)
-
-          CIlow <- ci95PlusMedian[["ciLower"]]
-          CIhigh <- ci95PlusMedian[["ciUpper"]]
-          medianPosterior <- ci95PlusMedian[["median"]]
-
-        } else if (options[["informativeStandardizedEffectSize"]] == "normal") {
-
-          ci99PlusMedian <- jaspTTests::.ciPlusMedian_normal(t                  = t,
-                                                 n1                 = n1,
-                                                 n2                 = n2,
-                                                 independentSamples = !paired && !is.null(n2),
-                                                 prior.mean         = options[["informativeNormalMean"]],
-                                                 prior.variance     = options[["informativeNormalStd"]]^2,
-                                                 ci                 = .99,
-                                                 oneSided           = oneSided)
-
-          priorAreaSmaller0 <- pnorm(0, options[["informativeNormalMean"]], options[["informativeNormalStd"]])
-
-          lowerp <- 0.15
-          upperp <- 0.85
-
-          priorLower <- qnorm(lowerp, options[["informativeNormalMean"]], options[["informativeNormalStd"]])
-          priorUpper <- qnorm(upperp, options[["informativeNormalMean"]], options[["informativeNormalStd"]])
-
-          # Compute 95% credible interval & median
-          ci95PlusMedian <- jaspTTests::.ciPlusMedian_normal(t                  = t,
-                                                 n1                 = n1,
-                                                 n2                 = n2,
-                                                 independentSamples = !paired && !is.null(n2),
-                                                 prior.mean         = options[["informativeNormalMean"]],
-                                                 prior.variance     = options[["informativeNormalStd"]]^2,
-                                                 ci                 = .95,
-                                                 oneSided           = oneSided)
-
-          CIlow <- ci95PlusMedian[["ciLower"]]
-          CIhigh <- ci95PlusMedian[["ciUpper"]]
-          medianPosterior <- ci95PlusMedian[["median"]]
-
-        }
-
-        xlim[1] <- min(-2, ci99PlusMedian[["ciLower"]], priorLower)
-        xlim[2] <- max(2, ci99PlusMedian[["ciUpper"]], priorUpper)
-        xticks <- pretty(xlim)
-
-        ylim <- vector("numeric", 2)
-
-        ylim[1] <- 0
-        dmax1 <- optimize(function(x)jaspTTests::.dposterior_informative(x,
-                                                             t        = t,
-                                                             n1       = n1,
-                                                             n2       = n2,
-                                                             paired   = paired,
-                                                             oneSided = oneSided,
-                                                             options  = options),
-                          interval = range(xticks),
-                          maximum  = TRUE)$objective
-
-        dmax2 <- optimize(function(x)jaspTTests::.dprior_informative(x,
-                                                         oneSided = oneSided,
-                                                         options  = options),
-                          interval = range(xticks),
-                          maximum  = TRUE)$objective
-        dmax <- max(c(dmax1, dmax2))
-
-        xlabels <- formatC(xticks, 1, format = "f")
-
-        # Calculate prior and posterior over the whole range
-        xxx <- seq(min(xticks), max(xticks), length.out = 1000)
-        priorLine <- jaspTTests::.dprior_informative(xxx,
-                                         oneSided = oneSided,
-                                         options  = options)
-
-        posteriorLine <- jaspTTests::.dposterior_informative(xxx,
-                                                 t        = t,
-                                                 n1       = n1,
-                                                 n2       = n2,
-                                                 paired   = paired,
-                                                 oneSided = oneSided,
-                                                 options  = options)
-
-        # Calculate prior and posterior over the interval range
-        # Equivalence bounds
-        if (options$lowerbound == -Inf) {
-          xx <- seq(min(xticks), max(options$upperbound), length.out = 1000)
-        } else if (options$upperbound == Inf) {
-          xx <- seq(min(options$lowerbound), max(xticks), length.out = 1000)
-        } else {
-          xx <- seq(min(options$lowerbound), max(options$upperbound), length.out = 1000)
-        }
-
-        priorInterval <- jaspTTests::.dprior_informative(xx,
-                                             oneSided = oneSided,
-                                             options  = options)
-
-        posteriorInterval <- jaspTTests::.dposterior_informative(xx,
-                                                     t        = t,
-                                                     n1       = n1,
-                                                     n2       = n2,
-                                                     paired   = paired,
-                                                     oneSided = oneSided,
-                                                     options  = options)
-
-        xlim <- c(min(CIlow,range(xticks)[1]), max(range(xticks)[2], CIhigh))
-
-      } else {
-
-        # Sample from delta posterior
-        bfObject <- BayesFactor::meta.ttestBF(t      = t,
-                                              n1     = n1,
-                                              n2     = n2,
-                                              rscale = r)
-
-        samples <- BayesFactor::posterior(model      = bfObject,
-                                          iterations = iterations,
-                                          index      = 1)
-        delta <- samples[,"delta"]
-
-        # fit shifted t distribution
-        if (is.null(n2) || paired) {
-
-          deltaHat <- t * sqrt(1 / n1)
-          N <- n1
-          df <- N - 1
-          sigmaStart <- 1 / N
-
-        } else if (!is.null(n2) && !paired) {
-
-          deltaHat <- t * sqrt((n1 + n2) / (n1 * n2))
-          df <- n1 + n2 - 2
-          sigmaStart <- sqrt((n1 * n2) / (n1 + n2))
-
-        }
-
-        if (sigmaStart < .01)
-          sigmaStart <- .01
-
-        parameters <- try(silent = TRUE,
-                          expr = optim(par = c(deltaHat, sigmaStart, df),
-                                       fn = jaspTTests::.likelihoodShiftedT, data = delta,
-                                       method = "BFGS")$par)
-
-        if (isTryError(parameters)) {
-          parameters <- try(silent = TRUE,
-                            expr = optim(par = c(deltaHat, sigmaStart, df),
-                                         fn = jaspTTests::.likelihoodShiftedT, data = delta,
-                                         method ="Nelder-Mead")$par)
-        }
-
-        # Set limits plot
-        xlim <- vector("numeric", 2)
-        xlim[1] <- min(-2, quantile(delta, probs = 0.01)[[1]])
-        xlim[2] <- max(2, quantile(delta, probs = 0.99)[[1]])
-        xticks <- pretty(xlim)
-        ylim <- vector("numeric", 2)
-        ylim[1] <- 0
-
-        dmax <- optimize(function(x)jaspTTests::.dposteriorShiftedT(x, parameters = parameters,
-                                                        oneSided = oneSided), interval = range(xticks),
-                         maximum = TRUE)$objective
-
-        # Calculate position of "nice" tick marks and create labels
-        xlabels <- formatC(xticks, 1, format= "f")
+        priorUpper <- jaspTTests::.qShiftedT(.85, parameters = c(options[["informativeCauchyLocation"]],
+                                                                 options[["informativeCauchyScale"]],
+                                                                 1), oneSided = oneSided)
 
         # Compute 95% credible interval & median
-        CIlow <- quantile(delta, probs = 0.025)[[1]]
-        CIhigh <- quantile(delta, probs = 0.975)[[1]]
-        medianPosterior <- median(delta)
+        ci95PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
+                                                      n1                 = n1,
+                                                      n2                 = n2,
+                                                      independentSamples = !paired && !is.null(n2),
+                                                      prior.location     = 0,
+                                                      prior.scale        = r,
+                                                      prior.df           = 1,
+                                                      ci                 = .95,
+                                                      oneSided           = oneSided)
 
-        if (any(is.na(c(CIlow, CIhigh, medianPosterior)))) {
-          CIlow <- jaspTTests::.qShiftedT(0.025, parameters, oneSided = FALSE)
-          CIhigh <- jaspTTests::.qShiftedT(0.975, parameters, oneSided = FALSE)
-          medianPosterior <- jaspTTests::.qShiftedT(0.5, parameters, oneSided = FALSE)
-        }
+        CIlow <- ci95PlusMedian[["ciLower"]]
+        CIhigh <- ci95PlusMedian[["ciUpper"]]
+        medianPosterior <- ci95PlusMedian[["median"]]
 
-        # Calculate prior and posterior over the whole range
-        priorLine     <- jaspTTests::.dprior(seq(min(xticks), max(xticks),length.out = 1000), r = r, oneSided = oneSided)
-        posteriorLine <- jaspTTests::.dposteriorShiftedT(x = seq(min(xticks), max(xticks),
-                                                     length.out = 1000), parameters = parameters,
-                                             oneSided = oneSided)
+      } else if (options[["informativeStandardizedEffectSize"]] == "cauchy") {
 
-        # Calculate prior and posterior over the interval range
-        # Equivalence bounds
-        if (options$lowerbound == -Inf) {
-          xx <- seq(min(xticks), max(options$upperbound), length.out = 1000)
-        } else if (options$upperbound == Inf) {
-          xx <- seq(min(options$lowerbound), max(xticks), length.out = 1000)
-        } else {
-          xx <- seq(min(options$lowerbound), max(options$upperbound), length.out = 1000)
-        }
+        ci99PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
+                                                      n1                 = n1,
+                                                      n2                 = n2,
+                                                      independentSamples = !paired && !is.null(n2),
+                                                      prior.location     = options[["informativeCauchyLocation"]],
+                                                      prior.scale        = options[["informativeCauchyScale"]],
+                                                      prior.df           = 1,
+                                                      ci                 = .99,
+                                                      oneSided           = oneSided)
 
-        priorInterval <- jaspTTests::.dprior(x        = xx,
-                                 r        = r,
+        priorLower <- jaspTTests::.qShiftedT(.15, parameters = c(options[["informativeCauchyLocation"]],
+                                                     options[["informativeCauchyScale"]],
+                                                     1), oneSided = oneSided)
+
+        priorUpper <- jaspTTests::.qShiftedT(.85, parameters = c(options[["informativeCauchyLocation"]],
+                                                     options[["informativeCauchyScale"]],
+                                                     1), oneSided = oneSided)
+
+        # Compute 95% credible interval & median
+        ci95PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
+                                          n1                 = n1,
+                                          n2                 = n2,
+                                          independentSamples = !paired && !is.null(n2),
+                                          prior.location     = options[["informativeCauchyLocation"]],
+                                          prior.scale        = options[["informativeCauchyScale"]],
+                                          prior.df           = 1,
+                                          ci                 = .95,
+                                          oneSided           = oneSided)
+
+        CIlow <- ci95PlusMedian[["ciLower"]]
+        CIhigh <- ci95PlusMedian[["ciUpper"]]
+        medianPosterior <- ci95PlusMedian[["median"]]
+
+      } else if (options[["informativeStandardizedEffectSize"]] == "t") {
+
+        ci99PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
+                                          n1                 = n1,
+                                          n2                 = n2,
+                                          independentSamples = !paired && !is.null(n2),
+                                          prior.location     = options[["informativeTLocation"]],
+                                          prior.scale        = options[["informativeTScale"]],
+                                          prior.df           = options[["informativeTDf"]],
+                                          ci                 = .99,
+                                          oneSided           = oneSided)
+
+        priorLower <- jaspTTests::.qShiftedT(.15, parameters = c(options[["informativeTLocation"]],
+                                                     options[["informativeTScale"]],
+                                                     options[["informativeTDf"]]),
                                  oneSided = oneSided)
 
-        posteriorInterval  <- jaspTTests::.dposteriorShiftedT(x          = xx,
-                                                  parameters = parameters,
-                                                  oneSided   = oneSided)
+        priorUpper <- jaspTTests::.qShiftedT(.85, parameters = c(options[["informativeTLocation"]],
+                                                     options[["informativeTScale"]],
+                                                     options[["informativeTDf"]]),
+                                 oneSided = oneSided)
+
+        # Compute 95% credible interval & median
+        ci95PlusMedian <- jaspTTests::.ciPlusMedian_t(t                  = t,
+                                          n1                 = n1,
+                                          n2                 = n2,
+                                          independentSamples = !paired && !is.null(n2),
+                                          prior.location     = options[["informativeTLocation"]],
+                                          prior.scale        = options[["informativeTScale"]],
+                                          prior.df           = options[["informativeTDf"]],
+                                          ci                 = .95,
+                                          oneSided           = oneSided)
+
+        CIlow <- ci95PlusMedian[["ciLower"]]
+        CIhigh <- ci95PlusMedian[["ciUpper"]]
+        medianPosterior <- ci95PlusMedian[["median"]]
+
+      } else if (options[["informativeStandardizedEffectSize"]] == "normal") {
+
+        ci99PlusMedian <- jaspTTests::.ciPlusMedian_normal(t                  = t,
+                                               n1                 = n1,
+                                               n2                 = n2,
+                                               independentSamples = !paired && !is.null(n2),
+                                               prior.mean         = options[["informativeNormalMean"]],
+                                               prior.variance     = options[["informativeNormalStd"]]^2,
+                                               ci                 = .99,
+                                               oneSided           = oneSided)
+
+        priorAreaSmaller0 <- pnorm(0, options[["informativeNormalMean"]], options[["informativeNormalStd"]])
+
+        lowerp <- 0.15
+        upperp <- 0.85
+
+        priorLower <- qnorm(lowerp, options[["informativeNormalMean"]], options[["informativeNormalStd"]])
+        priorUpper <- qnorm(upperp, options[["informativeNormalMean"]], options[["informativeNormalStd"]])
+
+        # Compute 95% credible interval & median
+        ci95PlusMedian <- jaspTTests::.ciPlusMedian_normal(t                  = t,
+                                               n1                 = n1,
+                                               n2                 = n2,
+                                               independentSamples = !paired && !is.null(n2),
+                                               prior.mean         = options[["informativeNormalMean"]],
+                                               prior.variance     = options[["informativeNormalStd"]]^2,
+                                               ci                 = .95,
+                                               oneSided           = oneSided)
+
+        CIlow <- ci95PlusMedian[["ciLower"]]
+        CIhigh <- ci95PlusMedian[["ciUpper"]]
+        medianPosterior <- ci95PlusMedian[["median"]]
 
       }
 
-      if ("effectSizeStandardized" %in% names(options) && options$effectSizeStandardized == "informative") {
-        heightPriorAtZero <- jaspTTests::.dprior_informative(0, oneSided = oneSided, options = options)
-        heightPosteriorAtZero <- jaspTTests::.dposterior_informative(0,
-                                                         t        = t,
-                                                         n1       = n1,
-                                                         n2       = n2,
-                                                         paired   = paired,
-                                                         oneSided = oneSided,
-                                                         options  = options)
+      xlim[1] <- min(-2, ci99PlusMedian[["ciLower"]], priorLower)
+      xlim[2] <- max(2, ci99PlusMedian[["ciUpper"]], priorUpper)
+      xticks <- pretty(xlim)
+
+      ylim <- vector("numeric", 2)
+
+      ylim[1] <- 0
+      dmax1 <- optimize(function(x)jaspTTests::.dposterior_informative(x,
+                                                           t        = t,
+                                                           n1       = n1,
+                                                           n2       = n2,
+                                                           paired   = paired,
+                                                           oneSided = oneSided,
+                                                           options  = options),
+                        interval = range(xticks),
+                        maximum  = TRUE)$objective
+
+      dmax2 <- optimize(function(x)jaspTTests::.dprior_informative(x,
+                                                       oneSided = oneSided,
+                                                       options  = options),
+                        interval = range(xticks),
+                        maximum  = TRUE)$objective
+      dmax <- max(c(dmax1, dmax2))
+
+      xlabels <- formatC(xticks, 1, format = "f")
+
+      # Calculate prior and posterior over the whole range
+      xxx <- seq(min(xticks), max(xticks), length.out = 1000)
+      priorLine <- jaspTTests::.dprior_informative(xxx,
+                                       oneSided = oneSided,
+                                       options  = options)
+
+      posteriorLine <- jaspTTests::.dposterior_informative(xxx,
+                                               t        = t,
+                                               n1       = n1,
+                                               n2       = n2,
+                                               paired   = paired,
+                                               oneSided = oneSided,
+                                               options  = options)
+
+      # Calculate prior and posterior over the interval range
+      # Equivalence bounds
+      if (options$lowerbound == -Inf) {
+        xx <- seq(min(xticks), max(options$upperbound), length.out = 1000)
+      } else if (options$upperbound == Inf) {
+        xx <- seq(min(options$lowerbound), max(xticks), length.out = 1000)
       } else {
-        heightPriorAtZero <- jaspTTests::.dprior(0, r, oneSided = oneSided)
-        heightPosteriorAtZero <- jaspTTests::.dposteriorShiftedT(0, parameters = parameters, oneSided = oneSided)
-
+        xx <- seq(min(options$lowerbound), max(options$upperbound), length.out = 1000)
       }
+
+      priorInterval <- jaspTTests::.dprior_informative(xx,
+                                           oneSided = oneSided,
+                                           options  = options)
+
+      posteriorInterval <- jaspTTests::.dposterior_informative(xx,
+                                                   t        = t,
+                                                   n1       = n1,
+                                                   n2       = n2,
+                                                   paired   = paired,
+                                                   oneSided = oneSided,
+                                                   options  = options)
+
+      xlim <- c(min(CIlow,range(xticks)[1]), max(range(xticks)[2], CIhigh))
+
+
+      heightPriorAtZero <- jaspTTests::.dprior_informative(0, oneSided = oneSided, options = options)
+      heightPosteriorAtZero <- jaspTTests::.dposterior_informative(0,
+                                                                   t        = t,
+                                                                   n1       = n1,
+                                                                   n2       = n2,
+                                                                   paired   = paired,
+                                                                   oneSided = oneSided,
+                                                                   options  = options)
 
       dfLines <- data.frame(
         x = seq(min(xticks), max(xticks), length.out = 1000L),
@@ -444,7 +380,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
   # BF = density in the range of the posterior / density in the range of the prior
 
   # Step 1: Density in the equivalence range of the prior
-  prior <- metaBMA::prior("t", c(location = prior.location, scale = prior.scale, nu = prior.df))
+  prior <- metaBMA::prior("t", c(location = prior.location, scale = prior.scale, nu = prior.df), lower = if (options[["alternative"]] == "greater") 0 else -Inf, upper = if (options[["alternative"]] == "less") 0 else Inf)
   integralEquivalencePrior <- integrate(prior, lower = options$lowerbound, upper = options$upperbound)
   errorEquivalencePrior <- integralEquivalencePrior$abs.error
 
@@ -484,6 +420,14 @@ gettextf <- function(fmt, ..., domain = NULL)  {
     integralEquivalencePosterior = 0
   }
 
+  # Step 2b: re-standardize the posteriors for one-sided tests
+  if (options$alternative == "greater") {
+    integralEquivalencePosterior    <- integralEquivalencePosterior / (1 - lowerbound$value)
+  } else if (options$alternative == "less") {
+    integralEquivalencePosterior    <- integralEquivalencePosterior / (upperbound$value)
+  }
+
+  # Step 2c: Calculate the nonequivalence posterior
   integralNonequivalencePosterior <- 1 - integralEquivalencePosterior
 
   # Step 3: Calculate BF
@@ -503,11 +447,12 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 .equivalence_bf_normal <- function(t, n1, n2, independentSamples, prior.mean, prior.variance, options) {
   # BF_equivalence = density in the range of the posterior / density in the range of the prior
 
-  # Step 1: Density in the range of the prior
-  integralEquivalencePrior <- pnorm(options$upperbound, prior.mean, sqrt(prior.variance)) - pnorm(options$lowerbound, prior.mean, sqrt(prior.variance))
+  # Step 1: Density in the equivalence range of the prior
+  prior <- metaBMA::prior("norm", c(mean = prior.mean, sd = sqrt(prior.variance)), lower = if (options[["alternative"]] == "greater") 0 else -Inf, upper = if (options[["alternative"]] == "less") 0 else Inf)
+  integralEquivalencePrior <- integrate(prior, lower = options$lowerbound, upper = options$upperbound)
+  errorEquivalencePrior <- integralEquivalencePrior$abs.error
 
-  errorEquivalencePrior <- 0
-
+  integralEquivalencePrior <- integralEquivalencePrior$value
   integralNonequivalencePrior <- 1 - integralEquivalencePrior
 
   # Step 2: Density in the equivalence range of the posterior
@@ -530,9 +475,18 @@ gettextf <- function(fmt, ..., domain = NULL)  {
   integralEquivalencePosterior <- upperbound$value - lowerbound$value
 
   # to prevent numerical integration error (value < error)
-  if (integralEquivalencePosterior < 0)
+  if (integralEquivalencePosterior < 0) {
     integralEquivalencePosterior = 0
+  }
 
+  # Step 2b: re-standardize the posteriors for one-sided tests
+  if (options$alternative == "greater") {
+    integralEquivalencePosterior    <- integralEquivalencePosterior / (1 - lowerbound$value)
+  } else if (options$alternative == "less") {
+    integralEquivalencePosterior    <- integralEquivalencePosterior / (upperbound$value)
+  }
+
+  # Step 2c: Calculate the nonequivalence posterior
   integralNonequivalencePosterior <- 1 - integralEquivalencePosterior
 
   # Step 3: Calculate BF
@@ -782,7 +736,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
       obj <- try(.plotEquivalenceSequentialBF.ttest(
         x                   = group1,
         y                   = group2,
-        oneSided            = FALSE,
+        oneSided            = oneSided,
         r                   = options$priorWidth,
         paired              = paired,
         plotDifferentPriors = options[["plotSequentialAnalysisRobustness"]],
@@ -1150,13 +1104,33 @@ gettextf <- function(fmt, ..., domain = NULL)  {
   }
 }
 
+.equivalenceBayesianBoundsDispatch <- function(options) {
+  if(options[["alternative"]] == "twoSided"){
+    if(options[['equivalenceRegion']] == "lower"){
+      options$lowerbound <- -Inf
+      options$upperbound <- options[["lower_max"]]
+    } else if(options[['equivalenceRegion']] == "upper"){
+      options$lowerbound <- options[["upper_min"]]
+      options$upperbound <- Inf
+    }
+  }else if(options[["alternative"]] == "greater"){
+    options$lowerbound <- 0    # use the lower bound the get the standardization probability
+    options$upperbound <- options[["upperbound_greater"]]
+  }else if(options[["alternative"]] == "less"){
+    options$lowerbound <- options[["lowerbound_less"]]
+    options$upperbound <- 0    # use the upper bound the get the standardization probability
+  }
+  return(options)
+}
+
 .equivalenceRegionDependencies <- c(
   "equivalenceRegion",
   "lowerbound", "upperbound",
-  "lower_max", "upper_min"
+  "lower_max", "upper_min",
+  "upperbound_greater", "lowerbound_less"
 )
 .equivalencePriorDependencies  <- c(
-  "effectSize", "effectSizeStandardized", "defaultStandardizedEffectSize", "informativeStandardizedEffectSize",
+  "effectSize", "effectSizeStandardized", "defaultStandardizedEffectSize", "informativeStandardizedEffectSize", "alternative",
   "priorWidth",
   "informativeCauchyLocation", "informativeCauchyScale",
   "informativeNormalMean", "informativeNormalStd",

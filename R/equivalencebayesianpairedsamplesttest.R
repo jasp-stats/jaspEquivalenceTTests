@@ -30,15 +30,10 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
     errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "paired")
   }
 
-  # Compute the results
-  if(options[['equivalenceRegion']] == "lower"){
-    options$lowerbound <- -Inf
-    options$upperbound <- options$lower_max
-  } else if(options[['equivalenceRegion']] == "upper"){
-    options$lowerbound <- options$upper_min
-    options$upperbound <- Inf
-  }
+  # Dispatch bounds options
+  options <- .equivalenceBayesianBoundsDispatch(options)
 
+  # Compute the results
   equivalenceBayesianPairedTTestResults <- .equivalenceBayesianPairedTTestComputeResults(jaspResults, dataset, options, ready, errors)
 
   # Output tables and plots
@@ -131,16 +126,20 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
 
   # Create table
   equivalenceBayesianPairedTTestTable <- createJaspTable(title = gettext("Equivalence Bayesian Paired Samples T-Test"))
-  equivalenceBayesianPairedTTestTable$dependOn(c("pairs", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  equivalenceBayesianPairedTTestTable$dependOn(c("pairs", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies, "bayesFactorType"))
   equivalenceBayesianPairedTTestTable$position <- 1
   equivalenceBayesianPairedTTestTable$showSpecifiedColumnsOnly <- TRUE
+
+  hypothesis <- switch(options[["alternative"]], "twoSided" = "equal", "greater" = "greater", "less" = "smaller")
+  bfTitle <- jaspTTests:::.ttestBayesianGetBFTitle(bfType  = options[["bayesFactorType"]], hypothesis = hypothesis)
 
   # Add Columns to table
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "variable1",   title = " ",                         type = "string")
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "separator",   title = " ",                         type = "separator")
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "variable2",   title = " ",                         type = "string")
+  equivalenceBayesianPairedTTestTable$addColumnInfo(name = "type",        title = gettext("Type"),             type = "string")
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "statistic",   title = gettext("Model Comparison"), type = "string")
-  equivalenceBayesianPairedTTestTable$addColumnInfo(name = "bf",          title = gettext("BF"),               type = "number")
+  equivalenceBayesianPairedTTestTable$addColumnInfo(name = "bf",          title = bfTitle,                     type = "number")
   equivalenceBayesianPairedTTestTable$addColumnInfo(name = "error",       title = gettextf("error %%"),        type = "number")
 
   if (ready)
@@ -174,36 +173,54 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
       equivalenceBayesianPairedTTestTable$addRows(list(variable1 = pair[[1L]], separator = "-", variable2 = pair[[2L]], statistic = NaN), rowNames = namePair)
     } else {
       error_in_alt <- (results$errorPrior + results$errorPosterior) / results$bfEquivalence
+      bfEquivalence <- .recodeBFtype(
+        bfOld     = results$bfEquivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianPairedTTestTable$addRows(list(variable1     = pair[[1L]],
                                                        separator     = "-",
                                                        variable2     = pair[[2L]],
+                                                       type          = gettext("Overlapping (inside vs. all)"),
                                                        statistic     = "\U003B4 \U02208 I vs. H\u2081",
-                                                       bf            = results$bfEquivalence,
+                                                       bf            = bfEquivalence,
                                                        error         = ifelse(error_in_alt == Inf, "NA", error_in_alt)))
 
       error_notin_alt <- (results$errorPrior + results$errorPosterior) / results$bfNonequivalence
+      bfNonequivalence <- .recodeBFtype(
+        bfOld     = results$bfNonequivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianPairedTTestTable$addRows(list(variable1     = " ",
                                                        separator     = " ",
                                                        variable2     = " ",
+                                                       type          = gettext("Overlapping (outside vs. all)"),
                                                        statistic     = "\U003B4 \U02209 I vs. H\u2081",
-                                                       bf            = results$bfNonequivalence,
+                                                       bf            = bfNonequivalence,
                                                        error         = ifelse(error_notin_alt == Inf, "NA", error_notin_alt)))
 
       error_in_notin <- (2*(results$errorPrior + results$errorPosterior)) / (results$bfEquivalence / results$bfNonequivalence)
+      bfNonoverlapping <- .recodeBFtype(
+        bfOld     = results$bfEquivalence / results$bfNonequivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianPairedTTestTable$addRows(list(variable1     = " ",
                                                        separator     = " ",
                                                        variable2     = " ",
+                                                       type          = gettext("Non-overlapping (inside vs. outside)"),
                                                        statistic     = "\U003B4 \U02208 I vs. \U003B4 \U02209 I",
-                                                       bf            = results$bfEquivalence / results$bfNonequivalence,
+                                                       bf            = bfNonoverlapping,
                                                        error         = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
 
-      error_notin_in <- (2*(results$errorPrior + results$errorPosterior)) / (1/(results$bfEquivalence / results$bfNonequivalence))
-      equivalenceBayesianPairedTTestTable$addRows(list(variable1     = " ",
-                                                       separator     = " ",
-                                                       variable2     = " ",
-                                                       statistic     = "\U003B4 \U02209 I vs. \U003B4 \U02208 I",
-                                                       bf            = 1 / (results$bfEquivalence / results$bfNonequivalence),
-                                                       error         = ifelse(error_notin_in == Inf, "NA", error_notin_in)))
+      # error_notin_in <- (2*(results$errorPrior + results$errorPosterior)) / (1/(results$bfEquivalence / results$bfNonequivalence))
+      # equivalenceBayesianPairedTTestTable$addRows(list(variable1     = " ",
+      #                                                  separator     = " ",
+      #                                                  variable2     = " ",
+      #                                                  statistic     = "\U003B4 \U02209 I vs. \U003B4 \U02208 I",
+      #                                                  bf            = 1 / (results$bfEquivalence / results$bfNonequivalence),
+      #                                                  error         = ifelse(error_notin_in == Inf, "NA", error_notin_in)))
     }
   }
 
