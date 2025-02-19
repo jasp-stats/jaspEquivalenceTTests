@@ -309,7 +309,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
   equivalenceMassTable$addColumnInfo(name = "variable",         title = " ",                        type = "string", combine = TRUE)
   equivalenceMassTable$addColumnInfo(name = "section",          title = gettext("Section"),         type = "string")
-  equivalenceMassTable$addColumnInfo(name = "mass",             title = gettext("Mass"),            type = "number")
+  equivalenceMassTable$addColumnInfo(name = "priorMass",        title = gettext("Prior Mass"),      type = "number")
+  equivalenceMassTable$addColumnInfo(name = "posteriorMass",    title = gettext("Posterior Mass"),  type = "number")
 
   equivalenceMassTable$showSpecifiedColumnsOnly <- TRUE
 
@@ -334,24 +335,18 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
     if (!is.null(results$status)) {
       equivalenceMassTable$addFootnote(message = results$errorFootnotes, rowNames = variable, colNames = "mass")
-      equivalenceMassTable$addRows(list(variable = variable, mass = NaN), rowNames = variable)
+      equivalenceMassTable$addRows(list(variable = variable, priorMass = NaN, posteriorMass = NaN), rowNames = variable)
     } else {
 
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02208 I | H\u2081)",
-                                        mass       = results$integralEquivalencePrior))
+      equivalenceMassTable$addRows(list(variable      = variable,
+                                        section       = "\U003B4 \U02208 I",
+                                        priorMass     = results$integralEquivalencePrior,
+                                        posteriorMass = results$integralEquivalencePosterior))
 
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02208 I | H\u2081, data)",
-                                        mass       = results$integralEquivalencePosterior))
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02209 I | H\u2081)",
-                                        mass       = results$integralNonequivalencePrior))
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02209 I | H\u2081, data)",
-                                        mass       = results$integralNonequivalencePosterior))
+      equivalenceMassTable$addRows(list(variable      = variable,
+                                        section       = "\U003B4 \U02209 I",
+                                        priorMass     = results$integralNonequivalencePrior,
+                                        posteriorMass = results$integralNonequivalencePosterior))
     }
   }
   return()

@@ -284,11 +284,12 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
   equivalenceMassPairedTTestTable$showSpecifiedColumnsOnly <- TRUE
 
   # Add Columns to table
-  equivalenceMassPairedTTestTable$addColumnInfo(name = "variable1",   title = " ",                         type = "string")
-  equivalenceMassPairedTTestTable$addColumnInfo(name = "separator",   title = " ",                         type = "separator")
-  equivalenceMassPairedTTestTable$addColumnInfo(name = "variable2",   title = " ",                         type = "string")
-  equivalenceMassPairedTTestTable$addColumnInfo(name = "section",     title = gettext("Section"),          type = "string")
-  equivalenceMassPairedTTestTable$addColumnInfo(name = "mass",        title = gettext("Mass"),             type = "number")
+  equivalenceMassPairedTTestTable$addColumnInfo(name = "variable1",     title = " ",                         type = "string")
+  equivalenceMassPairedTTestTable$addColumnInfo(name = "separator",     title = " ",                         type = "separator")
+  equivalenceMassPairedTTestTable$addColumnInfo(name = "variable2",     title = " ",                         type = "string")
+  equivalenceMassPairedTTestTable$addColumnInfo(name = "section",       title = gettext("Section"),          type = "string")
+  equivalenceMassPairedTTestTable$addColumnInfo(name = "priorMass",     title = gettext("Prior Mass"),       type = "number")
+  equivalenceMassPairedTTestTable$addColumnInfo(name = "posteriorMass", title = gettext("Posterior Mass"),   type = "number")
 
   if (ready)
     equivalenceMassPairedTTestTable$setExpectedSize(length(options$pairs))
@@ -311,31 +312,22 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
 
     if (!is.null(results$status)) {
       equivalenceMassPairedTTestTable$addFootnote(message = results$errorFootnotes, rowNames = namePair, colNames = "mass")
-      equivalenceMassPairedTTestTable$addRows(list(variable1 = pair[[1L]], separator = "-", variable2 = pair[[2L]], mass = NaN), rowNames = namePair)
+      equivalenceMassPairedTTestTable$addRows(list(variable1 = pair[[1L]], separator = "-", variable2 = pair[[2L]], priorMass = NaN, posteriorMass = NaN), rowNames = namePair)
     } else {
       equivalenceMassPairedTTestTable$addRows(list(variable1     = pair[[1L]],
                                                    separator     = "-",
                                                    variable2     = pair[[2L]],
-                                                   section       = "p(\U003B4 \U02208 I | H\u2081)",
-                                                   mass          = results$integralEquivalencePrior))
+                                                   section       = "\U003B4 \U02208 I",
+                                                   priorMass     = results$integralEquivalencePrior,
+                                                   posteriorMass = results$integralEquivalencePosterior))
 
       equivalenceMassPairedTTestTable$addRows(list(variable1     = " ",
                                                    separator     = " ",
                                                    variable2     = " ",
-                                                   section       = "p(\U003B4 \U02208 I | H\u2081, data)",
-                                                   mass          = results$integralEquivalencePosterior))
+                                                   section       = "\U003B4 \U02209 I",
+                                                   priorMass     = results$integralNonequivalencePrior,
+                                                   posteriorMass = results$integralNonequivalencePosterior))
 
-      equivalenceMassPairedTTestTable$addRows(list(variable1     = " ",
-                                                   separator     = " ",
-                                                   variable2     = " ",
-                                                   section       = "p(\U003B4 \U02209 I | H\u2081)",
-                                                   mass          = results$integralNonequivalencePrior))
-
-      equivalenceMassPairedTTestTable$addRows(list(variable1     = " ",
-                                                   separator     = " ",
-                                                   variable2     = " ",
-                                                   section       = "p(\U003B4 \U02209 I | H\u2081, data)",
-                                                   mass          = results$integralNonequivalencePosterior))
     }
   }
 }
