@@ -21,20 +21,19 @@ test_that("Descriptives table results match", {
 test_that("Equivalence Bayesian Independent Samples T-Test table results match", {
   table <- results[["results"]][["equivalenceBayesianIndTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(3.61383711052235, 7.45693549562363e-06, "<unicode> <unicode> I vs. H<unicode>",
-                                      "contNormal", 0.876984556738343, 3.07281924382806e-05, "<unicode> <unicode> I vs. H<unicode>",
-                                      "contNormal", 4.12075341892317, 1.30792345405118e-05, "<unicode> <unicode> I vs. <unicode> <unicode> I",
-                                      "contNormal", 0.242674069117516, 0.000222093364345461, "<unicode> <unicode> I vs. <unicode> <unicode> I",
-                                      "contNormal"))
+                                 list(3.61383711052232, 7.45693541923696e-06, "<unicode> <unicode> I vs. H<unicode>",
+                                      "Overlapping (inside vs. all)", "contNormal", 0.876984556738344,
+                                      3.07281921235097e-05, "<unicode> <unicode> I vs. H<unicode>",
+                                      "Overlapping (outside vs. all)", "contNormal", 4.12075341892314,
+                                      1.3079234406532e-05, "<unicode> <unicode> I vs. <unicode> <unicode> I",
+                                      "Non-overlapping (inside vs. outside)", "contNormal"))
 })
 
-test_that("Prior and Posterior Mass table results match", {
+test_that("Prior and Posterior Mass Table results match", {
   table <- results[["results"]][["equivalenceMassTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(0.0449477788241001, "p(<unicode> <unicode> I | H<unicode>)", "contNormal",
-                                      0.162433951150083, "p(<unicode> <unicode> I | H<unicode>, data)",
-                                      "contNormal", 0.9550522211759, "p(<unicode> <unicode> I | H<unicode>)",
-                                      "contNormal", 0.837566048849917, "p(<unicode> <unicode> I | H<unicode>, data)",
+                                 list(0.162433951150082, 0.0449477788241001, "<unicode> <unicode> I",
+                                      "contNormal", 0.837566048849918, 0.9550522211759, "<unicode> <unicode> I",
                                       "contNormal"))
 })
 

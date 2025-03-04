@@ -24,14 +24,10 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
     errors <- .ttestBayesianGetErrorsPerVariable(dataset, options, "one-sample")
   }
 
+  # Dispatch bounds options
+  options <- .equivalenceBayesianBoundsDispatch(options)
+
   # Compute the results
-  if(options[['equivalenceRegion']] == "lower"){
-    options$lowerbound <- -Inf
-    options$upperbound <- options$lower_max
-  } else if(options[['equivalenceRegion']] == "upper"){
-    options$lowerbound <- options$upper_min
-    options$upperbound <- Inf
-  }
   equivalenceBayesianOneTTestResults <- .equivalenceBayesianOneTTestComputeResults(jaspResults, dataset, options, ready, errors)
 
   # Output tables and plots
@@ -75,7 +71,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
     } else {
 
-      x <- dataset[[.v(variable)]]
+      x <- dataset[[variable]]
       x <- x[!is.na(x)] - options$mu
 
       results[[variable]][["n1"]] <- length(x)
@@ -120,14 +116,18 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
   # Create table
   equivalenceBayesianOneTTestTable <- createJaspTable(title = gettext("Equivalence Bayesian One Sample T-Test"))
-  equivalenceBayesianOneTTestTable$dependOn(c("variables", "groupingVariable", "missingValues", "mu", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  equivalenceBayesianOneTTestTable$dependOn(c("variables", "groupingVariable", "missingValues", "mu", .equivalenceRegionDependencies, .equivalencePriorDependencies, "bayesFactorType"))
   equivalenceBayesianOneTTestTable$position <- 1
   equivalenceBayesianOneTTestTable$showSpecifiedColumnsOnly <- TRUE
 
+  hypothesis <- switch(options[["alternative"]], "twoSided" = "equal", "greater" = "greater", "less" = "smaller")
+  bfTitle <- jaspTTests:::.ttestBayesianGetBFTitle(bfType  = options[["bayesFactorType"]], hypothesis = hypothesis)
+
   # Add Columns to table
   equivalenceBayesianOneTTestTable$addColumnInfo(name = "variable",   title = " ",                          type = "string", combine = TRUE)
+  equivalenceBayesianOneTTestTable$addColumnInfo(name = "type",       title = gettext("Type"),              type = "string")
   equivalenceBayesianOneTTestTable$addColumnInfo(name = "statistic",  title = gettext("Model Comparison"),  type = "string")
-  equivalenceBayesianOneTTestTable$addColumnInfo(name = "bf",         title = gettext("BF"),                type = "number")
+  equivalenceBayesianOneTTestTable$addColumnInfo(name = "bf",         title = bfTitle,                      type = "number")
   equivalenceBayesianOneTTestTable$addColumnInfo(name = "error",      title = gettextf("error %%"),         type = "number")
 
   if (ready)
@@ -160,28 +160,46 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
     } else {
 
       error_in_alt <- (results$errorPrior + results$errorPosterior) / results$bfEquivalence
+      bfEquivalence <- .recodeBFtype(
+        bfOld     = results$bfEquivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-                                                 statistic        = "\U003B4 \U02208 I vs. H\u2081",
-                                                 bf               = results$bfEquivalence,
-                                                 error            = ifelse(error_in_alt == Inf, "NA", error_in_alt)))
+                                                    type          = gettextf("Overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("inside") else gettext("all"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("all")    else gettext("inside")),
+                                                    statistic     = "\U003B4 \U02208 I vs. H\u2081",
+                                                    bf            = bfEquivalence,
+                                                    error         = ifelse(error_in_alt == Inf, "NA", error_in_alt)))
 
       error_notin_alt <- (results$errorPrior + results$errorPosterior) / results$bfNonequivalence
+      bfNonequivalence <- .recodeBFtype(
+        bfOld     = results$bfNonequivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-                                                 statistic        = "\U003B4 \U02209 I vs. H\u2081",
-                                                 bf               = results$bfNonequivalence,
-                                                 error            = ifelse(error_notin_alt == Inf, "NA", error_notin_alt)))
+                                                    type          = gettextf("Overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("outside") else gettext("all"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("all")     else gettext("outside")),
+                                                    statistic     = "\U003B4 \U02209 I vs. H\u2081",
+                                                    bf            = bfNonequivalence,
+                                                    error         = ifelse(error_notin_alt == Inf, "NA", error_notin_alt)))
 
       error_in_notin <- (2*(results$errorPrior + results$errorPosterior)) / (results$bfEquivalence / results$bfNonequivalence)
+      bfNonoverlapping <- .recodeBFtype(
+        bfOld     = results$bfEquivalence / results$bfNonequivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-                                                 statistic        = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
-                                                 bf               = results$bfEquivalence / results$bfNonequivalence,
-                                                 error            = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
-
-      error_notin_in <- (2*(results$errorPrior + results$errorPosterior)) / (1/(results$bfEquivalence / results$bfNonequivalence))
-      equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-                                                 statistic        = "\U003B4 \U02209 I vs. \U003B4 \U02208 I", # non-equivalence vs. equivalence
-                                                 bf               = 1 / (results$bfEquivalence / results$bfNonequivalence),
-                                                 error            = ifelse(error_notin_in == Inf, "NA", error_notin_in)))
+                                                    type          = gettextf("Non-overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("inside")  else gettext("outside"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("outside") else gettext("inside")),
+                                                   statistic      = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
+                                                   bf             = bfNonoverlapping,
+                                                   error          = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
     }
   }
 
@@ -213,7 +231,7 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   for (variable in options$variables) {
 
     # Get data of the variable
-    data <- dataset[[.v(variable)]]
+    data <- dataset[[variable]]
 
     n    <- length(data)
     mean <- mean(data)
@@ -240,9 +258,10 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   equivalenceMassTable$dependOn(c("variables", "mu", "groupingVariable", "missingValues", "massPriorPosterior", .equivalenceRegionDependencies, .equivalencePriorDependencies))
   equivalenceMassTable$position <- 3
 
-  equivalenceMassTable$addColumnInfo(name = "variable",      title = " ",                     type = "string", combine = TRUE)
-  equivalenceMassTable$addColumnInfo(name = "section",       title = gettext("Section"),      type = "string")
-  equivalenceMassTable$addColumnInfo(name = "mass",          title = gettext("Mass"),         type = "number")
+  equivalenceMassTable$addColumnInfo(name = "variable",      title = " ",                       type = "string", combine = TRUE)
+  equivalenceMassTable$addColumnInfo(name = "section",       title = gettext("Section"),        type = "string")
+  equivalenceMassTable$addColumnInfo(name = "priorMass",     title = gettext("Prior Mass"),     type = "number")
+  equivalenceMassTable$addColumnInfo(name = "posteriorMass", title = gettext("Posterior Mass"), type = "number")
 
 
   equivalenceMassTable$showSpecifiedColumnsOnly <- TRUE
@@ -259,33 +278,4 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
 
   return()
 
-}
-
-.equivalenceMassFillTableMain <- function(equivalenceMassTable, dataset, options, equivalenceBayesianOneTTestResults) {
-  for (variable in options$variables) {
-
-    results <- equivalenceBayesianOneTTestResults[[variable]]
-
-    if (!is.null(results$status)) {
-      equivalenceMassTable$addFootnote(message = results$errorFootnotes, rowNames = variable, colNames = "mass")
-      equivalenceMassTable$addRows(list(variable = variable, mass = NaN), rowNames = variable)
-    } else {
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02208 I | H\u2081)",
-                                        mass       = results$integralEquivalencePrior))
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                           section = "p(\U003B4 \U02208 I | H\u2081, data)",
-                                           mass    = results$integralEquivalencePosterior))
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                           section = "p(\U003B4 \U02209 I | H\u2081)",
-                                           mass    = results$integralNonequivalencePrior))
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                           section = "p(\U003B4 \U02209 I | H\u2081, data)",
-                                           mass    = results$integralNonequivalencePosterior))    }
-  }
-  return()
 }

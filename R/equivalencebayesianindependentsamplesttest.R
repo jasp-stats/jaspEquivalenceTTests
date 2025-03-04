@@ -23,14 +23,10 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
     errors  <- .ttestBayesianGetErrorsPerVariable(dataset, options, "independent")
   }
 
+  # Dispatch bounds options
+  options <- .equivalenceBayesianBoundsDispatch(options)
+
   # Compute the results
-  if(options[['equivalenceRegion']] == "lower"){
-    options$lowerbound <- -Inf
-    options$upperbound <- options$lower_max
-  } else if(options[['equivalenceRegion']] == "upper"){
-    options$lowerbound <- options$upper_min
-    options$upperbound <- Inf
-  }
   equivalenceBayesianIndTTestResults <- .equivalenceBayesianIndTTestComputeResults(jaspResults, dataset, options, ready, errors)
 
   # Output tables and plots
@@ -63,13 +59,13 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
   results <- list()
 
   group  <- options$groupingVariable
-  levels <- levels(dataset[[.v(group)]])
+  levels <- levels(dataset[[group]])
   g1     <- levels[1L]
   g2     <- levels[2L]
 
-  idxg1  <- dataset[[.v(group)]] == g1
-  idxg2  <- dataset[[.v(group)]] == g2
-  idxNAg <- is.na(dataset[[.v(group)]])
+  idxg1  <- dataset[[group]] == g1
+  idxg2  <- dataset[[group]] == g2
+  idxNAg <- is.na(dataset[[group]])
 
   for (variable in options$variables) {
 
@@ -84,8 +80,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
     } else {
 
       # It is necessary to remove NAs
-      idxNA      <- is.na(dataset[[.v(variable)]]) | idxNAg
-      subDataSet <- dataset[!idxNA, .v(variable)]
+      idxNA      <- is.na(dataset[[variable]]) | idxNAg
+      subDataSet <- dataset[!idxNA, variable]
 
       group1 <- subDataSet[idxg1[!idxNA]]
       group2 <- subDataSet[idxg2[!idxNA]]
@@ -134,13 +130,17 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
   # Create table
   equivalenceBayesianIndTTestTable <- createJaspTable(title = gettext("Equivalence Bayesian Independent Samples T-Test"))
-  equivalenceBayesianIndTTestTable$dependOn(c("variables", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  equivalenceBayesianIndTTestTable$dependOn(c("variables", "groupingVariable", "missingValues", .equivalenceRegionDependencies, .equivalencePriorDependencies, "bayesFactorType"))
   equivalenceBayesianIndTTestTable$position <- 1
+
+  hypothesis <- switch(options[["alternative"]], "twoSided" = "equal", "greater" = "greater", "less" = "smaller")
+  bfTitle <- jaspTTests:::.ttestBayesianGetBFTitle(bfType  = options[["bayesFactorType"]], hypothesis = hypothesis)
 
   # Add Columns to table
   equivalenceBayesianIndTTestTable$addColumnInfo(name = "variable",   title = " ",                          type = "string", combine = TRUE)
+  equivalenceBayesianIndTTestTable$addColumnInfo(name = "type",       title = gettext("Type"),              type = "string")
   equivalenceBayesianIndTTestTable$addColumnInfo(name = "statistic",  title = gettext("Model Comparison"),  type = "string")
-  equivalenceBayesianIndTTestTable$addColumnInfo(name = "bf",         title = gettext("BF"),                type = "number")
+  equivalenceBayesianIndTTestTable$addColumnInfo(name = "bf",         title = bfTitle,                      type = "number")
   equivalenceBayesianIndTTestTable$addColumnInfo(name = "error",      title = gettextf("error %%"),         type = "number")
 
   equivalenceBayesianIndTTestTable$showSpecifiedColumnsOnly <- TRUE
@@ -174,29 +174,48 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
       equivalenceBayesianIndTTestTable$addRows(list(variable = variable, statistic = NaN), rowNames = variable)
     } else {
 
-      error_in_alt <- (results$errorPrior + results$errorPosterior) / results$bfEquivalence
+      error_in_alt  <- (results$errorPrior + results$errorPosterior) / results$bfEquivalence
+      bfEquivalence <- .recodeBFtype(
+        bfOld     = results$bfEquivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianIndTTestTable$addRows(list(variable      = variable,
+                                                    type          = gettextf("Overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("inside") else gettext("all"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("all")    else gettext("inside")),
                                                     statistic     = "\U003B4 \U02208 I vs. H\u2081",
-                                                    bf            = results$bfEquivalence,
+                                                    bf            = bfEquivalence,
                                                     error         = ifelse(error_in_alt == Inf, "NA", error_in_alt)))
 
-      error_notin_alt <- (results$errorPrior + results$errorPosterior) / results$bfNonequivalence
+      error_notin_alt  <- (results$errorPrior + results$errorPosterior) / results$bfNonequivalence
+      bfNonequivalence <- .recodeBFtype(
+        bfOld     = results$bfNonequivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianIndTTestTable$addRows(list(variable      = variable,
+                                                    type          = gettextf("Overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("outside") else gettext("all"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("all")     else gettext("outside")),
                                                     statistic     = "\U003B4 \U02209 I vs. H\u2081",
-                                                    bf            = results$bfNonequivalence,
+                                                    bf            = bfNonequivalence,
                                                     error         = ifelse(error_notin_alt == Inf, "NA", error_notin_alt)))
 
-      error_in_notin <- (2*(results$errorPrior + results$errorPosterior)) / (results$bfEquivalence / results$bfNonequivalence)
-      equivalenceBayesianIndTTestTable$addRows(list(variable      = variable,
-                                                    statistic     = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
-                                                    bf            = results$bfEquivalence / results$bfNonequivalence,
-                                                    error         = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
 
-      error_notin_in <- (2*(results$errorPrior + results$errorPosterior)) / (1/(results$bfEquivalence / results$bfNonequivalence))
+      error_in_notin <- (2*(results$errorPrior + results$errorPosterior)) / (results$bfEquivalence / results$bfNonequivalence)
+      bfNonoverlapping <- .recodeBFtype(
+        bfOld     = results$bfEquivalence / results$bfNonequivalence,
+        newBFtype = options[["bayesFactorType"]],
+        oldBFtype = "BF10"
+      )
       equivalenceBayesianIndTTestTable$addRows(list(variable      = variable,
-                                                    statistic     = "\U003B4 \U02209 I vs. \U003B4 \U02208 I", # non-equivalence vs. equivalence
-                                                    bf            = 1 / (results$bfEquivalence / results$bfNonequivalence),
-                                                    error         = ifelse(error_notin_in == Inf, "NA", error_notin_in)))
+                                                    type          = gettextf("Non-overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("inside")  else gettext("outside"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("outside") else gettext("inside")),
+                                                    statistic     = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
+                                                    bf            = bfNonoverlapping,
+                                                    error         = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
     }
   }
 
@@ -248,7 +267,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
       equivalenceBayesianDescriptivesTable$addRows(list(variable = variable, level = NaN), rowNames = variable)
     } else {
       # Get data of the grouping variable
-      data    <- dataset[[.v(options$groupingVariable)]]
+      data    <- dataset[[options$groupingVariable]]
       levels  <- levels(data)
       nlevels <- length(levels)
 
@@ -256,7 +275,7 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
         # Get data per level
         level <- levels[i]
-        groupData <- na.omit(dataset[data == level, .v(variable)])
+        groupData <- na.omit(dataset[data == level, variable])
 
         # Calculate descriptives per level
         n                <- length(groupData)
@@ -290,7 +309,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
   equivalenceMassTable$addColumnInfo(name = "variable",         title = " ",                        type = "string", combine = TRUE)
   equivalenceMassTable$addColumnInfo(name = "section",          title = gettext("Section"),         type = "string")
-  equivalenceMassTable$addColumnInfo(name = "mass",             title = gettext("Mass"),            type = "number")
+  equivalenceMassTable$addColumnInfo(name = "priorMass",        title = gettext("Prior Mass"),      type = "number")
+  equivalenceMassTable$addColumnInfo(name = "posteriorMass",    title = gettext("Posterior Mass"),  type = "number")
 
   equivalenceMassTable$showSpecifiedColumnsOnly <- TRUE
 
@@ -315,24 +335,18 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
 
     if (!is.null(results$status)) {
       equivalenceMassTable$addFootnote(message = results$errorFootnotes, rowNames = variable, colNames = "mass")
-      equivalenceMassTable$addRows(list(variable = variable, mass = NaN), rowNames = variable)
+      equivalenceMassTable$addRows(list(variable = variable, priorMass = NaN, posteriorMass = NaN), rowNames = variable)
     } else {
 
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02208 I | H\u2081)",
-                                        mass       = results$integralEquivalencePrior))
+      equivalenceMassTable$addRows(list(variable      = variable,
+                                        section       = "\U003B4 \U02208 I",
+                                        priorMass     = results$integralEquivalencePrior,
+                                        posteriorMass = results$integralEquivalencePosterior))
 
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02208 I | H\u2081, data)",
-                                        mass       = results$integralEquivalencePosterior))
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02209 I | H\u2081)",
-                                        mass       = results$integralNonequivalencePrior))
-
-      equivalenceMassTable$addRows(list(variable   = variable,
-                                        section    = "p(\U003B4 \U02209 I | H\u2081, data)",
-                                        mass       = results$integralNonequivalencePosterior))
+      equivalenceMassTable$addRows(list(variable      = variable,
+                                        section       = "\U003B4 \U02209 I",
+                                        priorMass     = results$integralNonequivalencePrior,
+                                        posteriorMass = results$integralNonequivalencePosterior))
     }
   }
   return()

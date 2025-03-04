@@ -71,9 +71,10 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
       results[[variable]][["errorFootnotes"]] <- errorMessage
 
     } else {
+
       tableResults <- try(TOSTER::dataTOSTtwo(data         = dataset,
-                                              deps         = .v(variable),
-                                              group        = .v(options$groupingVariable),
+                                              deps         = (variable),                 # there is a non-standard evaluation - keep the brackets
+                                              group        = (options$groupingVariable), # there is a non-standard evaluation - keep the brackets
                                               var_equal    = options$tests == "students",
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
@@ -88,8 +89,8 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
 
       } else {
 
-        variableData <- dataset[[ .v(variable) ]]
-        groupingData <- dataset[[ .v(options$groupingVariable) ]]
+        variableData <- dataset[[ variable ]]
+        groupingData <- dataset[[ options$groupingVariable ]]
         ns  <- tapply(variableData, groupingData, function(x) length(na.omit(x)))
 
         confIntEffSize <- c(0, 0)

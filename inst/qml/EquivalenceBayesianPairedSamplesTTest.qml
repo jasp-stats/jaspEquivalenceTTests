@@ -43,6 +43,7 @@ Form
             columns: 3
             rowSpacing: jaspTheme.rowGroupSpacing
             columnSpacing: 0
+            visible: alternative.value === "twoSided"
 
             RadioButton { value: "region"; checked: true; id: region }
             DoubleField { name: "lowerbound"; label: qsTr("from")	; max: upperbound.value; defaultValue: -0.05; id: lowerbound; negativeValues: true; inclusive: JASP.None}
@@ -56,6 +57,28 @@ Form
             DoubleField { name: "upper_min"; label: qsTr("from"); id: upper_min; defaultValue: -0.05; negativeValues: true}
             Label		  { text: qsTr("to %1").arg(" ∞ "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
          }
+
+        GridLayout
+        {
+            columns: 2
+            rowSpacing: jaspTheme.rowGroupSpacing
+            columnSpacing: 0
+            visible: alternative.value === "greater"
+
+            Label		{ text: qsTr("from %1").arg(" 0 ")}
+            DoubleField { name: "upperbound_greater"; label: qsTr("to")	; min: 0; defaultValue: 0.05; negativeValues: false; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+        }
+
+        GridLayout
+        {
+            columns: 2
+            rowSpacing: jaspTheme.rowGroupSpacing
+            columnSpacing: 0
+            visible: alternative.value === "less"
+
+            DoubleField { name: "lowerbound_less"; label: qsTr("from")	; max: 0; defaultValue: -0.05; negativeValues: true; inclusive: JASP.None}
+            Label		{ text: qsTr("to %1").arg(" 0 "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
+        }
      }
 
      Group
@@ -64,6 +87,16 @@ Form
          CheckBox { name: "descriptives";					text: qsTr("Descriptives")	}
          CheckBox { name: "massPriorPosterior";              text: qsTr("Prior and posterior mass") }
      }
+
+    RadioButtonGroup
+	{
+		name:   "alternative"
+		title:  qsTr("Alternative Hypothesis")
+        id:     alternative
+		RadioButton { value: "twoSided";	label: qsTr("Measure 1 ≠ Measure 2");   checked: true	}
+		RadioButton { value: "greater"; 	label: qsTr("Measure 1 > Measure 2")					}
+		RadioButton { value: "less";	    label: qsTr("Measure 1 < Measure 2")					}
+	}
 
      Group
      {
@@ -80,6 +113,8 @@ Form
               CheckBox { name: "plotSequentialAnalysisRobustness";		label: qsTr("Robustness check") }
           }
      }
+
+    BayesFactorType { }
 
      RadioButtonGroup
      {

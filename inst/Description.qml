@@ -52,24 +52,24 @@ Description
 
 	Analysis
 	{
-		title:	qsTr("Equivalence Bayesian Independent Samples T-Test")
-		menu:	qsTr("Bayesian Independent Samples T-Test")
+		title:	qsTr("Bayesian Equivalence Independent Samples T-Test")
+		menu:	qsTr("Independent Samples T-Test")
 		qml:	"EquivalenceBayesianIndependentSamplesTTest.qml"
 		func:	"EquivalenceBayesianIndependentSamplesTTest"
 	}
 
 	Analysis
 	{
-		title:	qsTr("Equivalence Bayesian Paired Samples T-Test")
-		menu:	qsTr("Bayesian Paired Samples T-Test")
+		title:	qsTr("Bayesian Equivalence Paired Samples T-Test")
+		menu:	qsTr("Paired Samples T-Test")
 		qml:	"EquivalenceBayesianPairedSamplesTTest.qml"
 		func:	"EquivalenceBayesianPairedSamplesTTest"
 	}
 
 	Analysis
 	{
-		title:	qsTr("Equivalence Bayesian One Sample T-Test")
-		menu:	qsTr("Bayesian One Sample T-Test")
+		title:	qsTr("Bayesian Equivalence One Sample T-Test")
+		menu:	qsTr("One Sample T-Test")
 		qml:	"EquivalenceBayesianOneSampleTTest.qml"
 		func:	"EquivalenceBayesianOneSampleTTest"
 	}
