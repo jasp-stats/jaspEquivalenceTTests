@@ -30,7 +30,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 .equivalencePriorandPosterior <- function(jaspResults, dataset, options, equivalenceBayesianTTestResults, ready, paired = FALSE) {
 
   equivalencePriorPosteriorContainer <- createJaspContainer(title = gettext("Equivalence Prior and Posterior"))
-  equivalencePriorPosteriorContainer$dependOn(c("priorandposterior", "priorandposteriorAdditionalInfo", "missingValues", .equivalencePriorDependencies))
+  equivalencePriorPosteriorContainer$dependOn(c("variables", "pairs", "groupingVariable", "missingValues", "mu", "priorandposterior", "priorandposteriorAdditionalInfo", .equivalenceRegionDependencies, .equivalencePriorDependencies))
   equivalencePriorPosteriorContainer$position <- 4
 
   jaspResults[["equivalencePriorPosteriorContainer"]] <- equivalencePriorPosteriorContainer
@@ -647,7 +647,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 .equivalencePlotSequentialAnalysis <- function(jaspResults, dataset, options, equivalenceBayesianTTestResults, ready, paired = FALSE) {
 
   equivalenceSequentialContainer <- createJaspContainer(title = gettext("Equivalence Sequential Analysis"))
-  equivalenceSequentialContainer$dependOn(c("missingValues", "effectSizeStandardized", .equivalenceRegionDependencies, .equivalencePriorDependencies, "plotSequentialAnalysis", "plotSequentialAnalysisRobustness"))
+  equivalenceSequentialContainer$dependOn(c("variables", "pairs", "groupingVariable", "missingValues", "effectSizeStandardized", "plotSequentialAnalysis", "plotSequentialAnalysisRobustness", .equivalenceRegionDependencies, .equivalencePriorDependencies))
   equivalenceSequentialContainer$position <- 5
 
   jaspResults[["equivalenceSequentialContainer"]] <- equivalenceSequentialContainer
