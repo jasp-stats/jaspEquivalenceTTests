@@ -166,7 +166,9 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
         oldBFtype = "BF10"
       )
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-                                                    type          = gettext("Overlapping (inside vs. all)"),
+                                                    type          = gettextf("Overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("inside") else gettext("all"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("all")    else gettext("inside")),
                                                     statistic     = "\U003B4 \U02208 I vs. H\u2081",
                                                     bf            = bfEquivalence,
                                                     error         = ifelse(error_in_alt == Inf, "NA", error_in_alt)))
@@ -178,7 +180,9 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
         oldBFtype = "BF10"
       )
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-                                                    type          = gettext("Overlapping (outside vs. all)"),
+                                                    type          = gettextf("Overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("outside") else gettext("all"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("all")     else gettext("outside")),
                                                     statistic     = "\U003B4 \U02209 I vs. H\u2081",
                                                     bf            = bfNonequivalence,
                                                     error         = ifelse(error_notin_alt == Inf, "NA", error_notin_alt)))
@@ -190,16 +194,12 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
         oldBFtype = "BF10"
       )
       equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-                                                   type           = gettext("Non-overlapping (inside vs. outside)"),
+                                                    type          = gettextf("Non-overlapping (%1$s vs. %2$s)",
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("inside")  else gettext("outside"),
+                                                                             if (options[["bayesFactorType"]] %in% c("BF10", "LogBF10")) gettext("outside") else gettext("inside")),
                                                    statistic      = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
                                                    bf             = bfNonoverlapping,
                                                    error          = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
-
-      # error_notin_in <- (2*(results$errorPrior + results$errorPosterior)) / (1/(results$bfEquivalence / results$bfNonequivalence))
-      # equivalenceBayesianOneTTestTable$addRows(list(variable      = variable,
-      #                                            statistic        = "\U003B4 \U02209 I vs. \U003B4 \U02208 I", # non-equivalence vs. equivalence
-      #                                            bf               = 1 / (results$bfEquivalence / results$bfNonequivalence),
-      #                                            error            = ifelse(error_notin_in == Inf, "NA", error_notin_in)))
     }
   }
 
