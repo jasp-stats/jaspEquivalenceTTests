@@ -23,21 +23,19 @@ test_that("Equivalence Bayesian Paired Samples T-Test table results match", {
   table <- results[["results"]][["equivalenceBayesianPairedTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
                                  list(2.76007174511518, 2.71359624686912e-06, "-", "<unicode> <unicode> I vs. H<unicode>",
-                                      "contNormal", "contGamma", 0.0108203255834508, 0.000692189922647916,
-                                      " ", "<unicode> <unicode> I vs. H<unicode>", " ", " ", 255.08213443564,
+                                      "Overlapping (inside vs. all)", "contNormal", "contGamma", 0.0108203255834508,
+                                      0.000692189922647916, " ", "<unicode> <unicode> I vs. H<unicode>",
+                                      "Overlapping (outside vs. all)", " ", " ", 255.08213443564,
                                       5.87239897863078e-08, " ", "<unicode> <unicode> I vs. <unicode> <unicode> I",
-                                      " ", " ", 0.00392030591327952, 0.00382098769550796, " ", "<unicode> <unicode> I vs. <unicode> <unicode> I",
-                                      " ", " "))
+                                      "Non-overlapping (inside vs. outside)", " ", " "))
 })
 
-test_that("Prior and Posterior Mass table results match", {
+test_that("Equivalence Mass Table results match", {
   table <- results[["results"]][["equivalenceMassPairedTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(0.359799641236534, "p(<unicode> <unicode> I | H<unicode>)", "-",
-                                      "contNormal", "contGamma", 0.993072823679537, "p(<unicode> <unicode> I | H<unicode>, data)",
-                                      " ", " ", " ", 0.640200358763466, "p(<unicode> <unicode> I | H<unicode>)",
-                                      " ", " ", " ", 0.00692717632046269, "p(<unicode> <unicode> I | H<unicode>, data)",
-                                      " ", " ", " "))
+                                 list(0.993072823679537, 0.359799641236534, "<unicode> <unicode> I",
+                                      "-", "contNormal", "contGamma", 0.00692717632046269, 0.640200358763466,
+                                      "<unicode> <unicode> I", " ", " ", " "))
 })
 
 test_that("contNormal - contGamma plot matches", {
