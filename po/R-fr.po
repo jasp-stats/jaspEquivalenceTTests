@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
-"POT-Creation-Date: 2024-03-02 02:50\n"
+"POT-Creation-Date: 2025-03-08 02:50\n"
 "PO-Revision-Date: 2024-05-19 20:45+0000\n"
 "Last-Translator: robachowyk <kaya.robach@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/jasp/"
@@ -44,14 +44,20 @@ msgstr ""
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr ""
 
+msgid "Type"
+msgstr ""
+
 msgid "Model Comparison"
 msgstr "Comparaison du modèle"
 
-msgid "BF"
-msgstr ""
-
 msgid "error %%"
 msgstr "erreur %%"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr ""
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr ""
 
 msgid "Descriptives"
 msgstr "Statistiques descriptives"
@@ -86,8 +92,12 @@ msgstr "Table Statistiques pour le Prior et le Postérieur"
 msgid "Section"
 msgstr "Section"
 
-msgid "Mass"
+msgid "Prior Mass"
 msgstr ""
+
+#, fuzzy
+msgid "Posterior Mass"
+msgstr "Table Statistiques pour le Prior et le Postérieur"
 
 msgid "Equivalence Bayesian One Sample T-Test"
 msgstr ""

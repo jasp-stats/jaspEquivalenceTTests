@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2024-03-02 02:50\n"
+"POT-Creation-Date: 2025-03-08 02:50\n"
 "PO-Revision-Date: 2022-08-28 23:21+0000\n"
 "Last-Translator: Laura Durans <lauraadurans@gmail.com>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
@@ -48,15 +48,21 @@ msgstr "As variáveis %1$s e %2$s são as mesmas!"
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Teste T de Amostras Independentes Bayesianas de Equivalência"
 
+msgid "Type"
+msgstr ""
+
 msgid "Model Comparison"
 msgstr "Comparação de Modelo"
-
-msgid "BF"
-msgstr ""
 
 #, fuzzy
 msgid "error %%"
 msgstr "erro %"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr ""
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr ""
 
 msgid "Descriptives"
 msgstr "Descritivas"
@@ -91,8 +97,12 @@ msgstr "Tabela de massa anterior e posterior"
 msgid "Section"
 msgstr "Seção"
 
-msgid "Mass"
-msgstr "Massa"
+msgid "Prior Mass"
+msgstr ""
+
+#, fuzzy
+msgid "Posterior Mass"
+msgstr "Tabela de massa anterior e posterior"
 
 msgid "Equivalence Bayesian One Sample T-Test"
 msgstr "Teste T Bayesiano de Equivalência de Amostra Única"
@@ -156,3 +166,6 @@ msgstr "Teste T de Equivalência de Amostra Única"
 
 msgid "Equivalence Paired Samples T-Test"
 msgstr "Teste T de Equivalência de Amostras Dependentes"
+
+#~ msgid "Mass"
+#~ msgstr "Massa"

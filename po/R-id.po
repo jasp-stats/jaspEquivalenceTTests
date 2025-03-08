@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
-"POT-Creation-Date: 2024-03-02 02:50\n"
+"POT-Creation-Date: 2025-03-08 02:50\n"
 "PO-Revision-Date: 2022-02-17 15:13+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/jasp/"
@@ -42,15 +42,21 @@ msgstr "Variabel %1$s dan %2$s sama!"
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Uji-t Sampel Independen Bayesian Setara"
 
+msgid "Type"
+msgstr ""
+
 msgid "Model Comparison"
 msgstr "Perbandingan Model"
-
-msgid "BF"
-msgstr "BF"
 
 #, fuzzy
 msgid "error %%"
 msgstr "galat %"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr ""
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr ""
 
 msgid "Descriptives"
 msgstr "Deskriptif"
@@ -85,7 +91,10 @@ msgstr ""
 msgid "Section"
 msgstr "Bagian"
 
-msgid "Mass"
+msgid "Prior Mass"
+msgstr ""
+
+msgid "Posterior Mass"
 msgstr ""
 
 msgid "Equivalence Bayesian One Sample T-Test"
@@ -150,3 +159,6 @@ msgstr ""
 
 msgid "Equivalence Paired Samples T-Test"
 msgstr ""
+
+#~ msgid "BF"
+#~ msgstr "BF"

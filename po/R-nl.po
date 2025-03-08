@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2024-03-02 02:50\n"
+"POT-Creation-Date: 2025-03-08 02:50\n"
 "PO-Revision-Date: 2024-05-23 21:57+0000\n"
 "Last-Translator: Koen Derks <koen-derks@hotmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/jasp/"
@@ -45,14 +45,20 @@ msgstr "Variabelen %1$s en %2$s zijn hetzelfde!"
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Gelijkwaardigheid Bayesiaanse T-Toets Onafhankelijke Steekproeven"
 
+msgid "Type"
+msgstr ""
+
 msgid "Model Comparison"
 msgstr "Model Vergelijking"
 
-msgid "BF"
-msgstr "BF"
-
 msgid "error %%"
 msgstr "fout %%"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr ""
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr ""
 
 msgid "Descriptives"
 msgstr "Beschrijvende statistiek"
@@ -87,8 +93,12 @@ msgstr "Prior en Posterior Massa Tabel"
 msgid "Section"
 msgstr "Sectie"
 
-msgid "Mass"
-msgstr "Massa"
+msgid "Prior Mass"
+msgstr ""
+
+#, fuzzy
+msgid "Posterior Mass"
+msgstr "Prior en Posterior Massa Tabel"
 
 msgid "Equivalence Bayesian One Sample T-Test"
 msgstr "Gelijkwaardigheid Bayesiaanse T-Toets voor Eén Gemiddelde"
@@ -152,3 +162,9 @@ msgstr "Gelijkwaardigheid T-Toets voor Eén Gemiddelde"
 
 msgid "Equivalence Paired Samples T-Test"
 msgstr "Gelijkwaardigheid Gepaarde T-Toets"
+
+#~ msgid "BF"
+#~ msgstr "BF"
+
+#~ msgid "Mass"
+#~ msgstr "Massa"

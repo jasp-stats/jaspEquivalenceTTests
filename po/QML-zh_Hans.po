@@ -35,30 +35,6 @@ msgctxt "Description|"
 msgid "One Sample T-Test"
 msgstr "单样本 T 检验"
 
-msgctxt "Description|"
-msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr "贝叶斯独立样本的等效T检验"
-
-msgctxt "Description|"
-msgid "Bayesian Independent Samples T-Test"
-msgstr "贝叶斯独立样本T 检验"
-
-msgctxt "Description|"
-msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr "等效性贝叶斯配对样本 T 检验"
-
-msgctxt "Description|"
-msgid "Bayesian Paired Samples T-Test"
-msgstr "贝叶斯配对样本T检验"
-
-msgctxt "Description|"
-msgid "Equivalence Bayesian One Sample T-Test"
-msgstr "等效性贝叶斯单样本 T 检验"
-
-msgctxt "Description|"
-msgid "Bayesian One Sample T-Test"
-msgstr "贝叶斯单样本 T 检验"
-
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Variables"
 msgstr "变量"
@@ -506,3 +482,63 @@ msgstr "经典"
 msgctxt "Description|"
 msgid "Bayesian"
 msgstr "贝叶斯"
+
+msgctxt "Description|"
+msgid "Bayesian Equivalence Independent Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Bayesian Equivalence Paired Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Bayesian Equivalence One Sample T-Test"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Alternative Hypothesis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 ≠ Group 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 > Group 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 < Group 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Alternative Hypothesis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "≠ Test value"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "> Test value"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "< Test value"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Alternative Hypothesis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 ≠ Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 > Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 < Measure 2"
+msgstr ""

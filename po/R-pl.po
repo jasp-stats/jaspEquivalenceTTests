@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.17.0\n"
-"POT-Creation-Date: 2024-03-02 02:50\n"
+"POT-Creation-Date: 2025-03-08 02:50\n"
 "PO-Revision-Date: 2024-03-07 09:01+0000\n"
 "Last-Translator: Tomasz Misiuro <tomaszmisiuro@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/jasp/"
@@ -45,14 +45,20 @@ msgstr "Zmienne %1$s i %2$s są takie same!"
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Bayesowski test równoważności dla prób niezależnych"
 
+msgid "Type"
+msgstr ""
+
 msgid "Model Comparison"
 msgstr "Porównanie modeli"
 
-msgid "BF"
-msgstr "BF"
-
 msgid "error %%"
 msgstr "błąd %%"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr ""
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr ""
 
 msgid "Descriptives"
 msgstr "Statystyki opisowe"
@@ -87,8 +93,12 @@ msgstr "Tabela masy a priori i a posteriori"
 msgid "Section"
 msgstr "Sekcja"
 
-msgid "Mass"
-msgstr "Masa"
+msgid "Prior Mass"
+msgstr ""
+
+#, fuzzy
+msgid "Posterior Mass"
+msgstr "Tabela masy a priori i a posteriori"
 
 msgid "Equivalence Bayesian One Sample T-Test"
 msgstr "Bayesowski test równoważności dla jednej próby"
@@ -152,3 +162,9 @@ msgstr "Test równoważności dla jednej próby"
 
 msgid "Equivalence Paired Samples T-Test"
 msgstr "Test równoważności dla prób zależnych"
+
+#~ msgid "BF"
+#~ msgstr "BF"
+
+#~ msgid "Mass"
+#~ msgstr "Masa"

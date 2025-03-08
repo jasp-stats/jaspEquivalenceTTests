@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2024-03-02 02:50\n"
+"POT-Creation-Date: 2025-03-08 02:50\n"
 "PO-Revision-Date: 2024-09-28 11:51+0000\n"
 "Last-Translator: ecadrian <ecadrian@hotmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/jasp/"
@@ -52,14 +52,20 @@ msgstr "As variables %1$s e %2$s son as mesmas!"
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Proba T baiesiana de Equivalencia para Mostras Independentes"
 
+msgid "Type"
+msgstr ""
+
 msgid "Model Comparison"
 msgstr "Cotexo de Modelos"
 
-msgid "BF"
-msgstr "FB"
-
 msgid "error %%"
 msgstr "fallo %%"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr ""
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr ""
 
 msgid "Descriptives"
 msgstr "Descritivos"
@@ -94,8 +100,12 @@ msgstr "Táboa de Masa Previa e Posterior"
 msgid "Section"
 msgstr "Sección"
 
-msgid "Mass"
-msgstr "Masa"
+msgid "Prior Mass"
+msgstr ""
+
+#, fuzzy
+msgid "Posterior Mass"
+msgstr "Táboa de Masa Previa e Posterior"
 
 msgid "Equivalence Bayesian One Sample T-Test"
 msgstr "Proba T baiesiana de Equivalencia para Unha Mostra"
@@ -159,3 +169,9 @@ msgstr "Proba T de Equivalencia para Unha Mostra"
 
 msgid "Equivalence Paired Samples T-Test"
 msgstr "Proba T de Equivalencia para Mostras Emparelladas"
+
+#~ msgid "BF"
+#~ msgstr "FB"
+
+#~ msgid "Mass"
+#~ msgstr "Masa"

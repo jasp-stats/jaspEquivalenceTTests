@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.1.0\n"
-"POT-Creation-Date: 2024-03-02 02:50\n"
+"POT-Creation-Date: 2025-03-08 02:50\n"
 "PO-Revision-Date: 2024-07-02 16:09+0000\n"
 "Last-Translator: Koji Kosugi <kosugitti@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/jasp/"
@@ -44,14 +44,20 @@ msgstr "変数 %1$s と %2$s は同じです!"
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "同等性ベイジアン独立サンプルのt検定"
 
+msgid "Type"
+msgstr ""
+
 msgid "Model Comparison"
 msgstr "モデル比較"
 
-msgid "BF"
-msgstr "BF"
-
 msgid "error %%"
 msgstr "エラー %%"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr ""
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr ""
 
 msgid "Descriptives"
 msgstr "記述統計量"
@@ -86,8 +92,12 @@ msgstr "事前と事後の質量テーブル"
 msgid "Section"
 msgstr "セクション"
 
-msgid "Mass"
-msgstr "質量"
+msgid "Prior Mass"
+msgstr ""
+
+#, fuzzy
+msgid "Posterior Mass"
+msgstr "事前と事後の質量テーブル"
 
 msgid "Equivalence Bayesian One Sample T-Test"
 msgstr "同等性ベイジアン1標本のt検定"
@@ -151,3 +161,9 @@ msgstr "同等性1サンプルのt検定"
 
 msgid "Equivalence Paired Samples T-Test"
 msgstr "同等性対応のある標本のt検定"
+
+#~ msgid "BF"
+#~ msgstr "BF"
+
+#~ msgid "Mass"
+#~ msgstr "質量"

@@ -33,18 +33,6 @@ msgid "Bounds specification in"
 msgstr "Especificación de límites en"
 
 msgctxt "Description|"
-msgid "Equivalence Bayesian One Sample T-Test"
-msgstr "Proba T baiesiana de Equivalencia para Unha Mostra"
-
-msgctxt "Description|"
-msgid "Bayesian One Sample T-Test"
-msgstr "Proba T baiesiana para Unha Mostra"
-
-msgctxt "Description|"
-msgid "Bayesian Independent Samples T-Test"
-msgstr "Proba T baiesiana para Mostras Independentes"
-
-msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
 msgstr "Proba T de Equivalencia para Mostras Emparelladas"
 
@@ -53,24 +41,12 @@ msgid "Equivalence One Sample T-Test"
 msgstr "Proba T de Equivalencia para Unha Mostra"
 
 msgctxt "Description|"
-msgid "Bayesian Paired Samples T-Test"
-msgstr "Proba T baiesiana para Mostras Emparelladas"
-
-msgctxt "Description|"
-msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr "Proba T baiesiana de Equivalencia para Mostras Independentes"
-
-msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
 msgstr "Proba T de Equivalencia para Mostras Independentes"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
 msgstr "Proba T dunha mostra"
-
-msgctxt "Description|"
-msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr "Proba T baiesiana de Equivalencia para Mostras Emparelladas"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
@@ -507,3 +483,63 @@ msgstr "Clásico"
 msgctxt "Description|"
 msgid "Bayesian"
 msgstr "Baiesiano"
+
+msgctxt "Description|"
+msgid "Bayesian Equivalence Independent Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Bayesian Equivalence Paired Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Bayesian Equivalence One Sample T-Test"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Alternative Hypothesis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 ≠ Group 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 > Group 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 < Group 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Alternative Hypothesis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "≠ Test value"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "> Test value"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "< Test value"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Alternative Hypothesis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 ≠ Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 > Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 < Measure 2"
+msgstr ""
