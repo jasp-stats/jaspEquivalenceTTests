@@ -14,7 +14,7 @@ The equivalence independent samples t-test allows the user to test the null hypo
 ---
 
 #### Assignment Box
-- Variables: In this box the dependent variable is selected.
+- Dependent Variables: In this box the dependent variable is selected.
 - Grouping Variable: In this box the variable defining the groups is selected.
 
 #### Equivalence region

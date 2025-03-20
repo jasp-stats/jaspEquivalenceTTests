@@ -12,7 +12,7 @@ Met de gelijkwaardigheids Beyeisaanse gepaarde t-toets kan de gebruiker de nulhy
 ---
 
 #### Invoerveld
-- Variabelen: In deze box zijn de variabelen geselecteerd waarvoor het verschil is berekend. Meerdere verschillen kunnen tegelijkertijd worden geanalyseerd door het specificeren van verschillende rijen met twee variabelen waarvoor het verschil is berekend. Met andere woorden, iedere rij geeft andere verschilscores weer.
+- Variabele Paren: In deze box zijn de variabelen geselecteerd waarvoor het verschil is berekend. Meerdere verschillen kunnen tegelijkertijd worden geanalyseerd door het specificeren van verschillende rijen met twee variabelen waarvoor het verschil is berekend. Met andere woorden, iedere rij geeft andere verschilscores weer.
 
 #### Gelijkwaardigheids regio
 - van ... tot ... : Bepaalt de gelijkwaardigheids regio door de boven- en ondergrens te specificeren.

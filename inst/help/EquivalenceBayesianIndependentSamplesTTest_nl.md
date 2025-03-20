@@ -14,7 +14,7 @@ Met de gelijkwaardigheids t-toets voor onafhankelijke steekproeven kan de gebrui
 ---
 
 #### Invul veld
-- Variabelen: In deze box wordt de afhankelijke variabele geselecteerd.
+- Afhankelijke Variabelen: In deze box wordt de afhankelijke variabele geselecteerd.
 - Groeperende Variabele: In deze box wordt de variabele die de groepen definieert geselecteerd.
 
 #### Gelijkwaardigheids regio

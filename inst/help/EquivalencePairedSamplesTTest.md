@@ -11,7 +11,7 @@ The equivalence paired samples t-test allows the user to test the null hypothesi
 ### Input
 -------
 #### Assignment Box
-- Variables: In this box the variables are selected for which the difference is computed. Multiple differences can be analysed at the same time by specifying different rows with two variables for which the difference is computed. In other words, each row represents other difference scores.
+- Variable Pairs: In this box the variables are selected for which the difference is computed. Multiple differences can be analysed at the same time by specifying different rows with two variables for which the difference is computed. In other words, each row represents other difference scores.
 
 #### Equivalence region
 - Upper bound: The upper bound of the equivalence region.

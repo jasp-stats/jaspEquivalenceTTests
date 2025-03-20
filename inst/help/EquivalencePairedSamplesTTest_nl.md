@@ -11,7 +11,7 @@ Met de gelijkwaardigheids gepaarde t-toets kan de gebruiker de nul hypothese toe
 ### Invoer
 -------
 #### Invoerveld
-- Variabelen: In deze box zijn de variabelen geselecteerd waarvoor het verschil is berekend. Meerdere verschillen kunnen tegelijkertijd worden geanalyseerd door het specificeren van verschillende rijen met twee variabelen waarvoor het verschil is berekend. Met andere woorden, iedere rij geeft andere verschilscores weer.
+- Variabele Paren: In deze box zijn de variabelen geselecteerd waarvoor het verschil is berekend. Meerdere verschillen kunnen tegelijkertijd worden geanalyseerd door het specificeren van verschillende rijen met twee variabelen waarvoor het verschil is berekend. Met andere woorden, iedere rij geeft andere verschilscores weer.
 
 #### Gelijkwaardigheids regio
 - Bovengrens: De bovengrens van de gelijkswaardigheids regio.
