@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-03-19 23:04+0000\n"
+"PO-Revision-Date: 2025-03-20 12:54+0000\n"
 "Last-Translator: Uğur ÇELİK <prof_ugur@hotmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-qml/tr/>\n"
@@ -43,11 +43,11 @@ msgstr "Değişkenler"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr ""
+msgstr "Gruplama Değişkeni"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Eşdeğerlik Bölgesi"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
@@ -60,7 +60,7 @@ msgstr "ile"
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "%1'den itibaren"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
