@@ -40,10 +40,6 @@ msgid "One Sample T-Test"
 msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Variables"
-msgstr ""
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr ""
 
@@ -193,10 +189,6 @@ msgid "Exclude cases listwise"
 msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr ""
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
@@ -265,10 +257,6 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Variables"
 msgstr ""
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
@@ -424,10 +412,6 @@ msgid "Exclude cases listwise"
 msgstr ""
 
 msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr ""
-
-msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr ""
 
@@ -557,4 +541,20 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable Pairs"
 msgstr ""

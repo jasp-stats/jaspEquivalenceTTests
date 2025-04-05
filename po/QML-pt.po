@@ -9,10 +9,6 @@ msgstr ""
 "X-Qt-Contexts: true\n"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Variáveis"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr "Variável de Agrupamento"
 
@@ -105,10 +101,6 @@ msgid "Exclude cases listwise"
 msgstr "Exclusão listwise de casos"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Variáveis pareadas"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "Região de equivalência"
 
@@ -147,10 +139,6 @@ msgstr "Valores ausentes"
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "Exclusão listwise de casos"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Variáveis"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -231,10 +219,6 @@ msgstr "Valores ausentes"
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
 msgstr "Exclusão listwise"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Variáveis pareadas"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
@@ -542,4 +526,20 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable Pairs"
 msgstr ""

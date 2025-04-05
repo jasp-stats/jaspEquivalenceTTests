@@ -32,10 +32,6 @@ msgid "One Sample T-Test"
 msgstr "1標本のt検定"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "変数"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr "グループ化変数"
 
@@ -180,10 +176,6 @@ msgid "Exclude cases listwise"
 msgstr "ケースをリストワイズで除外"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "変数ペア"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "同等性領域"
 
@@ -248,10 +240,6 @@ msgstr "従属変数ごとにケースを除外する"
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "ケースをリストワイズで除外"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "変数"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -402,10 +390,6 @@ msgid "Exclude cases listwise"
 msgstr "ケースをリストワイズで除外"
 
 msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "変数ペア"
-
-msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "同等性領域"
 
@@ -541,4 +525,20 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable Pairs"
 msgstr ""

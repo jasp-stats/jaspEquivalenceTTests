@@ -61,10 +61,6 @@ msgid "Test the difference between two means with an interval-null hypothesis"
 msgstr "Probar a diferenza entre dúas medias cunha hipótese de intervalo nulo"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Variables"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr "Variable de Agrupamento"
 
@@ -209,10 +205,6 @@ msgid "Exclude cases listwise"
 msgstr "Excluír casos segundo a lista"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Pares de variables"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "Rexión de Equivalencia"
 
@@ -273,10 +265,6 @@ msgstr "Excluír casos segundo a variable dependente"
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "Excluír casos segundo a lista"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Variables"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -427,10 +415,6 @@ msgid "Exclude cases listwise"
 msgstr "Excluír casos segundo a lista"
 
 msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Pares de variables"
-
-msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
 msgstr "desde"
 
@@ -543,3 +527,19 @@ msgstr "Medida 1 > Medida 2"
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
 msgstr "Medida 1 < Medida 2"
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""

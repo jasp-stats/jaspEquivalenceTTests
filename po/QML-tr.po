@@ -32,10 +32,6 @@ msgid "One Sample T-Test"
 msgstr "Tek Örneklem T-Testi"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Değişkenler"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr "Gruplama Değişkeni"
 
@@ -182,10 +178,6 @@ msgid "Exclude cases listwise"
 msgstr "Vakaları liste bazında hariç tut"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Değişken çiftler"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "Eşdeğerlik Bölgesi"
 
@@ -250,10 +242,6 @@ msgstr "Bağımlı değişkene göre vakaları hariç tut"
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "Vakaları liste bazında hariç tut"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Değişkenler"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -405,10 +393,6 @@ msgid "Exclude cases listwise"
 msgstr "Vakaları liste bazında hariç tut"
 
 msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Değişken çiftleri"
-
-msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "Eşdeğerlik Bölgesi"
 
@@ -545,3 +529,19 @@ msgstr "Ölçüm 1 > Ölçüm 2"
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
 msgstr "Ölçüm 1 < Ölçüm 2"
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""

@@ -33,10 +33,6 @@ msgid "One Sample T-Test"
 msgstr "Test t dla jednej próby"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Zmienne"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr "Zmienna grupująca"
 
@@ -181,10 +177,6 @@ msgid "Exclude cases listwise"
 msgstr "Wyklucz obserwacje ze wszystkich analiz"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Pary zmiennych"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "Przedział równoważności"
 
@@ -249,10 +241,6 @@ msgstr "Sprawdzaj oddzielnie dla każdej analizy"
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "Wyklucz obserwacje ze wszystkich analiz"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Variables"
-msgstr "Zmienne"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -403,10 +391,6 @@ msgid "Exclude cases listwise"
 msgstr "Wyklucz obserwacje ze wszystkich analiz"
 
 msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Variable pairs"
-msgstr "Pary zmiennych"
-
-msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "Przedział równoważności"
 
@@ -544,4 +528,20 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable Pairs"
 msgstr ""
