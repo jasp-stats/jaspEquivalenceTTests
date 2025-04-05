@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.19.2\n"
 "POT-Creation-Date: 2025-03-08 02:50\n"
-"PO-Revision-Date: 2025-03-28 12:20+0000\n"
+"PO-Revision-Date: 2025-03-31 02:01+0000\n"
 "Last-Translator: Marko Bojović <bojovicmarko@outlook.com>\n"
 "Language-Team: Serbian <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/sr/>\n"
@@ -10,60 +10,62 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.11-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
 msgstr "I се креће од %1$s до %2$s"
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "Еквивалентност претходне и постериорне"
 
 msgid "Effect size"
-msgstr ""
+msgstr "Величина ефекта"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "Еквивалентност секвенцијалне анализе"
 
 msgid "Sequential analysis robustness check plot currently not supported for informed prior."
 msgstr ""
+"Графикон провере робусности секвенцијалне анализе тренутно није подржан за "
+"постављени претходни услов."
 
 msgid "n"
 msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "Наведите другу варијаблу."
 
 msgid "Variables %1$s and %2$s are the same!"
-msgstr ""
+msgstr "Варијабле %1$s и %2$s су исте!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Еквивалентност Бајесовог t-теста за независне узорке"
 
 msgid "Type"
-msgstr ""
+msgstr "Тип"
 
 msgid "Model Comparison"
-msgstr ""
+msgstr "Поређење модела"
 
 msgid "error %%"
-msgstr ""
+msgstr "грешка %%"
 
 msgid "Overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "Преклапање (%1$s vs. %2$s)"
 
 msgid "Non-overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "Непреклапање (%1$s vs. %2$s)"
 
 msgid "Descriptives"
-msgstr ""
+msgstr "Дескриптивна статистика"
 
 msgid "Group"
-msgstr ""
+msgstr "Група"
 
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgid "Mean"
 msgstr "Аритметичка средина"
@@ -75,7 +77,7 @@ msgid "SE"
 msgstr "SE"
 
 msgid "95%% Credible Interval"
-msgstr ""
+msgstr "95%% Веродостојан интервал"
 
 msgid "Lower"
 msgstr "Ниже"
@@ -84,28 +86,28 @@ msgid "Upper"
 msgstr "Горњи"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "Претходна и задња масена табела"
 
 msgid "Section"
-msgstr ""
+msgstr "Секција"
 
 msgid "Prior Mass"
-msgstr ""
+msgstr "Претходна маса"
 
 msgid "Posterior Mass"
-msgstr ""
+msgstr "Задња маса"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Еквивалентност Бајесов Т-тест са једним узорком"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Т-тест еквиваленције Баиесиан упарених узорака"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "Табела еквивалентних маса"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Т-тест за независне узорке еквиваленције"
 
 msgid "Statistic"
 msgstr "Статистика"
@@ -114,40 +116,40 @@ msgid "t"
 msgstr "t"
 
 msgid "df"
-msgstr ""
+msgstr "df"
 
 msgid "p"
 msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "T-тест"
 
 msgid "Upper bound"
-msgstr ""
+msgstr "Горња граница"
 
 msgid "Lower bound"
-msgstr ""
+msgstr "Доња граница"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "Границе еквиваленције"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "Врста граница"
 
 msgid "Low"
-msgstr ""
+msgstr "Ниско"
 
 msgid "High"
-msgstr ""
+msgstr "Високо"
 
 msgid "%s%% Confidence Interval"
-msgstr ""
+msgstr "%s%% Интервал поузданости"
 
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgid "Raw"
-msgstr ""
+msgstr "Сирово"
 
 msgid "Equivalence Bounds Plots"
 msgstr ""
