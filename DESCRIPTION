@@ -15,7 +15,8 @@ Imports:
   jaspBase,
   jaspGraphs,
   metaBMA,
-  TOSTER, 
+  TOSTER,
+  knitr, 
   jaspTTests
 Remotes:
   jasp-stats/jaspBase,

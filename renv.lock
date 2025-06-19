@@ -503,6 +503,14 @@
         "R"
       ]
     },
+    "evaluate": {
+      "Package": "evaluate",
+      "Version": "1.0.4",
+      "Source": "Repository",
+      "Requirements": [
+        "R"
+      ]
+    },
     "farver": {
       "Package": "farver",
       "Version": "2.1.2",
@@ -653,6 +661,15 @@
         "stats"
       ]
     },
+    "highr": {
+      "Package": "highr",
+      "Version": "0.11",
+      "Source": "Repository",
+      "Requirements": [
+        "R",
+        "xfun"
+      ]
+    },
     "htmltools": {
       "Package": "htmltools",
       "Version": "0.5.8.1",
@@ -767,7 +784,7 @@
       "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspTTests",
-      "RemoteSha": "20f0d01bc746315bca1338db9b5dea289bd58548"
+      "RemoteSha": "c9e02c959c16dd3e0c2b3c41c35d9c98eeab50da"
     },
     "jmvcore": {
       "Package": "jmvcore",
@@ -787,6 +804,20 @@
       "Source": "Repository",
       "Requirements": [
         "methods"
+      ]
+    },
+    "knitr": {
+      "Package": "knitr",
+      "Version": "1.50",
+      "Source": "Repository",
+      "Requirements": [
+        "evaluate",
+        "highr",
+        "methods",
+        "R",
+        "tools",
+        "xfun",
+        "yaml"
       ]
     },
     "labeling": {
@@ -1484,6 +1515,17 @@
         "R"
       ]
     },
+    "xfun": {
+      "Package": "xfun",
+      "Version": "0.52",
+      "Source": "Repository",
+      "Requirements": [
+        "grDevices",
+        "R",
+        "stats",
+        "tools"
+      ]
+    },
     "xml2": {
       "Package": "xml2",
       "Version": "1.3.8",
@@ -1494,6 +1536,12 @@
         "R",
         "rlang"
       ]
+    },
+    "yaml": {
+      "Package": "yaml",
+      "Version": "2.3.10",
+      "Source": "Repository",
+      "Requirements": []
     },
     "zip": {
       "Package": "zip",
