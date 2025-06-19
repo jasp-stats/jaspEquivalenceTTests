@@ -6,7 +6,7 @@ Description
 	title:			qsTr("Equivalence T-Tests")
 	name:			"jaspEquivalenceTTests"
 	description:	qsTr("Test the difference between two means with an interval-null hypothesis")
-	version			: "0.20.0"
+	version			: "0.95.0"
 	author:			"Jill de Ron"
 	maintainer:		"Jill de Ron <jillderon93@gmail.com>"
 	website:		"https://jasp-stats.org"
