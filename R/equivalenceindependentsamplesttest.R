@@ -124,7 +124,7 @@ EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
             lowCohen    = tableResults$eqb$asDF$`low[cohen]`,
             highCohen   = tableResults$eqb$asDF$`high[cohen]`,
             cilCohen    = tableResults$effsize$asDF$`cil[cohen]`,
-            ciuCohen    = tableResults$effsize$asDF$`ciu[raw]`,
+            ciuCohen    = tableResults$effsize$asDF$`ciu[cohen]`,
             lowRaw      = tableResults$eqb$asDF$`low[raw]`,
             highRaw     = tableResults$eqb$asDF$`high[raw]`,
             cilRaw      = tableResults$effsize$asDF$`cil[raw]`,
