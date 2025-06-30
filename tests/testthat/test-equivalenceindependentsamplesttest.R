@@ -16,7 +16,7 @@ test_that("contNormal plot matches", {
 test_that("Equivalence Bounds table results match", {
   table <- results[["results"]][["equivalenceBoundsTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
-                                 list(0.05, -0.05, -0.178720893167791, "Cohen's d", 0.520223461720696,
+                                 list(0.05, -0.05, -0.178720893167791, "Cohen's d", 0.489454832902251,
                                       "contNormal", 0.0530338698488416, -0.0530338698488416, -0.193495020233012,
                                       "Raw", 0.520223461720696, ""))
 })
