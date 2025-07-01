@@ -106,7 +106,7 @@ msgstr "Sprawdzaj oddzielnie dla każdej analizy"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr "Wyklucz obserwacje"
+msgstr "Wyklucz przypadki"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
@@ -180,7 +180,7 @@ msgstr "Sprawdzaj oddzielnie dla każdej analizy"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr "Wyklucz obserwacje"
+msgstr "Wyklucz przypadki"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
@@ -246,7 +246,7 @@ msgstr "Sprawdzaj oddzielnie dla każdej analizy"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr "Wyklucz obserwacje"
+msgstr "Wyklucz przypadki"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -324,7 +324,7 @@ msgstr "Sprawdzaj oddzielnie dla każdej analizy"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr "Wyklucz obserwacje"
+msgstr "Wyklucz przypadki"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
@@ -394,7 +394,7 @@ msgstr "Sprawdzaj oddzielnie dla każdej analizy"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr "Wyklucz obserwacje"
+msgstr "Wyklucz przypadki"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
@@ -456,7 +456,7 @@ msgstr "Sprawdzaj oddzielnie dla każdej analizy"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr "Wyklucz obserwacje"
+msgstr "Wyklucz przypadki"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
