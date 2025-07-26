@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2025-07-24 09:07+0000\n"
+"Last-Translator: Ertuğrul Uyar <ertugruluyar.academic@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/tr/>\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.13-dev\n"
 "X-Language: tr\n"
 "X-Qt-Contexts: true\n"
 
@@ -41,7 +47,7 @@ msgstr "Eşdeğerlik Bölgesi"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
-msgstr "itibaren"
+msgstr "'den"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to"
@@ -50,7 +56,7 @@ msgstr "ile"
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from %1"
-msgstr "%1'den itibaren"
+msgstr "%1'den"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
@@ -113,20 +119,18 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
 msgstr "Eşdeğerlik Bölgesi"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
-msgstr "itibaren"
+msgstr "'den"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to"
-msgstr "ile"
+msgstr "'e"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from %1"
-msgstr "%1'den itibaren"
+msgstr "%1'den"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
@@ -171,7 +175,7 @@ msgstr "Eksik Değerler"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr "Bağımlı değişkene göre vakaları hariç tut"
+msgstr "Bağımlı değişken başına vakaları hariç tut"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases listwise"
@@ -183,16 +187,16 @@ msgstr "Eşdeğerlik Bölgesi"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
-msgstr "itibaren"
+msgstr "'den"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to"
-msgstr "ile"
+msgstr "'e"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from %1"
-msgstr "%1'den itibaren"
+msgstr "%1'den"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
@@ -237,7 +241,7 @@ msgstr "Eksik Değerler"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr "Bağımlı değişkene göre vakaları hariç tut"
+msgstr "Bağımlı değişken başına vakaları hariç tut"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
@@ -277,16 +281,16 @@ msgstr "Eşdeğerlik Bölgesi"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
-msgstr "itibaren"
+msgstr "'den"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to"
-msgstr "ile"
+msgstr "'e"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from %1"
-msgstr "%1'den itibaren"
+msgstr "%1'den"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
@@ -299,7 +303,7 @@ msgstr "Sınır belirtimi içinde"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr "Cohen d"
+msgstr "Cohen'in d"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
@@ -315,7 +319,7 @@ msgstr "Eksik Değerler"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr "Bağımlı değişkene göre vakaları hariç tut"
+msgstr "Bağımlı değişken başına vakaları hariç tut"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
@@ -347,16 +351,16 @@ msgstr "Eşdeğerlik Bölgesi"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
-msgstr "itibaren"
+msgstr "'den"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to"
-msgstr "ile"
+msgstr "'e"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from %1"
-msgstr "%1'den itibaren"
+msgstr "%1'den"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
@@ -365,11 +369,11 @@ msgstr "%1'e"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr "Şartname sınırları"
+msgstr "Sınır belirtimi içinde"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
-msgstr "Cohen d"
+msgstr "Cohen'in d"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Raw"
@@ -385,7 +389,7 @@ msgstr "Eksik Değerler"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr "Bağımlı değişkene göre vakaları hariç tut"
+msgstr "Bağımlı değişken başına vakaları hariç tut"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
@@ -397,16 +401,16 @@ msgstr "Eşdeğerlik Bölgesi"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
-msgstr "itibaren"
+msgstr "'den"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to"
-msgstr "ile"
+msgstr "'e"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from %1"
-msgstr "%1'den itibaren"
+msgstr "%1'den"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
@@ -415,11 +419,11 @@ msgstr "%1'e"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr "Şartname sınırları"
+msgstr "Sınır belirtimi içinde"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr "Cohen d"
+msgstr "Cohen'in d"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
@@ -447,7 +451,7 @@ msgstr "Eksik Değerler"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr "Bağımlı değişkene göre vakaları hariç tut"
+msgstr "Bağımlı değişken başına vakaları hariç tut"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
@@ -483,7 +487,7 @@ msgstr "Bayes Eşdeğerliği Tek Örneklem T-Testi"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr "Alternatif hipotez"
+msgstr "Alternatif Hipotez"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 ≠ Group 2"
@@ -499,7 +503,7 @@ msgstr "Grup 1 < Grup 2"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Alternative Hypothesis"
-msgstr "Alternatif hipotez"
+msgstr "Alternatif Hipotez"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "≠ Test value"
@@ -515,7 +519,7 @@ msgstr "<Test değeri"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr "Alternatif hipotez"
+msgstr "Alternatif Hipotez"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 ≠ Measure 2"
