@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-08-05 14:01+0000\n"
+"PO-Revision-Date: 2025-08-08 17:01+0000\n"
 "Last-Translator: Wendel Paulo Silvestre <wpsilvestre@ucs.br>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-qml/pt/>\n"
@@ -476,76 +476,76 @@ msgstr "Bayesiano"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Teste t de Equivalência para Amostras Independentes Bayesiano"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Teste t de Equivalência para Amostras Pareadas Bayesiano"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Teste t de Equivalência para uma Amostra Bayesiano"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "Hipótese Alternativa"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 ≠ Group 2"
-msgstr ""
+msgstr "Grupo 1 ≠ Grupo 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 > Group 2"
-msgstr ""
+msgstr "Grupo 1 > Grupo 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 < Group 2"
-msgstr ""
+msgstr "Grupo 1 < Grupo 2"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "Hipótese Alternativa"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "≠ Test value"
-msgstr ""
+msgstr "≠ valor de teste"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "> Test value"
-msgstr ""
+msgstr "> valor de teste"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "< Test value"
-msgstr ""
+msgstr "< valor de teste"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "Hipótese Alternativa"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 ≠ Measure 2"
-msgstr ""
+msgstr "Medida 1 ≠ Medida 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 > Measure 2"
-msgstr ""
+msgstr "Medida 1 > Medida 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
-msgstr ""
+msgstr "Medida 1 < Medida 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "Variáveis Dependentes"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "Pares de Variáveis"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "Variáveis Dependentes"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "Pares de Variáveis"
