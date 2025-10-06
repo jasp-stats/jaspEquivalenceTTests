@@ -2,155 +2,159 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.95.0\n"
 "POT-Creation-Date: 2025-06-21 03:13\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-10-07 22:02+0000\n"
+"Last-Translator: Hamza Yalçin <h.yalcin08@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-r/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
-msgstr ""
+msgstr "I aralığı %1$s ile %2$s arasındadır"
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "Eşdeğerlik Önsel ve Sonsal Dağılım"
 
 msgid "Effect size"
-msgstr ""
+msgstr "Etki büyüklüğü"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "Eşdeğerlik Sıralı Analizi"
 
 msgid "Sequential analysis robustness check plot currently not supported for informed prior."
 msgstr ""
+"Bilgilendirilmiş önsel dağılım için sıralı analiz sağlamlık kontrol grafiği "
+"şu anda desteklenmiyor."
 
 msgid "n"
-msgstr ""
+msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "Lütfen başka bir değişken seçin."
 
 msgid "Variables %1$s and %2$s are the same!"
-msgstr ""
+msgstr "%1$s ve %2$s değişkenleri aynı!"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "Eşdeğerlik Bayesçi Bağımsız Örneklemler T-Testi"
 
 msgid "Type"
-msgstr ""
+msgstr "Tip"
 
 msgid "Model Comparison"
-msgstr ""
+msgstr "Model Karşılaştırması"
 
 msgid "error %%"
-msgstr ""
+msgstr "hata %%"
 
 msgid "Overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "Örtüşen (%1$s - %2$s)"
 
 msgid "Non-overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "Örtüşmeyen (%1$s - %2$s)"
 
 msgid "Descriptives"
-msgstr ""
+msgstr "Betimsel İstatistikler"
 
 msgid "Group"
-msgstr ""
+msgstr "Grup"
 
 msgid "N"
-msgstr ""
+msgstr "N"
 
 msgid "Mean"
-msgstr ""
+msgstr "Ortalama"
 
 msgid "SD"
-msgstr ""
+msgstr "SS"
 
 msgid "SE"
-msgstr ""
+msgstr "SH"
 
 msgid "95%% Credible Interval"
-msgstr ""
+msgstr "%%95 Güvenilir Aralık"
 
 msgid "Lower"
-msgstr ""
+msgstr "Alt"
 
 msgid "Upper"
-msgstr ""
+msgstr "Üst"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "Önsel ve Sonsal Kütle Tablosu"
 
 msgid "Section"
-msgstr ""
+msgstr "Bölüm"
 
 msgid "Prior Mass"
-msgstr ""
+msgstr "Önsel Kütle"
 
 msgid "Posterior Mass"
-msgstr ""
+msgstr "Sonsal Kütle"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Eşdeğerlik Bayesçi Tek Örneklem T-Testi"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Eşdeğerlik Bayesçi Bağımlı Örneklemler T-Testi"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "Eşdeğerlik Kütle Tablosu"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Eşdeğerlik Bağımsız Örneklemler T-Testi"
 
 msgid "Statistic"
-msgstr ""
+msgstr "İstatistik"
 
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgid "df"
-msgstr ""
+msgstr "sd"
 
 msgid "p"
-msgstr ""
+msgstr "p"
 
 msgid "T-Test"
-msgstr ""
+msgstr "T-Testi"
 
 msgid "Upper bound"
-msgstr ""
+msgstr "Üst sınır"
 
 msgid "Lower bound"
-msgstr ""
+msgstr "Alt sınır"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "Eşdeğerlik Sınırları"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "Sınır türü"
 
 msgid "Low"
-msgstr ""
+msgstr "Düşük"
 
 msgid "High"
-msgstr ""
+msgstr "Yüksek"
 
 msgid "%s%% Confidence Interval"
-msgstr ""
+msgstr "%%%s Güven Aralığı"
 
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgid "Raw"
-msgstr ""
+msgstr "Ham"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "Eşdeğerlik Sınırları Grafikleri"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Eşdeğerlik Tek Örneklem T-Testi"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Eşdeğerlik Bağımlı Örneklemler T-Testi"
