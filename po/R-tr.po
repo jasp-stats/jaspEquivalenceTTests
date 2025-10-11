@@ -1,0 +1,160 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: jaspEquivalenceTTests 0.95.0\n"
+"POT-Creation-Date: 2025-06-21 03:13\n"
+"PO-Revision-Date: 2025-10-07 22:02+0000\n"
+"Last-Translator: Hamza Yalçin <h.yalcin08@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-r/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.14-dev\n"
+
+msgid "I ranges from %1$s to %2$s"
+msgstr "I aralığı %1$s ile %2$s arasındadır"
+
+msgid "Equivalence Prior and Posterior"
+msgstr "Eşdeğerlik Önsel ve Sonsal Dağılım"
+
+msgid "Effect size"
+msgstr "Etki büyüklüğü"
+
+msgid "Equivalence Sequential Analysis"
+msgstr "Eşdeğerlik Sıralı Analizi"
+
+msgid "Sequential analysis robustness check plot currently not supported for informed prior."
+msgstr ""
+"Bilgilendirilmiş önsel dağılım için sıralı analiz sağlamlık kontrol grafiği "
+"şu anda desteklenmiyor."
+
+msgid "n"
+msgstr "n"
+
+msgid "Please provide another variable."
+msgstr "Lütfen başka bir değişken seçin."
+
+msgid "Variables %1$s and %2$s are the same!"
+msgstr "%1$s ve %2$s değişkenleri aynı!"
+
+msgid "Equivalence Bayesian Independent Samples T-Test"
+msgstr "Eşdeğerlik Bayesçi Bağımsız Örneklemler T-Testi"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Model Comparison"
+msgstr "Model Karşılaştırması"
+
+msgid "error %%"
+msgstr "hata %%"
+
+msgid "Overlapping (%1$s vs. %2$s)"
+msgstr "Örtüşen (%1$s - %2$s)"
+
+msgid "Non-overlapping (%1$s vs. %2$s)"
+msgstr "Örtüşmeyen (%1$s - %2$s)"
+
+msgid "Descriptives"
+msgstr "Betimsel İstatistikler"
+
+msgid "Group"
+msgstr "Grup"
+
+msgid "N"
+msgstr "N"
+
+msgid "Mean"
+msgstr "Ortalama"
+
+msgid "SD"
+msgstr "SS"
+
+msgid "SE"
+msgstr "SH"
+
+msgid "95%% Credible Interval"
+msgstr "%%95 Güvenilir Aralık"
+
+msgid "Lower"
+msgstr "Alt"
+
+msgid "Upper"
+msgstr "Üst"
+
+msgid "Prior and Posterior Mass Table"
+msgstr "Önsel ve Sonsal Kütle Tablosu"
+
+msgid "Section"
+msgstr "Bölüm"
+
+msgid "Prior Mass"
+msgstr "Önsel Kütle"
+
+msgid "Posterior Mass"
+msgstr "Sonsal Kütle"
+
+msgid "Equivalence Bayesian One Sample T-Test"
+msgstr "Eşdeğerlik Bayesçi Tek Örneklem T-Testi"
+
+msgid "Equivalence Bayesian Paired Samples T-Test"
+msgstr "Eşdeğerlik Bayesçi Bağımlı Örneklemler T-Testi"
+
+msgid "Equivalence Mass Table"
+msgstr "Eşdeğerlik Kütle Tablosu"
+
+msgid "Equivalence Independent Samples T-Test"
+msgstr "Eşdeğerlik Bağımsız Örneklemler T-Testi"
+
+msgid "Statistic"
+msgstr "İstatistik"
+
+msgid "t"
+msgstr "t"
+
+msgid "df"
+msgstr "sd"
+
+msgid "p"
+msgstr "p"
+
+msgid "T-Test"
+msgstr "T-Testi"
+
+msgid "Upper bound"
+msgstr "Üst sınır"
+
+msgid "Lower bound"
+msgstr "Alt sınır"
+
+msgid "Equivalence Bounds"
+msgstr "Eşdeğerlik Sınırları"
+
+msgid "Bounds type"
+msgstr "Sınır türü"
+
+msgid "Low"
+msgstr "Düşük"
+
+msgid "High"
+msgstr "Yüksek"
+
+msgid "%s%% Confidence Interval"
+msgstr "%%%s Güven Aralığı"
+
+msgid "Cohen's d"
+msgstr "Cohen's d"
+
+msgid "Raw"
+msgstr "Ham"
+
+msgid "Equivalence Bounds Plots"
+msgstr "Eşdeğerlik Sınırları Grafikleri"
+
+msgid "Equivalence One Sample T-Test"
+msgstr "Eşdeğerlik Tek Örneklem T-Testi"
+
+msgid "Equivalence Paired Samples T-Test"
+msgstr "Eşdeğerlik Bağımlı Örneklemler T-Testi"
