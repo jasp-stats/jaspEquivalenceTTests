@@ -4,16 +4,10 @@ import JASP.Module
 Description
 {
 	title:			qsTr("Equivalence T-Tests")
-	name:			"jaspEquivalenceTTests"
 	description:	qsTr("Test the difference between two means with an interval-null hypothesis")
-	version			: "0.95.0"
-	author:			"Jill de Ron"
-	maintainer:		"Jill de Ron <jillderon93@gmail.com>"
-	website:		"https://jasp-stats.org"
-	license:		"GPL (>= 2)"
 	icon:			"equivalence-module.svg"
-	preloadData:	true
-
+	hasWrappers: 	false
+	
 	GroupTitle
 	{
 		title:	qsTr("Classical")
