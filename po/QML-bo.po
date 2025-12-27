@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-26 11:34+0000\n"
+"PO-Revision-Date: 2025-12-27 03:14+0000\n"
 "Last-Translator: Zev Oster <zevelijah@gmail.com>\n"
 "Language-Team: Tibetan <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-qml/bo/>\n"
@@ -16,17 +16,15 @@ msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
 msgstr "རང་དབང་དཔེ་ཚད་ཀྱི་མཉམ་པ་ཉིད་ཊི་ཚོད་ལྟ།"
 
-#, fuzzy
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
-msgstr "རང་དབང་ཅན་གྱི་མ་དཔེ་ཊི་ཚོད་ལྟ།"
+msgstr "རང་དབང་ཅན་གྱི་དཔེ་ཚད་ཊི་ཚོད་ལྟ།"
 
 #, fuzzy
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
 msgstr "མཚུངས་པའི་ཆ་སྒྲིག་མ་དཔེ་ཊི་ཚོད་ལྟ།"
 
-#, fuzzy
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
 msgstr "ཆ་སྒྲིག་མ་དཔེ་ཊི་ཚོད་ལྟ།"
@@ -36,17 +34,14 @@ msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
 msgstr "མཚུངས་པའི་མ་དཔེ་གཅིག་གི་ཊི་ཚོད་ལྟ།"
 
-#, fuzzy
 msgctxt "Description|"
 msgid "One Sample T-Test"
 msgstr "མ་དཔེ་གཅིག་གི་ཊི་ཚོད་ལྟ།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr "ཚོགས་སྒྲིག་འགྱུར་གྲངས།"
+msgstr ""
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "མཚུངས་པའི་ཁོངས།"
@@ -126,12 +121,10 @@ msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
 msgstr "འགྱུར་གྲངས།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
 msgstr "ཚོད་ལྟའི་རིན་ཐང་།"
@@ -146,47 +139,41 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
 msgstr "ནས།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to"
 msgstr "བར།"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from %1"
-msgstr "ནས་ %1"
+msgstr "%1་ནས་"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to %1"
-msgstr "བར་ %1"
+msgstr "%1་བར་"
 
 #, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
 msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
-msgstr "འགྲེལ་བརྗོད་རང་བཞིན།"
+msgstr "འགྲེལ་བརྗོད་གྱི།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior mass"
 msgstr "སྔོན་དང་རྗེས་ཀྱི་གདོས་ཚད།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
 msgstr "དཔེ་རིས།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
 msgstr "སྔོན་དང་རྗེས།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
 msgstr "གནས་ཚུལ་ཁ་སྣོན།"
@@ -221,25 +208,23 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
 msgstr "མཚུངས་པའི་ཁོངས།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
 msgstr "ནས།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to"
 msgstr "བར།"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from %1"
-msgstr "ནས་ %1"
+msgstr "%1་ནས་"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to %1"
-msgstr "བར་ %1"
+msgstr "%1་བར་"
 
 #, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
@@ -566,10 +551,9 @@ msgctxt "Description|"
 msgid "Classical"
 msgstr "སྲོལ་རྒྱུན།"
 
-#, fuzzy
 msgctxt "Description|"
 msgid "Bayesian"
-msgstr "བྷེ་ཡེ་སི།"
+msgstr "བྷེ་ཡེ་སིའི།"
 
 #, fuzzy
 msgctxt "Description|"
