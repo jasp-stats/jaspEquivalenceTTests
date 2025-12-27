@@ -1,0 +1,651 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-12-27 03:14+0000\n"
+"Last-Translator: Zev Oster <zevelijah@gmail.com>\n"
+"Language-Team: Tibetan <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/bo/>\n"
+"Language: bo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15.1\n"
+"X-Qt-Contexts: true\n"
+
+msgctxt "Description|"
+msgid "Equivalence Independent Samples T-Test"
+msgstr "རང་དབང་དཔེ་ཚད་ཀྱི་མཉམ་པ་ཉིད་ཊི་ཚོད་ལྟ།"
+
+msgctxt "Description|"
+msgid "Independent Samples T-Test"
+msgstr "རང་དབང་ཅན་གྱི་དཔེ་ཚད་ཊི་ཚོད་ལྟ།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Equivalence Paired Samples T-Test"
+msgstr "མཚུངས་པའི་ཆ་སྒྲིག་མ་དཔེ་ཊི་ཚོད་ལྟ།"
+
+msgctxt "Description|"
+msgid "Paired Samples T-Test"
+msgstr "ཆ་སྒྲིག་མ་དཔེ་ཊི་ཚོད་ལྟ།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Equivalence One Sample T-Test"
+msgstr "མཚུངས་པའི་མ་དཔེ་གཅིག་གི་ཊི་ཚོད་ལྟ།"
+
+msgctxt "Description|"
+msgid "One Sample T-Test"
+msgstr "མ་དཔེ་གཅིག་གི་ཊི་ཚོད་ལྟ།"
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Grouping Variable"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "མཚུངས་པའི་ཁོངས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "from"
+msgstr "ནས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "to"
+msgstr "བར།"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "from %1"
+msgstr "ནས་ %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "to %1"
+msgstr "བར་ %1"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Descriptives"
+msgstr "འགྲེལ་བརྗོད་རང་བཞིན།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Prior and posterior mass"
+msgstr "སྔོན་དང་རྗེས་ཀྱི་གདོས་ཚད།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Plots"
+msgstr "དཔེ་རིས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Prior and posterior"
+msgstr "སྔོན་དང་རྗེས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Additional info"
+msgstr "གནས་ཚུལ་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Sequential analysis"
+msgstr "རིམ་འགྲོས་དབྱེ་ཞིབ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Robustness check"
+msgstr "བརྟན་པོའི་རང་བཞིན་ཞིབ་བཤེར།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Missing Values"
+msgstr "ཆད་པའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས་རེ་རེར་གཞིགས་ནས་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Variables"
+msgstr "འགྱུར་གྲངས།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Test value"
+msgstr "ཚོད་ལྟའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Equivalence Region"
+msgstr "མཚུངས་པའི་ཁོངས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "from"
+msgstr "ནས།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "to"
+msgstr "བར།"
+
+#, qt-format
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "from %1"
+msgstr "%1་ནས་"
+
+#, qt-format
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "to %1"
+msgstr "%1་བར་"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Additional Statistics"
+msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Descriptives"
+msgstr "འགྲེལ་བརྗོད་གྱི།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Prior and posterior mass"
+msgstr "སྔོན་དང་རྗེས་ཀྱི་གདོས་ཚད།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Plots"
+msgstr "དཔེ་རིས།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Prior and posterior"
+msgstr "སྔོན་དང་རྗེས།"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Additional info"
+msgstr "གནས་ཚུལ་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Sequential analysis"
+msgstr "རིམ་འགྲོས་དབྱེ་ཞིབ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Robustness check"
+msgstr "བརྟན་པོའི་རང་བཞིན་ཞིབ་བཤེར།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Missing Values"
+msgstr "ཆད་པའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས་རེ་རེར་གཞིགས་ནས་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Exclude cases listwise"
+msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "མཚུངས་པའི་ཁོངས།"
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "from"
+msgstr "ནས།"
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "to"
+msgstr "བར།"
+
+#, qt-format
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "from %1"
+msgstr "%1་ནས་"
+
+#, qt-format
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "to %1"
+msgstr "%1་བར་"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Descriptives"
+msgstr "འགྲེལ་བརྗོད་རང་བཞིན།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Prior and posterior mass"
+msgstr "སྔོན་དང་རྗེས་ཀྱི་གདོས་ཚད།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Plots"
+msgstr "དཔེ་རིས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Prior and posterior"
+msgstr "སྔོན་དང་རྗེས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Additional info"
+msgstr "གནས་ཚུལ་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Sequential analysis"
+msgstr "རིམ་འགྲོས་དབྱེ་ཞིབ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Robustness check"
+msgstr "བརྟན་པོའི་རང་བཞིན་ཞིབ་བཤེར།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Missing Values"
+msgstr "ཆད་པའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས་རེ་རེར་གཞིགས་ནས་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Grouping Variable"
+msgstr "ཚོགས་སྒྲིག་འགྱུར་གྲངས།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Tests"
+msgstr "ཚོད་ལྟ།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Student"
+msgstr "སློབ་མ།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Welch"
+msgstr "ཝེལཅ།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Descriptives"
+msgstr "འགྲེལ་བརྗོད་རང་བཞིན།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Equivalence bounds plot"
+msgstr "མཚུངས་པའི་མཚམས་ཀྱི་དཔེ་རིས།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "མཚུངས་པའི་ཁོངས།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "from"
+msgstr "ནས།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "to"
+msgstr "བར།"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "from %1"
+msgstr "ནས་ %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "to %1"
+msgstr "བར་ %1"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "ནང་གི་མཚམས་ཀྱི་གསལ་བཤད།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Cohen's d"
+msgstr "ཀོ་ཧེན་གྱི་ཌི།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Raw"
+msgstr "རྗེན་པ།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Alpha level"
+msgstr "ཨལ་ཕ་རིམ་པ།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Missing Values"
+msgstr "ཆད་པའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས་རེ་རེར་གཞིགས་ནས་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Variables"
+msgstr "འགྱུར་གྲངས།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Test value"
+msgstr "ཚོད་ལྟའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Additional Statistics"
+msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Descriptives"
+msgstr "འགྲེལ་བརྗོད་རང་བཞིན།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Equivalence bounds plot"
+msgstr "མཚུངས་པའི་མཚམས་ཀྱི་དཔེ་རིས།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Equivalence Region"
+msgstr "མཚུངས་པའི་ཁོངས།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "from"
+msgstr "ནས།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "to"
+msgstr "བར།"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "from %1"
+msgstr "ནས་ %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "to %1"
+msgstr "བར་ %1"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Bounds specification in"
+msgstr "ནང་གི་མཚམས་ཀྱི་གསལ་བཤད།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Cohen's d"
+msgstr "ཀོ་ཧེན་གྱི་ཌི།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Raw"
+msgstr "རྗེན་པ།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Alpha level"
+msgstr "ཨལ་ཕ་གྲངས་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Missing Values"
+msgstr "ཆད་པའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས་རེ་རེར་གཞིགས་ནས་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Exclude cases listwise"
+msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Equivalence Region"
+msgstr "མཚུངས་པའི་ཁོངས།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "from"
+msgstr "ནས།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "to"
+msgstr "བར།"
+
+#, fuzzy, qt-format
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "from %1"
+msgstr "ནས་ %1"
+
+#, fuzzy, qt-format
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "to %1"
+msgstr "བར་ %1"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "ནང་གི་མཚམས་ཀྱི་གསལ་བཤད།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Cohen's d"
+msgstr "ཀོ་ཧེན་གྱི་ཌི།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Raw"
+msgstr "རྗེན་པ།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Alpha level"
+msgstr "ཨལ་ཕ་རིམ་པ།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Additional Statistics"
+msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Descriptives"
+msgstr "འགྲེལ་བརྗོད་རང་བཞིན།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Equivalence bounds plot"
+msgstr "མཚུངས་པའི་མཚམས་ཀྱི་དཔེ་རིས།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Missing Values"
+msgstr "ཆད་པའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས་རེ་རེར་གཞིགས་ནས་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Test the difference between two means with an interval-null hypothesis"
+msgstr "བར་མཚམས་-མེད་པའི་ཚོད་དཔག་གིས་ཆ་སྙོམས་གཉིས་བར་གྱི་ཁྱད་པར་ཚོད་ལྟ་བྱེད་པ།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Equivalence T-Tests"
+msgstr "མཚུངས་པའི་ཊི་ཚོད་ལྟ།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Classical"
+msgstr "སྲོལ་རྒྱུན།"
+
+msgctxt "Description|"
+msgid "Bayesian"
+msgstr "བྷེ་ཡེ་སིའི།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Bayesian Equivalence Independent Samples T-Test"
+msgstr "བྷེ་ཡེ་སིའི་མཚུངས་པའི་རང་དབང་ཅན་གྱི་མ་དཔེ་ཊི་ཚོད་ལྟ།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Bayesian Equivalence Paired Samples T-Test"
+msgstr "བྷེ་ཡེ་སིའི་མཚུངས་པའི་ཆ་སྒྲིག་མ་དཔེ་ཊི་ཚོད་ལྟ།"
+
+#, fuzzy
+msgctxt "Description|"
+msgid "Bayesian Equivalence One Sample T-Test"
+msgstr "བྷེ་ཡེ་སིའི་མཚུངས་པའི་མ་དཔེ་གཅིག་གི་ཊི་ཚོད་ལྟ།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Alternative Hypothesis"
+msgstr "གཞན་པའི་ཚོད་དཔག"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 ≠ Group 2"
+msgstr "ཚོགས་པ་ ༡ ≠ ཚོགས་པ་ ༢"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 > Group 2"
+msgstr "ཚོགས་པ་ ༡ > ཚོགས་པ་ ༢"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Group 1 < Group 2"
+msgstr "ཚོགས་པ་ ༡ < ཚོགས་པ་ ༢"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Alternative Hypothesis"
+msgstr "གཞན་པའི་ཚོད་དཔག"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "≠ Test value"
+msgstr "≠ ཚོད་ལྟའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "> Test value"
+msgstr "> ཚོད་ལྟའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "< Test value"
+msgstr "< ཚོད་ལྟའི་རིན་ཐང་།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Alternative Hypothesis"
+msgstr "གཞན་པའི་ཚོད་དཔག"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 ≠ Measure 2"
+msgstr "འཇལ་ཚད་ ༡ ≠ འཇལ་ཚད་ ༢"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 > Measure 2"
+msgstr "འཇལ་ཚད་ ༡ > འཇལ་ཚད་ ༢"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Measure 1 < Measure 2"
+msgstr "འཇལ་ཚད་ ༡ < འཇལ་ཚད་ ༢"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས།"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr "འགྱུར་གྲངས་ཆ་སྒྲིག"
+
+#, fuzzy
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr "ལྟོས་བཅས་འགྱུར་གྲངས།"
+
+#, fuzzy
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr "འགྱུར་གྲངས་ཆ་སྒྲིག"
