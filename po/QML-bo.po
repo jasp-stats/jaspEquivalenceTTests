@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2025-12-27 03:14+0000\n"
+"PO-Revision-Date: 2025-12-28 05:00+0000\n"
 "Last-Translator: Zev Oster <zevelijah@gmail.com>\n"
 "Language-Team: Tibetan <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-qml/bo/>\n"
@@ -56,25 +56,24 @@ msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to"
 msgstr "བར།"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from %1"
-msgstr "ནས་ %1"
+msgstr "%1་ནས་"
 
-#, fuzzy, qt-format
+#, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to %1"
-msgstr "བར་ %1"
+msgstr "%1་བར་"
 
 #, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional Statistics"
 msgstr "སྡོམ་རྩིས་ཁ་སྣོན།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr "འགྲེལ་བརྗོད་རང་བཞིན།"
+msgstr "འགྲེལ་བརྗོད་གྱི།"
 
 #, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
@@ -241,12 +240,10 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior mass"
 msgstr "སྔོན་དང་རྗེས་ཀྱི་གདོས་ཚད།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
 msgstr "དཔེ་རིས།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
 msgstr "སྔོན་དང་རྗེས།"
@@ -271,12 +268,10 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Missing Values"
 msgstr "ཆད་པའི་རིན་ཐང་།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
 msgstr "ལྟོས་བཅས་འགྱུར་གྲངས་རེ་རེར་གཞིགས་ནས་གནས་ཚུལ་འདོར་བ།"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
 msgstr "ཐོ་གཞུང་ལྟར་གནས་ཚུལ་འདོར་བ།"
@@ -286,17 +281,14 @@ msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
 msgstr "ཚོགས་སྒྲིག་འགྱུར་གྲངས།"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Tests"
 msgstr "ཚོད་ལྟ།"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Student"
 msgstr "སློབ་མ།"
 
-#, fuzzy
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Welch"
 msgstr "ཝེལཅ།"
