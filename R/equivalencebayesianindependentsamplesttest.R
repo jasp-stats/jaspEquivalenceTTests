@@ -90,9 +90,22 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
       results[[variable]][["n2"]]     <- length(group2)
       results[[variable]][["status"]] <- NULL
 
+      # Calculate pooled SD
+      n1 <- length(group1)
+      n2 <- length(group2)
+      sd1 <- sd(group1)
+      sd2 <- sd(group2)
+      pooled_sd <- sqrt(((n1-1)*sd1^2 + (n2-1)*sd2^2) / (n1+n2-2))
+
+      # Convert bounds and priors if needed
+      optionsConverted <- .equivalenceBayesianConvertRawToSMD(options, pooled_sd)
+
+      # Store pooled SD for footnote
+      results[[variable]][["pooledSD"]] <- pooled_sd
+
       r <- try(.generalEquivalenceTtestBF(x       = group1,
                                           y       = group2,
-                                          options = options))
+                                          options = optionsConverted))
 
       if (isTryError(r)) {
         errorMessage <- .extractErrorMessage(r)
@@ -148,10 +161,8 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
   if (ready)
     equivalenceBayesianIndTTestTable$setExpectedSize(length(options$variables))
 
-  message <- gettextf("I ranges from %1$s to %2$s",
-                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
-                      ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
-  equivalenceBayesianIndTTestTable$addFootnote(message)
+  # Add scale-specific footnote
+  .addEquivalenceBayesianScaleFootnotes(equivalenceBayesianIndTTestTable, options)
 
   jaspResults[["equivalenceBayesianIndTTestTable"]] <- equivalenceBayesianIndTTestTable
 
@@ -216,6 +227,10 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
                                                     statistic     = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
                                                     bf            = bfNonoverlapping,
                                                     error         = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
+
+      # Add per-variable footnotes for raw scale
+      .addEquivalenceBayesianScaleFootnotes(equivalenceBayesianIndTTestTable, options,
+                                            sd_val = results$pooledSD, rowName = variable)
     }
   }
 

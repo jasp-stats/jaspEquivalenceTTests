@@ -34,11 +34,15 @@ Form
 		AssignedPairsVariablesList { name: "pairs"; title: qsTr("Variable Pairs"); allowedColumns: ["scale"] }
     }
 
-    RadioButtonGroup
+    Group
     {
-        name: "equivalenceRegion"
         title: qsTr("Equivalence Region")
-        GridLayout
+        columns: 2
+
+        RadioButtonGroup
+        {
+            name: "equivalenceRegion"
+            GridLayout
         {
             columns: 3
             rowSpacing: jaspTheme.rowGroupSpacing
@@ -78,6 +82,26 @@ Form
 
             DoubleField { name: "lowerbound_less"; label: qsTr("from")	; max: 0; defaultValue: -0.05; negativeValues: true; inclusive: JASP.None}
             Label		{ text: qsTr("to %1").arg(" 0 "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
+        }
+        }
+
+        DropDown
+        {
+            Layout.columnSpan: 2
+            name: "boundstype"
+            id: boundstype
+            label: qsTr("Bounds specification in")
+            indexDefaultValue: 0
+			onCurrentValueChanged: if (value === "raw") {
+				effectSizeStandardized.value = "raw"
+			} else if (value === "cohensD") {
+				effectSizeStandardized.value = "default"
+			}
+            values:
+            [
+                { value: "cohensD", label: qsTr("Cohen's d")	},
+                { value: "raw",     label: qsTr("Raw")			}
+            ]
         }
      }
 
@@ -124,5 +148,5 @@ Form
          RadioButton { value: "excludeListwise";				label: qsTr("Exclude cases listwise")							}
      }
 
-     SubjectivePriors { }
+     EquivalenceSubjectivePriors { }
 }

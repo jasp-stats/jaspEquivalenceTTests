@@ -10,10 +10,23 @@ In all interactions and commit messages, be extremely concise and sacrifice gram
 
 ### Initial Setup and Build
 - R and the JASP R packages are pre-installed in GitHub Actions runners
+- renv automatically activates via `.Rprofile` when R starts
 - All tests should pass. Note that there might be many tests and the runtime might be ~ 5 minutes.
 
+**Module Installation Workflow:**
+
+```r
+library(jaspTools)
+renv::install(".")
+
+setPkgOption("module.dirs", ".")
+setPkgOption("reinstall.modules", FALSE)
+```
+
 ### Running Tests
-- `Rscript -e "library(jaspTools); testAll()"` -- runs full test suite, takes 70+ seconds. NEVER CANCEL.
+
+- `testAll()` -- runs full test suite, takes 70+ seconds. NEVER CANCEL
+- `testAnalysis("analysisname")` -- runs tests for specific analysis
 - Tests are located in `tests/testthat/test-*.R` files
 - Each test file corresponds to an R analysis file in the `R/` directory
 - Test snapshots are stored in `tests/testthat/_snaps/`
@@ -41,19 +54,32 @@ In all interactions and commit messages, be extremely concise and sacrifice gram
 ## Building and Testing Code Changes
 
 ### Before Making Changes
-- Run full test suite to establish baseline: `Rscript -e "library(jaspTools); testAll()"`
+
+- Load module and run full test suite to establish baseline:
+
+```r
+library(jaspTools)
+renv::install(".")
+setPkgOption("module.dirs", ".")
+setPkgOption("reinstall.modules", FALSE)
+testAll()
+```
+
 - NEVER CANCEL: Tests can take 300+ seconds, set timeout to 300 seconds
 
 ### After Making Changes
-- Run tests again to verify your changes: `Rscript -e "library(jaspTools); testAll()"`
+
+- Run tests again to verify your changes: `testAll()`
 - NEVER CANCEL: Build and test can take up to 5 minutes total
 - All tests must pass - do not proceed if tests fail
 - Some deprecation warnings are expected and can be ignored
 
 ### Manual Validation Scenarios
+
 Since this module runs within JASP desktop application, manual testing requires:
+
 - Testing via jaspTools test framework (covered above)
-- Individual analysis validation can be done through R console using jaspTools::runAnalysis()
+- Individual analysis validation can be done through R console using `runAnalysis()`
 - CANNOT run standalone - module only functions within JASP ecosystem
 
 ## Development Rules
@@ -94,8 +120,9 @@ Since this module runs within JASP desktop application, manual testing requires:
 - Double `%` characters in format strings: `gettextf("%s%% CI for Mean")`
 
 ### Testing Requirements
+
 - Unit tests in `tests/testthat/` use jaspTools framework
-- Tests run via `jaspTools::testAll()` - takes 300+ seconds, NEVER CANCEL
+- Tests run via `testAll()` - takes 300+ seconds, NEVER CANCEL
 - Test files correspond to R analysis files (test-*.R matches *.R)
 - Update test expected values when changing analysis outputs
 
@@ -108,18 +135,20 @@ Since this module runs within JASP desktop application, manual testing requires:
 ## Common Tasks
 
 ### Adding New Analysis
+
 1. Create R function in `R/` directory following camelCase naming
 2. Add QML interface in `inst/qml/`
 3. Define analysis in `inst/Description.qml`
 4. Add unit tests in `tests/testthat/`
-5. Run `jaspTools::testAll()` to validate (300+ seconds, NEVER CANCEL)
+5. Run `testAll()` to validate (300+ seconds, NEVER CANCEL)
 
 ### Modifying Existing Analysis
+
 1. Update R function maintaining existing interface
 2. Update QML if adding/changing options
 3. Update unit tests and expected results
 4. Add upgrade mapping to `inst/Upgrades.qml` if renaming options
-5. Run tests: `jaspTools::testAll()` (NEVER CANCEL, 300+ seconds)
+5. Run tests: `testAll()` (NEVER CANCEL, 300+ seconds)
 
 ### Detailed Development Process
 - **Step 1**: Create main analysis function with `jaspResults`, `dataset`, `options` arguments

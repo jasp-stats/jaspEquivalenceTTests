@@ -35,50 +35,74 @@ Form
 		AssignedVariablesList  { name: "groupingVariable";	title: qsTr("Grouping Variable");	allowedColumns: ["nominal"]; singleVariable: true}
     }
 
-    RadioButtonGroup
+    Group
     {
-       name: "equivalenceRegion"
-       title: qsTr("Equivalence Region")
-       GridLayout
-       {
-          columns: 3
-          rowSpacing: jaspTheme.rowGroupSpacing
-          columnSpacing: 0
-          visible: alternative.value === "twoSided"
+        title: qsTr("Equivalence Region")
+        columns: 2
 
-          RadioButton { value: "region"; checked: true; id: region}
-          DoubleField { name: "lowerbound"; label: qsTr("from")	; max: upperbound.value; defaultValue: -0.05; id: lowerbound; negativeValues: true; inclusive: JASP.None}
-          DoubleField { name: "upperbound"; label: qsTr("to")	; min: lowerbound.value; defaultValue: 0.05;  id: upperbound; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+        RadioButtonGroup
+        {
+           name: "equivalenceRegion"
+           GridLayout
+		   {
+				columns: 3
+				rowSpacing: jaspTheme.rowGroupSpacing
+				columnSpacing: 0
+				visible: alternative.value === "twoSided"
 
-          RadioButton { value: "lower"; id: lower }
-          Label		  { text: qsTr("from %1").arg(" -∞ ")}
-          DoubleField { name: "lower_max"; label: qsTr("to"); id: lower_max; defaultValue: 0.05; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+				RadioButton { value: "region"; checked: true; id: region}
+				DoubleField { name: "lowerbound"; label: qsTr("from")	; max: upperbound.value; defaultValue: -0.05; id: lowerbound; negativeValues: true; inclusive: JASP.None}
+				DoubleField { name: "upperbound"; label: qsTr("to")	; min: lowerbound.value; defaultValue: 0.05;  id: upperbound; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
 
-          RadioButton { value: "upper"; id: upper }
-          DoubleField { name: "upper_min"; label: qsTr("from"); id: upper_min; defaultValue: -0.05; negativeValues: true}
-          Label		  { text: qsTr("to %1").arg(" ∞ "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
+				RadioButton { value: "lower"; id: lower }
+				Label		  { text: qsTr("from %1").arg(" -∞ ")}
+				DoubleField { name: "lower_max"; label: qsTr("to"); id: lower_max; defaultValue: 0.05; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+
+				RadioButton { value: "upper"; id: upper }
+				DoubleField { name: "upper_min"; label: qsTr("from"); id: upper_min; defaultValue: -0.05; negativeValues: true}
+				Label		  { text: qsTr("to %1").arg(" ∞ "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
+			}
+
+			GridLayout
+			{
+				columns: 2
+				rowSpacing: jaspTheme.rowGroupSpacing
+				columnSpacing: 0
+				visible: alternative.value === "greater"
+
+				Label		{ text: qsTr("from %1").arg(" 0 ")}
+				DoubleField { name: "upperbound_greater"; label: qsTr("to")	; min: 0; defaultValue: 0.05; negativeValues: false; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+			}
+
+			GridLayout
+			{
+				columns: 2
+				rowSpacing: jaspTheme.rowGroupSpacing
+				columnSpacing: 0
+				visible: alternative.value === "less"
+
+				DoubleField { name: "lowerbound_less"; label: qsTr("from")	; max: 0; defaultValue: -0.05; negativeValues: true; inclusive: JASP.None}
+				Label		{ text: qsTr("to %1").arg(" 0 "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
+			}
         }
 
-        GridLayout
+        DropDown
         {
-            columns: 2
-            rowSpacing: jaspTheme.rowGroupSpacing
-            columnSpacing: 0
-            visible: alternative.value === "greater"
-
-            Label		{ text: qsTr("from %1").arg(" 0 ")}
-            DoubleField { name: "upperbound_greater"; label: qsTr("to")	; min: 0; defaultValue: 0.05; negativeValues: false; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
-        }
-
-        GridLayout
-        {
-            columns: 2
-            rowSpacing: jaspTheme.rowGroupSpacing
-            columnSpacing: 0
-            visible: alternative.value === "less"
-
-            DoubleField { name: "lowerbound_less"; label: qsTr("from")	; max: 0; defaultValue: -0.05; negativeValues: true; inclusive: JASP.None}
-            Label		{ text: qsTr("to %1").arg(" 0 "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
+            Layout.columnSpan: 2
+            name: "boundstype"
+            id: boundstype
+            label: qsTr("Bounds specification in")
+            indexDefaultValue: 0
+			onCurrentValueChanged: if (value === "raw") {
+				effectSizeStandardized.value = "raw"
+			} else if (value === "cohensD") {
+				effectSizeStandardized.value = "default"
+			}
+            values:
+            [
+                { value: "cohensD", label: qsTr("Cohen's d")	},
+                { value: "raw",     label: qsTr("Raw")			}
+            ]
         }
     }
 
@@ -125,5 +149,5 @@ Form
         RadioButton { value: "excludeListwise";				label: qsTr("Exclude cases listwise")							}
     }
 
-    SubjectivePriors{ }
+    EquivalenceSubjectivePriors{ }
 }

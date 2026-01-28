@@ -51,3 +51,4 @@ _processedLockFile.lock
 
 # Claude Code personal preferences
 CLAUDE.local.md
+.claude/settings.local.json
