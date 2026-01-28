@@ -81,10 +81,20 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
       x <- subDataSet[[1L]]
       y <- subDataSet[[2L]]
 
+      # Calculate SD of differences
+      differences <- x - y
+      sd_diff <- sd(differences)
+
+      # Convert bounds and priors if needed
+      optionsConverted <- .equivalenceBayesianConvertRawToSMD(options, sd_diff)
+
+      # Store SD for footnote
+      results[[namePair]][["sd"]] <- sd_diff
+
       r <- try(.generalEquivalenceTtestBF(x       = x,
                                           y       = y,
                                           paired  = TRUE,
-                                          options = options))
+                                          options = optionsConverted))
 
       if (isTryError(r)) {
 
@@ -145,10 +155,8 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
   if (ready)
     equivalenceBayesianPairedTTestTable$setExpectedSize(length(options$pairs))
 
-  message <- gettextf("I ranges from %1$s to %2$s",
-                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
-                      ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
-  equivalenceBayesianPairedTTestTable$addFootnote(message)
+  # Add scale-specific footnote
+  .addEquivalenceBayesianScaleFootnotes(equivalenceBayesianPairedTTestTable, options)
 
   jaspResults[["equivalenceBayesianPairedTTestTable"]] <- equivalenceBayesianPairedTTestTable
 
@@ -219,6 +227,10 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
                                                        statistic     = "\U003B4 \U02208 I vs. \U003B4 \U02209 I",
                                                        bf            = bfNonoverlapping,
                                                        error         = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
+
+      # Add per-variable footnotes for raw scale
+      .addEquivalenceBayesianScaleFootnotes(equivalenceBayesianPairedTTestTable, options,
+                                            sd_val = results$sd, rowName = namePair)
     }
   }
 

@@ -236,29 +236,61 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
       xlim[1] <- min(-2, ci99PlusMedian[["ciLower"]], priorLower)
       xlim[2] <- max(2, ci99PlusMedian[["ciUpper"]], priorUpper)
-      xticks <- pretty(xlim)
+
+      # For raw scale: transform to raw for pretty ticks, then back to SMD for computation
+      if (options[["boundstype"]] == "raw") {
+
+        # Select the sd value
+        if (paired || is.null(n2)) {
+          sd_val <- results[["sd"]]
+        } else {
+          sd_val <- results[["pooledSD"]]
+        }
+
+        # Transform xlim to raw scale for nice ticks
+        xlim_raw <- xlim * sd_val
+        xticks_raw <- pretty(xlim_raw)
+
+        # Transform back to SMD scale for computation
+        xticks <- xticks_raw / sd_val
+      } else {
+        xticks <- pretty(xlim)
+      }
 
       ylim <- vector("numeric", 2)
 
       ylim[1] <- 0
-      dmax1 <- optimize(function(x)jaspTTests::.dposterior_informative(x,
-                                                           t        = t,
-                                                           n1       = n1,
-                                                           n2       = n2,
-                                                           paired   = paired,
-                                                           oneSided = oneSided,
-                                                           options  = options),
-                        interval = range(xticks),
-                        maximum  = TRUE)$objective
+      dmax1 <- optimize(
+        f = function(x)jaspTTests::.dposterior_informative(
+          x,
+          t        = t,
+          n1       = n1,
+          n2       = n2,
+          paired   = paired,
+          oneSided = oneSided,
+          options  = options),
+        interval = range(xticks),
+        maximum  = TRUE)$objective
 
-      dmax2 <- optimize(function(x)jaspTTests::.dprior_informative(x,
-                                                       oneSided = oneSided,
-                                                       options  = options),
-                        interval = range(xticks),
-                        maximum  = TRUE)$objective
+      dmax2 <- optimize(
+        f = function(x)jaspTTests::.dposterior_informative(
+          x,
+          t        = t,
+          n1       = n1,
+          n2       = n2,
+          paired   = paired,
+          oneSided = oneSided,
+          options  = options),
+        interval = range(xticks),
+        maximum  = TRUE)$objective
       dmax <- max(c(dmax1, dmax2))
 
-      xlabels <- formatC(xticks, 1, format = "f")
+      # For raw scale: transform labels back to raw for display
+      if (options[["boundstype"]] == "raw") {
+        xlabels <- formatC(xticks * sd_val, 1, format = "f")
+      } else {
+        xlabels <- formatC(xticks, 1, format = "f")
+      }
 
       # Calculate prior and posterior over the whole range
       xxx <- seq(min(xticks), max(xticks), length.out = 1000)
@@ -308,43 +340,75 @@ gettextf <- function(fmt, ..., domain = NULL)  {
                                                                    oneSided = oneSided,
                                                                    options  = options)
 
+      # Transform distribution x-coordinates, densities, CRI and median to raw scale if needed
+      if (options[["boundstype"]] == "raw") {
+        x_for_lines <- seq(min(xticks), max(xticks), length.out = 1000L) * sd_val
+        x_for_point <- 0.0 * sd_val
+        # Scale densities by 1/sd due to change of variables
+        y_for_lines <- c(posteriorLine, priorLine) / sd_val
+        y_for_points <- c(heightPosteriorAtZero, heightPriorAtZero) / sd_val
+        CRI <- c(CIlow, CIhigh) * sd_val
+        median <- medianPosterior * sd_val
+      } else {
+        x_for_lines <- seq(min(xticks), max(xticks), length.out = 1000L)
+        x_for_point <- 0.0
+        y_for_lines <- c(posteriorLine, priorLine)
+        y_for_points <- c(heightPosteriorAtZero, heightPriorAtZero)
+        CRI <- c(CIlow, CIhigh)
+        median <- medianPosterior
+      }
+
       dfLines <- data.frame(
-        x = seq(min(xticks), max(xticks), length.out = 1000L),
-        y = c(posteriorLine, priorLine),
+        x = x_for_lines,
+        y = y_for_lines,
         g = factor(rep(c("Posterior", "Prior"), each = 1000L)) # 1000 is apparently a fixed number
       )
 
       dfPoints <- data.frame(
-        x = 0.0,
-        y = c(heightPosteriorAtZero, heightPriorAtZero),
+        x = x_for_point,
+        y = y_for_points,
         g = c("Posterior", "Prior")
       )
 
-      CRI <- c(CIlow, CIhigh)
-      median <- medianPosterior
-
-
       if (!addInformation) {
-        BF <- NULL
+        BF     <- NULL
         median <- NULL
-        CRI <- NULL
+        CRI    <- NULL
       }
 
-      plotPriorPosterior <- jaspGraphs::PlotPriorAndPosterior(dfLines,
-                                                              BF           = BF,
-                                                              CRI          = CRI,
-                                                              median       = median,
-                                                              bfType       = "BF10",
-                                                              xName = bquote(paste(.(gettext("Effect size")), ~delta)),
-                                                              bfSubscripts = jaspGraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]",
-                                                                                                     "BF[phantom()%notin%phantom()%in%phantom()]")),
-                                                              pizzaTxt     = jaspGraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
+      # X-axis label depends on scale type
+      if (options[["boundstype"]] == "raw") {
+        xAxisLabel <- bquote(paste(.(gettext("Mean Difference (Raw)"))))
+      } else {
+        xAxisLabel <- bquote(paste(.(gettext("Effect size")), ~delta))
+      }
+
+      plotPriorPosterior <- jaspGraphs::PlotPriorAndPosterior(
+        dfLines,
+        BF           = BF,
+        CRI          = CRI,
+        median       = median,
+        bfType       = "BF10",
+        xName        = xAxisLabel,
+        bfSubscripts = jaspGraphs::parseThis(c("BF[phantom()%in%phantom()%notin%phantom()]", "BF[phantom()%notin%phantom()%in%phantom()]")),
+        pizzaTxt     = jaspGraphs::parseThis(c("data~'|'~H[phantom()%notin%phantom()]", "data~'|'~H[phantom()%in%phantom()]")))
 
 
-      if (options$priorandposteriorAdditionalInfo) {
+      # Transform xx and densities for display if raw scale
+      if (options[["boundstype"]] == "raw") {
+        xx_display <- xx * sd_val
+        priorInterval_display <- priorInterval / sd_val
+        posteriorInterval_display <- posteriorInterval / sd_val
+      } else {
+        xx_display <- xx
+        priorInterval_display <- priorInterval
+        posteriorInterval_display <- posteriorInterval
+      }
+
+      if (options[["priorandposteriorAdditionalInfo"]]) {
 
         plotPriorPosterior$subplots[[4]] <- plotPriorPosterior$subplots[[4]] + ggplot2::geom_ribbon(
-          data.frame(x = xx, ymin = 0, ymax = c(priorInterval, posteriorInterval), g = factor(rep(1:2, each = 1000))), # data.frame(x = xx, ymin = 0, ymax = c(dnorm(xx, 0, 1), dnorm(xx, 1, .5)), g = factor(rep(1:2, each=1000))),
+          data.frame(x = xx_display, ymin = 0, ymax = c(priorInterval_display, posteriorInterval_display), g = factor(rep(1:2, each = 1000))),
           mapping = ggplot2::aes(x = x, ymax = ymax, ymin = ymin, group = g, fill = g),
           inherit.aes = FALSE,
           alpha = .5, show.legend = FALSE) +
@@ -352,9 +416,8 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
       } else {
 
-        plotPriorPosterior <- plotPriorPosterior + ggplot2::geom_ribbon(
-          data.frame(x = xx, ymin = 0, ymax = c(jaspTTests::.dposteriorShiftedT(x = xx, parameters = parameters,
-                                                                    oneSided = oneSided), jaspTTests::.dprior(xx, r = r, oneSided = oneSided)), g = factor(rep(1:2, each = 1000))), # data.frame(x = xx, ymin = 0, ymax = c(dnorm(xx, 0, 1), dnorm(xx, 1, .5)), g = factor(rep(1:2, each=1000))),
+        plotPriorPosterior <- plotPriorPosterior +  ggplot2::geom_ribbon(
+          data.frame(x = xx_display, ymin = 0, ymax = c(priorInterval_display, posteriorInterval_display), g = factor(rep(1:2, each = 1000))),
           mapping = ggplot2::aes(x = x, ymax = ymax, ymin = ymin, group = g, fill = g),
           inherit.aes = FALSE,
           alpha = .5, show.legend = FALSE) +
@@ -722,7 +785,12 @@ gettextf <- function(fmt, ..., domain = NULL)  {
     if (is.null(results$status)) {
 
       if (options[["effectSizeStandardized"]] == "informative") {
-        equivalenceTTestSequential$setError(gettext("Sequential analysis robustness check plot currently not supported for informed prior."))
+        equivalenceTTestSequential$setError(gettext("Sequential analysis robustness check plot currently not supported for informed priors."))
+        next
+      }
+
+      if (options[["effectSizeStandardized"]] == "raw") {
+        equivalenceTTestSequential$setError(gettext("Sequential analysis robustness check plot currently not supported for raw scale priors."))
         next
       }
 
@@ -1120,19 +1188,115 @@ gettextf <- function(fmt, ..., domain = NULL)  {
     options$lowerbound <- options[["lowerbound_less"]]
     options$upperbound <- 0    # use the upper bound the get the standardization probability
   }
+
   return(options)
+}
+
+.equivalenceBayesianConvertRawToSMD <- function(options, sd) {
+
+  if (options[["boundstype"]] != "raw") {
+    return(options)  # No conversion needed for Cohen's d
+  }
+
+  # Convert finite bounds only
+  optionsConverted <- options
+  if (is.finite(options$lowerbound)) {
+    optionsConverted$lowerbound <- options$lowerbound / sd
+  }
+  if (is.finite(options$upperbound)) {
+    optionsConverted$upperbound <- options$upperbound / sd
+  }
+
+  # Convert the rawEffectSize parameters and map to informative standardized names
+  optionsConverted$effectSizeStandardized <- "informative"
+
+  if (options[["rawEffectSize"]] == "cauchy") {
+    optionsConverted$informativeStandardizedEffectSize <- "cauchy"
+    optionsConverted$informativeCauchyLocation         <- options[["rawCauchyLocation"]] / sd
+    optionsConverted$informativeCauchyScale            <- options[["rawCauchyScale"]] / sd
+  } else if (options[["rawEffectSize"]] == "normal") {
+    optionsConverted$informativeStandardizedEffectSize <- "normal"
+    optionsConverted$informativeNormalMean             <- options[["rawNormalMean"]] / sd
+    optionsConverted$informativeNormalStd              <- options[["rawNormalStd"]] / sd
+  } else if (options[["rawEffectSize"]] == "t") {
+    optionsConverted$informativeStandardizedEffectSize <- "t"
+    optionsConverted$informativeTLocation <- options[["rawTLocation"]] / sd
+    optionsConverted$informativeTScale    <- options[["rawTScale"]] / sd
+    optionsConverted$informativeTDf       <- options[["rawTDf"]]
+  }
+
+  return(optionsConverted)
+}
+
+.addEquivalenceBayesianScaleFootnotes <- function(table, options, sd_val = NULL, rowName = NULL) {
+
+  # For Cohen's d scale: add table-level footnote
+  if (options[["boundstype"]] == "cohensD") {
+    message <- gettextf("I ranges from %1$s to %2$s on the Cohen's d scale",
+                        ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
+                        ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
+    table$addFootnote(message)
+    return()
+  }
+
+  # For raw scale: add per-variable footnotes (requires sd_val and rowName)
+  if (options[["boundstype"]] == "raw") {
+    # If called at table-level without per-variable data, do nothing
+    if (is.null(sd_val) || is.null(rowName)) {
+      return()
+    }
+
+    # Format the SMD bounds
+    smd_lower <- format(options$lowerbound / sd_val, digits = 3)
+    smd_upper <- format(options$upperbound / sd_val, digits = 3)
+
+    # First footnote: interval with SMD conversion
+    interval_message <- gettextf("I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] on the Cohen's d scale)",
+                                 ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
+                                 ifelse(options$upperbound == Inf, "\u221E", options$upperbound),
+                                 smd_lower,
+                                 smd_upper)
+    table$addFootnote(interval_message, rowNames = rowName)
+
+    if (options[["rawEffectSize"]] == "cauchy") {
+      smd_location <- format(options[["rawCauchyLocation"]] / sd_val, digits = 3)
+      smd_scale <- format(options[["rawCauchyScale"]] / sd_val, digits = 3)
+      prior_text <- gettextf("Cauchy(%s, %s)", smd_location, smd_scale)
+    } else if (options[["rawEffectSize"]] == "normal") {
+      smd_mean <- format(options[["rawNormalMean"]] / sd_val, digits = 3)
+      smd_std <- format(options[["rawNormalStd"]] / sd_val, digits = 3)
+      prior_text <- gettextf("Normal(%s, %s)", smd_mean, smd_std)
+    } else if (options[["rawEffectSize"]] == "t") {
+      smd_location <- format(options[["rawTLocation"]] / sd_val, digits = 3)
+      smd_scale <- format(options[["rawTScale"]] / sd_val, digits = 3)
+      prior_text <- gettextf("t(%s, %s, df=%s)",
+                            smd_location,
+                            smd_scale,
+                            format(options[["rawTDf"]], digits = 0))
+    }
+
+    # Second footnote: prior conversion
+    prior_message <- gettextf("The prior distribution on the raw scale corresponds to %s on the Cohen's d scale",
+                              prior_text)
+    table$addFootnote(prior_message, rowNames = rowName)
+  }
 }
 
 .equivalenceRegionDependencies <- c(
   "equivalenceRegion",
   "lowerbound", "upperbound",
   "lower_max", "upper_min",
-  "upperbound_greater", "lowerbound_less"
+  "upperbound_greater", "lowerbound_less",
+  "boundstype"
 )
 .equivalencePriorDependencies  <- c(
   "effectSize", "effectSizeStandardized", "defaultStandardizedEffectSize", "informativeStandardizedEffectSize", "alternative",
   "priorWidth",
   "informativeCauchyLocation", "informativeCauchyScale",
   "informativeNormalMean", "informativeNormalStd",
-  "informativeTLocation", "informativeTScale", "informativeTDf"
+  "informativeTLocation", "informativeTScale", "informativeTDf",
+  "rawEffectSize",
+  "rawCauchyLocation", "rawCauchyScale",
+  "rawNormalMean", "rawNormalStd",
+  "rawTLocation", "rawTScale", "rawTDf"
 )

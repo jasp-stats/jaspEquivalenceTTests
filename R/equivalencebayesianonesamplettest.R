@@ -72,13 +72,21 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
     } else {
 
       x <- dataset[[variable]]
-      x <- x[!is.na(x)] - options$mu
+      x_clean <- x[!is.na(x)]
+      sd_original <- sd(x_clean)  # SD of original data (before centering)
+      x <- x_clean - options$mu
 
       results[[variable]][["n1"]] <- length(x)
       results[[variable]][["n2"]] <- NULL
 
+      # Convert bounds and priors if needed
+      optionsConverted <- .equivalenceBayesianConvertRawToSMD(options, sd_original)
+
+      # Store SD for footnote
+      results[[variable]][["sd"]] <- sd_original
+
       r <- try(.generalEquivalenceTtestBF(x       = x,
-                                          options = options))
+                                          options = optionsConverted))
 
       if (isTryError(r)) {
 
@@ -133,10 +141,8 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
   if (ready)
     equivalenceBayesianOneTTestTable$setExpectedSize(length(options$variables))
 
-  message <- gettextf("I ranges from %1$s to %2$s",
-                      ifelse(options$lowerbound == -Inf, "-\u221E", options$lowerbound),
-                      ifelse(options$upperbound == Inf, "\u221E", options$upperbound))
-  equivalenceBayesianOneTTestTable$addFootnote(message)
+  # Add scale-specific footnote
+  .addEquivalenceBayesianScaleFootnotes(equivalenceBayesianOneTTestTable, options)
 
   jaspResults[["equivalenceBayesianOneTTestTable"]] <- equivalenceBayesianOneTTestTable
 
@@ -200,6 +206,10 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
                                                    statistic      = "\U003B4 \U02208 I vs. \U003B4 \U02209 I", # equivalence vs. nonequivalence"
                                                    bf             = bfNonoverlapping,
                                                    error          = ifelse(error_in_notin == Inf, "NA", error_in_notin)))
+
+      # Add per-variable footnotes for raw scale
+      .addEquivalenceBayesianScaleFootnotes(equivalenceBayesianOneTTestTable, options,
+                                            sd_val = results$sd, rowName = variable)
     }
   }
 
