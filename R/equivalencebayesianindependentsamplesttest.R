@@ -103,6 +103,9 @@ EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, opt
       # Store pooled SD for footnote
       results[[variable]][["pooledSD"]] <- pooled_sd
 
+      # Store converted options for plotting functions
+      results[[variable]][["optionsConverted"]] <- optionsConverted
+
       r <- try(.generalEquivalenceTtestBF(x       = group1,
                                           y       = group2,
                                           options = optionsConverted))

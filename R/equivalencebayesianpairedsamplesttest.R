@@ -91,6 +91,9 @@ EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options)
       # Store SD for footnote
       results[[namePair]][["sd"]] <- sd_diff
 
+      # Store converted options for plotting functions
+      results[[namePair]][["optionsConverted"]] <- optionsConverted
+
       r <- try(.generalEquivalenceTtestBF(x       = x,
                                           y       = y,
                                           paired  = TRUE,

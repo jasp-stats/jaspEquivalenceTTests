@@ -85,6 +85,9 @@ EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
       # Store SD for footnote
       results[[variable]][["sd"]] <- sd_original
 
+      # Store converted options for plotting functions
+      results[[variable]][["optionsConverted"]] <- optionsConverted
+
       r <- try(.generalEquivalenceTtestBF(x       = x,
                                           options = optionsConverted))
 

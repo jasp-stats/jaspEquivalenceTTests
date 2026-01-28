@@ -35,7 +35,8 @@ Section
 		RadioButton
 		{
 			id: defaultPriors
-			label: qsTr("Default"); name: "default"; checked: true
+			label: qsTr("Default"); name: "default"; 
+			checked: boundstype.value === "cohensD"
 			visible: boundstype.value === "cohensD"
 			RadioButtonGroup
 			{
