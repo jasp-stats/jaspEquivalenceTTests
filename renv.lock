@@ -3174,11 +3174,11 @@
       ],
       "Roxygen": "list(markdown = TRUE)",
       "RemoteType": "github",
+      "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspGraphs",
       "RemoteRef": "master",
-      "RemoteSha": "266f408db9761292050c1319c01640747bf77a0d",
-      "RemoteHost": "api.github.com"
+      "RemoteSha": "e189e5da7644ec4c50a3c4b55a57f4c69b0d2421"
     },
     "jaspTTests": {
       "Package": "jaspTTests",
