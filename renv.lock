@@ -3136,11 +3136,11 @@
       ],
       "Config/testthat/edition": "3",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspBase",
       "RemoteRef": "master",
       "RemoteSha": "836023e9f57d39427fc805fb0f4bb2e48a838d56",
+      "RemoteHost": "api.github.com",
       "Remotes": "jasp-stats/jaspGraphs"
     },
     "jaspGraphs": {
@@ -3174,11 +3174,11 @@
       ],
       "Roxygen": "list(markdown = TRUE)",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspGraphs",
       "RemoteRef": "master",
-      "RemoteSha": "e189e5da7644ec4c50a3c4b55a57f4c69b0d2421"
+      "RemoteSha": "589dc9a7903eb6b952d1d4ca07524abee05774f8",
+      "RemoteHost": "api.github.com"
     },
     "jaspTTests": {
       "Package": "jaspTTests",
@@ -3207,7 +3207,7 @@
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspTTests",
       "RemoteRef": "master",
-      "RemoteSha": "0ad1bf603c9c7e1f65af691fe73b9fee2ee53057",
+      "RemoteSha": "6662bf370fc6a95a36fcbc5f160503581d1a3c6a",
       "RemoteHost": "api.github.com",
       "Remotes": "jasp-stats/jaspBase, jasp-stats/jaspGraphs"
     },
@@ -3243,11 +3243,11 @@
       "Roxygen": "list(markdown = TRUE)",
       "Author": "Tim de Jong [aut], Don van den Bergh [ctb, cre], František Bartoš [ctb]",
       "RemoteType": "github",
-      "RemoteHost": "api.github.com",
       "RemoteUsername": "jasp-stats",
       "RemoteRepo": "jaspTools",
       "RemoteRef": "master",
-      "RemoteSha": "46871381f5c710f21f3b69e0a2332134f4031154"
+      "RemoteSha": "566714d376f7d74d750819920cf34e71f3ad9045",
+      "RemoteHost": "api.github.com"
     },
     "jmvcore": {
       "Package": "jmvcore",
@@ -6115,7 +6115,7 @@
     },
     "timeDate": {
       "Package": "timeDate",
-      "Version": "4051.111",
+      "Version": "4052.112",
       "Source": "Repository",
       "Title": "Rmetrics - Chronological and Calendar Objects",
       "Authors@R": "c(person(\"Diethelm\", \"Wuertz\", role=\"aut\", comment = \"original code\") , person(\"Tobias\", \"Setz\", role = c(\"aut\"), email = \"tobias.setz@live.com\") , person(\"Yohan\", \"Chalabi\", role = \"aut\") , person(\"Martin\",\"Maechler\", role = \"ctb\", email = \"maechler@stat.math.ethz.ch\", comment = c(ORCID = \"0000-0002-8685-9910\")) , person(given = c(\"Joe\", \"W.\"), family = \"Byers\", role = \"ctb\") , person(given = c(\"Georgi\", \"N.\"), family = \"Boshnakov\",  role = c(\"cre\", \"aut\"), email = \"georgi.boshnakov@manchester.ac.uk\", comment = c(ORCID = \"0000-0003-2839-346X\")) )",
@@ -6134,8 +6134,8 @@
       ],
       "License": "GPL (>= 2)",
       "Encoding": "UTF-8",
-      "URL": "https://geobosh.github.io/timeDateDoc/ (doc), https://r-forge.r-project.org/scm/viewvc.php/pkg/timeDate/?root=rmetrics (devel), https://www.rmetrics.org",
-      "BugReports": "https://r-forge.r-project.org/projects/rmetrics",
+      "URL": "https://geobosh.github.io/timeDateDoc/ (doc), https://CRAN.R-project.org/package=timeDate, https://www.rmetrics.org",
+      "BugReports": "https://r-forge.r-project.org/tracker/?atid=633&group_id=156&func=browse",
       "NeedsCompilation": "no",
       "Author": "Diethelm Wuertz [aut] (original code), Tobias Setz [aut], Yohan Chalabi [aut], Martin Maechler [ctb] (ORCID: <https://orcid.org/0000-0002-8685-9910>), Joe W. Byers [ctb], Georgi N. Boshnakov [cre, aut] (ORCID: <https://orcid.org/0000-0003-2839-346X>)",
       "Maintainer": "Georgi N. Boshnakov <georgi.boshnakov@manchester.ac.uk>",
