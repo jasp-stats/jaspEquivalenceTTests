@@ -48,3 +48,7 @@ Thumbs.db
 # RStudio files
 .Rproj.user
 _processedLockFile.lock
+
+# Claude Code personal preferences
+CLAUDE.local.md
+.claude/settings.local.json

@@ -36,66 +36,74 @@ Form
 
     Group
     {
-        DoubleField { name: "mu";	text: qsTr("Test value");		defaultValue: 0}
+        Group
+		{
+			DoubleField { name: "mu";	text: qsTr("Test value");		defaultValue: 0}
+		}
+
+		Group
+		{
+			title: qsTr("Equivalence Region")
+			columns: 2
+
+			RadioButtonGroup
+			{
+			name: "equivalenceRegion"
+			GridLayout
+			{
+				columns: 3
+				rowSpacing: jaspTheme.rowGroupSpacing
+				columnSpacing: 0
+
+				RadioButton { value: "region"; checked: true; id: region }
+				DoubleField { name: "lowerbound"; label: qsTr("from")	; max: upperbound.value; defaultValue: -0.05; id: lowerbound; negativeValues: true; inclusive: JASP.None}
+				DoubleField { name: "upperbound"; label: qsTr("to")	; min: lowerbound.value; defaultValue: 0.05;  id: upperbound; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+
+				RadioButton { value: "lower"; id: lower }
+				Label		  { text: qsTr("from %1").arg(" -∞ ")}
+				DoubleField { name: "lower_max"; label: qsTr("to"); id: lower_max; defaultValue: 0.05; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
+
+				RadioButton { value: "upper"; id: upper }
+				DoubleField { name: "upper_min"; label: qsTr("from"); id: upper_min; defaultValue: -0.05; negativeValues: true}
+				Label		  { text: qsTr("to %1").arg(" ∞ "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
+				}
+			}
+
+			DropDown
+			{
+				Layout.columnSpan: 2
+				name: "boundstype"
+				label: qsTr("Bounds specification in")
+				indexDefaultValue: 1
+				values:
+				[
+					{ value: "cohensD", label: qsTr("Cohen's d")	},
+					{ value: "raw",     label: qsTr("Raw")			}
+				]
+			}
+
+			DoubleField { name: "alpha";        text: qsTr("Alpha level");                  defaultValue: 0.05; max: 0.49; min: 0}
+		}
     }
 
-    Group
-    {
-        title: qsTr("Additional Statistics")
-        CheckBox { name: "descriptives";					text: qsTr("Descriptives")	}
-        CheckBox { name: "equivalenceboundsplot";           text: qsTr("Equivalence bounds plot")	}
-    }
+	Group
+	{
+		Group
+		{
+			title: qsTr("Additional Statistics")
+			CheckBox { name: "descriptives";					text: qsTr("Descriptives")	}
+			CheckBox { name: "equivalenceboundsplot";           text: qsTr("Equivalence bounds plot")	}
+		}
 
-    Group
-    {
-        title: qsTr("Equivalence Region")
-        columns: 2
 
-        RadioButtonGroup
-        {
-           name: "equivalenceRegion"
-           GridLayout
-           {
-              columns: 3
-              rowSpacing: jaspTheme.rowGroupSpacing
-              columnSpacing: 0
 
-              RadioButton { value: "region"; checked: true; id: region }
-              DoubleField { name: "lowerbound"; label: qsTr("from")	; max: upperbound.value; defaultValue: -0.05; id: lowerbound; negativeValues: true; inclusive: JASP.None}
-              DoubleField { name: "upperbound"; label: qsTr("to")	; min: lowerbound.value; defaultValue: 0.05;  id: upperbound; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
-
-              RadioButton { value: "lower"; id: lower }
-              Label		  { text: qsTr("from %1").arg(" -∞ ")}
-              DoubleField { name: "lower_max"; label: qsTr("to"); id: lower_max; defaultValue: 0.05; negativeValues: true; Layout.leftMargin: jaspTheme.columnGroupSpacing; inclusive: JASP.None}
-
-              RadioButton { value: "upper"; id: upper }
-              DoubleField { name: "upper_min"; label: qsTr("from"); id: upper_min; defaultValue: -0.05; negativeValues: true}
-              Label		  { text: qsTr("to %1").arg(" ∞ "); Layout.leftMargin: jaspTheme.columnGroupSpacing}
-            }
-        }
-
-        DropDown
-        {
-            Layout.columnSpan: 2
-            name: "boundstype"
-            label: qsTr("Bounds specification in")
-            indexDefaultValue: 1
-            values:
-            [
-                { value: "cohensD", label: qsTr("Cohen's d")	},
-                { value: "raw",     label: qsTr("Raw")			}
-            ]
-        }
-
-        DoubleField { name: "alpha";        text: qsTr("Alpha level");                  defaultValue: 0.05; max: 0.49; min: 0}
-    }
-
-    RadioButtonGroup
-    {
-        name: "missingValues"
-        title: qsTr("Missing Values")
-		RadioButton { value: "excludeAnalysisByAnalysis";	label: qsTr("Exclude cases per dependent variable"); checked: true	}
-        RadioButton { value: "excludeListwise";				label: qsTr("Exclude cases listwise")							}
-    }
+		RadioButtonGroup
+		{
+			name: "missingValues"
+			title: qsTr("Missing Values")
+			RadioButton { value: "excludeAnalysisByAnalysis";	label: qsTr("Exclude cases per dependent variable"); checked: true	}
+			RadioButton { value: "excludeListwise";				label: qsTr("Exclude cases listwise")							}
+		}
+	}
 
 }
