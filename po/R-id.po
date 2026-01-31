@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
-"POT-Creation-Date: 2025-03-08 02:50\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: 2022-02-17 15:13+0000\n"
 "Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/jasp/"
@@ -19,6 +19,9 @@ msgstr "I berkisar dari %1$s hingga %2$s"
 msgid "Equivalence Prior and Posterior"
 msgstr "Prior dan Posterior Setara"
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr "Besaran efek"
 
@@ -27,7 +30,12 @@ msgstr "Analisis Sekuensial Setara"
 
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
-"informed prior."
+"informed priors."
+msgstr ""
+
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 
 msgid "n"
@@ -38,6 +46,29 @@ msgstr "Mohon tambahkan variabel lainnya."
 
 msgid "Variables %1$s and %2$s are the same!"
 msgstr "Variabel %1$s dan %2$s sama!"
+
+#, fuzzy
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr "I berkisar dari %1$s hingga %2$s"
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
+msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Uji-t Sampel Independen Bayesian Setara"

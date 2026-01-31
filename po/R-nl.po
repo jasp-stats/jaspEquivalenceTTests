@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2025-03-08 02:50\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: 2025-05-03 03:09+0000\n"
 "Last-Translator: Koen Derks <koen-derks@hotmail.com>\n"
 "Language-Team: Dutch <https://hosted.weblate.org/projects/jasp/"
@@ -20,15 +20,27 @@ msgstr "I varieert van %1$s tot %2$s"
 msgid "Equivalence Prior and Posterior"
 msgstr "Gelijkwaardigheid Prior en Posterior"
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr "Effectgrootte"
 
 msgid "Equivalence Sequential Analysis"
 msgstr "Gelijkwaardigheid Sequentiële Analyse"
 
+#, fuzzy
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
-"informed prior."
+"informed priors."
+msgstr ""
+"Sequentiële analyse robuustheidsevaluatiegrafiek momenteel niet ondersteund "
+"voor de geïnformeerde prior."
+
+#, fuzzy
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 "Sequentiële analyse robuustheidsevaluatiegrafiek momenteel niet ondersteund "
 "voor de geïnformeerde prior."
@@ -41,6 +53,29 @@ msgstr "Geef a.u.b. een andere variable."
 
 msgid "Variables %1$s and %2$s are the same!"
 msgstr "Variabelen %1$s en %2$s zijn hetzelfde!"
+
+#, fuzzy
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr "I varieert van %1$s tot %2$s"
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
+msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Gelijkwaardigheid Bayesiaanse T-Toets Onafhankelijke Steekproeven"

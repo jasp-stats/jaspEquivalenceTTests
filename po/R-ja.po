@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.1.0\n"
-"POT-Creation-Date: 2025-03-08 02:50\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: 2024-07-02 16:09+0000\n"
 "Last-Translator: Koji Kosugi <kosugitti@gmail.com>\n"
 "Language-Team: Japanese <https://hosted.weblate.org/projects/jasp/"
@@ -19,15 +19,27 @@ msgstr "範囲を%1$sから%2$sへ"
 msgid "Equivalence Prior and Posterior"
 msgstr "同等の事前分布と事後分布"
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr "効果量"
 
 msgid "Equivalence Sequential Analysis"
 msgstr "同等性逐次解析"
 
+#, fuzzy
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
-"informed prior."
+"informed priors."
+msgstr ""
+"逐次解析のロバストネスチェックプロットは、現在、情報のある事前分布ではサポー"
+"トされていません."
+
+#, fuzzy
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 "逐次解析のロバストネスチェックプロットは、現在、情報のある事前分布ではサポー"
 "トされていません."
@@ -40,6 +52,29 @@ msgstr "別の変数を用意してください."
 
 msgid "Variables %1$s and %2$s are the same!"
 msgstr "変数 %1$s と %2$s は同じです!"
+
+#, fuzzy
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr "範囲を%1$sから%2$sへ"
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
+msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "同等性ベイジアン独立サンプルのt検定"

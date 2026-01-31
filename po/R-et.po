@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.95.0\n"
-"POT-Creation-Date: 2025-06-21 03:13\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -17,13 +17,23 @@ msgstr ""
 msgid "Equivalence Prior and Posterior"
 msgstr ""
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr ""
 
 msgid "Equivalence Sequential Analysis"
 msgstr ""
 
-msgid "Sequential analysis robustness check plot currently not supported for informed prior."
+msgid ""
+"Sequential analysis robustness check plot currently not supported for "
+"informed priors."
+msgstr ""
+
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 
 msgid "n"
@@ -33,6 +43,28 @@ msgid "Please provide another variable."
 msgstr ""
 
 msgid "Variables %1$s and %2$s are the same!"
+msgstr ""
+
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr ""
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
 msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"

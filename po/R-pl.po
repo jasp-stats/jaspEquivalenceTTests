@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.17.0\n"
-"POT-Creation-Date: 2025-03-08 02:50\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: 2025-07-16 23:01+0000\n"
 "Last-Translator: Tomasz Misiuro <tomaszmisiuro@gmail.com>\n"
 "Language-Team: Polish <https://hosted.weblate.org/projects/jasp/"
@@ -20,15 +20,27 @@ msgstr "I znajduje się w zakresie od %1$s do %2$s"
 msgid "Equivalence Prior and Posterior"
 msgstr "Prior i posterior równoważności"
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr "Wielkość efektu"
 
 msgid "Equivalence Sequential Analysis"
 msgstr "Analiza sekwencyjna równoważności"
 
+#, fuzzy
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
-"informed prior."
+"informed priors."
+msgstr ""
+"Wykres sprawdzający odporność analizy sekwencyjnej nie jest obecnie "
+"obsługiwany dla informacyjnych rozkładów a priori."
+
+#, fuzzy
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 "Wykres sprawdzający odporność analizy sekwencyjnej nie jest obecnie "
 "obsługiwany dla informacyjnych rozkładów a priori."
@@ -41,6 +53,29 @@ msgstr "Proszę podać kolejną zmienną."
 
 msgid "Variables %1$s and %2$s are the same!"
 msgstr "Zmienne %1$s i %2$s są takie same!"
+
+#, fuzzy
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr "I znajduje się w zakresie od %1$s do %2$s"
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
+msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Bayesowski test równoważności dla prób niezależnych"

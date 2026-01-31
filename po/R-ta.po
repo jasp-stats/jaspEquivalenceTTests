@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.19.2\n"
-"POT-Creation-Date: 2025-03-08 02:50\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: 2026-01-01 19:01+0000\n"
 "Last-Translator: தமிழ்நேரம் <tamilneram247@gmail.com>\n"
 "Language-Team: Tamil <https://hosted.weblate.org/projects/jasp/"
@@ -19,15 +19,26 @@ msgstr "நான் %1$s முதல் %2$s வரை இருக்கு�
 msgid "Equivalence Prior and Posterior"
 msgstr "சமநிலை முன் மற்றும் பின்புறம்"
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr "விளைவு அளவு"
 
 msgid "Equivalence Sequential Analysis"
 msgstr "சமநிலை தொடர்ச்சியான பகுப்பாய்வு"
 
+#, fuzzy
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
-"informed prior."
+"informed priors."
+msgstr ""
+"தொடர்ச்சியான பகுப்பாய்வு வலுவான சோதனை சூழ்ச்சி தற்போது தகவலறிந்த முன் ஆதரிக்கப்படவில்லை."
+
+#, fuzzy
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 "தொடர்ச்சியான பகுப்பாய்வு வலுவான சோதனை சூழ்ச்சி தற்போது தகவலறிந்த முன் ஆதரிக்கப்படவில்லை."
 
@@ -39,6 +50,29 @@ msgstr "மற்றொரு மாறியை வழங்கவும்."
 
 msgid "Variables %1$s and %2$s are the same!"
 msgstr "மாறிகள் %1$s மற்றும் %2$s ஆகியவை ஒன்றே!"
+
+#, fuzzy
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr "நான் %1$s முதல் %2$s வரை இருக்கும்"
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
+msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "சமநிலை பேய்சியன் சுயாதீன மாதிரிகள் டி-சோதனை"

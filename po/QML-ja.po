@@ -542,3 +542,101 @@ msgstr ""
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
 msgstr ""
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "境界指定:"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Cohen's d"
+msgstr "コーエン(Cohen)のd"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Raw"
+msgstr "生(Raw)"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Bounds specification in"
+msgstr "境界指定:"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Cohen's d"
+msgstr "コーエン(Cohen)のd"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Raw"
+msgstr "生(Raw)"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "境界指定:"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Cohen's d"
+msgstr "コーエン(Cohen)のd"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Raw"
+msgstr "生(Raw)"
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Prior"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Default"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Cauchy"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "scale"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Informative"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "location:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "scale:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Normal"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "mean:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "std:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "t"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "df:"
+msgstr ""
+
+#, fuzzy
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Raw"
+msgstr "生(Raw)"

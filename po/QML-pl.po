@@ -545,3 +545,97 @@ msgstr "Zmienne zależne"
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
 msgstr "Pary zmiennych"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "Specyfikacja granic"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Cohen's d"
+msgstr "d Cohena"
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Raw"
+msgstr ""
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Bounds specification in"
+msgstr "Specyfikacja granic"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Cohen's d"
+msgstr "d Cohena"
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Raw"
+msgstr ""
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Bounds specification in"
+msgstr "Specyfikacja granic"
+
+#, fuzzy
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Cohen's d"
+msgstr "d Cohena"
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Raw"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Prior"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Default"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Cauchy"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "scale"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Informative"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "location:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "scale:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Normal"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "mean:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "std:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "t"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "df:"
+msgstr ""
+
+msgctxt "EquivalenceSubjectivePriors|"
+msgid "Raw"
+msgstr ""

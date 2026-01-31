@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-03-08 02:50\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: 2025-07-18 11:11+0000\n"
 "Last-Translator: ecadrian <ecadrian@hotmail.com>\n"
 "Language-Team: Galician <https://hosted.weblate.org/projects/jasp/"
@@ -27,15 +27,27 @@ msgstr "I flutúa de %1$s a %2$s"
 msgid "Equivalence Prior and Posterior"
 msgstr "Equivalencia Previa e Posterior"
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr "Magnitude do efecto"
 
 msgid "Equivalence Sequential Analysis"
 msgstr "Análise Secuencial de Equivalencias"
 
+#, fuzzy
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
-"informed prior."
+"informed priors."
+msgstr ""
+"Gráfica de comprobación da robustez da análise secuencial actualmente non é "
+"compatible coa previa informada."
+
+#, fuzzy
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 "Gráfica de comprobación da robustez da análise secuencial actualmente non é "
 "compatible coa previa informada."
@@ -48,6 +60,29 @@ msgstr "Por favor, proporciona outra variable."
 
 msgid "Variables %1$s and %2$s are the same!"
 msgstr "As variables %1$s e %2$s son as mesmas!"
+
+#, fuzzy
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr "I flutúa de %1$s a %2$s"
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
+msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Proba T baiesiana de Equivalencia para Mostras Independentes"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.95.0\n"
-"POT-Creation-Date: 2025-06-21 03:13\n"
+"POT-Creation-Date: 2026-01-31 03:33\n"
 "PO-Revision-Date: 2025-10-20 06:17+0000\n"
 "Last-Translator: Gabija Vaitkevičiūtė <gabija.vaitkev@gmail.com>\n"
 "Language-Team: Lithuanian <https://hosted.weblate.org/projects/jasp/"
@@ -10,8 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural="
-"(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 5.14-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
@@ -20,13 +20,23 @@ msgstr ""
 msgid "Equivalence Prior and Posterior"
 msgstr ""
 
+msgid "Mean Difference (Raw)"
+msgstr ""
+
 msgid "Effect size"
 msgstr ""
 
 msgid "Equivalence Sequential Analysis"
 msgstr ""
 
-msgid "Sequential analysis robustness check plot currently not supported for informed prior."
+msgid ""
+"Sequential analysis robustness check plot currently not supported for "
+"informed priors."
+msgstr ""
+
+msgid ""
+"Sequential analysis robustness check plot currently not supported for raw "
+"scale priors."
 msgstr ""
 
 msgid "n"
@@ -36,6 +46,28 @@ msgid "Please provide another variable."
 msgstr ""
 
 msgid "Variables %1$s and %2$s are the same!"
+msgstr ""
+
+msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
+msgstr ""
+
+msgid ""
+"I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
+"on the Cohen's d scale)"
+msgstr ""
+
+msgid "Cauchy(%s, %s)"
+msgstr ""
+
+msgid "Normal(%s, %s)"
+msgstr ""
+
+msgid "t(%s, %s, df=%s)"
+msgstr ""
+
+msgid ""
+"The prior distribution on the raw scale corresponds to %s on the Cohen's d "
+"scale"
 msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
