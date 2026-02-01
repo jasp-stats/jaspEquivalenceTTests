@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-02-02 03:40+0000\n"
+"Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
+"Language-Team: German <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.16-dev\n"
 "X-Language: de\n"
 "X-Source-Language: American English\n"
 "X-Qt-Contexts: true\n"
@@ -551,12 +557,10 @@ msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Bounds specification in"
 msgstr "Grenzenspezifikation in"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Cohen's d"
 msgstr "Cohens d"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Raw"
 msgstr "Roh"
@@ -566,12 +570,10 @@ msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Bounds specification in"
 msgstr "Grenzenspezifikation in"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Cohen's d"
 msgstr "Cohens d"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Raw"
 msgstr "Roh"
@@ -581,65 +583,62 @@ msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Bounds specification in"
 msgstr "Grenzenspezifikation in"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Cohen's d"
 msgstr "Cohens d"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Raw"
 msgstr "Roh"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Prior"
-msgstr ""
+msgstr "Prior"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Cauchy"
-msgstr ""
+msgstr "Cauchy"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale"
-msgstr ""
+msgstr "Skalenparameter"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Informative"
-msgstr ""
+msgstr "Informativ"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "location:"
-msgstr ""
+msgstr "Lageparameter:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale:"
-msgstr ""
+msgstr "Skalenparameter:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "mean:"
-msgstr ""
+msgstr "Mittelwert:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "std:"
-msgstr ""
+msgstr "Std:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "df:"
-msgstr ""
+msgstr "df:"
 
-#, fuzzy
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Raw"
 msgstr "Roh"
