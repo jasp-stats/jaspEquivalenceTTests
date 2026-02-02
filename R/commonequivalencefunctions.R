@@ -1268,15 +1268,15 @@ gettextf <- function(fmt, ..., domain = NULL)  {
     if (options[["rawEffectSize"]] == "cauchy") {
       smd_location <- format(options[["rawCauchyLocation"]] / sd_val, digits = 3)
       smd_scale <- format(options[["rawCauchyScale"]] / sd_val, digits = 3)
-      prior_text <- gettextf("Cauchy(%s, %s)", smd_location, smd_scale)
+      prior_text <- gettextf("Cauchy(%1$s, %2$s)", smd_location, smd_scale)
     } else if (options[["rawEffectSize"]] == "normal") {
       smd_mean <- format(options[["rawNormalMean"]] / sd_val, digits = 3)
       smd_std <- format(options[["rawNormalStd"]] / sd_val, digits = 3)
-      prior_text <- gettextf("Normal(%s, %s)", smd_mean, smd_std)
+      prior_text <- gettextf("Normal(%1$s, %2$s)", smd_mean, smd_std)
     } else if (options[["rawEffectSize"]] == "t") {
       smd_location <- format(options[["rawTLocation"]] / sd_val, digits = 3)
       smd_scale <- format(options[["rawTScale"]] / sd_val, digits = 3)
-      prior_text <- gettextf("t(%s, %s, df=%s)",
+      prior_text <- gettextf("t(%1$s, %2$s, df=%3$s)",
                             smd_location,
                             smd_scale,
                             options[["rawTDf"]])
