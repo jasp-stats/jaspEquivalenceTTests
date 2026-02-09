@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2026-01-31 03:33\n"
+"POT-Creation-Date: 2026-02-09 12:24\n"
 "PO-Revision-Date: 2026-01-31 16:18+0000\n"
 "Last-Translator: Wendel Paulo Silvestre <wpsilvestre@ucs.br>\n"
 "Language-Team: Portuguese <https://hosted.weblate.org/projects/jasp/"
@@ -65,13 +65,16 @@ msgstr ""
 "I varia de %1$s a %2$s na escala bruta (correspondendo a [%3$s, %4$s] na "
 "escala d de Cohen)"
 
-msgid "Cauchy(%s, %s)"
+#, fuzzy
+msgid "Cauchy(%1$s, %2$s)"
 msgstr "Cauchy(%s, %s)"
 
-msgid "Normal(%s, %s)"
+#, fuzzy
+msgid "Normal(%1$s, %2$s)"
 msgstr "Normal(%s, %s)"
 
-msgid "t(%s, %s, df=%s)"
+#, fuzzy
+msgid "t(%1$s, %2$s, df=%3$s)"
 msgstr "t(%s, %s, gl=%s)"
 
 msgid ""

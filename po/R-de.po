@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: R 3.6.1\n"
 "Report-Msgid-Bugs-To: github.com/jasp-stats/jasp-issues/issues\n"
-"POT-Creation-Date: 2026-01-31 03:33\n"
+"POT-Creation-Date: 2026-02-09 12:24\n"
 "PO-Revision-Date: 2025-04-26 03:06+0000\n"
 "Last-Translator: Johannes Keyser <joke@fsfe.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/jasp/"
@@ -63,13 +63,14 @@ msgid ""
 "on the Cohen's d scale)"
 msgstr ""
 
-msgid "Cauchy(%s, %s)"
+msgid "Cauchy(%1$s, %2$s)"
 msgstr ""
 
-msgid "Normal(%s, %s)"
-msgstr ""
+#, fuzzy
+msgid "Normal(%1$s, %2$s)"
+msgstr "Nicht-Überlappung (%1$s vs. %2$s)"
 
-msgid "t(%s, %s, df=%s)"
+msgid "t(%1$s, %2$s, df=%3$s)"
 msgstr ""
 
 msgid ""
