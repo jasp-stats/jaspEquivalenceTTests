@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.15.0\n"
 "POT-Creation-Date: 2026-02-09 12:24\n"
-"PO-Revision-Date: 2022-02-17 15:13+0000\n"
-"Last-Translator: Reza Almanda <rezaalmanda27@gmail.com>\n"
+"PO-Revision-Date: 2026-03-18 03:09+0000\n"
+"Last-Translator: Zahid Rizky Fakhri <zahidrizkyfakhri@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/id/>\n"
 "Language: id\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 5.17-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
 msgstr "I berkisar dari %1$s hingga %2$s"
@@ -20,10 +20,10 @@ msgid "Equivalence Prior and Posterior"
 msgstr "Prior dan Posterior Setara"
 
 msgid "Mean Difference (Raw)"
-msgstr ""
+msgstr "Perbedaan Rata-rata (Mentah)"
 
 msgid "Effect size"
-msgstr "Besaran efek"
+msgstr "Ukuran efek"
 
 msgid "Equivalence Sequential Analysis"
 msgstr "Analisis Sekuensial Setara"
@@ -32,11 +32,15 @@ msgid ""
 "Sequential analysis robustness check plot currently not supported for "
 "informed priors."
 msgstr ""
+"Diagram pemeriksaan ketahanan analisis sekuensial saat ini belum didukung "
+"untuk priori yang terinformasi."
 
 msgid ""
 "Sequential analysis robustness check plot currently not supported for raw "
 "scale priors."
 msgstr ""
+"Diagram pemeriksaan ketahanan analisis sekuensial saat ini belum didukung "
+"untuk priori skala mentah."
 
 msgid "n"
 msgstr "n"
@@ -47,53 +51,54 @@ msgstr "Mohon tambahkan variabel lainnya."
 msgid "Variables %1$s and %2$s are the same!"
 msgstr "Variabel %1$s dan %2$s sama!"
 
-#, fuzzy
 msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
-msgstr "I berkisar dari %1$s hingga %2$s"
+msgstr "I berkisar dari %1$s sampai %2$s pada skala d Cohen"
 
 msgid ""
 "I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
 "on the Cohen's d scale)"
 msgstr ""
+"I berkisar dari %1$s sampai %2$s pada skala mentah (setara dengan [%3$s, "
+"%4$s] pada skala d Cohen)"
 
 msgid "Cauchy(%1$s, %2$s)"
-msgstr ""
+msgstr "Cauchy(%1$s, %2$s)"
 
 msgid "Normal(%1$s, %2$s)"
-msgstr ""
+msgstr "Normal(%1$s, %2$s)"
 
 msgid "t(%1$s, %2$s, df=%3$s)"
-msgstr ""
+msgstr "t(%1$s, %2$s, df=%3$s)"
 
 msgid ""
 "The prior distribution on the raw scale corresponds to %s on the Cohen's d "
 "scale"
 msgstr ""
+"Distribusi a priori pada skala mentah setara dengan %s pada skala d Cohen"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Uji-t Sampel Independen Bayesian Setara"
 
 msgid "Type"
-msgstr ""
+msgstr "Jenis"
 
 msgid "Model Comparison"
 msgstr "Perbandingan Model"
 
-#, fuzzy
 msgid "error %%"
-msgstr "galat %"
+msgstr "galat %%"
 
 msgid "Overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "Tumpang tindih (%1$s vs. %2$s)"
 
 msgid "Non-overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "Tidak tumpang tindih (%1$s vs. %2$s)"
 
 msgid "Descriptives"
 msgstr "Deskriptif"
 
 msgid "Group"
-msgstr "Kelompok"
+msgstr "Grup"
 
 msgid "N"
 msgstr "N"
@@ -117,28 +122,28 @@ msgid "Upper"
 msgstr "Atas"
 
 msgid "Prior and Posterior Mass Table"
-msgstr ""
+msgstr "Tabel Massa Sebelumnya dan Posterior"
 
 msgid "Section"
 msgstr "Bagian"
 
 msgid "Prior Mass"
-msgstr ""
+msgstr "Massa Sebelumnya"
 
 msgid "Posterior Mass"
-msgstr ""
+msgstr "Massa Posterior"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Satu Bayesian Kesetaraan"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Berpasang Bayesian Kesetaraan"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "Tabel Massa Kesetaraan"
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Independen Kesetaraan"
 
 msgid "Statistic"
 msgstr "Statistik"
@@ -180,16 +185,16 @@ msgid "Cohen's d"
 msgstr "d Cohen"
 
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "Plot Batas Keseteraan"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Satu Kesetaraan"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Berpasang Kesetaraan"
 
 #~ msgid "BF"
 #~ msgstr "BF"
