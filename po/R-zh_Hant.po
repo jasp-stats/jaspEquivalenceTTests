@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.18.2\n"
 "POT-Creation-Date: 2026-02-09 12:24\n"
-"PO-Revision-Date: 2026-03-31 14:09+0000\n"
+"PO-Revision-Date: 2026-04-01 16:09+0000\n"
 "Last-Translator: 陳正昌 <chencc99@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/jasp/jaspequivalencettests-r/zh_Hant/>\n"
@@ -14,13 +14,13 @@ msgstr ""
 "X-Generator: Weblate 5.17-dev\n"
 
 msgid "I ranges from %1$s to %2$s"
-msgstr ""
+msgstr "I 的範圍為 %1$s 至 %2$s"
 
 msgid "Equivalence Prior and Posterior"
-msgstr ""
+msgstr "等效性先驗與後驗"
 
 msgid "Mean Difference (Raw)"
-msgstr ""
+msgstr "平均數差異（原始）"
 
 msgid "Effect size"
 msgstr "效果量"
@@ -59,7 +59,7 @@ msgid "Cauchy(%1$s, %2$s)"
 msgstr ""
 
 msgid "Normal(%1$s, %2$s)"
-msgstr ""
+msgstr "常態分配(%1$s, %2$s)"
 
 msgid "t(%1$s, %2$s, df=%3$s)"
 msgstr ""
@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
-msgstr ""
+msgstr "等效性貝氏獨立樣本 T 檢定"
 
 msgid "Type"
 msgstr "類型"
@@ -137,7 +137,7 @@ msgid "Equivalence Mass Table"
 msgstr ""
 
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "等效性獨立樣本 T 檢定"
 
 msgid "Statistic"
 msgstr "統計量"
@@ -146,7 +146,7 @@ msgid "t"
 msgstr "t"
 
 msgid "df"
-msgstr "df"
+msgstr "自由度"
 
 msgid "p"
 msgstr "p"
