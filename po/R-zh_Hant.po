@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.18.2\n"
 "POT-Creation-Date: 2026-02-09 12:24\n"
-"PO-Revision-Date: 2026-04-01 16:09+0000\n"
+"PO-Revision-Date: 2026-04-03 15:09+0000\n"
 "Last-Translator: 陳正昌 <chencc99@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
 "projects/jasp/jaspequivalencettests-r/zh_Hant/>\n"
@@ -26,17 +26,17 @@ msgid "Effect size"
 msgstr "效果量"
 
 msgid "Equivalence Sequential Analysis"
-msgstr ""
+msgstr "等效序列分析"
 
 msgid ""
 "Sequential analysis robustness check plot currently not supported for "
 "informed priors."
-msgstr ""
+msgstr "目前不支援對已知先驗進行序列分析穩健性檢查圖。"
 
 msgid ""
 "Sequential analysis robustness check plot currently not supported for raw "
 "scale priors."
-msgstr ""
+msgstr "目前不支援對原始刻度先驗進行序列分析穩健性檢查圖。"
 
 msgid "n"
 msgstr "n"
@@ -48,12 +48,12 @@ msgid "Variables %1$s and %2$s are the same!"
 msgstr "變數 %1$s 和 %2$s 相同!"
 
 msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
-msgstr ""
+msgstr "I 在 Cohen's d 量表上範圍為 %1$s 到 %2$s"
 
 msgid ""
 "I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
 "on the Cohen's d scale)"
-msgstr ""
+msgstr "I 在原始刻度上的範圍為 %1$s 到 %2$s（對應於 Cohen's d 量表的 [%3$s, %4$s]）"
 
 msgid "Cauchy(%1$s, %2$s)"
 msgstr ""
@@ -67,7 +67,7 @@ msgstr ""
 msgid ""
 "The prior distribution on the raw scale corresponds to %s on the Cohen's d "
 "scale"
-msgstr ""
+msgstr "原始刻度的先驗分布對應於 Cohen's d 量表上的 %s"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "等效性貝氏獨立樣本 T 檢定"
@@ -78,15 +78,14 @@ msgstr "類型"
 msgid "Model Comparison"
 msgstr "模型比較"
 
-#, fuzzy
 msgid "error %%"
-msgstr "誤差 %"
+msgstr "誤差 %%"
 
 msgid "Overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "重疊（%1$s 對 %2$s）"
 
 msgid "Non-overlapping (%1$s vs. %2$s)"
-msgstr ""
+msgstr "不重疊（%1$s 對 %2$s）"
 
 msgid "Descriptives"
 msgstr "描述性統計"
@@ -107,7 +106,7 @@ msgid "SE"
 msgstr "標準誤"
 
 msgid "95%% Credible Interval"
-msgstr ""
+msgstr "95% 可信區間"
 
 msgid "Lower"
 msgstr "下界"
@@ -122,19 +121,19 @@ msgid "Section"
 msgstr ""
 
 msgid "Prior Mass"
-msgstr ""
+msgstr "先驗總量"
 
 msgid "Posterior Mass"
-msgstr ""
+msgstr "後驗總量"
 
 msgid "Equivalence Bayesian One Sample T-Test"
-msgstr ""
+msgstr "等效貝式單樣本 t 檢定"
 
 msgid "Equivalence Bayesian Paired Samples T-Test"
-msgstr ""
+msgstr "等效貝式配對樣本 t 檢定"
 
 msgid "Equivalence Mass Table"
-msgstr ""
+msgstr "等效總量表"
 
 msgid "Equivalence Independent Samples T-Test"
 msgstr "等效性獨立樣本 T 檢定"
@@ -161,16 +160,16 @@ msgid "Lower bound"
 msgstr "下界"
 
 msgid "Equivalence Bounds"
-msgstr ""
+msgstr "等效界限"
 
 msgid "Bounds type"
-msgstr ""
+msgstr "界限類型"
 
 msgid "Low"
-msgstr ""
+msgstr "下界"
 
 msgid "High"
-msgstr ""
+msgstr "上界"
 
 msgid "%s%% Confidence Interval"
 msgstr "%s%% 信賴區間"
@@ -179,16 +178,16 @@ msgid "Cohen's d"
 msgstr "Cohen's d"
 
 msgid "Raw"
-msgstr ""
+msgstr "原始"
 
 msgid "Equivalence Bounds Plots"
-msgstr ""
+msgstr "等效界限圖"
 
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "等效單一樣本 T 檢定"
 
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "等效配對樣本 T 檢定"
 
 #~ msgid "BF"
 #~ msgstr "BF"
