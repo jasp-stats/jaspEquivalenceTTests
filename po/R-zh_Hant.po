@@ -106,7 +106,7 @@ msgid "SE"
 msgstr "標準誤"
 
 msgid "95%% Credible Interval"
-msgstr "95% 可信區間"
+msgstr "95%% 可信區間"
 
 msgid "Lower"
 msgstr "下界"
