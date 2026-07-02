@@ -1,9 +1,15 @@
 msgid ""
 msgstr ""
+"PO-Revision-Date: 2026-07-02 11:08+0000\n"
+"Last-Translator: Zahid Rizky Fakhri <zahidrizkyfakhri@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/id/>\n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2026.7.dev0\n"
 "X-Language: id\n"
 "X-Qt-Contexts: true\n"
 
@@ -13,11 +19,11 @@ msgstr "Uji-T Kesetaraan"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
-msgstr ""
+msgstr "Uji perbedaan antara dua rerata dengan hipotesis null-interval"
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Independen Kesetaraan"
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
@@ -25,7 +31,7 @@ msgstr "Uji-T Sampel Independen"
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Berpasangan Kesetaraan"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
@@ -33,7 +39,7 @@ msgstr "Uji-T Sampel Berpasangan"
 
 msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Uji-T Satu Sampel Kesetaraan"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
@@ -41,267 +47,267 @@ msgstr "Uji-T Satu Sampel"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr ""
+msgstr "Variabel Penggrupan"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Wilayah Kesetaraan"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "dari"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ke"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "dari %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "ke %1"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistik Tambahan"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptif"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "Massa priori dan posterior"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "Diagram"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Priori dan posterior"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Info tambahan"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Analisis sekuensial"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "Pemeriksaan kekuatan"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Nilai Hilang"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "Kecualikan kasus per variabel dependen"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Kecualikan kasus berdaftar"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "Variabel"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
-msgstr ""
+msgstr "Nilai uji"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Wilayah Kesetaraan"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "dari"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "ke"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "dari %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "ke %1"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistik Tambahan"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptif"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "Massa priori dan posterior"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "Diagram"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Priori dan posterior"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Info tambahan"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Analisis sekuensial"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "Pemeriksaan kekuatan"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Nilai Hilang"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "Kecualikan kasus per variabel dependen"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Kecualikan kasus berdaftar"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Wilayah Kesetaraan"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "dari"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ke"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "dari %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "ke %1"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistik Tambahan"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptif"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "Massa priori dan posterior"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "Diagram"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "Priori dan posterior"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "Info tambahan"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "Analisis sekuensial"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "Pemeriksaan kekuatan"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Nilai Hilang"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "Kecualikan kasus per variabel dependen"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Kecualikan kasus berdaftar"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr ""
+msgstr "Variabel Penggrupan"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Tests"
-msgstr ""
+msgstr "Uji-T"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Student"
-msgstr ""
+msgstr "t Student"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Welch"
-msgstr ""
+msgstr "Welch"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistik Tambahan"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptif"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "Diagram batas kesetaraan"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Wilayah Kesetaraan"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "dari"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ke"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "dari %1"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "ke %1"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Spesifikasi batas di"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
@@ -309,69 +315,69 @@ msgstr "d Cohen"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "Tingkat alfa"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Nilai Hilang"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "Kecualikan kasus per variabel dependen"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Kecualikan kasus berdaftar"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "Variabel"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
-msgstr ""
+msgstr "Nilai uji"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistik Tambahan"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptif"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "Diagram batas kesetaraan"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Wilayah Kesetaraan"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "dari"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "ke"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "dari %1"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "ke %1"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Spesifikasi batas di"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
@@ -379,49 +385,49 @@ msgstr "d Cohen"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "Tingkat alfa"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Nilai Hilang"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "Kecualikan kasus per variabel dependen"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Kecualikan kasus berdaftar"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "Wilayah Kesetaraan"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "dari"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "ke"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "dari %1"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "ke %1"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Spesifikasi batas di"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
@@ -429,39 +435,39 @@ msgstr "d Cohen"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "Tingkat alfa"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "Statistik Tambahan"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "Deskriptif"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "Diagram batas kesetaraan"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "Nilai Hilang"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "Kecualikan kasus per variabel dependen"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "Kecualikan kasus berdaftar"
 
 msgctxt "Description|"
 msgid "Classical"
-msgstr "Klasikal"
+msgstr "Klasik"
 
 msgctxt "Description|"
 msgid "Bayesian"
@@ -469,63 +475,63 @@ msgstr "Bayes"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Independen Kesetaraan Bayes"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "Uji-T Sampel Berpasangan Kesetaraan Bayes"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence One Sample T-Test"
-msgstr ""
+msgstr "Uji-T Satu Sampel Kesetaraan Bayes"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "Hipotesis Alternatif"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 ≠ Group 2"
-msgstr ""
+msgstr "Grup 1 ≠ Grup 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 > Group 2"
-msgstr ""
+msgstr "Grup 1 > Grup 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 < Group 2"
-msgstr ""
+msgstr "Grup 1 < Grup 2"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "Hipotesis Alternatif"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "≠ Test value"
-msgstr ""
+msgstr "≠ Nilai uji"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "> Test value"
-msgstr ""
+msgstr "> Nilai uji"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "< Test value"
-msgstr ""
+msgstr "< Nilai uji"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "Hipotesis Alternatif"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 ≠ Measure 2"
-msgstr ""
+msgstr "Pengukuran 1 ≠ Pengukuran 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 > Measure 2"
-msgstr ""
+msgstr "Pengukuran 1 > Pengukuran 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
-msgstr ""
+msgstr "Pengukuran 1 < Pengukuran 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Dependent Variables"
@@ -533,7 +539,7 @@ msgstr "Variabel Terikat"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "Pasangan Variabel"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Dependent Variables"
@@ -541,11 +547,11 @@ msgstr "Variabel Terikat"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "Pasangan Variabel"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Spesifikasi batas di"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Cohen's d"
@@ -553,11 +559,11 @@ msgstr "d Cohen"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Spesifikasi batas di"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Cohen's d"
@@ -565,11 +571,11 @@ msgstr "d Cohen"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "Spesifikasi batas di"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Cohen's d"
@@ -577,56 +583,56 @@ msgstr "d Cohen"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Prior"
-msgstr ""
+msgstr "Priori"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Default"
-msgstr ""
+msgstr "Bawaan"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Cauchy"
-msgstr ""
+msgstr "Cauchy"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale"
-msgstr ""
+msgstr "skala"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Informative"
-msgstr ""
+msgstr "Informatif"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "location:"
-msgstr ""
+msgstr "lokasi:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale:"
-msgstr ""
+msgstr "skala:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Normal"
-msgstr ""
+msgstr "Normal"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "mean:"
-msgstr ""
+msgstr "rerata:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "std:"
-msgstr ""
+msgstr "std:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "df:"
-msgstr ""
+msgstr "df:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Raw"
-msgstr ""
+msgstr "Mentah"
