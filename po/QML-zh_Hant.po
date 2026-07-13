@@ -6,6 +6,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Language: zh_Hant\n"
 "X-Qt-Contexts: true\n"
+"PO-Revision-Date: 2026-07-14 07:01+0000\n"
+"Last-Translator: 陳正昌 <chencc99@gmail.com>\n"
+"Language-Team: Chinese (Traditional Han script) <https://hosted.weblate.org/"
+"projects/jasp/jaspequivalencettests-qml/zh_Hant/>\n"
+"Language: zh_Hant\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
@@ -45,25 +51,25 @@ msgstr "分組變項"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效區域"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "從"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "到"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "從 %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "到 %1"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional Statistics"
@@ -71,11 +77,11 @@ msgstr "其他統計量"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述統計"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "先驗與後驗機率質量"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Plots"
@@ -83,31 +89,31 @@ msgstr "圖"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "先驗與後驗"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "其它資訊"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "序列分析"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "穩健型檢定"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "遺漏值"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "依各依變數排除個案"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "完全排除法"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
@@ -119,25 +125,25 @@ msgstr "檢定值"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效區域"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "從"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "到"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "從 %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "到 %1"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
@@ -145,11 +151,11 @@ msgstr "其他統計量"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述統計"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "先驗與後驗機率質量"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
@@ -157,53 +163,53 @@ msgstr "圖"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "先驗和後驗"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "其它資訊"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "序列分析"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "穩健型檢定"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "遺漏值"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "依各依變數排除個案"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "完全排除法"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效區域"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "從"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "到"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "從 %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "到 %1"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional Statistics"
@@ -211,11 +217,11 @@ msgstr "其他統計量"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述統計"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "先驗與後驗機率質量"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
@@ -223,31 +229,31 @@ msgstr "圖"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "先驗和後驗"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "其它資訊"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "序列分析"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "穩健型檢定"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "遺漏值"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "依各依變數排除個案"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "完全排除法"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -255,15 +261,15 @@ msgstr "分組變項"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Tests"
-msgstr ""
+msgstr "檢定"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Student"
-msgstr ""
+msgstr "Student t 檢定"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Welch"
-msgstr ""
+msgstr "Welch t 檢定"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Additional Statistics"
@@ -271,37 +277,37 @@ msgstr "其他統計量"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述統計"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "等效界限圖"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效區域"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "從"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "到"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "從 %1"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "到 %1"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
@@ -309,23 +315,23 @@ msgstr ""
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "原始"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "顯著水準"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "遺漏值"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "依各依變數排除個案"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "完全排除法"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
@@ -341,37 +347,37 @@ msgstr "其他統計量"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述統計"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "等效界限圖"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效區域"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "從"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "到"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "從 %1"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "到 %1"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
@@ -379,49 +385,49 @@ msgstr ""
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "原始"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "顯著水準"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "遺漏值"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "依各依變數排除個案"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "完全排除法"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "等效區域"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "從"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "到"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "從 %1"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "到 %1"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "等效界限的指定方式"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
@@ -429,11 +435,11 @@ msgstr ""
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "原始"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "顯著水準"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
@@ -441,23 +447,23 @@ msgstr "其他統計量"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "描述統計"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "等效界限圖"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "遺漏值"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "依各依變數排除個案"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "完全排除法"
 
 msgctxt "Description|"
 msgid "Classical"
@@ -481,7 +487,7 @@ msgstr "貝氏等效性單一樣本 T 檢定"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "對立假設"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 ≠ Group 2"
@@ -489,15 +495,15 @@ msgstr "組 1 ≠ 組 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 > Group 2"
-msgstr ""
+msgstr "組 1 > 組 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 < Group 2"
-msgstr ""
+msgstr "組 1 < 組 2"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "對立假設"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "≠ Test value"
@@ -513,39 +519,39 @@ msgstr "< 檢定值"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "對立假設"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 ≠ Measure 2"
-msgstr ""
+msgstr "測量 1 ≠ 測量 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 > Measure 2"
-msgstr ""
+msgstr "測量 1 > 測量 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
-msgstr ""
+msgstr "測量 1 < 測量 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "依變項"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "成對變項"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "依變項"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "成對變項"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Cohen's d"
@@ -553,11 +559,11 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "原始"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Cohen's d"
@@ -565,11 +571,11 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "原始"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Cohen's d"
@@ -577,15 +583,15 @@ msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "原始"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Prior"
-msgstr ""
+msgstr "先驗"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Default"
-msgstr ""
+msgstr "預設"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Cauchy"
@@ -593,31 +599,31 @@ msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale"
-msgstr ""
+msgstr "尺度"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Informative"
-msgstr ""
+msgstr "資訊性"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "location:"
-msgstr ""
+msgstr "位置："
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale:"
-msgstr ""
+msgstr "尺度："
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Normal"
-msgstr ""
+msgstr "常態"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "mean:"
-msgstr ""
+msgstr "平均數："
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "std:"
-msgstr ""
+msgstr "標準差："
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "t"
@@ -625,8 +631,8 @@ msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "df:"
-msgstr ""
+msgstr "自由度："
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Raw"
-msgstr ""
+msgstr "原始"
