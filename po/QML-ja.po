@@ -6,6 +6,12 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Language: ja\n"
 "X-Qt-Contexts: true\n"
+"PO-Revision-Date: 2026-07-28 08:01+0000\n"
+"Last-Translator: Koji Kosugi <kosugitti@gmail.com>\n"
+"Language-Team: Japanese <https://hosted.weblate.org/projects/jasp/"
+"jaspequivalencettests-qml/ja/>\n"
+"Language: ja\n"
+"X-Generator: Weblate 2026.8.dev0\n"
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
@@ -13,7 +19,7 @@ msgstr "同等性独立サンプルのt検定"
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
-msgstr "独立したサンプルのt検定"
+msgstr "対応のないt検定"
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
@@ -29,7 +35,7 @@ msgstr "同等性1サンプルのt検定"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
-msgstr "1標本のt検定"
+msgstr "1標本t検定"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
@@ -107,7 +113,7 @@ msgstr "変数"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
-msgstr "検定統計量:"
+msgstr "検定値"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
@@ -293,7 +299,7 @@ msgstr "%1 まで"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr "境界指定:"
+msgstr "境界の指定"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
@@ -325,7 +331,7 @@ msgstr "変数"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
-msgstr "検定統計量:"
+msgstr "検定値"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
@@ -363,7 +369,7 @@ msgstr "%1 まで"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr "境界指定:"
+msgstr "境界の指定"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
@@ -413,7 +419,7 @@ msgstr "%1 まで"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr "境界指定:"
+msgstr "境界の指定"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
@@ -461,182 +467,172 @@ msgstr "同等性t検定"
 
 msgctxt "Description|"
 msgid "Classical"
-msgstr "伝統的"
+msgstr "古典的"
 
 msgctxt "Description|"
 msgid "Bayesian"
-msgstr ""
+msgstr "ベイズ"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "ベイズ同等性 対応のないt検定"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "ベイズ同等性 対応のあるt検定"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence One Sample T-Test"
-msgstr ""
+msgstr "ベイズ同等性 1標本t検定"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "対立仮説"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 ≠ Group 2"
-msgstr ""
+msgstr "群1 ≠ 群2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 > Group 2"
-msgstr ""
+msgstr "群1 > 群2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 < Group 2"
-msgstr ""
+msgstr "群1 < 群2"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "対立仮説"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "≠ Test value"
-msgstr ""
+msgstr "≠ 検定値"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "> Test value"
-msgstr ""
+msgstr "> 検定値"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "< Test value"
-msgstr ""
+msgstr "< 検定値"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "対立仮説"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 ≠ Measure 2"
-msgstr ""
+msgstr "測定1 ≠ 測定2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 > Measure 2"
-msgstr ""
+msgstr "測定1 > 測定2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
-msgstr ""
+msgstr "測定1 < 測定2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "従属変数"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "変数ペア"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "従属変数"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "変数ペア"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr "境界指定:"
+msgstr "境界の指定"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Cohen's d"
 msgstr "コーエン(Cohen)のd"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Raw"
 msgstr "生(Raw)"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr "境界指定:"
+msgstr "境界の指定"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Cohen's d"
 msgstr "コーエン(Cohen)のd"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Raw"
 msgstr "生(Raw)"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr "境界指定:"
+msgstr "境界の指定"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Cohen's d"
 msgstr "コーエン(Cohen)のd"
 
-#, fuzzy
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Raw"
 msgstr "生(Raw)"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Prior"
-msgstr ""
+msgstr "事前分布"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Default"
-msgstr ""
+msgstr "既定"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Cauchy"
-msgstr ""
+msgstr "コーシー"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale"
-msgstr ""
+msgstr "尺度"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Informative"
-msgstr ""
+msgstr "情報のある事前分布"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "location:"
-msgstr ""
+msgstr "位置:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale:"
-msgstr ""
+msgstr "尺度:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Normal"
-msgstr ""
+msgstr "正規"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "mean:"
-msgstr ""
+msgstr "平均:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "std:"
-msgstr ""
+msgstr "標準偏差:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "df:"
-msgstr ""
+msgstr "df:"
 
-#, fuzzy
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Raw"
 msgstr "生(Raw)"
