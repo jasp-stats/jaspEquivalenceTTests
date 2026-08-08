@@ -3,630 +3,628 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"X-Language: ja\n"
 "X-Qt-Contexts: true\n"
 
 msgctxt "Description|"
-msgid "Equivalence Independent Samples T-Test"
-msgstr "同等性独立サンプルのt検定"
-
-msgctxt "Description|"
-msgid "Independent Samples T-Test"
-msgstr "対応のないt検定"
-
-msgctxt "Description|"
-msgid "Equivalence Paired Samples T-Test"
-msgstr "同等性対応のある標本のt検定"
-
-msgctxt "Description|"
-msgid "Paired Samples T-Test"
-msgstr "対応のあるサンプルのt検定"
-
-msgctxt "Description|"
-msgid "Equivalence One Sample T-Test"
-msgstr "同等性1サンプルのt検定"
-
-msgctxt "Description|"
-msgid "One Sample T-Test"
-msgstr "1標本t検定"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Grouping Variable"
-msgstr "グループ化変数"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "同等性領域"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "from"
-msgstr "次から"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "to"
-msgstr "次まで"
-
-#, qt-format
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "from %1"
-msgstr "%1 から"
-
-#, qt-format
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "to %1"
-msgstr "%1 まで"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "その他の統計"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Descriptives"
-msgstr "記述統計量"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Prior and posterior mass"
-msgstr "事前分布と事後分布の質量"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Plots"
-msgstr "プロット"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Prior and posterior"
-msgstr "事前分布と事後分布"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Additional info"
-msgstr "追加情報"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Sequential analysis"
-msgstr "逐次解析"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Robustness check"
-msgstr "頑健性チェック"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Missing Values"
-msgstr "欠損値"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "従属変数ごとにケースを除外する"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "ケースをリストワイズで除外"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Variables"
-msgstr "変数"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Test value"
-msgstr "検定値"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Equivalence Region"
-msgstr "同等性領域"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "from"
-msgstr "次から"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "to"
-msgstr "次まで"
-
-#, qt-format
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "from %1"
-msgstr "%1 から"
-
-#, qt-format
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "to %1"
-msgstr "%1 まで"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Additional Statistics"
-msgstr "その他の統計"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Descriptives"
-msgstr "記述統計量"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Prior and posterior mass"
-msgstr "事前分布と事後分布の質量"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Plots"
-msgstr "プロット"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Prior and posterior"
-msgstr "事前分布と事後分布"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Additional info"
-msgstr "追加情報"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Sequential analysis"
-msgstr "逐次解析"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Robustness check"
-msgstr "頑健性チェック"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Missing Values"
-msgstr "欠損値"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "従属変数ごとにケースを除外する"
-
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Exclude cases listwise"
-msgstr "ケースをリストワイズで除外"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "同等性領域"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "from"
-msgstr "次から"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "to"
-msgstr "次まで"
-
-#, qt-format
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "from %1"
-msgstr "%1 から"
-
-#, qt-format
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "to %1"
-msgstr "%1 まで"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "その他の統計"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Descriptives"
-msgstr "記述統計量"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Prior and posterior mass"
-msgstr "事前分布と事後分布の質量"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Plots"
-msgstr "プロット"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Prior and posterior"
-msgstr "事前分布と事後分布"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Additional info"
-msgstr "追加情報"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Sequential analysis"
-msgstr "逐次分析"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Robustness check"
-msgstr "頑健性チェック"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Missing Values"
-msgstr "欠損値"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "従属変数ごとにケースを除外する"
-
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "ケースをリストワイズで除外"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Grouping Variable"
-msgstr "グループ化変数"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Tests"
-msgstr "検定"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Student"
-msgstr "スチューデント"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Welch"
-msgstr "ウェルチ(Welch)"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "その他の統計"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Descriptives"
-msgstr "記述統計量"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Equivalence bounds plot"
-msgstr "同等性境界線プロット"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "同等性領域"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "from"
-msgstr "次から"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "to"
-msgstr "次まで"
-
-#, qt-format
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "from %1"
-msgstr "%1 から"
-
-#, qt-format
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "to %1"
-msgstr "%1 まで"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Bounds specification in"
-msgstr "境界の指定"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Cohen's d"
-msgstr "コーエン(Cohen)のd"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Raw"
-msgstr "生(Raw)"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Alpha level"
-msgstr "有意水準(α)"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Missing Values"
-msgstr "欠損値"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "従属変数ごとにケースを除外する"
-
-msgctxt "EquivalenceIndependentSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "ケースをリストワイズで除外"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Variables"
-msgstr "変数"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Test value"
-msgstr "検定値"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Additional Statistics"
-msgstr "その他の統計"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Descriptives"
-msgstr "記述統計量"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Equivalence bounds plot"
-msgstr "同等性境界線プロット"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Equivalence Region"
-msgstr "同等性領域"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "from"
-msgstr "次から"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "to"
-msgstr "次まで"
-
-#, qt-format
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "from %1"
-msgstr "%1 から"
-
-#, qt-format
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "to %1"
-msgstr "%1 まで"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Bounds specification in"
-msgstr "境界の指定"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Cohen's d"
-msgstr "コーエン(Cohen)のd"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Raw"
-msgstr "生(Raw)"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Alpha level"
-msgstr "有意水準(α)"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Missing Values"
-msgstr "欠損値"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "従属変数ごとにケースを除外する"
-
-msgctxt "EquivalenceOneSampleTTest|"
-msgid "Exclude cases listwise"
-msgstr "ケースをリストワイズで除外"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Equivalence Region"
-msgstr "同等性領域"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "from"
-msgstr "次から"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "to"
-msgstr "次まで"
-
-#, qt-format
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "from %1"
-msgstr "%1 から"
-
-#, qt-format
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "to %1"
-msgstr "%1 まで"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Bounds specification in"
-msgstr "境界の指定"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Cohen's d"
-msgstr "コーエン(Cohen)のd"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Raw"
-msgstr "生(Raw)"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Alpha level"
-msgstr "有意水準(α)"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Additional Statistics"
-msgstr "その他の統計"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Descriptives"
-msgstr "記述統計量"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Equivalence bounds plot"
-msgstr "同等性境界線プロット"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Missing Values"
-msgstr "欠損値"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Exclude cases per dependent variable"
-msgstr "従属変数ごとにケースを除外する"
-
-msgctxt "EquivalencePairedSamplesTTest|"
-msgid "Exclude cases listwise"
-msgstr "ケースをリストワイズで除外"
+msgid "Equivalence T-Tests"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
-msgstr "区間帰無仮説による2つの平均値の差の検定"
-
-msgctxt "Description|"
-msgid "Equivalence T-Tests"
-msgstr "同等性t検定"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Classical"
-msgstr "伝統的"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Equivalence Independent Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Independent Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Equivalence Paired Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Paired Samples T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "Equivalence One Sample T-Test"
+msgstr ""
+
+msgctxt "Description|"
+msgid "One Sample T-Test"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian"
-msgstr "ベイジアン"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Independent Samples T-Test"
-msgstr "ベイズ同等性 対応のないt検定"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Paired Samples T-Test"
-msgstr "ベイズ同等性 対応のあるt検定"
+msgstr ""
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence One Sample T-Test"
-msgstr "ベイズ同等性 1標本t検定"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Dependent Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Grouping Variable"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Equivalence Region"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "from"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "to"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "from %1"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "to %1"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Bounds specification in"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Cohen's d"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Raw"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Prior and posterior mass"
+msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr "対立仮説"
+msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 ≠ Group 2"
-msgstr "群1 ≠ 群2"
+msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 > Group 2"
-msgstr "群1 > 群2"
+msgstr ""
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 < Group 2"
-msgstr "群1 < 群2"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Plots"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Prior and posterior"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Additional info"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Sequential analysis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Robustness check"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Missing Values"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr ""
+
+msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Variables"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Test value"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Equivalence Region"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "from"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "to"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "from %1"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "to %1"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Bounds specification in"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Cohen's d"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Raw"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Prior and posterior mass"
+msgstr ""
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Alternative Hypothesis"
-msgstr "対立仮説"
+msgstr ""
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "≠ Test value"
-msgstr "≠ 検定値"
+msgstr ""
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "> Test value"
-msgstr "> 検定値"
+msgstr ""
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "< Test value"
-msgstr "< 検定値"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Plots"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Prior and posterior"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Additional info"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Sequential analysis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Robustness check"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Missing Values"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr ""
+
+msgctxt "EquivalenceBayesianOneSampleTTest|"
+msgid "Exclude cases listwise"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Variable Pairs"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Equivalence Region"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "from"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "to"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "from %1"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "to %1"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Bounds specification in"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Cohen's d"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Raw"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Prior and posterior mass"
+msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr "対立仮説"
+msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 ≠ Measure 2"
-msgstr "測定1 ≠ 測定2"
+msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 > Measure 2"
-msgstr "測定1 > 測定2"
+msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
-msgstr "測定1 < 測定2"
-
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
-msgid "Dependent Variables"
-msgstr "従属変数"
+msgstr ""
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Variable Pairs"
-msgstr "変数ペア"
+msgid "Plots"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Prior and posterior"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Additional info"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Sequential analysis"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Robustness check"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Missing Values"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr ""
+
+msgctxt "EquivalenceBayesianPairedSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr ""
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr "従属変数"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Grouping Variable"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Tests"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Student"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Welch"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Equivalence bounds plot"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Equivalence Region"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "from"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "to"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "from %1"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "to %1"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Bounds specification in"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Cohen's d"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Raw"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Alpha level"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Missing Values"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr ""
+
+msgctxt "EquivalenceIndependentSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Variables"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Test value"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Equivalence Region"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "from"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "to"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "from %1"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "to %1"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Bounds specification in"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Cohen's d"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Raw"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Alpha level"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Additional Statistics"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Descriptives"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Equivalence bounds plot"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Missing Values"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr ""
+
+msgctxt "EquivalenceOneSampleTTest|"
+msgid "Exclude cases listwise"
+msgstr ""
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr "変数ペア"
+msgstr ""
 
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Equivalence Region"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "from"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "to"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "from %1"
+msgstr ""
+
+#, qt-format
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "to %1"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr "境界の指定"
+msgstr ""
 
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr "コーエン(Cohen)のd"
+msgstr ""
 
-msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
+msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr "生(Raw)"
+msgstr ""
 
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Bounds specification in"
-msgstr "境界の指定"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Alpha level"
+msgstr ""
 
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Cohen's d"
-msgstr "コーエン(Cohen)のd"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Additional Statistics"
+msgstr ""
 
-msgctxt "EquivalenceBayesianOneSampleTTest|"
-msgid "Raw"
-msgstr "生(Raw)"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Descriptives"
+msgstr ""
 
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Bounds specification in"
-msgstr "境界の指定"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Equivalence bounds plot"
+msgstr ""
 
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Cohen's d"
-msgstr "コーエン(Cohen)のd"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Missing Values"
+msgstr ""
 
-msgctxt "EquivalenceBayesianPairedSamplesTTest|"
-msgid "Raw"
-msgstr "生(Raw)"
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Exclude cases per dependent variable"
+msgstr ""
+
+msgctxt "EquivalencePairedSamplesTTest|"
+msgid "Exclude cases listwise"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Prior"
-msgstr "事前分布"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Default"
-msgstr "既定"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Cauchy"
-msgstr "コーシー"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale"
-msgstr "尺度"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Informative"
-msgstr "情報のある事前分布"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "location:"
-msgstr "位置:"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale:"
-msgstr "尺度:"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Normal"
-msgstr "正規"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "mean:"
-msgstr "平均:"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "std:"
-msgstr "標準偏差:"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "t"
-msgstr "t"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "df:"
-msgstr "df:"
+msgstr ""
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Raw"
-msgstr "生(Raw)"
+msgstr ""
