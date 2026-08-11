@@ -21,7 +21,7 @@ msgid "Equivalence Prior and Posterior"
 msgstr "Gelijkwaardigheid Prior en Posterior"
 
 msgid "Mean Difference (Raw)"
-msgstr ""
+msgstr "Gemiddeld Verschil (Ruw)"
 
 msgid "Effect size"
 msgstr "Effectgrootte"
@@ -62,21 +62,25 @@ msgid ""
 "I ranges from %1$s to %2$s on the raw scale (corresponding to [%3$s, %4$s] "
 "on the Cohen's d scale)"
 msgstr ""
+"I varieert van %1$s tot %2$s op de ruwe schaal (overeenkomend met [%3$s, "
+"%4$s] op de Cohen's d-schaal)"
 
 msgid "Cauchy(%1$s, %2$s)"
-msgstr ""
+msgstr "Cauchy(%1$s, %2$s)"
 
 #, fuzzy
 msgid "Normal(%1$s, %2$s)"
 msgstr "Niet-overlappend (%1$s vs. %2$s)"
 
 msgid "t(%1$s, %2$s, df=%3$s)"
-msgstr ""
+msgstr "t(%1$s, %2$s, df=%3$s)"
 
 msgid ""
 "The prior distribution on the raw scale corresponds to %s on the Cohen's d "
 "scale"
 msgstr ""
+"De priorverdeling op de ruwe schaal komt overeen met %s op de Cohen's "
+"d-schaal"
 
 msgid "Equivalence Bayesian Independent Samples T-Test"
 msgstr "Gelijkwaardigheid Bayesiaanse T-Toets Onafhankelijke Steekproeven"
