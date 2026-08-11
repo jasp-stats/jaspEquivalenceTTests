@@ -56,13 +56,13 @@ msgid ""
 msgstr "I 在原始刻度上的範圍為 %1$s 到 %2$s（對應於 Cohen's d 量表的 [%3$s, %4$s]）"
 
 msgid "Cauchy(%1$s, %2$s)"
-msgstr ""
+msgstr "柯西分配(%1$s, %2$s)"
 
 msgid "Normal(%1$s, %2$s)"
 msgstr "常態分配(%1$s, %2$s)"
 
 msgid "t(%1$s, %2$s, df=%3$s)"
-msgstr ""
+msgstr "t 分配(%1$s, %2$s, df=%3$s)"
 
 msgid ""
 "The prior distribution on the raw scale corresponds to %s on the Cohen's d "

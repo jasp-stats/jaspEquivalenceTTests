@@ -305,7 +305,7 @@ msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
@@ -375,7 +375,7 @@ msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Raw"
@@ -425,7 +425,7 @@ msgstr "等效界限的指定方式"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
@@ -549,7 +549,7 @@ msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Raw"
@@ -561,7 +561,7 @@ msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Raw"
@@ -573,7 +573,7 @@ msgstr "等效界限的指定方式"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "Cohen's d"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Raw"
@@ -589,7 +589,7 @@ msgstr "預設"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Cauchy"
-msgstr ""
+msgstr "柯西"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale"
@@ -621,7 +621,7 @@ msgstr "標準差："
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "t"
-msgstr ""
+msgstr "t 分配"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "df:"
