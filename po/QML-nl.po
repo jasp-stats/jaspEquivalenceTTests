@@ -471,7 +471,8 @@ msgstr "Bayesiaans"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Independent Samples T-Test"
-msgstr "Bayesiaanse Gelijkswaardigheid T-Toets voor Onafhankelijke Steekproeven"
+msgstr ""
+"Bayesiaanse Gelijkswaardigheid T-Toets voor Onafhankelijke Steekproeven"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Paired Samples T-Test"
