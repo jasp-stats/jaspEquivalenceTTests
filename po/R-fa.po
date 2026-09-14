@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: jaspEquivalenceTTests 0.96.4\n"
 "POT-Creation-Date: 2026-04-25 03:46\n"
-"PO-Revision-Date: 2026-09-14 02:27+0000\n"
+"PO-Revision-Date: 2026-09-15 03:58+0000\n"
 "Last-Translator: Sohrab Delshad <sdel4030@gmail.com>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/jasp/"
 "jaspequivalencettests-r/fa/>\n"
@@ -23,7 +23,7 @@ msgid "Mean Difference (Raw)"
 msgstr ""
 
 msgid "Effect size"
-msgstr ""
+msgstr "اندازه اثر"
 
 msgid "Equivalence Sequential Analysis"
 msgstr ""
@@ -35,13 +35,13 @@ msgid "Sequential analysis robustness check plot currently not supported for raw
 msgstr ""
 
 msgid "n"
-msgstr ""
+msgstr "n"
 
 msgid "Please provide another variable."
-msgstr ""
+msgstr "لطفاً متغیر دیگری ارائه دهید."
 
 msgid "Variables %1$s and %2$s are the same!"
-msgstr ""
+msgstr "متغیرهای %1$s و %2$s یکسان هستند!"
 
 msgid "I ranges from %1$s to %2$s on the Cohen's d scale"
 msgstr ""
@@ -83,10 +83,10 @@ msgid "Descriptives"
 msgstr "آماره‌های توصیفی"
 
 msgid "Group"
-msgstr ""
+msgstr "گروه"
 
 msgid "N"
-msgstr "N (تعداد)"
+msgstr "N"
 
 msgid "Mean"
 msgstr "میانگین"
@@ -95,7 +95,7 @@ msgid "SD"
 msgstr "انحراف معیار"
 
 msgid "SE"
-msgstr "خطای استاندارد (SE)"
+msgstr "خطای معیار"
 
 msgid "95%% Credible Interval"
 msgstr ""
@@ -146,7 +146,7 @@ msgid "T-Test"
 msgstr ""
 
 msgid "Upper bound"
-msgstr ""
+msgstr "کران بالا"
 
 msgid "Lower bound"
 msgstr ""
@@ -158,10 +158,10 @@ msgid "Bounds type"
 msgstr ""
 
 msgid "Low"
-msgstr ""
+msgstr "پایین"
 
 msgid "High"
-msgstr ""
+msgstr "بالا"
 
 msgid "%s%% Confidence Interval"
 msgstr ""
