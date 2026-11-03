@@ -19,6 +19,7 @@
 ## Fixed
 * One-sample equivalence t-test: the test value was ignored (TOSTER's `dataTOSTone` does not use `mu`), so the TOST rows, the confidence intervals and the effect size were always for the raw mean; the equivalence bounds are now differences from the test value.
 * One-sample equivalence t-test: the "Upper bound" and "Lower bound" rows showed each other's statistics.
+* Independent samples equivalence t-test: the "Upper bound" and "Lower bound" rows showed each other's statistics.
 
 
 ---
