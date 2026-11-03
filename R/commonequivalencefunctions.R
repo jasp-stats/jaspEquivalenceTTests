@@ -642,7 +642,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
 .generalEquivalenceTtestBF <- function(x = NULL, y = NULL, paired = FALSE, options) {
 
-  tValue <- unname(t.test(x, y, var.equal = TRUE)$statistic)
+  tValue <- unname(t.test(x, y, paired = paired, var.equal = TRUE)$statistic)
 
   n1 <- as.numeric(length(x))
   n2 <- if (paired) 0 else as.numeric(length(y))
