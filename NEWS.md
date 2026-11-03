@@ -18,3 +18,6 @@
 
 ## Fixed
 * Bayesian paired samples equivalence t-test: the Bayes factors, posterior masses and prior and posterior plot now use the paired t statistic instead of the independent samples t statistic.
+* One-sample equivalence t-test: the test value was ignored (TOSTER's `dataTOSTone` does not use `mu`), so the TOST rows, the confidence intervals and the effect size were always for the raw mean; the equivalence bounds are now differences from the test value.
+* One-sample equivalence t-test: the "Upper bound" and "Lower bound" rows showed each other's statistics.
+* Independent samples equivalence t-test: the "Upper bound" and "Lower bound" rows showed each other's statistics.

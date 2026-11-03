@@ -33,6 +33,6 @@ test_that("Equivalence Independent Samples T-Test table results match", {
   table <- results[["results"]][["equivalenceIndTTestTable"]][["data"]]
   jaspTools::expect_equal_tables(table,
                                  list(98, 0.448976320466698, "T-Test", 0.760172707980336, "contNormal",
-                                      98, 0.158218835873606, "Upper bound", 1.0069519615654, "",
-                                      98, 0.695584187884492, "Lower bound", 0.513393454395275, ""))
+                                      98, 0.695584187884492, "Upper bound", 0.513393454395275, "",
+                                      98, 0.158218835873606, "Lower bound", 1.0069519615654, ""))
 })
