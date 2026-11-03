@@ -16,6 +16,8 @@
 
 # jaspEquivalenceTTests (development version)
 
+## Fixed
+* Bayesian paired samples equivalence t-test: the Bayes factors, posterior masses and prior and posterior plot now use the paired t statistic instead of the independent samples t statistic.
 
 
 ---
