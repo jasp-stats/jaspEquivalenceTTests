@@ -14,32 +14,10 @@
 
 ---
 
-# jaspEquivalenceTTests (development version)
+# jaspEquivalenceTTests 0.97.0
 
 ## Fixed
+* Bayesian paired samples equivalence t-test: the Bayes factors, posterior masses and prior and posterior plot now use the paired t statistic instead of the independent samples t statistic.
 * One-sample equivalence t-test: the test value was ignored (TOSTER's `dataTOSTone` does not use `mu`), so the TOST rows, the confidence intervals and the effect size were always for the raw mean; the equivalence bounds are now differences from the test value.
 * One-sample equivalence t-test: the "Upper bound" and "Lower bound" rows showed each other's statistics.
 * Independent samples equivalence t-test: the "Upper bound" and "Lower bound" rows showed each other's statistics.
-
-
----
-
-# jaspModuleTemplate 0.2.0
-## Added
-* Added NEWS.md
-* Added workflow to remind users to update their `NEWS.md`.
-* Added workflow to auto-bump version when user does not do so.
-
----
-
-# jaspModuleTemplate 0.1.0
-
-## Added
-* Initial examples to showcase JASP module development
-
-## Changed
-* Use best practices for checking input ([Issue #19](https://github.com/jasp-stats/jaspModuleTemplate/issues/19)).
-* The main results table now defaults to displaying 95% Confidence Intervals for effect sizes.
-
-## Fixed
-* Remove deprecated dependencies from qml files ([Issue #14](https://github.com/jasp-stats/jaspModuleTemplate/issues/14)).
