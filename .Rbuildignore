@@ -6,3 +6,4 @@
 ^.github
 ^.claude
 ^examples
+^\.claude$
