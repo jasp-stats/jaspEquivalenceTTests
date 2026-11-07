@@ -72,9 +72,12 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
       results[[variable]][["errorFootnotes"]] <- errorMessage
 
     } else {
-      tableResults <- try(TOSTER::dataTOSTone(data         = dataset,
+      # TOSTER::dataTOSTone ignores `mu` (0.8.6): the TOST rows and the confidence intervals are always for the mean
+      # itself. The equivalence bounds are differences from the test value, so test x - mu against them instead.
+      dataShifted <- stats::setNames(data.frame(dataset[[variable]] - options$mu), variable)
+
+      tableResults <- try(TOSTER::dataTOSTone(data         = dataShifted,
                                               vars         = (variable), # there is a non-standard evaluation - keep the brackets
-                                              mu           = options$mu,
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
                                               eqbound_type = switch(options$boundstype, "raw" = "raw", "cohensD" = "SMD"),  # bounds type is raw or cohen's d
@@ -102,16 +105,22 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
         confIntEffSize <- unlist(confIntEffSize) / sqrt(n)
         confIntEffSize <- sort(confIntEffSize)
 
+        # the descriptives are those of the variable itself, not of x - mu
+        desc <- as.data.frame(tableResults$desc)
+        desc$m   <- desc$m   + options$mu
+        desc$med <- desc$med + options$mu
+
         results[[variable]] <- list(
           ttestTvalue = tableResults$tost$asDF$`t[0]`,
           ttestDf     = tableResults$tost$asDF$`df[0]`,
           ttestP      = tableResults$tost$asDF$`p[0]`,
-          upperTvalue = tableResults$tost$asDF$`t[1]`,
-          upperDf     = tableResults$tost$asDF$`df[1]`,
-          upperP      = tableResults$tost$asDF$`p[1]`,
-          lowerTvalue = tableResults$tost$asDF$`t[2]`,
-          lowerDf     = tableResults$tost$asDF$`df[2]`,
-          lowerP      = tableResults$tost$asDF$`p[2]`,
+          # TOSTER's first TOST row ("TOST Lower") tests the lower bound, the second ("TOST Upper") the upper bound
+          lowerTvalue = tableResults$tost$asDF$`t[1]`,
+          lowerDf     = tableResults$tost$asDF$`df[1]`,
+          lowerP      = tableResults$tost$asDF$`p[1]`,
+          upperTvalue = tableResults$tost$asDF$`t[2]`,
+          upperDf     = tableResults$tost$asDF$`df[2]`,
+          upperP      = tableResults$tost$asDF$`p[2]`,
           lowCohen    = tableResults$eqb$asDF$`low[cohen]`,
           highCohen   = tableResults$eqb$asDF$`high[cohen]`,
           cilCohen    = tableResults$effsize$asDF$`cil[cohen]`,
@@ -120,7 +129,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
           highRaw     = tableResults$eqb$asDF$`high[raw]`,
           cilRaw      = tableResults$effsize$asDF$`cil[raw]`,
           ciuRaw      = tableResults$effsize$asDF$`ciu[raw]`,
-          desc        = as.data.frame(tableResults$desc))
+          desc        = desc)
       }
     }
   }
