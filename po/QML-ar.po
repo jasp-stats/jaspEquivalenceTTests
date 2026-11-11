@@ -4,7 +4,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Qt-Contexts: true\n"
-"PO-Revision-Date: 2026-11-11 18:37+0000\n"
+"PO-Revision-Date: 2026-11-12 10:25+0000\n"
 "Last-Translator: Fahad Mahfouz Al-Subhi "
 "<fahadalsubhi@users.noreply.hosted.weblate.org>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/jasp/"
@@ -16,11 +16,11 @@ msgstr ""
 
 msgctxt "Description|"
 msgid "Equivalence T-Tests"
-msgstr ""
+msgstr "اختبارات t للتكافؤ"
 
 msgctxt "Description|"
 msgid "Test the difference between two means with an interval-null hypothesis"
-msgstr ""
+msgstr "اختبار الفرق بين متوسطين بفرضية صفرية فترية"
 
 msgctxt "Description|"
 msgid "Classical"
@@ -28,7 +28,7 @@ msgstr "كلاسيكي"
 
 msgctxt "Description|"
 msgid "Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "اختبار تكافؤ t لعينتين مستقلتين"
 
 msgctxt "Description|"
 msgid "Independent Samples T-Test"
@@ -36,15 +36,15 @@ msgstr "اختبار t لعينتين مستقلتين"
 
 msgctxt "Description|"
 msgid "Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "اختبار t للتكافؤ لعينتين مترابطتين"
 
 msgctxt "Description|"
 msgid "Paired Samples T-Test"
-msgstr ""
+msgstr "اختبار t لعينتين مرتبطتين"
 
 msgctxt "Description|"
 msgid "Equivalence One Sample T-Test"
-msgstr ""
+msgstr "اختبار t للتكافؤ لعينة واحدة"
 
 msgctxt "Description|"
 msgid "One Sample T-Test"
@@ -56,584 +56,584 @@ msgstr "بايزي"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Independent Samples T-Test"
-msgstr ""
+msgstr "اختبار t البايزي للتكافؤ لعينتين مستقلتين"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence Paired Samples T-Test"
-msgstr ""
+msgstr "اختبار t البايزي للتكافؤ لعينتين مرتبطتين"
 
 msgctxt "Description|"
 msgid "Bayesian Equivalence One Sample T-Test"
-msgstr ""
+msgstr "اختبار t البايزي للتكافؤ لعينة واحدة"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "المتغيرات التابعة"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr ""
+msgstr "متغير التجميع"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "منطقة التكافؤ"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "من"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "إلى"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "من %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "إلى %1"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "تحديد الحدود بوحدة"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "معامل d لكوهين"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "خام"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "إحصاءات إضافية"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "الإحصاءات الوصفية"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "الكتلة الاحتمالية القبلية والبعدية"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "الفرضية البديلة"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 ≠ Group 2"
-msgstr ""
+msgstr "المجموعة 1 ≠ المجموعة 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 > Group 2"
-msgstr ""
+msgstr "المجموعة 1 > المجموعة 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Group 1 < Group 2"
-msgstr ""
+msgstr "المجموعة 1 < المجموعة 2"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "المخططات"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "التوزيعان القبلي والبعدي"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "معلومات إضافية"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "التحليل التتابعي"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "فحص الحصانة"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "القيم المفقودة"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "استبعاد الحالات لكل متغير تابع"
 
 msgctxt "EquivalenceBayesianIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "استبعاد الحالات بالكامل"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "المتغيرات"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Test value"
-msgstr ""
+msgstr "قيمة الاختبار"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "منطقة التكافؤ"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "من"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "إلى"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "من %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "إلى %1"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "تحديد الحدود بوحدة"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "معامل d لكوهين"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "خام"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "إحصاءات إضافية"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "الإحصاءات الوصفية"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "الكتلة الاحتمالية القبلية والبعدية"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "الفرضية البديلة"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "≠ Test value"
-msgstr ""
+msgstr "≠ قيمة الاختبار"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "> Test value"
-msgstr ""
+msgstr "> قيمة الاختبار"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "< Test value"
-msgstr ""
+msgstr "< قيمة الاختبار"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "المخططات"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "التوزيعان القبلي والبعدي"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "معلومات إضافية"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "التحليل التتابعي"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "فحص الحصانة"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "القيم المفقودة"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "استبعاد الحالات لكل متغير تابع"
 
 msgctxt "EquivalenceBayesianOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "استبعاد الحالات بالكامل"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "أزواج المتغيرات"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "منطقة التكافؤ"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "من"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "إلى"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "من %1"
 
 #, qt-format
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "إلى %1"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "تحديد الحدود بوحدة"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "معامل d لكوهين"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "خام"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "إحصاءات إضافية"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "الإحصاءات الوصفية"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior mass"
-msgstr ""
+msgstr "الكتلة الاحتمالية القبلية والبعدية"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Alternative Hypothesis"
-msgstr ""
+msgstr "الفرضية البديلة"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 ≠ Measure 2"
-msgstr ""
+msgstr "القياس 1 ≠ القياس 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 > Measure 2"
-msgstr ""
+msgstr "القياس 1 > القياس 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Measure 1 < Measure 2"
-msgstr ""
+msgstr "القياس 1 < القياس 2"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Plots"
-msgstr ""
+msgstr "المخططات"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Prior and posterior"
-msgstr ""
+msgstr "التوزيعان القبلي والبعدي"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Additional info"
-msgstr ""
+msgstr "معلومات إضافية"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Sequential analysis"
-msgstr ""
+msgstr "التحليل التتابعي"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Robustness check"
-msgstr ""
+msgstr "فحص الحصانة"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "القيم المفقودة"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "استبعاد الحالات لكل متغير تابع"
 
 msgctxt "EquivalenceBayesianPairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "استبعاد الحالات بالكامل"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Dependent Variables"
-msgstr ""
+msgstr "المتغيرات التابعة"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Grouping Variable"
-msgstr ""
+msgstr "متغير التجميع"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Tests"
-msgstr ""
+msgstr "الاختبارات"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Student"
-msgstr ""
+msgstr "ستيودنت"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Welch"
-msgstr ""
+msgstr "ويلش"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "إحصاءات إضافية"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "الإحصاءات الوصفية"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "مخطط حدود التكافؤ"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "منطقة التكافؤ"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "من"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "إلى"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "من %1"
 
 #, qt-format
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "إلى %1"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "تحديد الحدود بوحدة"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "معامل d لكوهين"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "خام"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "مستوى ألفا"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "القيم المفقودة"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "استبعاد الحالات لكل متغير تابع"
 
 msgctxt "EquivalenceIndependentSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "استبعاد الحالات بالكامل"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Variables"
-msgstr ""
+msgstr "المتغيرات"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Test value"
-msgstr ""
+msgstr "قيمة الاختبار"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "منطقة التكافؤ"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from"
-msgstr ""
+msgstr "من"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to"
-msgstr ""
+msgstr "إلى"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "من %1"
 
 #, qt-format
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "إلى %1"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "تحديد الحدود بوحدة"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "معامل d لكوهين"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "خام"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "مستوى ألفا"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "إحصاءات إضافية"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "الإحصاءات الوصفية"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "مخطط حدود التكافؤ"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "القيم المفقودة"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "استبعاد الحالات لكل متغير تابع"
 
 msgctxt "EquivalenceOneSampleTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "استبعاد الحالات بالكامل"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Variable Pairs"
-msgstr ""
+msgstr "أزواج المتغيرات"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence Region"
-msgstr ""
+msgstr "منطقة التكافؤ"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from"
-msgstr ""
+msgstr "من"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to"
-msgstr ""
+msgstr "إلى"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "from %1"
-msgstr ""
+msgstr "من %1"
 
 #, qt-format
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "to %1"
-msgstr ""
+msgstr "إلى %1"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Bounds specification in"
-msgstr ""
+msgstr "تحديد الحدود بوحدة"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Cohen's d"
-msgstr ""
+msgstr "معامل d لكوهين"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Raw"
-msgstr ""
+msgstr "خام"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Alpha level"
-msgstr ""
+msgstr "مستوى ألفا"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Additional Statistics"
-msgstr ""
+msgstr "إحصاءات إضافية"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Descriptives"
-msgstr ""
+msgstr "الإحصاءات الوصفية"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Equivalence bounds plot"
-msgstr ""
+msgstr "مخطط حدود التكافؤ"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Missing Values"
-msgstr ""
+msgstr "القيم المفقودة"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases per dependent variable"
-msgstr ""
+msgstr "استبعاد الحالات لكل متغير تابع"
 
 msgctxt "EquivalencePairedSamplesTTest|"
 msgid "Exclude cases listwise"
-msgstr ""
+msgstr "استبعاد الحالات بالكامل"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Prior"
-msgstr ""
+msgstr "قبلي"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Default"
-msgstr ""
+msgstr "افتراضي"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Cauchy"
-msgstr ""
+msgstr "كوشي"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale"
-msgstr ""
+msgstr "المقياس"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Informative"
-msgstr ""
+msgstr "غني بالمعلومات"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "location:"
-msgstr ""
+msgstr "الموقع:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "scale:"
-msgstr ""
+msgstr "المقياس:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Normal"
-msgstr ""
+msgstr "طبيعي"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "mean:"
-msgstr ""
+msgstr "المتوسط:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "std:"
-msgstr ""
+msgstr "الانحراف المعياري:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "t"
-msgstr ""
+msgstr "t"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "df:"
-msgstr ""
+msgstr "درجات الحرية:"
 
 msgctxt "EquivalenceSubjectivePriors|"
 msgid "Raw"
-msgstr ""
+msgstr "خام"
