@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-EquivalenceBayesianPairedSamplesTTest <- function(jaspResults, dataset, options) {
+EquivalenceBayesianPairedSamplesTTestInternal <- function(jaspResults, dataset, options) {
 
   ready <- (length(options$pairs) > 0)
 

@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-EquivalenceBayesianOneSampleTTest <- function(jaspResults, dataset, options) {
+EquivalenceBayesianOneSampleTTestInternal <- function(jaspResults, dataset, options) {
 
   ready <- (length(options$variables) > 0)
 
