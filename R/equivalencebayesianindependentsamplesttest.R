@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-EquivalenceBayesianIndependentSamplesTTest <- function(jaspResults, dataset, options) {
+EquivalenceBayesianIndependentSamplesTTestInternal <- function(jaspResults, dataset, options) {
 
   ready <- (length(options$variables) != 0 && options$groupingVariable != "")
 

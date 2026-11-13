@@ -15,7 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-EquivalenceIndependentSamplesTTest <- function(jaspResults, dataset, options) {
+EquivalenceIndependentSamplesTTestInternal <- function(jaspResults, dataset, options) {
   ready <- (length(options$variables) != 0 && options$groupingVariable != "")
 
   # Read dataset and error checking

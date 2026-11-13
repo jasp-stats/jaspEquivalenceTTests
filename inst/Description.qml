@@ -6,7 +6,7 @@ Description
 	title:			qsTr("Equivalence T-Tests")
 	description:	qsTr("Test the difference between two means with an interval-null hypothesis")
 	icon:			"equivalence-module.svg"
-	hasWrappers: 	false
+	hasWrappers: 	true
 	
 	GroupTitle
 	{
