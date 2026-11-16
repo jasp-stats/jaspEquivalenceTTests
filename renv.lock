@@ -745,14 +745,15 @@
     },
     "TOSTER": {
       "Package": "TOSTER",
-      "Version": "0.8.6",
-      "Source": "Repository",
+      "Version": "0.9.0",
+      "Source": "GitHub",
       "Title": "Two One-Sided Tests (TOST) Equivalence Testing",
       "Description": "Two one-sided tests (TOST) procedure to test equivalence for t-tests, correlations, differences between proportions, and meta-analyses, including power analysis for t-tests and correlations. Allows you to specify equivalence bounds in raw scale units or in terms of effect sizes. See: Lakens (2017) <doi:10.1177/1948550617697177>.",
       "Authors@R": "c( person(given = \"Daniel\",family = \"Lakens\", role = c(\"aut\"), email = \"D.Lakens@tue.nl\"), person(given = \"Aaron\", family = \"Caldwell\", role = c(\"aut\", \"cre\"), email = \"arcaldwell49@gmail.com\"))",
       "Maintainer": "Aaron Caldwell <arcaldwell49@gmail.com>",
       "URL": "https://aaroncaldwell.us/TOSTERpkg/",
       "License": "GPL-3",
+      "Roxygen": "list(markdown = TRUE)",
       "Imports": [
         "stats",
         "graphics",
@@ -782,11 +783,15 @@
       "Depends": [
         "R (>= 3.5)"
       ],
-      "RoxygenNote": "7.3.2",
+      "RoxygenNote": "7.3.3",
       "Language": "en-US",
-      "NeedsCompilation": "no",
       "Author": "Daniel Lakens [aut], Aaron Caldwell [aut, cre]",
-      "Repository": "CRAN"
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "Lakens",
+      "RemoteRepo": "TOSTER",
+      "RemoteRef": "df47a3db1ca30fee110428e9ae6628e447435283",
+      "RemoteSha": "df47a3db1ca30fee110428e9ae6628e447435283"
     },
     "TTR": {
       "Package": "TTR",

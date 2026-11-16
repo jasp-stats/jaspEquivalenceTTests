@@ -15,10 +15,11 @@ Imports:
   jaspBase,
   jaspGraphs,
   metaBMA,
-  TOSTER,
+  TOSTER (>= 0.9.0),
   knitr, 
   jaspTTests
 Remotes:
+  Lakens/TOSTER@df47a3db1ca30fee110428e9ae6628e447435283,
   jasp-stats/jaspBase,
   jasp-stats/jaspGraphs,
   jasp-stats/jaspTTests
