@@ -14,6 +14,13 @@
 
 ---
 
+# jaspEquivalenceTTests (development version)
+
+## Fixed
+* One sample equivalence t-test: nonzero test values now affect the tests, confidence intervals and equivalence bounds plot ([Issue #4701](https://github.com/jasp-stats/jasp-issues/issues/4701)).
+* Bayesian one sample equivalence t-test: changing the test value now refreshes the sequential analysis plot.
+* Both one sample equivalence t-tests now accept negative test values.
+
 # jaspEquivalenceTTests 0.97.0
 
 ## Fixed

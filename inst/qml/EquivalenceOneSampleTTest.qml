@@ -38,7 +38,7 @@ Form
     {
         Group
 		{
-			DoubleField { name: "mu";	text: qsTr("Test value");		defaultValue: 0}
+			DoubleField { name: "mu";	text: qsTr("Test value");		defaultValue: 0; negativeValues: true}
 		}
 
 		Group

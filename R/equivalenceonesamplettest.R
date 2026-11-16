@@ -72,9 +72,11 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
       results[[variable]][["errorFootnotes"]] <- errorMessage
 
     } else {
-      tableResults <- try(TOSTER::dataTOSTone(data         = dataset,
+      # dataTOSTone() does not pass mu to its underlying test, so center the test data explicitly.
+      testData <- dataset[variable]
+      testData[[variable]] <- testData[[variable]] - options$mu
+      tableResults <- try(TOSTER::dataTOSTone(data         = testData,
                                               vars         = (variable), # there is a non-standard evaluation - keep the brackets
-                                              mu           = options$mu,
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
                                               eqbound_type = switch(options$boundstype, "raw" = "raw", "cohensD" = "SMD"),  # bounds type is raw or cohen's d
@@ -91,6 +93,8 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
 
         dat <- na.omit(dataset[[ variable ]])
         n   <- length(dat)
+        descriptives <- as.data.frame(tableResults$desc)
+        descriptives$m <- mean(dat)
 
         confIntEffSize <- c(0,0)
         ciEffSize <- 1 - 2 * options$alpha
@@ -120,7 +124,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
           highRaw     = tableResults$eqb$asDF$`high[raw]`,
           cilRaw      = tableResults$effsize$asDF$`cil[raw]`,
           ciuRaw      = tableResults$effsize$asDF$`ciu[raw]`,
-          desc        = as.data.frame(tableResults$desc))
+          desc        = descriptives)
       }
     }
   }

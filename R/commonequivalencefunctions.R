@@ -713,7 +713,7 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 .equivalencePlotSequentialAnalysis <- function(jaspResults, dataset, options, equivalenceBayesianTTestResults, ready, paired = FALSE) {
 
   equivalenceSequentialContainer <- createJaspContainer(title = gettext("Equivalence Sequential Analysis"))
-  equivalenceSequentialContainer$dependOn(c("variables", "pairs", "groupingVariable", "missingValues", "effectSizeStandardized", "plotSequentialAnalysis", "plotSequentialAnalysisRobustness", .equivalenceRegionDependencies, .equivalencePriorDependencies))
+  equivalenceSequentialContainer$dependOn(c("variables", "pairs", "groupingVariable", "missingValues", "mu", "effectSizeStandardized", "plotSequentialAnalysis", "plotSequentialAnalysisRobustness", .equivalenceRegionDependencies, .equivalencePriorDependencies))
   equivalenceSequentialContainer$position <- 5
 
   jaspResults[["equivalenceSequentialContainer"]] <- equivalenceSequentialContainer

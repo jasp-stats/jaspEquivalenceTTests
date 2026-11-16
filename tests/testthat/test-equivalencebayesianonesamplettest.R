@@ -39,3 +39,32 @@ test_that("contNormal plot matches", {
   testPlot <- results[["state"]][["figures"]][[plotName]][["obj"]]
   jaspTools::expect_equal_plots(testPlot, "contnormal", dir="EquivalenceBayesianOneSampleTTest")
 })
+
+test_that("Bayesian one sample test values match centered data", {
+  dataset <- data.frame(score = c(1:5, NA))
+  for (mu in c(3, -2)) {
+    options <- jaspTools::analysisOptions("EquivalenceBayesianOneSampleTTest")
+    options$variables <- "score"
+    options$mu <- mu
+    options$lowerbound <- -0.5
+    options$upperbound <- 0.5
+    options$massPriorPosterior <- TRUE
+    options$plotSequentialAnalysis <- TRUE
+    results <- jaspTools::runAnalysis("EquivalenceBayesianOneSampleTTest", dataset, options)
+
+    centeredDataset <- dataset
+    centeredDataset$score <- centeredDataset$score - mu
+    options$mu <- 0
+    centered <- jaspTools::runAnalysis("EquivalenceBayesianOneSampleTTest", centeredDataset, options)
+    table <- results$results$equivalenceBayesianOneTTestTable$data
+    centeredTable <- centered$results$equivalenceBayesianOneTTestTable$data
+    expect_equal(vapply(table, function(row) row$bf, 0), vapply(centeredTable, function(row) row$bf, 0))
+    expect_equal(results$results$equivalenceMassTable$data, centered$results$equivalenceMassTable$data)
+
+    plotName <- results$results$equivalenceSequentialContainer$collection$equivalenceSequentialContainer_score$data
+    centeredPlotName <- centered$results$equivalenceSequentialContainer$collection$equivalenceSequentialContainer_score$data
+    plotData <- lapply(results$state$figures[[plotName]]$obj$subplots, function(plot) plot$data)
+    centeredPlotData <- lapply(centered$state$figures[[centeredPlotName]]$obj$subplots, function(plot) plot$data)
+    expect_equal(plotData, centeredPlotData)
+  }
+})
