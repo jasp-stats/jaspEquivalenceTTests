@@ -1,4 +1,5 @@
 options <- jaspTools::analysisOptions("EquivalenceIndependentSamplesTTest")
+options$boundstype <- "cohensD"
 options$variables <- "contNormal"
 options$groupingVariable <- "contBinom"
 options$descriptives <- TRUE
