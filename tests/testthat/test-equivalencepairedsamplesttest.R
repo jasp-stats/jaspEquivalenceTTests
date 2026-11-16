@@ -1,4 +1,5 @@
 options <- jaspTools::analysisOptions("EquivalencePairedSamplesTTest")
+options$boundstype <- "cohensD"
 options$descriptives <- TRUE
 options$equivalenceboundsplot <- TRUE
 options$pairs <- list(c("contNormal", "contGamma"))

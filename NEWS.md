@@ -14,6 +14,12 @@
 
 ---
 
+# jaspEquivalenceTTests (development version)
+
+## Fixed
+* Update TOSTER to its 0.9.0 GitHub release, which fixes the ignored one sample test value ([Issue #4701](https://github.com/jasp-stats/jasp-issues/issues/4701)).
+* Refresh the JASP testing and graph dependencies, replace obsolete example-test APIs, and explicitly specify standardized bounds in the existing frequentist tests.
+
 # jaspEquivalenceTTests 0.97.0
 
 ## Fixed
