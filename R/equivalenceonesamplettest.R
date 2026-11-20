@@ -72,12 +72,9 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
       results[[variable]][["errorFootnotes"]] <- errorMessage
 
     } else {
-      # TOSTER::dataTOSTone ignores `mu` (0.8.6): the TOST rows and the confidence intervals are always for the mean
-      # itself. The equivalence bounds are differences from the test value, so test x - mu against them instead.
-      dataShifted <- stats::setNames(data.frame(dataset[[variable]] - options$mu), variable)
-
-      tableResults <- try(TOSTER::dataTOSTone(data         = dataShifted,
+      tableResults <- try(TOSTER::dataTOSTone(data         = dataset,
                                               vars         = (variable), # there is a non-standard evaluation - keep the brackets
+                                              mu           = options$mu,
                                               low_eqbound  = options$lowerbound,
                                               high_eqbound = options$upperbound,
                                               eqbound_type = switch(options$boundstype, "raw" = "raw", "cohensD" = "SMD"),  # bounds type is raw or cohen's d
@@ -105,11 +102,6 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
         confIntEffSize <- unlist(confIntEffSize) / sqrt(n)
         confIntEffSize <- sort(confIntEffSize)
 
-        # the descriptives are those of the variable itself, not of x - mu
-        desc <- as.data.frame(tableResults$desc)
-        desc$m   <- desc$m   + options$mu
-        desc$med <- desc$med + options$mu
-
         results[[variable]] <- list(
           ttestTvalue = tableResults$tost$asDF$`t[0]`,
           ttestDf     = tableResults$tost$asDF$`df[0]`,
@@ -129,7 +121,7 @@ EquivalenceOneSampleTTest <- function(jaspResults, dataset, options) {
           highRaw     = tableResults$eqb$asDF$`high[raw]`,
           cilRaw      = tableResults$effsize$asDF$`cil[raw]`,
           ciuRaw      = tableResults$effsize$asDF$`ciu[raw]`,
-          desc        = desc)
+          desc        = as.data.frame(tableResults$desc))
       }
     }
   }

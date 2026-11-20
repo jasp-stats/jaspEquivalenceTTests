@@ -1,4 +1,5 @@
 options <- jaspTools::analysisOptions("EquivalenceOneSampleTTest")
+options$boundstype <- "cohensD"
 options$variables <- "contGamma"
 options$descriptives <- TRUE
 options$equivalenceboundsplot <- TRUE
@@ -34,36 +35,38 @@ test_that("Equivalence One Sample T-Test table results match", {
                                       99, 4.97392579208359e-25, "Lower bound", 13.7664189226908, "contGamma"))
 })
 
-# the test value (mu) shifts the t-test and the bound tests; the equivalence bounds are differences from mu
-# reference values from plain R, x = contGamma, mu = 1.8, bounds -0.3 and 0.3:
-#   t.test(x, mu = 1.8), t.test(x, mu = 1.8 - 0.3, alternative = "greater"), t.test(x, mu = 1.8 + 0.3, alternative = "less"),
-#   t.test(x - 1.8, conf.level = 0.9)$conf.int
-optionsMu <- jaspTools::analysisOptions("EquivalenceOneSampleTTest")
-optionsMu$variables <- "contGamma"
-optionsMu$mu <- 1.8
-optionsMu$boundstype <- "raw"
-optionsMu$lowerbound <- -0.3
-optionsMu$upperbound <- 0.3
-optionsMu$descriptives <- TRUE
-resultsMu <- jaspTools::runAnalysis("EquivalenceOneSampleTTest", "test.csv", optionsMu)
+test_that("Nonzero test values are honored with raw and standardized bounds", {
+  x <- 1:5
+  dataset <- data.frame(score = c(x, NA))
+  se <- sd(x) / sqrt(length(x))
+  for (boundsType in c("raw", "cohensD")) {
+    options <- jaspTools::analysisOptions("EquivalenceOneSampleTTest")
+    options$variables <- "score"
+    options$mu <- 3
+    options$boundstype <- boundsType
+    options$lowerbound <- if (boundsType == "raw") 2.5 else -0.5
+    options$upperbound <- if (boundsType == "raw") 3.5 else 0.5
+    options$descriptives <- TRUE
+    results <- jaspTools::runAnalysis("EquivalenceOneSampleTTest", dataset, options)
 
-test_that("Equivalence One Sample T-Test table honours the test value", {
-  table <- resultsMu[["results"]][["equivalenceOneTTestTable"]][["data"]]
-  jaspTools::expect_equal_tables(table,
-                                 list(99, 0.131642180010755, "T-Test", 1.52022386307060, "contGamma",
-                                      99, 0.331359782115875, "Upper bound", -0.437475313532762, "contGamma",
-                                      99, 0.000376179770983911, "Lower bound", 3.47792303967396, "contGamma"))
-})
+    reference <- stats::t.test(x, mu = 3)
+    table <- results$results$equivalenceOneTTestTable$data
+    expect_equal(table[[1]]$t, unname(reference$statistic))
+    expect_equal(table[[1]]$p, reference$p.value)
 
-test_that("Equivalence Bounds table (raw) is relative to the test value", {
-  table <- resultsMu[["results"]][["equivalenceOneBoundsTable"]][["data"]]
-  rawRow <- Filter(function(row) identical(row[["statistic"]], "Raw"), table)
-  jaspTools::expect_equal_tables(rawRow,
-                                 list(0.3, -0.3, -0.0214793919241846, "Raw", 0.487400984344185, "contGamma"))
-})
-
-test_that("Descriptives table is not shifted by the test value", {
-  table <- resultsMu[["results"]][["equivalenceOneDescriptivesTable"]][["data"]]
-  jaspTools::expect_equal_tables(table,
-                                 list(100, 2.03296079621, 1.53241112621044, 0.153241112621044, "contGamma"))
+    # Raw bounds are absolute means; standardized bounds are distances from mu.
+    bounds <- if (boundsType == "raw") c(2.5, 3.5) else 3 + c(-0.5, 0.5) * sd(x)
+    boundT <- (mean(x) - bounds) / se
+    rows <- setNames(table, vapply(table, function(row) row$statistic, ""))
+    expect_equal(rows[["Lower bound"]]$t, boundT[1])
+    expect_equal(rows[["Lower bound"]]$p, stats::pt(boundT[1], 4, lower.tail = FALSE))
+    expect_equal(rows[["Upper bound"]]$t, boundT[2])
+    expect_equal(rows[["Upper bound"]]$p, stats::pt(boundT[2], 4))
+    raw <- results$results$equivalenceOneBoundsTable$data[[2]]
+    expect_equal(c(raw$low, raw$high), bounds)
+    expect_equal(c(raw$lower, raw$upper), mean(x) + c(-1, 1) * stats::qt(0.95, 4) * se)
+    descriptives <- results$results$equivalenceOneDescriptivesTable$data[[1]]
+    expect_equal(c(descriptives$N, descriptives$mean, descriptives$sd, descriptives$se),
+                 c(length(x), mean(x), sd(x), se))
+  }
 })
