@@ -42,3 +42,20 @@ test_that("contNormal plot matches", {
   testPlot <- results[["state"]][["figures"]][[plotName]][["obj"]]
   jaspTools::expect_equal_plots(testPlot, "contnormal", dir = "EquivalenceBayesianIndependentSamplesTTest")
 })
+
+test_that("Sequential analysis plot excludes rows without a group", {
+  # the last row has no group, so the sequential analysis uses only the other 8 rows instead of failing
+  dataset <- data.frame(y = c(3, 5, 6, 8, 10, 11, 12, 13, 1),
+                        g = factor(c("a", "a", "a", "a", "b", "b", "b", "b", NA)))
+
+  options <- jaspTools::analysisOptions("EquivalenceBayesianIndependentSamplesTTest")
+  options$variables <- "y"
+  options$groupingVariable <- "g"
+  options$plotSequentialAnalysis <- TRUE
+  options$plotSequentialAnalysisRobustness <- TRUE
+  set.seed(1)
+  results <- jaspTools::runAnalysis("EquivalenceBayesianIndependentSamplesTTest", dataset, options)
+  plots <- results[["results"]][["equivalenceSequentialContainer"]][["collection"]]
+  testPlot <- plots[["equivalenceSequentialContainer_y"]]
+  expect_identical(testPlot[["status"]], "complete")
+})

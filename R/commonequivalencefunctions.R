@@ -1138,6 +1138,10 @@ gettextf <- function(fmt, ..., domain = NULL)  {
 
 .ttestReadData <- function(dataset, options, type) {
 
+  grouping <- options[["groupingVariable"]]
+  if (type == "independent" && grouping != "" && !is.null(dataset[[grouping]]))
+    dataset <- dataset[!is.na(dataset[[grouping]]), , drop = FALSE]
+
   if (options[["missingValues"]] == "excludeListwise") {
 
     if (type %in% c("one-sample", "independent"))
