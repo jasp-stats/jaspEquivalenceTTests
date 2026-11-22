@@ -20,6 +20,7 @@
 * Update TOSTER to its 0.9.0 GitHub release, which fixes the ignored one sample test value ([Issue #4701](https://github.com/jasp-stats/jasp-issues/issues/4701)).
 * Refresh the JASP testing and graph dependencies, replace obsolete example-test APIs, and explicitly specify standardized bounds in the existing frequentist tests.
 * Fix swapped lower- and upper-bound statistics in the one-sample and independent samples equivalence t-test tables.
+* Fix the sequential analysis plot of the Bayesian independent samples equivalence t-test failing on rows with a dependent variable value but no group ([Issue #4720](https://github.com/jasp-stats/jasp-issues/issues/4720)).
 
 # jaspEquivalenceTTests 0.97.0
 
